@@ -77,3 +77,23 @@ Toda la información se consume de manera tipada y reactiva desde:
   - `src/components/`: Componentes modulares y reutilizables.
   - `src/pages/`: Vistas completas asociadas a las rutas.
   - `src/data/`: Tipos y datos maestros.
+
+---
+
+## ☁️ 7. Guía de Despliegue y Hosting (Vercel & Cloudflare Pages)
+
+El proyecto está 100% preconfigurado para subirse a las dos plataformas principales sin errores de rutas (*404 al recargar páginas internas*):
+
+1. **Vercel** (Ideal para demos, propuestas y pruebas rápidas):
+   - **Configuración activa**: [`vercel.json`](file:///c:/Users/USUARIO/Desktop/Plantilla%20Inmobiliaria/vercel.json) con regla de `rewrites` hacia `/index.html`.
+   - **Framework Preset**: Vite.
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+
+2. **Cloudflare Pages** (Recomendado para webs finales de clientes en producción):
+   - **Configuración activa**: [`public/_redirects`](file:///c:/Users/USUARIO/Desktop/Plantilla%20Inmobiliaria/public/_redirects) (`/* /index.html 200`).
+   - **Framework Preset**: Vite.
+   - **Build Command**: `npm run build`
+   - **Build Output Directory**: `dist`
+   - **Ventajas**: Ancho de banda ilimitado, menor latencia en Perú/Sudamérica y 100% compatible con uso comercial gratuito.
+
