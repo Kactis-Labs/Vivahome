@@ -71,15 +71,15 @@ export const Navbar: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-[#1D4263]/95 backdrop-blur-md py-3.5 shadow-2xl' 
-        : 'bg-gradient-to-b from-[#1D4263]/90 via-[#1D4263]/40 to-transparent py-5'
+        ? 'bg-white/95 backdrop-blur-md py-3.5 shadow-md border-b border-zinc-100' 
+        : 'bg-white/70 backdrop-blur-md py-4 sm:py-5 border-b border-zinc-100/50'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
           {/* Logo Golden Inmobiliaria */}
           <Link to="/" className="flex items-center group py-1">
-            <Logo variant="light" size="md" />
+            <Logo variant="dark" size="md" />
           </Link>
 
           {/* Navigation Links - Desktop */}
@@ -95,17 +95,17 @@ export const Navbar: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center gap-1.5 text-xs font-medium text-zinc-100 hover:text-amber-400 transition-colors tracking-wide py-1"
+                className="flex items-center gap-1.5 text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide py-1"
                 aria-expanded={dropdownOpen}
               >
                 <span>Páginas</span>
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180 text-amber-400' : ''}`} />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180 text-[#E5A020]' : ''}`} />
               </button>
 
               {/* 2-Column Dropdown */}
               {dropdownOpen && (
                 <div 
-                  className="absolute top-full left-0 mt-1 w-80 bg-[#1D4263]/98 backdrop-blur-xl rounded-2xl shadow-2xl p-5 grid grid-cols-2 gap-4 animate-in fade-in slide-in-from-top-2 duration-200 z-50 border border-white/10"
+                  className="absolute top-full left-0 mt-1 w-80 bg-white/98 backdrop-blur-xl rounded-2xl shadow-2xl p-5 grid grid-cols-2 gap-4 border border-zinc-200 z-50 animate-in fade-in slide-in-from-top-2 duration-200"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -115,20 +115,20 @@ export const Navbar: React.FC = () => {
                         key={link.title}
                         to={link.href}
                         onClick={() => setDropdownOpen(false)}
-                        className="block text-xs font-light text-zinc-200 hover:text-amber-400 transition-colors py-1 hover:translate-x-1 duration-150"
+                        className="block text-xs font-medium text-zinc-700 hover:text-[#E5A020] transition-colors py-1 hover:translate-x-1 duration-150"
                       >
                         {link.title}
                       </Link>
                     ))}
                   </div>
 
-                  <div className="space-y-2.5 border-l border-white/10 pl-4">
+                  <div className="space-y-2.5 border-l border-zinc-100 pl-4">
                     {pageLinksCol2.map((link) => (
                       <Link
                         key={link.title}
                         to={link.href}
                         onClick={() => setDropdownOpen(false)}
-                        className="block text-xs font-light text-zinc-200 hover:text-amber-400 transition-colors py-1 hover:translate-x-1 duration-150"
+                        className="block text-xs font-medium text-zinc-700 hover:text-[#E5A020] transition-colors py-1 hover:translate-x-1 duration-150"
                       >
                         {link.title}
                       </Link>
@@ -138,27 +138,27 @@ export const Navbar: React.FC = () => {
               )}
             </div>
 
-            <Link to="/nosotros" className="text-xs font-medium text-zinc-100 hover:text-amber-400 transition-colors tracking-wide">
+            <Link to="/nosotros" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
               Nosotros
             </Link>
 
-            <Link to="/servicios" className="text-xs font-medium text-zinc-100 hover:text-amber-400 transition-colors tracking-wide">
+            <Link to="/servicios" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
               Servicios
             </Link>
 
-            <Link to="/equipo" className="text-xs font-medium text-zinc-100 hover:text-amber-400 transition-colors tracking-wide">
+            <Link to="/equipo" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
               Equipo
             </Link>
 
-            <a href="#deals" className="text-xs font-medium text-zinc-100 hover:text-amber-400 transition-colors tracking-wide">
+            <a href="#deals" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
               Lotes Villa Club
             </a>
 
-            <a href="#blog" className="text-xs font-medium text-zinc-100 hover:text-amber-400 transition-colors tracking-wide">
+            <a href="#blog" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
               Blog
             </a>
 
-            <Link to="/contacto" className="text-xs font-medium text-zinc-100 hover:text-amber-400 transition-colors tracking-wide">
+            <Link to="/contacto" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
               Contacto
             </Link>
           </nav>
@@ -167,15 +167,15 @@ export const Navbar: React.FC = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <a 
               href="tel:+51987654321" 
-              className="text-xs font-light text-zinc-200 hover:text-amber-400 transition-colors flex items-center gap-1.5"
+              className="text-xs font-medium text-zinc-700 hover:text-[#E5A020] transition-colors flex items-center gap-1.5"
             >
-              <PhoneCall className="w-3.5 h-3.5 text-amber-400" />
+              <PhoneCall className="w-3.5 h-3.5 text-[#E5A020]" />
               <span>+51 987 654 321</span>
             </a>
 
             <Link 
               to="/contacto"
-              className="bg-[#E5A020] hover:bg-[#D97706] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-all shadow-lg hover:scale-105"
+              className="bg-[#E5A020] hover:bg-[#D97706] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-all shadow-md hover:scale-105"
             >
               Cotizar en Preventa
             </Link>
@@ -185,7 +185,7 @@ export const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-white hover:text-amber-400 p-2 focus:outline-none"
+              className="text-zinc-800 hover:text-[#E5A020] p-2 focus:outline-none"
               aria-label="Abrir menú de navegación"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -197,53 +197,53 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#1D4263] px-4 pt-4 pb-6 space-y-3 shadow-2xl">
+        <div className="md:hidden bg-white px-4 pt-4 pb-6 space-y-3 shadow-2xl border-b border-zinc-200">
           <Link 
             to="/" 
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-light text-zinc-100 hover:text-amber-400 py-1.5 border-b border-white/5"
+            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
           >
             Inicio
           </Link>
           <Link 
             to="/nosotros" 
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-light text-zinc-100 hover:text-amber-400 py-1.5 border-b border-white/5"
+            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
           >
             Nosotros
           </Link>
           <Link 
             to="/servicios" 
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-light text-zinc-100 hover:text-amber-400 py-1.5 border-b border-white/5"
+            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
           >
             Servicios
           </Link>
           <Link 
             to="/equipo" 
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-light text-zinc-100 hover:text-amber-400 py-1.5 border-b border-white/5"
+            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
           >
             Equipo de Ventas
           </Link>
           <a 
             href="#deals" 
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-light text-zinc-100 hover:text-amber-400 py-1.5 border-b border-white/5"
+            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
           >
             Lotes Villa Club
           </a>
           <a 
             href="#blog" 
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-light text-zinc-100 hover:text-amber-400 py-1.5 border-b border-white/5"
+            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
           >
             Blog
           </a>
           <Link 
             to="/contacto" 
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-light text-zinc-100 hover:text-amber-400 py-1.5"
+            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5"
           >
             Contacto
           </Link>
