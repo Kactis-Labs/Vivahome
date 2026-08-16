@@ -86,7 +86,7 @@ export const PropertyDetailPage: React.FC = () => {
                 VENTA EXCLUSIVA
               </span>
               {property.badge && (
-                <span className="px-2.5 py-0.5 rounded-md bg-[#0A2540] text-emerald-300 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider">
+                <span className="px-2.5 py-0.5 rounded-md bg-[#0D2218] text-emerald-300 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider">
                   {property.badge}
                 </span>
               )}
@@ -125,16 +125,16 @@ export const PropertyDetailPage: React.FC = () => {
 
           {/* 2. FOTO PRINCIPAL */}
           <div className="mb-10 sm:mb-14">
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm h-[260px] sm:h-[400px] lg:h-[580px] w-full bg-[#0A2540]">
+            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm h-[260px] sm:h-[400px] lg:h-[580px] w-full bg-[#0D2218]">
               <img 
                 src={property.image} 
                 alt={property.title} 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540]/60 via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0D2218]/60 via-transparent to-transparent opacity-60" />
               
               <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex items-center justify-between text-white">
-                <span className="bg-[#0A2540]/85 backdrop-blur-md px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-light border border-emerald-500/20">
+                <span className="bg-[#0D2218]/85 backdrop-blur-md px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-light">
                   {property.category} • {property.sqft} m²
                 </span>
               </div>
@@ -385,7 +385,7 @@ export const PropertyDetailPage: React.FC = () => {
 
                     <button 
                       type="submit"
-                      className="w-full bg-[#0A2540] hover:bg-zinc-800 text-white text-xs font-medium py-2.5 sm:py-3 rounded-full flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer"
+                      className="w-full bg-[#0D2218] hover:bg-[#153425] text-white text-xs font-medium py-2.5 sm:py-3 rounded-full flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer"
                     >
                       <Send className="w-3.5 h-3.5 text-emerald-400" />
                       <span>Enviar Solicitud</span>
@@ -399,7 +399,7 @@ export const PropertyDetailPage: React.FC = () => {
                     href={`https://wa.me/${property.assignedAgent.phone.replace(/\D/g, '')}?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-102"
+                    className="w-full bg-[#1E8E5A] hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-102"
                   >
                     <MessageCircle className="w-4 h-4 fill-current stroke-none" />
                     <span>Consultar por WhatsApp</span>
@@ -451,7 +451,7 @@ export const PropertyDetailPage: React.FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60" />
                     
                     {simProp.badge && (
-                      <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#0A2540]/85 text-emerald-300 text-[9px] sm:text-[10px] font-semibold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-md uppercase tracking-wider border border-emerald-400/30">
+                      <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#0D2218]/90 text-emerald-300 text-[9px] sm:text-[10px] font-semibold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-md uppercase tracking-wider">
                         {simProp.badge}
                       </div>
                     )}

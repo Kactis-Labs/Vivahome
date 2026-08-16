@@ -50,7 +50,7 @@ export const BlogSection: React.FC = () => {
                     alt={post.title} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#0A2540]/85 backdrop-blur-md text-emerald-300 text-[9px] sm:text-[10px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-md uppercase tracking-wider border border-emerald-400/30">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#0D2218]/90 backdrop-blur-md text-emerald-300 text-[9px] sm:text-[10px] font-semibold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-md uppercase tracking-wider">
                     {post.category}
                   </div>
                 </Link>

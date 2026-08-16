@@ -53,12 +53,12 @@ export const ServicesSection: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
                 
-                {/* Circular Action Button */}
-                <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-400 transition-all">
+                {/* Floating Action Button */}
+                <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-[#1E8E5A] text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-emerald-500 transition-all">
                   <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
                 </div>
 
-                <div className="absolute top-4 left-4 bg-[#0A2540]/85 backdrop-blur-md text-emerald-300 text-[10px] font-semibold px-3 py-1 rounded-md uppercase tracking-wider border border-emerald-400/30">
+                <div className="absolute top-4 left-4 bg-[#0D2218]/90 backdrop-blur-md text-emerald-300 text-[10px] font-semibold px-3 py-1 rounded-md uppercase tracking-wider">
                   {service.tag}
                 </div>
               </Link>
@@ -96,7 +96,7 @@ export const ServicesSection: React.FC = () => {
         <div className="text-center mt-12 sm:mt-16">
           <Link 
             to="/servicios"
-            className="inline-flex items-center gap-2 bg-[#0A2540] hover:bg-zinc-800 text-white text-xs sm:text-sm font-medium px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105"
+            className="inline-flex items-center gap-2 bg-[#0D2218] hover:bg-[#153425] text-white text-xs sm:text-sm font-medium px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105"
           >
             <span>Ver Todos los Servicios Inmobiliarios</span>
             <ArrowUpRight className="w-4 h-4 text-emerald-400" />

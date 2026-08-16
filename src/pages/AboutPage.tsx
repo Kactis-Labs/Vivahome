@@ -49,7 +49,7 @@ export const AboutPage: React.FC = () => {
       <Navbar />
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#0A2540]">
+      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#0D2218]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -57,7 +57,7 @@ export const AboutPage: React.FC = () => {
             alt="ECO HOGAR Inmobiliaria - Nuestra Historia" 
             className="w-full h-full object-cover object-center filter brightness-[0.4] contrast-[1.1]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540] via-[#0A2540]/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D2218] via-[#0D2218]/60 to-black/70" />
         </div>
 
         {/* Hero Content */}
@@ -113,13 +113,13 @@ export const AboutPage: React.FC = () => {
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className={`p-6 sm:p-7 rounded-3xl border transition-all duration-300 flex flex-col justify-between ${
                   stat.isHighlighted 
-                    ? 'bg-[#0A2540] text-white border-emerald-500/30 shadow-xl shadow-emerald-950/20' 
+                    ? 'bg-[#0D2218] text-white border-emerald-500/30 shadow-xl' 
                     : 'bg-white text-zinc-900 border-zinc-200 shadow-sm'
                 }`}
               >
                 <div>
                   <div className={`text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-2 font-mono ${
-                    stat.isHighlighted ? 'text-emerald-300' : 'text-[#0A2540]'
+                    stat.isHighlighted ? 'text-emerald-300' : 'text-[#0D2218]'
                   }`}>
                     {stat.value}
                   </div>

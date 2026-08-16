@@ -37,7 +37,7 @@ export const ContactPage: React.FC = () => {
       <Navbar />
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0A2540]">
+      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0D2218]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -45,7 +45,7 @@ export const ContactPage: React.FC = () => {
             alt="Contáctanos en ECO HOGAR Inmobiliaria" 
             className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540] via-[#0A2540]/60 to-black/75" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D2218] via-[#0D2218]/60 to-black/75" />
         </div>
 
         {/* Hero Content */}
@@ -123,7 +123,7 @@ export const ContactPage: React.FC = () => {
                 <div className="space-y-4 pt-2">
                   {/* Dirección */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0A2540] text-emerald-300 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#0D2218] text-emerald-300 flex items-center justify-center shrink-0">
                       <MapPin className="w-4 h-4" />
                     </div>
                     <div>
@@ -136,7 +136,7 @@ export const ContactPage: React.FC = () => {
 
                   {/* Teléfono */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0A2540] text-emerald-300 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#0D2218] text-emerald-300 flex items-center justify-center shrink-0">
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
@@ -149,7 +149,7 @@ export const ContactPage: React.FC = () => {
 
                   {/* Correo */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0A2540] text-emerald-300 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#0D2218] text-emerald-300 flex items-center justify-center shrink-0">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div>

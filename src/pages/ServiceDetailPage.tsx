@@ -30,7 +30,7 @@ export const ServiceDetailPage: React.FC = () => {
       <Navbar />
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0A2540]">
+      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0D2218]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -38,7 +38,7 @@ export const ServiceDetailPage: React.FC = () => {
             alt={service.title} 
             className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540] via-[#0A2540]/60 to-black/75" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D2218] via-[#0D2218]/60 to-black/75" />
         </div>
 
         {/* Hero Content */}
@@ -123,7 +123,7 @@ export const ServiceDetailPage: React.FC = () => {
                         key={idx}
                         className="p-5 sm:p-6 rounded-2xl bg-[#F8FAFC] border border-zinc-200 flex items-start gap-4"
                       >
-                        <span className="w-9 h-9 rounded-xl bg-[#0A2540] text-emerald-300 font-bold font-mono text-sm flex items-center justify-center shrink-0">
+                        <span className="w-9 h-9 rounded-xl bg-[#0D2218] text-emerald-300 font-bold font-mono text-sm flex items-center justify-center shrink-0">
                           {step.step}
                         </span>
                         <div>
@@ -175,7 +175,7 @@ export const ServiceDetailPage: React.FC = () => {
             <div className="lg:col-span-4 space-y-6">
               
               {/* Tarjeta de Contacto Inmediato */}
-              <div className="bg-[#0A2540] text-white rounded-3xl p-6 sm:p-8 space-y-5 shadow-xl border border-emerald-500/30">
+              <div className="bg-[#0D2218] text-white rounded-3xl p-6 sm:p-8 space-y-5 shadow-xl">
                 <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block">
                   ATENCIÓN PERSONALIZADA
                 </span>
@@ -191,14 +191,14 @@ export const ServiceDetailPage: React.FC = () => {
                     href="https://wa.me/51987654321?text=Hola,%20solicito%20asesoría%20sobre%20el%20servicio:%20"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md"
+                    className="w-full bg-[#1E8E5A] hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md"
                   >
                     <span>Consultar por WhatsApp</span>
                   </a>
 
                   <Link 
                     to="/contacto"
-                    className="w-full bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-colors border border-white/15"
+                    className="w-full bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-colors"
                   >
                     <PhoneCall className="w-3.5 h-3.5 text-emerald-400" />
                     <span>Solicitar una Llamada</span>

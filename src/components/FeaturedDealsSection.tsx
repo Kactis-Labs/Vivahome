@@ -55,7 +55,7 @@ export const FeaturedDealsSection: React.FC = () => {
                 
                 {/* Badge Overlay */}
                 {prop.badge && (
-                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#0A2540]/85 text-emerald-300 border border-emerald-400/30 text-[10px] sm:text-[11px] font-semibold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-md uppercase tracking-wider backdrop-blur-md">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#0D2218]/90 text-emerald-300 text-[10px] sm:text-[11px] font-semibold px-3 py-1 rounded-md uppercase tracking-wider backdrop-blur-md">
                     {prop.badge}
                   </div>
                 )}
@@ -133,7 +133,7 @@ export const FeaturedDealsSection: React.FC = () => {
         <div className="text-center mt-12 sm:mt-16">
           <Link
             to="/contacto"
-            className="inline-flex items-center gap-2 bg-[#0A2540] hover:bg-zinc-800 text-white text-xs sm:text-sm font-medium px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105"
+            className="inline-flex items-center gap-2 bg-[#0D2218] hover:bg-[#153425] text-white text-xs sm:text-sm font-medium px-8 py-3.5 rounded-full transition-all shadow-md hover:scale-105"
           >
             <span>Conoce Todos Nuestros Proyectos de Lotes</span>
             <ArrowUpRight className="w-4 h-4 text-emerald-400" />

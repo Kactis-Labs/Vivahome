@@ -53,7 +53,7 @@ export const AboutStatsSection: React.FC = () => {
             <div className="pt-4">
               <Link 
                 to="/nosotros"
-                className="inline-flex items-center gap-2 bg-[#0A2540] hover:bg-zinc-800 text-white text-xs sm:text-sm font-medium px-6 py-3 rounded-full transition-all shadow-md group"
+                className="inline-flex items-center gap-2 bg-[#0D2218] hover:bg-[#153425] text-white text-xs sm:text-sm font-medium px-6 py-3 rounded-full transition-all shadow-md group"
               >
                 <span>Conoce Nuestra Misión</span>
                 <ArrowUpRight className="w-4 h-4 text-emerald-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -75,7 +75,7 @@ export const AboutStatsSection: React.FC = () => {
                 className="bg-[#F8FAFC] border border-zinc-200 rounded-3xl p-6 sm:p-7 flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-lg transition-all duration-300"
               >
                 <div>
-                  <div className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0A2540] mb-2 font-mono">
+                  <div className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0D2218] mb-2 font-mono">
                     {stat.value}
                   </div>
                   <h3 className="text-xs sm:text-sm font-medium text-zinc-900 mb-2 uppercase tracking-wide">

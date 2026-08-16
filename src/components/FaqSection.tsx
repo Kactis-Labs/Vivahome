@@ -12,7 +12,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 sm:py-28 bg-[#0A2540] text-white overflow-hidden">
+    <section className="py-20 sm:py-28 bg-[#0D2218] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 items-start">
@@ -37,7 +37,7 @@ export const FaqSection: React.FC = () => {
               Resolvemos tus dudas sobre financiamiento directo, visitas guiadas gratuitas y servicios en nuestros proyectos en La Libertad.
             </p>
 
-            <div className="p-6 rounded-3xl bg-white/5 border border-emerald-500/20 backdrop-blur-sm space-y-4">
+            <div className="p-6 rounded-3xl bg-white/5 backdrop-blur-sm space-y-4">
               <h3 className="text-sm font-medium text-white">¿Quieres conocer los terrenos este fin de semana?</h3>
               <p className="text-xs font-light text-zinc-300 leading-relaxed">
                 Contamos con movilidad ida y vuelta gratuita saliendo desde Trujillo y puntos estratégicos de Ascope.
@@ -52,13 +52,13 @@ export const FaqSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Right Column: Accordion List */}
+          {/* Right Column: Accordion List sin marcos verdes pesados */}
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-7 space-y-4"
+            className="lg:col-span-7 space-y-3.5"
           >
             {faqs.map((faq) => {
               const isOpen = openId === faq.id;
@@ -66,7 +66,7 @@ export const FaqSection: React.FC = () => {
               return (
                 <div 
                   key={faq.id}
-                  className="rounded-2xl sm:rounded-3xl border border-white/10 bg-white/[0.03] overflow-hidden transition-colors hover:border-emerald-500/40"
+                  className="rounded-2xl sm:rounded-3xl bg-white/[0.04] hover:bg-white/[0.07] overflow-hidden transition-colors"
                 >
                   <button
                     onClick={() => toggleFaq(faq.id)}

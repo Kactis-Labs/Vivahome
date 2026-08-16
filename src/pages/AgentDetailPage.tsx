@@ -34,7 +34,7 @@ export const AgentDetailPage: React.FC = () => {
       <Navbar />
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-[44vh] sm:min-h-[48vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0A2540]">
+      <section className="relative min-h-[44vh] sm:min-h-[48vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0D2218]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -42,7 +42,7 @@ export const AgentDetailPage: React.FC = () => {
             alt="Asesor Especialista ECO HOGAR Inmobiliaria" 
             className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540] via-[#0A2540]/60 to-black/75" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D2218] via-[#0D2218]/60 to-black/75" />
         </div>
 
         {/* Hero Content */}
@@ -240,7 +240,7 @@ export const AgentDetailPage: React.FC = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href={`mailto:${agent.email}`}
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-zinc-100 hover:bg-[#0A2540] hover:text-white text-zinc-700 text-xs font-medium transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-zinc-100 hover:bg-[#0D2218] hover:text-white text-zinc-700 text-xs font-medium transition-colors"
                   >
                     <Mail className="w-4 h-4" />
                     <span>{agent.email}</span>
@@ -250,7 +250,7 @@ export const AgentDetailPage: React.FC = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href={`tel:${agent.phone.replace(/\s+/g, '')}`}
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-zinc-100 hover:bg-[#0A2540] hover:text-white text-zinc-700 text-xs font-medium transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-zinc-100 hover:bg-[#0D2218] hover:text-white text-zinc-700 text-xs font-medium transition-colors"
                   >
                     <Phone className="w-4 h-4" />
                     <span>{agent.phone}</span>

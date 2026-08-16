@@ -21,7 +21,7 @@ export const ServicesPage: React.FC = () => {
       <Navbar />
 
       {/* 1. HERO BANNER */}
-      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0A2540]">
+      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0D2218]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -29,7 +29,7 @@ export const ServicesPage: React.FC = () => {
             alt="Servicios Inmobiliarios ECO HOGAR" 
             className="w-full h-full object-cover object-center filter brightness-[0.4] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540] via-[#0A2540]/60 to-black/75" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D2218] via-[#0D2218]/60 to-black/75" />
         </div>
 
         {/* Hero Content */}
@@ -85,7 +85,7 @@ export const ServicesPage: React.FC = () => {
                     <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
                   </div>
 
-                  <div className="absolute top-4 left-4 bg-[#0A2540]/85 backdrop-blur-md text-emerald-300 text-[10px] font-semibold px-3 py-1 rounded-md uppercase tracking-wider border border-emerald-400/30">
+                  <div className="absolute top-4 left-4 bg-[#0D2218]/90 backdrop-blur-md text-emerald-300 text-[10px] font-semibold px-3 py-1 rounded-md uppercase tracking-wider">
                     {service.tag}
                   </div>
                 </Link>

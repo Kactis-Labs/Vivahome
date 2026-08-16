@@ -72,8 +72,8 @@ export const Navbar: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-[#0A2540]/95 backdrop-blur-md py-3.5 border-b border-emerald-500/20 shadow-2xl' 
-        : 'bg-gradient-to-b from-[#0A2540]/90 via-[#0A2540]/50 to-transparent py-5'
+        ? 'bg-[#0D2218]/95 backdrop-blur-md py-3.5 shadow-2xl' 
+        : 'bg-gradient-to-b from-[#0D2218]/90 via-[#0D2218]/40 to-transparent py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -106,7 +106,7 @@ export const Navbar: React.FC = () => {
               {/* 2-Column Dropdown */}
               {dropdownOpen && (
                 <div 
-                  className="absolute top-full left-0 mt-1 w-80 bg-[#0A2540]/98 backdrop-blur-xl border border-emerald-500/30 rounded-2xl shadow-2xl p-5 grid grid-cols-2 gap-4 animate-in fade-in slide-in-from-top-2 duration-200 z-50"
+                  className="absolute top-full left-0 mt-1 w-80 bg-[#0D2218]/98 backdrop-blur-xl rounded-2xl shadow-2xl p-5 grid grid-cols-2 gap-4 animate-in fade-in slide-in-from-top-2 duration-200 z-50"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -178,7 +178,7 @@ export const Navbar: React.FC = () => {
 
             <Link 
               to="/contacto"
-              className="bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-all shadow-lg shadow-emerald-950/40 hover:scale-105"
+              className="bg-[#1E8E5A] hover:bg-emerald-500 text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-all shadow-lg hover:scale-105"
             >
               Agenda Visita Gratis
             </Link>
@@ -200,7 +200,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0A2540] border-b border-emerald-500/20 px-4 pt-4 pb-6 space-y-3 shadow-2xl">
+        <div className="md:hidden bg-[#0D2218] px-4 pt-4 pb-6 space-y-3 shadow-2xl">
           <Link 
             to="/" 
             onClick={() => setMobileMenuOpen(false)}
@@ -254,7 +254,7 @@ export const Navbar: React.FC = () => {
             <Link 
               to="/contacto"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-center w-full bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-xs py-3 rounded-full transition-all shadow-md"
+              className="block text-center w-full bg-[#1E8E5A] hover:bg-emerald-500 text-white font-semibold text-xs py-3 rounded-full transition-all shadow-md"
             >
               Agendar Visita Guiada Gratis
             </Link>
