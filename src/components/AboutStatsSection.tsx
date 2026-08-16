@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { stats } from '../data/realEstateData';
-import { ArrowUpRight, ShieldCheck, Award } from 'lucide-react';
+import { ArrowUpRight, ShieldCheck } from 'lucide-react';
 
 export const AboutStatsSection: React.FC = () => {
   return (
@@ -16,10 +16,9 @@ export const AboutStatsSection: React.FC = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-4xl mb-12 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-zinc-200 text-zinc-800 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-4 sm:mb-6">
-            <Award className="w-3.5 h-3.5" />
-            <span>SOBRE KC INMOBILIARIA</span>
-          </div>
+          <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block mb-2 sm:mb-3">
+            SOBRE KC INMOBILIARIA
+          </span>
           
           <h2 className="text-2xl sm:text-4xl lg:text-6xl font-normal text-zinc-900 leading-[1.18] tracking-[-0.035em]">
             Ayudamos a familias e inversionistas a encontrar su departamento ideal con asesoría transparente, rigor legal y respaldo integral.

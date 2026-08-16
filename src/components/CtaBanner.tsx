@@ -27,9 +27,9 @@ export const CtaBanner: React.FC = () => {
 
           {/* Banner Content */}
           <div className="relative z-10 max-w-3xl mx-auto text-white">
-            <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1 rounded-full bg-white/10 border border-white/20 text-zinc-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-4 sm:mb-6">
-              <span>TU PRÓXIMO DEPARTAMENTO COMIENZA AQUÍ</span>
-            </div>
+            <span className="text-xs font-semibold text-zinc-400 uppercase tracking-widest block mb-3 sm:mb-4">
+              TU PRÓXIMO DEPARTAMENTO COMIENZA AQUÍ
+            </span>
 
             <h2 className="text-2xl sm:text-4xl lg:text-6xl font-medium tracking-tight text-white leading-[1.14] mb-4 sm:mb-6">
               Encuentra el Departamento Ideal con Asesoría Especializada

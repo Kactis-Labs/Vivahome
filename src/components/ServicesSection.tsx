@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { services } from '../data/realEstateData';
-import { ArrowUpRight, Compass } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export const ServicesSection: React.FC = () => {
   const featuredServices = services.slice(0, 3);
@@ -20,10 +20,9 @@ export const ServicesSection: React.FC = () => {
           className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
         >
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-zinc-100 text-zinc-800 text-xs font-semibold uppercase tracking-wider mb-4 border border-zinc-200">
-              <Compass className="w-3.5 h-3.5 text-zinc-700" />
-              <span>SERVICIOS ESPECIALIZADOS</span>
-            </div>
+            <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block mb-2">
+              SERVICIOS ESPECIALIZADOS
+            </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-black">
               Servicios para la Compra & Venta de Departamentos
             </h2>

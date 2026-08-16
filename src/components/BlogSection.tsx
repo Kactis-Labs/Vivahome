@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { blogPosts } from '../data/realEstateData';
-import { ArrowUpRight, BookOpen, Calendar } from 'lucide-react';
+import { ArrowUpRight, Calendar } from 'lucide-react';
 
 export const BlogSection: React.FC = () => {
   return (
@@ -18,10 +18,9 @@ export const BlogSection: React.FC = () => {
           className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-4 sm:gap-6"
         >
           <div>
-            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-white border border-zinc-200 text-zinc-800 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-3 sm:mb-4 shadow-sm">
-              <BookOpen className="w-3.5 h-3.5 text-zinc-700" />
-              <span>GUÍAS & RECOMENDACIONES</span>
-            </div>
+            <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block mb-2 sm:mb-3">
+              GUÍAS & RECOMENDACIONES
+            </span>
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-black">
               Artículos & Consejos para Comprar Departamentos
             </h2>

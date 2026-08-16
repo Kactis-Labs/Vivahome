@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { agents } from '../data/realEstateData';
-import { Phone, UserCheck, ArrowUpRight } from 'lucide-react';
+import { Phone, ArrowUpRight } from 'lucide-react';
 
 export const AgentsSection: React.FC = () => {
   return (
@@ -17,10 +17,9 @@ export const AgentsSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-10 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-zinc-200 text-zinc-800 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-3 sm:mb-4 shadow-sm">
-            <UserCheck className="w-3.5 h-3.5 text-zinc-700" />
-            <span>NUESTRO EQUIPO</span>
-          </div>
+          <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block mb-2 sm:mb-3">
+            NUESTRO EQUIPO
+          </span>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-black mb-2 sm:mb-4">
             Especialistas en Venta de Departamentos
           </h2>

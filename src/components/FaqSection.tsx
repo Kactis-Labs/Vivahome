@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { faqs } from '../data/realEstateData';
-import { Plus, Minus, HelpCircle, ArrowUpRight } from 'lucide-react';
+import { Plus, Minus, ArrowUpRight } from 'lucide-react';
 
 export const FaqSection: React.FC = () => {
   const [openId, setOpenId] = useState<string | null>(faqs[0]?.id || null);
@@ -25,10 +25,9 @@ export const FaqSection: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="lg:col-span-5"
           >
-            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-zinc-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-3 sm:mb-6">
-              <HelpCircle className="w-3.5 h-3.5" />
-              <span>PREGUNTAS FRECUENTES</span>
-            </div>
+            <span className="text-xs font-semibold text-zinc-400 uppercase tracking-widest block mb-2 sm:mb-4">
+              PREGUNTAS FRECUENTES
+            </span>
 
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-white mb-2 sm:mb-6 leading-tight">
               Todo lo que Debes Saber para Comprar tu Departamento

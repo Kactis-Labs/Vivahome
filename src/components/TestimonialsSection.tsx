@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { testimonials } from '../data/realEstateData';
-import { Star, MessageSquare, ChevronDown, ChevronUp } from 'lucide-react';
+import { Star, ChevronDown, ChevronUp } from 'lucide-react';
 
 export const TestimonialsSection: React.FC = () => {
   const [showAllMobile, setShowAllMobile] = useState(false);
@@ -18,10 +18,9 @@ export const TestimonialsSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-8 sm:mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-zinc-100 text-zinc-800 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-3 sm:mb-4">
-            <MessageSquare className="w-3.5 h-3.5 text-zinc-700" />
-            <span>TESTIMONIOS REALES</span>
-          </div>
+          <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block mb-2 sm:mb-3">
+            TESTIMONIOS REALES
+          </span>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-black mb-2 sm:mb-4">
             Lo que Dicen Quienes Compraron su Departamento
           </h2>

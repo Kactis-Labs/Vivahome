@@ -7,7 +7,7 @@ import { FaqSection } from '../components/FaqSection';
 import { BlogSection } from '../components/BlogSection';
 import { CtaBanner } from '../components/CtaBanner';
 import { Footer } from '../components/Footer';
-import { ShieldCheck, Sparkles } from 'lucide-react';
+
 
 export const AboutPage: React.FC = () => {
   const statsList = [
@@ -144,10 +144,9 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 space-y-4"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-zinc-100 text-zinc-800 text-xs font-semibold uppercase tracking-wider">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>SEGURIDAD JURÍDICA</span>
-              </div>
+              <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block mb-1">
+                SEGURIDAD JURÍDICA
+              </span>
               
               <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-black leading-tight">
                 Comprometidos con la Protección de tu Inversión
@@ -200,10 +199,9 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 space-y-4 order-1 lg:order-2"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-zinc-100 text-zinc-800 text-xs font-semibold uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>EXCLUSIVIDAD</span>
-              </div>
+              <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block mb-1">
+                EXCLUSIVIDAD
+              </span>
 
               <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-black leading-tight">
                 Los Mejores Departamentos en Zonas Residenciales
