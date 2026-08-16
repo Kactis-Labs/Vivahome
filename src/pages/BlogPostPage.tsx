@@ -1,45 +1,44 @@
 import React from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Navbar } from '../components/Navbar';
 import { CtaBanner } from '../components/CtaBanner';
 import { Footer } from '../components/Footer';
-import { 
-  ArrowLeft, 
-  Calendar, 
-  Clock, 
-  CheckCircle2 
-} from 'lucide-react';
 import { blogPosts } from '../data/realEstateData';
+import { 
+  Calendar, 
+  Tag, 
+  Clock, 
+  ArrowLeft 
+} from 'lucide-react';
 
 export const BlogPostPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const post = blogPosts.find((p) => p.id === id);
+  const navigate = useNavigate();
 
-  if (!post) {
-    return <Navigate to="/#blog" replace />;
-  }
+  // Find post by id or fallback to first
+  const post = blogPosts.find((p) => p.id === id) || blogPosts[0];
 
   return (
     <motion.div 
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="min-h-screen bg-white text-zinc-900 font-sans selection:bg-amber-500 selection:text-white"
+      className="min-h-screen bg-white text-slate-900 font-sans selection:bg-#E5A020 selection:text-white"
     >
       {/* Navbar */}
       <Navbar />
 
-      {/* 1. HERO BANNER */}
+      {/* 1. HERO BANNER WITH STAGGERED ENTRANCE */}
       <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#1D4263]">
-        {/* Background Image with Dark Overlay */}
+        {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src={post.image} 
             alt={post.title} 
             className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1D4263] via-[#1D4263]/60 to-black/75" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
         </div>
 
         {/* Hero Content */}
@@ -58,7 +57,7 @@ export const BlogPostPage: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="flex items-center justify-center gap-2 text-xs font-light text-zinc-300"
+            className="flex items-center justify-center gap-2 text-xs font-light text-slate-300"
           >
             <Link to="/" className="hover:text-white transition-colors">Inicio</Link>
             <span>/</span>
@@ -69,150 +68,199 @@ export const BlogPostPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 2. CONTENIDO PRINCIPAL */}
+      {/* 2. CONTENIDO PRINCIPAL (Layout dividido en 2 columnas con Scroll Reveal) */}
       <main className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Top back button */}
-          <div className="mb-8 sm:mb-12">
-            <Link 
-              to="/#blog"
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-zinc-600 hover:text-amber-600 transition-colors"
+          <div className="mb-8 sm:mb-10">
+            <button 
+              onClick={() => navigate(-1)}
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-700 hover:text-amber-600 bg-slate-50 border border-slate-200 px-4 py-2 rounded-full transition-colors shadow-sm cursor-pointer"
             >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Volver a Todos los Artículos</span>
-            </Link>
+              <ArrowLeft className="w-3.5 h-3.5" />
+              <span>Volver a Noticias Inmobiliarias</span>
+            </button>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-10 sm:space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             
-            {/* Meta tags bar */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-zinc-500 pb-6 border-b border-zinc-100">
-              <span className="bg-amber-50 text-amber-800 font-bold px-3 py-1 rounded-md uppercase tracking-wider">
-                {post.category}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5 text-amber-600" />
-                <span>{post.date}</span>
-              </span>
-              {post.readingTime && (
-                <span className="flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5 text-amber-600" />
-                  <span>Lectura: {post.readingTime}</span>
-                </span>
-              )}
-            </div>
-
-            {/* Resumen / Intro Lead */}
-            <p className="text-lg sm:text-2xl font-light text-zinc-800 leading-relaxed italic border-l-4 border-[#E5A020] pl-6 py-1">
-              {post.summary}
-            </p>
-
-            {/* Section 1 */}
-            {post.section1 && (
-              <div className="space-y-4">
-                <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-zinc-900">
-                  {post.section1.title}
-                </h2>
-                {post.section1.paragraphs.map((p, idx) => (
-                  <p key={idx} className="text-sm sm:text-base font-light text-zinc-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
-              </div>
-            )}
-
-            {/* Middle Image */}
-            {post.middleImage && (
-              <div className="my-8 rounded-3xl overflow-hidden shadow-lg aspect-[16/9] bg-zinc-100">
-                <img 
-                  src={post.middleImage} 
-                  alt={post.title} 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            )}
-
-            {/* Section 2 */}
-            {post.section2 && (
-              <div className="space-y-4">
-                <h3 className="text-2xl font-medium tracking-tight text-zinc-900">
-                  {post.section2.title}
+            {/* COLUMNA IZQUIERDA (Sidebar de Metadatos & Autor - ~35% width) */}
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-4 space-y-6"
+            >
+              
+              {/* Tarjeta 1: Detalles del Artículo (Blog Details) */}
+              <div className="bg-#E5A020/10 border border-#E5A020/20 rounded-2xl sm:rounded-3xl p-6 sm:p-7 space-y-4">
+                <h3 className="text-lg font-medium text-slate-900 tracking-tight">
+                  Detalles del Artículo
                 </h3>
-                {post.section2.paragraphs.map((p, idx) => (
-                  <p key={idx} className="text-sm sm:text-base font-light text-zinc-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
-              </div>
-            )}
 
-            {/* Section 3 */}
-            {post.section3 && (
-              <div className="space-y-4">
-                <h3 className="text-2xl font-medium tracking-tight text-zinc-900">
-                  {post.section3.title}
-                </h3>
-                {post.section3.paragraphs.map((p, idx) => (
-                  <p key={idx} className="text-sm sm:text-base font-light text-zinc-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
-              </div>
-            )}
-
-            {/* Section 4: Key Takeaways */}
-            {post.section4 && (
-              <div className="p-6 sm:p-8 rounded-3xl bg-[#F8FAFC] border border-zinc-200 space-y-4">
-                <h3 className="text-xl font-medium tracking-tight text-zinc-900">
-                  {post.section4.title}
-                </h3>
-                <p className="text-xs sm:text-sm font-light text-zinc-600">
-                  {post.section4.intro}
-                </p>
-                <div className="space-y-2.5 pt-2">
-                  {post.section4.items.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm font-light text-zinc-800">
-                      <CheckCircle2 className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                <div className="space-y-3.5 pt-1 text-xs sm:text-sm font-light text-slate-700">
+                  {/* Fecha */}
+                  <div>
+                    <span className="text-[10px] sm:text-[11px] font-medium text-slate-500 uppercase tracking-wider block mb-1">
+                      Fecha de Publicación
+                    </span>
+                    <div className="flex items-center gap-2 text-slate-900 font-medium">
+                      <Calendar className="w-4 h-4 text-#E5A020 shrink-0" />
+                      <span>{post.date}</span>
                     </div>
-                  ))}
+                  </div>
+
+                  {/* Categoría */}
+                  <div>
+                    <span className="text-[10px] sm:text-[11px] font-medium text-slate-500 uppercase tracking-wider block mb-1">
+                      Categoría
+                    </span>
+                    <div className="flex items-center gap-2 text-slate-900 font-medium">
+                      <Tag className="w-4 h-4 text-#E5A020 shrink-0" />
+                      <span>{post.category}</span>
+                    </div>
+                  </div>
+
+                  {/* Tiempo de Lectura */}
+                  <div>
+                    <span className="text-[10px] sm:text-[11px] font-medium text-slate-500 uppercase tracking-wider block mb-1">
+                      Tiempo de Lectura
+                    </span>
+                    <div className="flex items-center gap-2 text-slate-900 font-medium">
+                      <Clock className="w-4 h-4 text-#E5A020 shrink-0" />
+                      <span>{post.readingTime || '6 Minutos'}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            )}
 
-            {/* Author Profile Box */}
-            {post.author && (
-              <div className="p-6 sm:p-8 rounded-3xl bg-[#1D4263] text-white flex flex-col sm:flex-row items-center sm:items-start gap-6 shadow-xl">
-                <img 
-                  src={post.author.avatar} 
-                  alt={post.author.name} 
-                  className="w-16 h-16 rounded-full object-cover ring-2 ring-amber-400 shrink-0"
-                />
-                <div className="text-center sm:text-left space-y-1.5">
-                  <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">
-                    AUTOR DEL ARTÍCULO
-                  </span>
-                  <h4 className="text-lg font-bold text-white">
-                    {post.author.name}
-                  </h4>
-                  <p className="text-xs text-zinc-300 font-light">
-                    {post.author.role} • Golden Inmobiliaria
-                  </p>
-                  <p className="text-xs sm:text-sm font-light text-zinc-200 italic pt-2">
+              {/* Tarjeta 2: Perfil del Autor */}
+              {post.author && (
+                <div className="bg-[#F8FAFC] border border-slate-200 rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
+                  <h3 className="text-lg font-medium text-slate-900 tracking-tight">
+                    Autor
+                  </h3>
+
+                  <div className="flex items-center gap-3.5">
+                    <img 
+                      src={post.author.avatar} 
+                      alt={post.author.name} 
+                      className="w-12 h-12 rounded-full object-cover ring-2 ring-#E5A020 shrink-0"
+                    />
+                    <div className="overflow-hidden">
+                      <h4 className="text-sm font-medium text-slate-900 truncate">
+                        {post.author.name}
+                      </h4>
+                      <p className="text-xs font-light text-slate-500 truncate">
+                        {post.author.role}
+                      </p>
+                    </div>
+                  </div>
+
+                  <p className="text-xs font-light text-slate-600 leading-relaxed italic pt-2 border-t border-slate-200">
                     "{post.author.quote}"
                   </p>
                 </div>
-              </div>
-            )}
+              )}
+
+            </motion.div>
+
+            {/* COLUMNA DERECHA (Cuerpo Editorial del Artículo - ~65% width) */}
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-8 space-y-8 sm:space-y-10"
+            >
+              
+              {/* Sección 1 */}
+              {post.section1 && (
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-slate-900 mb-4">
+                    {post.section1.title}
+                  </h2>
+                  <div className="space-y-4 text-sm sm:text-base font-light text-slate-700 leading-relaxed">
+                    {post.section1.paragraphs.map((p, idx) => (
+                      <p key={idx}>{p}</p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Sección 2 */}
+              {post.section2 && (
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-slate-900 mb-4">
+                    {post.section2.title}
+                  </h2>
+                  <div className="space-y-4 text-sm sm:text-base font-light text-slate-700 leading-relaxed">
+                    {post.section2.paragraphs.map((p, idx) => (
+                      <p key={idx}>{p}</p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Imagen Intermedia */}
+              {post.middleImage && (
+                <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm my-6 sm:my-8 bg-slate-100">
+                  <img 
+                    src={post.middleImage} 
+                    alt={post.title} 
+                    className="w-full h-[240px] sm:h-[380px] object-cover"
+                  />
+                </div>
+              )}
+
+              {/* Sección 3 */}
+              {post.section3 && (
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-slate-900 mb-4">
+                    {post.section3.title}
+                  </h2>
+                  <div className="space-y-4 text-sm sm:text-base font-light text-slate-700 leading-relaxed">
+                    {post.section3.paragraphs.map((p, idx) => (
+                      <p key={idx}>{p}</p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Sección 4 */}
+              {post.section4 && (
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-slate-900 mb-4">
+                    {post.section4.title}
+                  </h2>
+                  <p className="text-sm sm:text-base font-light text-slate-700 leading-relaxed mb-4">
+                    {post.section4.intro}
+                  </p>
+
+                  <ol className="space-y-2.5 text-xs sm:text-sm font-light text-slate-700 leading-relaxed list-none">
+                    {post.section4.items.map((item, idx) => (
+                      <li key={idx} className="flex items-baseline gap-2.5">
+                        <span className="font-semibold text-amber-600 shrink-0">{idx + 1}.</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+
+            </motion.div>
 
           </div>
 
         </div>
       </main>
 
-      {/* CTA & FOOTER */}
+      {/* Reused CTA Banner */}
       <CtaBanner />
+
+      {/* Reused Footer */}
       <Footer />
     </motion.div>
   );

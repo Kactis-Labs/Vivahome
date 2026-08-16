@@ -27,6 +27,7 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close dropdown on click outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -54,25 +55,26 @@ export const Navbar: React.FC = () => {
   interface PageLink {
     title: string;
     href: string;
+    isExternal?: boolean;
   }
 
   const pageLinksCol1: PageLink[] = [
-    { title: 'Inicio', href: '/' },
+    { title: 'Homepage', href: '/' },
     { title: 'Nosotros', href: '/nosotros' },
     { title: 'Servicios', href: '/servicios' },
   ];
 
   const pageLinksCol2: PageLink[] = [
-    { title: 'Equipo de Ventas', href: '/equipo' },
-    { title: 'Blog & Novedades', href: '/#blog' },
-    { title: 'Contacto & Preventa', href: '/contacto' },
+    { title: 'Equipo', href: '/equipo' },
+    { title: 'Blog', href: '/#blog' },
+    { title: 'Contacto', href: '/contacto' },
   ];
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-white/95 backdrop-blur-md py-3.5 shadow-md border-b border-zinc-100' 
-        : 'bg-white/70 backdrop-blur-md py-4 sm:py-5 border-b border-zinc-100/50'
+        ? 'bg-white/95 backdrop-blur-md py-3.5 border-b border-zinc-100 shadow-md' 
+        : 'bg-white/75 backdrop-blur-md py-4 sm:py-5 border-b border-zinc-100/50'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -92,169 +94,151 @@ export const Navbar: React.FC = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <button
-                type="button"
+              <button 
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center gap-1.5 text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide py-1"
+                className={`flex items-center gap-1.5 text-sm font-medium transition-colors cursor-pointer ${
+                  dropdownOpen ? 'text-[#E5A020]' : 'text-zinc-700 hover:text-zinc-900'
+                }`}
                 aria-expanded={dropdownOpen}
               >
                 <span>Páginas</span>
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180 text-[#E5A020]' : ''}`} />
               </button>
 
-              {/* 2-Column Dropdown */}
               {dropdownOpen && (
                 <div 
-                  className="absolute top-full left-0 mt-1 w-80 bg-white/98 backdrop-blur-xl rounded-2xl shadow-2xl p-5 grid grid-cols-2 gap-4 border border-zinc-200 z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+                  className="absolute top-full left-0 pt-2 w-80 z-50"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="space-y-2.5">
-                    {pageLinksCol1.map((link) => (
-                      <Link
-                        key={link.title}
-                        to={link.href}
-                        onClick={() => setDropdownOpen(false)}
-                        className="block text-xs font-medium text-zinc-700 hover:text-[#E5A020] transition-colors py-1 hover:translate-x-1 duration-150"
-                      >
-                        {link.title}
-                      </Link>
-                    ))}
-                  </div>
+                  <div className="bg-white border border-zinc-200 rounded-2xl shadow-2xl p-6 transition-all duration-200">
+                    <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+                      {/* Columna 1 */}
+                      <div className="space-y-3.5">
+                        {pageLinksCol1.map((item, idx) => (
+                          <Link
+                            key={idx}
+                            to={item.href}
+                            onClick={() => setDropdownOpen(false)}
+                            className="block text-sm font-medium text-zinc-700 hover:text-[#E5A020] transition-colors leading-tight"
+                          >
+                            {item.title}
+                          </Link>
+                        ))}
+                      </div>
 
-                  <div className="space-y-2.5 border-l border-zinc-100 pl-4">
-                    {pageLinksCol2.map((link) => (
-                      <Link
-                        key={link.title}
-                        to={link.href}
-                        onClick={() => setDropdownOpen(false)}
-                        className="block text-xs font-medium text-zinc-700 hover:text-[#E5A020] transition-colors py-1 hover:translate-x-1 duration-150"
-                      >
-                        {link.title}
-                      </Link>
-                    ))}
+                      {/* Columna 2 */}
+                      <div className="space-y-3.5">
+                        {pageLinksCol2.map((item, idx) => (
+                          item.isExternal ? (
+                            <a
+                              key={idx}
+                              href={item.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => setDropdownOpen(false)}
+                              className="block text-sm font-medium text-zinc-700 hover:text-[#E5A020] transition-colors leading-tight"
+                            >
+                              {item.title}
+                            </a>
+                          ) : (
+                            <Link
+                              key={idx}
+                              to={item.href}
+                              onClick={() => setDropdownOpen(false)}
+                              className="block text-sm font-medium text-zinc-700 hover:text-[#E5A020] transition-colors leading-tight"
+                            >
+                              {item.title}
+                            </Link>
+                          )
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
             </div>
 
-            <Link to="/nosotros" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
+            {/* Direct Links */}
+            <Link to="/nosotros" className="text-sm font-normal text-zinc-700 hover:text-zinc-900 transition-colors">
               Nosotros
             </Link>
-
-            <Link to="/servicios" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
+            <Link to="/servicios" className="text-sm font-normal text-zinc-700 hover:text-zinc-900 transition-colors">
               Servicios
             </Link>
-
-            <Link to="/equipo" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
-              Equipo
-            </Link>
-
-            <a href="#deals" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
-              Lotes Villa Club
-            </a>
-
-            <a href="#blog" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
-              Blog
-            </a>
-
-            <Link to="/contacto" className="text-xs font-semibold text-zinc-800 hover:text-[#E5A020] transition-colors tracking-wide">
+            <Link 
+              to="/contacto"
+              className="text-sm font-normal text-zinc-700 hover:text-zinc-900 transition-colors"
+            >
               Contacto
             </Link>
           </nav>
 
-          {/* Right Action Buttons */}
-          <div className="hidden lg:flex items-center space-x-4">
+          {/* Right Action CTA Button */}
+          <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="tel:+51987654321" 
-              className="text-xs font-medium text-zinc-700 hover:text-[#E5A020] transition-colors flex items-center gap-1.5"
+              href="https://wa.me/51987654321?text=Hola%20Golden%20Inmobiliaria,%20deseo%20agendar%20una%20visita%20a%20los%20lotes%20de%20Villa%20Club%20Malabrigo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#E5A020] hover:bg-[#D97706] text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all duration-300 shadow-md hover:scale-105"
             >
-              <PhoneCall className="w-3.5 h-3.5 text-[#E5A020]" />
-              <span>+51 987 654 321</span>
+              <PhoneCall className="w-4 h-4" />
+              <span>Agendar Visita</span>
             </a>
-
-            <Link 
-              to="/contacto"
-              className="bg-[#E5A020] hover:bg-[#D97706] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-all shadow-md hover:scale-105"
-            >
-              Cotizar en Preventa
-            </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile menu trigger */}
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-zinc-800 hover:text-[#E5A020] p-2 focus:outline-none"
-              aria-label="Abrir menú de navegación"
+              className="text-zinc-800 hover:text-[#E5A020] p-2 rounded-lg cursor-pointer"
+              aria-label="Menú de Navegación"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
-
         </div>
       </div>
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white px-4 pt-4 pb-6 space-y-3 shadow-2xl border-b border-zinc-200">
-          <Link 
-            to="/" 
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
-          >
-            Inicio
-          </Link>
-          <Link 
-            to="/nosotros" 
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
-          >
-            Nosotros
-          </Link>
-          <Link 
-            to="/servicios" 
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
-          >
-            Servicios
-          </Link>
-          <Link 
-            to="/equipo" 
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
-          >
-            Equipo de Ventas
-          </Link>
-          <a 
-            href="#deals" 
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
-          >
-            Lotes Villa Club
-          </a>
-          <a 
-            href="#blog" 
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5 border-b border-zinc-100"
-          >
-            Blog
-          </a>
-          <Link 
-            to="/contacto" 
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-medium text-zinc-800 hover:text-[#E5A020] py-1.5"
-          >
-            Contacto
-          </Link>
-          <div className="pt-2">
-            <Link 
-              to="/contacto"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-center w-full bg-[#E5A020] hover:bg-[#D97706] text-white font-semibold text-xs py-3 rounded-full transition-all shadow-md"
+        <div className="md:hidden bg-white border-b border-zinc-200 px-4 pt-3 pb-6 space-y-4 shadow-xl">
+          <div className="grid grid-cols-2 gap-3 pt-2">
+            {[...pageLinksCol1, ...pageLinksCol2].map((item, idx) => (
+              item.isExternal ? (
+                <a 
+                  key={idx}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm font-medium text-zinc-700 hover:text-[#E5A020] py-1.5"
+                >
+                  {item.title}
+                </a>
+              ) : (
+                <Link 
+                  key={idx}
+                  to={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-sm font-medium text-zinc-700 hover:text-[#E5A020] py-1.5"
+                >
+                  {item.title}
+                </Link>
+              )
+            ))}
+          </div>
+
+          <div className="pt-3 border-t border-zinc-100">
+            <a 
+              href="https://wa.me/51987654321?text=Hola%20Golden%20Inmobiliaria,%20deseo%20agendar%20una%20visita%20a%20los%20lotes%20de%20Villa%20Club%20Malabrigo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full bg-[#E5A020] hover:bg-[#D97706] text-white font-medium text-sm px-6 py-3 rounded-full shadow-md"
             >
-              Cotizar en Preventa
-            </Link>
+              <PhoneCall className="w-4 h-4" />
+              <span>Agendar Visita</span>
+            </a>
           </div>
         </div>
       )}

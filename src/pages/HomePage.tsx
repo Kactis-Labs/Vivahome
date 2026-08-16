@@ -18,7 +18,7 @@ export const HomePage: React.FC = () => {
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="min-h-screen bg-[#FAFAFA] text-gray-900 font-sans selection:bg-emerald-500 selection:text-white"
+      className="min-h-screen bg-[#FAFAFA] text-gray-900 font-sans selection:bg-[#E5A020] selection:text-white"
     >
       {/* 1. Header / Navbar */}
       <Navbar />
