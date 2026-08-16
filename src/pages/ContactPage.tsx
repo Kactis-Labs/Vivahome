@@ -17,9 +17,8 @@ export const ContactPage: React.FC = () => {
   const [locationReq, setLocationReq] = useState('');
   const [phone, setPhone] = useState('');
   const [budget, setBudget] = useState('');
-  const [address, setAddress] = useState('');
   const [email, setEmail] = useState('');
-  const [propertyType, setPropertyType] = useState('Departamento');
+  const [propertyType, setPropertyType] = useState('Proyecto SIENNA');
   const [message, setMessage] = useState('');
   const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -33,21 +32,21 @@ export const ContactPage: React.FC = () => {
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-500 selection:text-white"
+      className="min-h-screen bg-[#FAF8F5] text-slate-900 font-sans selection:bg-[#C8A97E] selection:text-[#181614]"
     >
       {/* Navbar */}
       <Navbar />
 
-      {/* 1. HERO BANNER WITH STAGGERED ENTRANCE */}
-      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0B1E17]">
-        {/* Background Image with Dark Architectural Overlay */}
+      {/* 1. HERO BANNER */}
+      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#181614]">
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" 
-            alt="Contáctanos en VivaHome Perú" 
-            className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
+            alt="Contáctanos en R&R Inmobiliaria" 
+            className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.08]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#181614] via-[#181614]/60 to-black/70" />
         </div>
 
         {/* Hero Content */}
@@ -56,9 +55,9 @@ export const ContactPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-3xl sm:text-5xl lg:text-6xl font-normal text-white tracking-[-0.035em] leading-[1.12] mb-4"
+            className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-[-0.035em] leading-[1.12] mb-4"
           >
-            Contáctanos en VivaHome
+            Contacto & Sala de Ventas
           </motion.h1>
 
           {/* Breadcrumbs */}
@@ -66,20 +65,20 @@ export const ContactPage: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="flex items-center justify-center gap-2 text-xs font-light text-slate-300"
+            className="flex items-center justify-center gap-2 text-xs font-normal text-slate-300"
           >
             <Link to="/" className="hover:text-white transition-colors">Inicio</Link>
             <span>/</span>
-            <span className="text-emerald-400 font-medium">Contacto</span>
+            <span className="text-[#D4B996] font-semibold">Contacto</span>
           </motion.div>
         </div>
       </section>
 
-      {/* 2. SECCIÓN PRINCIPAL: ENCONTREMOS TU PRÓXIMO INMUEBLE */}
+      {/* 2. SECCIÓN PRINCIPAL */}
       <main className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Header de la sección con Scroll Reveal */}
+          {/* Header de la sección */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -88,23 +87,23 @@ export const ContactPage: React.FC = () => {
             className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6"
           >
             <div>
-              <span className="text-xs font-medium text-emerald-700 uppercase tracking-wider block mb-2">
-                // CONTACTO
+              <span className="text-xs font-bold text-[#A8875D] uppercase tracking-wider block mb-2">
+                ATENCIÓN PERSONALIZADA
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-slate-900 leading-tight">
-                Encontremos Tu Próximo Inmueble
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#1C1917] leading-tight">
+                Encontremos Tu Próximo Hogar
               </h2>
             </div>
 
-            <p className="text-xs sm:text-sm font-light text-slate-600 max-w-md leading-relaxed">
-              Comunícate con nuestro equipo especializado hoy y déjanos ayudarte a alcanzar tus objetivos inmobiliarios con total confianza y claridad jurídica.
+            <p className="text-xs sm:text-sm font-normal text-slate-600 max-w-md leading-relaxed">
+              Comunícate con nuestro equipo especializado de <strong className="text-[#1C1917] font-semibold">R&R Inmobiliaria</strong> y recibe asesoría exclusiva para los proyectos SIENNA, ORIGEN y oportunidades en preventa.
             </p>
           </motion.div>
 
-          {/* Layout Dividido: Tarjeta de Sede Izquierda + Formulario Completo Derecha */}
+          {/* Layout Dividido */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">
             
-            {/* COLUMNA IZQUIERDA: TARJETA DE SEDE CORPORATIVA */}
+            {/* COLUMNA IZQUIERDA */}
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -112,67 +111,63 @@ export const ContactPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-4"
             >
-              <div className="bg-[#F8FAFC] border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
+              <div className="bg-[#FAF8F5] border border-[#E8E4DC] rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
                 <div>
-                  <span className="text-[11px] font-semibold text-emerald-700 uppercase tracking-wider block mb-1">
-                    SEDE CENTRAL
+                  <span className="text-[11px] font-bold text-[#A8875D] uppercase tracking-wider block mb-1">
+                    SALA DE VENTAS & PROYECTOS
                   </span>
-                  <h3 className="text-xl font-medium tracking-tight text-slate-900">
-                    Oficina Principal VivaHome
+                  <h3 className="text-xl font-bold tracking-tight text-[#1C1917]">
+                    Sede R&R Inmobiliaria
                   </h3>
                 </div>
 
                 <div className="space-y-4 pt-2">
-                  {/* Dirección */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0B1E17] text-emerald-400 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#1C1917] text-[#D4B996] flex items-center justify-center shrink-0">
                       <MapPin className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-medium text-slate-900">Dirección</h4>
-                      <p className="text-xs font-light text-slate-600 leading-relaxed mt-0.5">
-                        Av. Víctor Andrés Belaúnde 147, Real 5, San Isidro, Lima - Perú
+                      <h4 className="text-xs font-bold text-slate-900">Dirección Principal</h4>
+                      <p className="text-xs font-normal text-slate-600 leading-relaxed mt-0.5">
+                        Calle Las Camelias 950, Urb. Las Palmeras del Golf, Lima - Perú
                       </p>
                     </div>
                   </div>
 
-                  {/* Teléfono */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0B1E17] text-emerald-400 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#1C1917] text-[#D4B996] flex items-center justify-center shrink-0">
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-medium text-slate-900">Central Telefónica</h4>
-                      <p className="text-xs font-light text-slate-600 mt-0.5">
+                      <h4 className="text-xs font-bold text-slate-900">Central Telefónica</h4>
+                      <p className="text-xs font-normal text-slate-600 mt-0.5">
                         +51 (01) 456-7890 / +51 987 654 321
                       </p>
                     </div>
                   </div>
 
-                  {/* Correo */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0B1E17] text-emerald-400 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#1C1917] text-[#D4B996] flex items-center justify-center shrink-0">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-medium text-slate-900">Correo Electrónico</h4>
-                      <p className="text-xs font-light text-slate-600 mt-0.5">
-                        contacto@vivahome.pe
+                      <h4 className="text-xs font-bold text-slate-900">Correo Electrónico</h4>
+                      <p className="text-xs font-normal text-slate-600 mt-0.5">
+                        contacto@ryrinmobiliaria.pe
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Horario de atención */}
-                <div className="p-4 rounded-2xl bg-white border border-slate-200 text-xs font-light text-slate-600 leading-relaxed">
-                  <strong className="font-medium text-slate-900 block mb-1">Horario de Atención:</strong>
+                <div className="p-4 rounded-2xl bg-white border border-[#E8E4DC] text-xs font-normal text-slate-600 leading-relaxed">
+                  <strong className="font-bold text-slate-900 block mb-1">Horario de Atención:</strong>
                   Lunes a Viernes: 8:30 AM – 7:00 PM <br />
                   Sábados: 9:00 AM – 2:00 PM
                 </div>
               </div>
             </motion.div>
 
-            {/* COLUMNA DERECHA: FORMULARIO INMOBILIARIO COMPLETO (Grid 2 Columnas) */}
+            {/* COLUMNA DERECHA: FORMULARIO */}
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -180,15 +175,15 @@ export const ContactPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-8"
             >
-              <div className="bg-[#F8FAFC] border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm">
+              <div className="bg-[#FAF8F5] border border-[#E8E4DC] rounded-3xl p-6 sm:p-10 shadow-sm">
                 {formSubmitted ? (
-                  <div className="p-10 bg-emerald-50 border border-emerald-200 rounded-2xl text-center space-y-4">
-                    <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
-                    <h3 className="text-2xl font-medium text-emerald-900">
+                  <div className="p-10 bg-amber-50/70 border border-[#C8A97E]/40 rounded-2xl text-center space-y-4">
+                    <CheckCircle2 className="w-12 h-12 text-[#A8875D] mx-auto" />
+                    <h3 className="text-2xl font-bold text-[#1C1917]">
                       ¡Consulta Enviada con Éxito!
                     </h3>
-                    <p className="text-sm font-light text-emerald-800 leading-relaxed max-w-md mx-auto">
-                      Gracias {name || 'estimado cliente'}. Un asesor senior de VivaHome revisará tu requerimiento y se comunicará contigo vía WhatsApp o correo electrónico a la brevedad.
+                    <p className="text-sm font-normal text-slate-700 leading-relaxed max-w-md mx-auto">
+                      Gracias {name || 'estimado cliente'}. Un asesor senior de R&R Inmobiliaria revisará tu requerimiento y se comunicará contigo vía WhatsApp o correo electrónico a la brevedad.
                     </p>
                   </div>
                 ) : (
@@ -197,7 +192,7 @@ export const ContactPage: React.FC = () => {
                       
                       {/* Nombre */}
                       <div>
-                        <label className="text-xs font-medium text-slate-700 block mb-1.5">
+                        <label className="text-xs font-semibold text-slate-700 block mb-1.5">
                           Nombre Completo *
                         </label>
                         <input 
@@ -206,28 +201,28 @@ export const ContactPage: React.FC = () => {
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           placeholder="Ingresa tu nombre"
-                          className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500"
+                          className="w-full bg-white border border-[#E8E4DC] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#C8A97E]"
                         />
                       </div>
 
-                      {/* Ubicación Requerida */}
+                      {/* Proyecto o Zona */}
                       <div>
-                        <label className="text-xs font-medium text-slate-700 block mb-1.5">
-                          Zona o Ubicación de Interés *
+                        <label className="text-xs font-semibold text-slate-700 block mb-1.5">
+                          Proyecto o Zona de Interés *
                         </label>
                         <input 
                           type="text" 
                           required
                           value={locationReq}
                           onChange={(e) => setLocationReq(e.target.value)}
-                          placeholder="Ej. San Isidro, Miraflores, Playas"
-                          className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500"
+                          placeholder="Ej. Proyecto SIENNA o ORIGEN"
+                          className="w-full bg-white border border-[#E8E4DC] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#C8A97E]"
                         />
                       </div>
 
                       {/* Teléfono */}
                       <div>
-                        <label className="text-xs font-medium text-slate-700 block mb-1.5">
+                        <label className="text-xs font-semibold text-slate-700 block mb-1.5">
                           Teléfono / WhatsApp *
                         </label>
                         <input 
@@ -236,42 +231,13 @@ export const ContactPage: React.FC = () => {
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
                           placeholder="+51 987 654 321"
-                          className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500"
+                          className="w-full bg-white border border-[#E8E4DC] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#C8A97E]"
                         />
                       </div>
 
-                      {/* Presupuesto Deseado */}
+                      {/* Correo */}
                       <div>
-                        <label className="text-xs font-medium text-slate-700 block mb-1.5">
-                          Presupuesto Estimado (USD) *
-                        </label>
-                        <input 
-                          type="text" 
-                          required
-                          value={budget}
-                          onChange={(e) => setBudget(e.target.value)}
-                          placeholder="Ej. $250,000 - $400,000"
-                          className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500"
-                        />
-                      </div>
-
-                      {/* Dirección Actual */}
-                      <div>
-                        <label className="text-xs font-medium text-slate-700 block mb-1.5">
-                          Dirección Actual
-                        </label>
-                        <input 
-                          type="text" 
-                          value={address}
-                          onChange={(e) => setAddress(e.target.value)}
-                          placeholder="Tu dirección residencial actual"
-                          className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500"
-                        />
-                      </div>
-
-                      {/* Correo Electrónico */}
-                      <div>
-                        <label className="text-xs font-medium text-slate-700 block mb-1.5">
+                        <label className="text-xs font-semibold text-slate-700 block mb-1.5">
                           Correo Electrónico *
                         </label>
                         <input 
@@ -279,57 +245,65 @@ export const ContactPage: React.FC = () => {
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          placeholder="correo@ejemplo.com"
-                          className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500"
+                          placeholder="tu@correo.com"
+                          className="w-full bg-white border border-[#E8E4DC] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#C8A97E]"
                         />
                       </div>
 
-                      {/* Tipo de Inmueble */}
-                      <div className="sm:col-span-2">
-                        <label className="text-xs font-medium text-slate-700 block mb-1.5">
-                          Tipo de Inmueble Deseado
+                      {/* Presupuesto */}
+                      <div>
+                        <label className="text-xs font-semibold text-slate-700 block mb-1.5">
+                          Presupuesto Estimado
                         </label>
-                        <select
+                        <input 
+                          type="text" 
+                          value={budget}
+                          onChange={(e) => setBudget(e.target.value)}
+                          placeholder="Ej. $180,000 – $280,000 USD"
+                          className="w-full bg-white border border-[#E8E4DC] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#C8A97E]"
+                        />
+                      </div>
+
+                      {/* Tipo de Propiedad */}
+                      <div>
+                        <label className="text-xs font-semibold text-slate-700 block mb-1.5">
+                          Tipología de Interés
+                        </label>
+                        <select 
                           value={propertyType}
                           onChange={(e) => setPropertyType(e.target.value)}
-                          className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-emerald-500 cursor-pointer"
+                          className="w-full bg-white border border-[#E8E4DC] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-[#C8A97E]"
                         >
-                          <option value="Departamento">Departamento Exclusivo</option>
-                          <option value="Casa Residencial">Casa Residencial / Mansión</option>
-                          <option value="Penthouse">Penthouse / Dúplex</option>
-                          <option value="Casa de Playa">Casa de Playa / Campo</option>
-                          <option value="Proyecto en Preventa">Proyecto en Preventa (Inversión)</option>
-                          <option value="Terreno / Lote">Terreno / Lote Urbano</option>
+                          <option value="Proyecto SIENNA (2, 3 y 4 Dorm.)">Proyecto SIENNA (2, 3 y 4 Dorm.)</option>
+                          <option value="Proyecto ORIGEN (1, 2 y 3 Dorm.)">Proyecto ORIGEN (1, 2 y 3 Dorm.)</option>
+                          <option value="Penthouse Dúplex">Penthouse Dúplex</option>
+                          <option value="Departamento Garden">Departamento Garden</option>
                         </select>
-                      </div>
-
-                      {/* Mensaje Textarea */}
-                      <div className="sm:col-span-2">
-                        <label className="text-xs font-medium text-slate-700 block mb-1.5">
-                          Mensaje / Requerimiento Específico *
-                        </label>
-                        <textarea 
-                          rows={4}
-                          required
-                          value={message}
-                          onChange={(e) => setMessage(e.target.value)}
-                          placeholder="Describe qué características buscas (número de dormitorios, vista al mar/golf, fecha estimada de mudanza, etc.)..."
-                          className="w-full bg-white border border-slate-200 rounded-xl p-4 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500 leading-relaxed"
-                        />
                       </div>
 
                     </div>
 
-                    {/* Botón Ancho Verde Esmeralda */}
-                    <motion.button
-                      whileHover={{ scale: 1.01 }}
-                      whileTap={{ scale: 0.98 }}
+                    {/* Mensaje */}
+                    <div>
+                      <label className="text-xs font-semibold text-slate-700 block mb-1.5">
+                        Mensaje o Consulta Específica
+                      </label>
+                      <textarea 
+                        rows={4}
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        placeholder="Escribe aquí cualquier detalle sobre los departamentos, financiamiento o visita al piloto..."
+                        className="w-full bg-white border border-[#E8E4DC] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#C8A97E]"
+                      />
+                    </div>
+
+                    <button 
                       type="submit"
-                      className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm py-3.5 sm:py-4 px-8 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-emerald-900/20 cursor-pointer"
+                      className="inline-flex items-center justify-center gap-2 bg-[#1C1917] hover:bg-[#2E2A25] text-white font-semibold text-xs sm:text-sm px-8 py-3.5 rounded-full transition-all shadow-md hover:shadow-xl hover:scale-102 cursor-pointer"
                     >
-                      <span>Enviar Consulta / Solicitar Asesor</span>
-                      <ArrowUpRight className="w-4 h-4" />
-                    </motion.button>
+                      <span>Enviar Solicitud</span>
+                      <ArrowUpRight className="w-4 h-4 text-[#D4B996]" />
+                    </button>
                   </form>
                 )}
               </div>
@@ -340,10 +314,8 @@ export const ContactPage: React.FC = () => {
         </div>
       </main>
 
-      {/* Reused CTA Banner */}
+      {/* CTA Banner & Footer */}
       <CtaBanner />
-
-      {/* Reused Footer */}
       <Footer />
     </motion.div>
   );

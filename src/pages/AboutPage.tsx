@@ -7,32 +7,31 @@ import { FaqSection } from '../components/FaqSection';
 import { BlogSection } from '../components/BlogSection';
 import { CtaBanner } from '../components/CtaBanner';
 import { Footer } from '../components/Footer';
-import { ShieldCheck, Sparkles } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   const statsList = [
     {
-      value: "10+",
+      value: "+14",
       label: "Años de Experiencia",
-      desc: "Liderando operaciones en el sector inmobiliario residencial y corporativo",
+      desc: "Liderando operaciones en desarrollo inmobiliario y construcción residencial de alto nivel",
       isHighlighted: false
     },
     {
-      value: "9k+",
-      label: "Clientes Satisfechos",
-      desc: "Familias e inversionistas respaldados con asesoría personalizada",
+      value: "+20",
+      label: "Proyectos Terminados",
+      desc: "Edificios boutique y departamentos entregados con excelencia constructiva en el Perú",
       isHighlighted: true
     },
     {
-      value: "10k+",
-      label: "Propiedades Gestionadas",
-      desc: "Inmuebles entregados con absoluta seguridad registral en el Perú",
+      value: "+420",
+      label: "Familias Felices",
+      desc: "Hogares consolidados con asesoría personalizada y respaldo integral",
       isHighlighted: false
     },
     {
-      value: "30+",
-      label: "Alianzas Estratégicas",
-      desc: "Convenios directos con las principales notarías y entidades bancarias",
+      value: "100%",
+      label: "Seguridad Jurídica",
+      desc: "Partidas independizadas en Sunarp y asesoría notarial garantizada",
       isHighlighted: true
     }
   ];
@@ -42,21 +41,21 @@ export const AboutPage: React.FC = () => {
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="min-h-screen bg-[#F8FAFC] text-slate-900 font-sans selection:bg-emerald-500 selection:text-white"
+      className="min-h-screen bg-[#FAF8F5] text-slate-900 font-sans selection:bg-[#C8A97E] selection:text-[#181614]"
     >
       {/* Navbar */}
       <Navbar />
 
-      {/* 1. ABOUT HERO BANNER WITH STAGGERED ENTRANCE */}
-      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#0B1E17]">
-        {/* Background Image with Dark Architectural Overlay */}
+      {/* 1. ABOUT HERO BANNER */}
+      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#181614]">
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" 
-            alt="Arquitectura Moderna y Residencia de Lujo - VivaHome" 
-            className="w-full h-full object-cover object-center filter brightness-[0.45] contrast-[1.05]"
+            alt="Arquitectura Moderna y Proyectos - R&R Inmobiliaria" 
+            className="w-full h-full object-cover object-center filter brightness-[0.38] contrast-[1.08]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#181614] via-[#181614]/60 to-black/70" />
         </div>
 
         {/* Hero Content */}
@@ -65,16 +64,16 @@ export const AboutPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-3xl sm:text-5xl lg:text-6xl font-normal text-white tracking-[-0.035em] leading-[1.12]"
+            className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-[-0.035em] leading-[1.12]"
           >
             Nuestra Trayectoria en Casos <br className="hidden sm:block" />
-            <span className="font-medium text-white">de Éxito Inmobiliario</span>
+            <span className="font-semibold text-white">de Éxito Inmobiliario</span>
           </motion.h1>
         </div>
       </section>
 
-      {/* 2. MANIFIESTO & MÉTRICAS (About Manifesto & Stats Grid) */}
-      <section className="py-16 sm:py-24 bg-[#F8FAFC]">
+      {/* 2. MANIFIESTO & MÉTRICAS */}
+      <section className="py-16 sm:py-24 bg-[#FAF8F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Top Manifesto Statement */}
@@ -85,8 +84,8 @@ export const AboutPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12 sm:mb-16"
           >
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-normal text-slate-900 leading-[1.25] tracking-[-0.03em]">
-              VivaHome nació con la visión de transformar la experiencia inmobiliaria a través de la confianza, transparencia e innovación. Asesoramos a nuestros clientes en la compra, venta e inversión de propiedades con seguridad jurídica y visión a largo plazo.
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-normal text-[#1C1917] leading-[1.25] tracking-[-0.03em]">
+              <strong className="font-bold text-[#A8875D]">R&R Inmobiliaria</strong> nació con la visión de elevar el estándar residencial en el Perú. Con más de 14 años de experiencia y 20 proyectos concluidos, creamos espacios que trascienden mediante <strong className="font-semibold text-slate-900">diseño de vanguardia, solidez constructiva y total seguridad jurídica</strong>.
             </p>
           </motion.div>
 
@@ -102,25 +101,25 @@ export const AboutPage: React.FC = () => {
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
                 className={`rounded-2xl sm:rounded-3xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between ${
                   stat.isHighlighted
-                    ? 'bg-emerald-600 text-white shadow-xl shadow-emerald-900/20'
-                    : 'bg-white text-slate-900 border border-slate-200 shadow-sm'
+                    ? 'bg-[#181614] text-white shadow-xl shadow-black/20 border border-[#38332D]'
+                    : 'bg-white text-slate-900 border border-[#E8E4DC] shadow-sm'
                 }`}
               >
                 <div>
-                  <div className={`text-4xl sm:text-5xl font-medium tracking-tight mb-3 ${
-                    stat.isHighlighted ? 'text-white' : 'text-slate-900'
+                  <div className={`text-4xl sm:text-5xl font-bold tracking-tight mb-3 ${
+                    stat.isHighlighted ? 'text-[#D4B996]' : 'text-[#1C1917]'
                   }`}>
                     {stat.value}
                   </div>
-                  <h3 className={`text-base font-semibold mb-2 ${
-                    stat.isHighlighted ? 'text-white' : 'text-slate-900'
+                  <h3 className={`text-base font-bold mb-2 ${
+                    stat.isHighlighted ? 'text-white' : 'text-[#1C1917]'
                   }`}>
                     {stat.label}
                   </h3>
                 </div>
 
-                <p className={`text-xs font-light leading-relaxed pt-4 border-t ${
-                  stat.isHighlighted ? 'text-white/80 border-white/20' : 'text-slate-500 border-slate-100'
+                <p className={`text-xs font-normal leading-relaxed pt-4 border-t ${
+                  stat.isHighlighted ? 'text-slate-300 border-white/15' : 'text-slate-500 border-slate-100'
                 }`}>
                   {stat.desc}
                 </p>
@@ -131,11 +130,11 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. PILARES DE VALOR (Zig-Zag Story Blocks with Scroll Reveal) */}
-      <section className="py-16 sm:py-20 bg-white border-t border-slate-200">
+      {/* 3. PILARES DE VALOR */}
+      <section className="py-16 sm:py-20 bg-white border-t border-[#E8E4DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-24">
           
-          {/* Bloque 1: Texto Izquierda + Imagen Derecha */}
+          {/* Bloque 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
@@ -144,17 +143,16 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 space-y-4"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-medium uppercase tracking-wider">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>EXCELENCIA</span>
-              </div>
+              <span className="text-xs font-bold text-[#A8875D] uppercase tracking-wider block">
+                EXCELENCIA & RIGOR CONSTRUCTIVO
+              </span>
               
-              <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-slate-900 leading-tight">
+              <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-[#1C1917] leading-tight">
                 Comprometidos con la Seguridad de tu Patrimonio
               </h2>
               
-              <p className="text-sm sm:text-base font-light text-slate-600 leading-relaxed">
-                Cada inmueble en nuestro portafolio pasa por un riguroso estudio de títulos, verificación de gravámenes en Sunarp y saneamiento legal completo. Garantizamos que tu adquisición con VivaHome se realice con absoluta transparencia y respaldo notarial.
+              <p className="text-sm sm:text-base font-normal text-slate-600 leading-relaxed">
+                Cada proyecto desarrollado por <strong className="text-slate-900 font-semibold">R&R Inmobiliaria</strong> cuenta con respaldo bancario, saneamiento legal integral y estudio de títulos en Sunarp. Garantizamos una adquisición segura, transparente y con alto retorno de inversión.
               </p>
             </motion.div>
 
@@ -165,17 +163,17 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6"
             >
-              <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+              <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-[#E8E4DC]">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Asesoría Inmobiliaria Profesional VivaHome" 
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop" 
+                  alt="Asesoría Inmobiliaria Profesional R&R Inmobiliaria" 
                   className="w-full h-[260px] sm:h-[360px] object-cover"
                 />
               </div>
             </motion.div>
           </div>
 
-          {/* Bloque 2: Imagen Izquierda + Texto Derecha */}
+          {/* Bloque 2 */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
@@ -184,10 +182,10 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 order-2 lg:order-1"
             >
-              <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+              <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-[#E8E4DC]">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Construyendo el Futuro Inmobiliario con VivaHome" 
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" 
+                  alt="Construyendo el Futuro con R&R Inmobiliaria" 
                   className="w-full h-[260px] sm:h-[360px] object-cover"
                 />
               </div>
@@ -198,19 +196,18 @@ export const AboutPage: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6 }}
-              className="lg:col-span-6 space-y-4 order-1 lg:order-2"
+              className="lg:col-span-6 order-1 lg:order-2 space-y-4"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-medium uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>FUTURO</span>
-              </div>
+              <span className="text-xs font-bold text-[#A8875D] uppercase tracking-wider block">
+                ARQUITECTURA DE VANGUARDIA
+              </span>
 
-              <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-slate-900 leading-tight">
-                Construyendo un Mañana Mejor para tu Familia
+              <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-[#1C1917] leading-tight">
+                Espacios Diseñados para Elevar tu Estilo de Vida
               </h2>
 
-              <p className="text-sm sm:text-base font-light text-slate-600 leading-relaxed">
-                Seleccionamos proyectos residenciales y departamentos de estreno en las zonas con mayor proyección y plusvalía de Lima Top y playas. Diseñamos experiencias habitacionales que priorizan la luz natural, la arquitectura sustentable y el confort familiar.
+              <p className="text-sm sm:text-base font-normal text-slate-600 leading-relaxed">
+                Nuestros proyectos emblemáticos como <strong className="text-slate-900 font-semibold">SIENNA</strong> y <strong className="text-slate-900 font-semibold">ORIGEN</strong> integran distribuciones inteligentes, acabados nobles y amenidades funcionales como Coworking, BBQ y Lounge social.
               </p>
             </motion.div>
           </div>
@@ -218,14 +215,14 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. SECCIONES REUTILIZADAS DE LA HOMEPAGE */}
+      {/* Agents, Testimonials, FAQ & Blog Sections */}
       <AgentsSection />
       <TestimonialsSection />
       <FaqSection />
       <BlogSection />
-      <CtaBanner />
 
-      {/* Footer */}
+      {/* CTA Banner & Footer */}
+      <CtaBanner />
       <Footer />
     </motion.div>
   );

@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Building2, 
   PhoneCall, 
   Menu, 
   X, 
   ChevronDown 
 } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -59,7 +59,7 @@ export const Navbar: React.FC = () => {
   }
 
   const pageLinksCol1: PageLink[] = [
-    { title: 'Homepage', href: '/' },
+    { title: 'Inicio', href: '/' },
     { title: 'Nosotros', href: '/nosotros' },
     { title: 'Servicios', href: '/servicios' },
   ];
@@ -73,26 +73,21 @@ export const Navbar: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-[#0B1E17]/95 backdrop-blur-md py-3.5 border-b border-emerald-900/30 shadow-xl' 
-        : 'bg-gradient-to-b from-[#0B1E17]/90 via-[#0B1E17]/50 to-transparent py-5'
+        ? 'bg-[#181614]/95 backdrop-blur-md py-3.5 border-b border-[#2E2A25] shadow-xl' 
+        : 'bg-gradient-to-b from-[#181614]/90 via-[#181614]/50 to-transparent py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo VivaHome */}
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white shadow-lg shadow-emerald-900/30 group-hover:scale-105 transition-transform">
-              <Building2 className="w-5 h-5 stroke-[2.5]" />
-            </div>
-            <span className="text-2xl font-medium tracking-tight text-white">
-              Viva<span className="text-emerald-400 font-semibold">Home</span>
-            </span>
+          {/* Logo R&R Inmobiliaria */}
+          <Link to="/" className="flex items-center group">
+            <Logo variant="light" size="md" />
           </Link>
 
           {/* Navigation Links - Desktop */}
-          <nav className="hidden md:flex items-center space-x-7">
+          <nav className="hidden md:flex items-center space-x-8">
             
-            {/* Dropdown "Páginas" estilo Foreal */}
+            {/* Dropdown "Páginas" */}
             <div 
               ref={dropdownRef}
               className="relative py-2"
@@ -102,30 +97,30 @@ export const Navbar: React.FC = () => {
               <button 
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 className={`flex items-center gap-1.5 text-sm font-medium transition-colors cursor-pointer ${
-                  dropdownOpen ? 'text-emerald-400' : 'text-slate-300 hover:text-white'
+                  dropdownOpen ? 'text-[#D4B996]' : 'text-slate-300 hover:text-white'
                 }`}
                 aria-expanded={dropdownOpen}
               >
                 <span>Páginas</span>
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180 text-emerald-400' : ''}`} />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180 text-[#D4B996]' : ''}`} />
               </button>
 
               {dropdownOpen && (
                 <div 
-                  className="absolute top-full left-0 pt-2 w-80 z-50"
+                  className="absolute top-full left-0 pt-2 w-72 z-50"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="bg-[#0F241D] border border-emerald-900/40 rounded-2xl shadow-2xl p-6 transition-all duration-200">
-                    <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+                  <div className="bg-[#1E1B18] border border-[#38332D] rounded-2xl shadow-2xl p-6 transition-all duration-200">
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-3.5">
                       {/* Columna 1 */}
-                      <div className="space-y-3.5">
+                      <div className="space-y-3">
                         {pageLinksCol1.map((item, idx) => (
                           <Link
                             key={idx}
                             to={item.href}
                             onClick={() => setDropdownOpen(false)}
-                            className="block text-sm font-medium text-slate-100 hover:text-emerald-400 transition-colors leading-tight"
+                            className="block text-sm font-normal text-slate-200 hover:text-[#D4B996] transition-colors leading-tight"
                           >
                             {item.title}
                           </Link>
@@ -133,7 +128,7 @@ export const Navbar: React.FC = () => {
                       </div>
 
                       {/* Columna 2 */}
-                      <div className="space-y-3.5">
+                      <div className="space-y-3">
                         {pageLinksCol2.map((item, idx) => (
                           item.isExternal ? (
                             <a
@@ -142,7 +137,7 @@ export const Navbar: React.FC = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                               onClick={() => setDropdownOpen(false)}
-                              className="block text-sm font-medium text-slate-100 hover:text-emerald-400 transition-colors leading-tight"
+                              className="block text-sm font-normal text-slate-200 hover:text-[#D4B996] transition-colors leading-tight"
                             >
                               {item.title}
                             </a>
@@ -151,7 +146,7 @@ export const Navbar: React.FC = () => {
                               key={idx}
                               to={item.href}
                               onClick={() => setDropdownOpen(false)}
-                              className="block text-sm font-medium text-slate-100 hover:text-emerald-400 transition-colors leading-tight"
+                              className="block text-sm font-normal text-slate-200 hover:text-[#D4B996] transition-colors leading-tight"
                             >
                               {item.title}
                             </Link>
@@ -165,16 +160,16 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Direct Links */}
+            <a href="/#deals" className="text-sm font-normal text-slate-300 hover:text-white transition-colors">
+              Proyectos
+            </a>
             <Link to="/nosotros" className="text-sm font-normal text-slate-300 hover:text-white transition-colors">
               Nosotros
             </Link>
             <Link to="/servicios" className="text-sm font-normal text-slate-300 hover:text-white transition-colors">
               Servicios
             </Link>
-            <Link 
-              to="/contacto"
-              className="text-sm font-normal text-slate-300 hover:text-white transition-colors"
-            >
+            <Link to="/contacto" className="text-sm font-normal text-slate-300 hover:text-white transition-colors">
               Contacto
             </Link>
           </nav>
@@ -182,13 +177,13 @@ export const Navbar: React.FC = () => {
           {/* Right Action CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="https://wa.me/51987654321?text=Hola,%20quisiera%20agendar%20una%20visita%20a%20las%20propiedades%20de%20VivaHome" 
+              href="https://wa.me/51987654321?text=Hola,%20quisiera%20informacion%20sobre%20los%20proyectos%20SIENNA%20y%20ORIGEN%20de%20R%26R%20Inmobiliaria" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-emerald-900/30 hover:scale-105"
+              className="inline-flex items-center gap-2 bg-[#C8A97E] hover:bg-[#B89368] text-[#181614] font-semibold text-sm px-6 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-[#C8A97E]/30 hover:scale-102"
             >
               <PhoneCall className="w-4 h-4" />
-              <span>Agendar Visita</span>
+              <span>Contactar Asesor</span>
             </a>
           </div>
 
@@ -207,7 +202,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0B1E17] border-b border-emerald-900/30 px-4 pt-3 pb-6 space-y-4">
+        <div className="md:hidden bg-[#181614] border-b border-[#2E2A25] px-4 pt-3 pb-6 space-y-4">
           <div className="grid grid-cols-2 gap-3 pt-2">
             {[...pageLinksCol1, ...pageLinksCol2].map((item, idx) => (
               item.isExternal ? (
@@ -217,7 +212,7 @@ export const Navbar: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-sm font-medium text-slate-200 hover:text-emerald-400 py-1.5"
+                  className="text-sm font-medium text-slate-200 hover:text-[#D4B996] py-1.5"
                 >
                   {item.title}
                 </a>
@@ -226,7 +221,7 @@ export const Navbar: React.FC = () => {
                   key={idx}
                   to={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-sm font-medium text-slate-200 hover:text-emerald-400 py-1.5"
+                  className="text-sm font-medium text-slate-200 hover:text-[#D4B996] py-1.5"
                 >
                   {item.title}
                 </Link>
@@ -234,15 +229,15 @@ export const Navbar: React.FC = () => {
             ))}
           </div>
 
-          <div className="pt-3 border-t border-emerald-900/30">
+          <div className="pt-3 border-t border-[#2E2A25]">
             <a 
-              href="https://wa.me/51987654321?text=Hola,%20quisiera%20agendar%20una%20visita%20a%20las%20propiedades%20de%20VivaHome" 
+              href="https://wa.me/51987654321?text=Hola,%20quisiera%20informacion%20sobre%20los%20proyectos%20de%20R%26R%20Inmobiliaria" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-6 py-3 rounded-full shadow-md"
+              className="inline-flex items-center justify-center gap-2 w-full bg-[#C8A97E] hover:bg-[#B89368] text-[#181614] font-semibold text-sm px-6 py-3 rounded-full shadow-md"
             >
               <PhoneCall className="w-4 h-4" />
-              <span>Agendar Visita</span>
+              <span>Contactar Asesor</span>
             </a>
           </div>
         </div>
