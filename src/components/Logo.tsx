@@ -12,8 +12,8 @@ export const Logo: React.FC<LogoProps> = ({
   className = '' 
 }) => {
   const sizeClasses = {
-    sm: 'h-8 sm:h-9',
-    md: 'h-10 sm:h-12',
+    sm: 'h-9 sm:h-10',
+    md: 'h-11 sm:h-13',
     lg: 'h-14 sm:h-16',
   };
 
@@ -25,7 +25,7 @@ export const Logo: React.FC<LogoProps> = ({
   return (
     <div className={`flex items-center select-none ${className}`}>
       <svg 
-        viewBox="0 0 340 120" 
+        viewBox="16 16 254 96" 
         className={`${sizeClasses[size]} w-auto transition-transform duration-300 group-hover:scale-105`}
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
