@@ -143,8 +143,8 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 space-y-4"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-medium uppercase tracking-wider">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#E5A020]" />
+              <div className="inline-flex items-center gap-2 text-amber-600 text-xs font-bold uppercase tracking-wider">
+                <ShieldCheck className="w-4 h-4 text-[#E5A020]" />
                 <span>EXCELENCIA</span>
               </div>
               
@@ -199,8 +199,8 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 space-y-4 order-1 lg:order-2"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-medium uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5 text-[#E5A020]" />
+              <div className="inline-flex items-center gap-2 text-amber-600 text-xs font-bold uppercase tracking-wider">
+                <Sparkles className="w-4 h-4 text-[#E5A020]" />
                 <span>FUTURO</span>
               </div>
 

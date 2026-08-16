@@ -27,7 +27,7 @@ export const CtaBanner: React.FC = () => {
 
           {/* Banner Content */}
           <div className="relative z-10 max-w-3xl mx-auto text-white">
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-4 sm:mb-6">
+            <div className="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3 sm:mb-4">
               <span>TU LOTE EN MALABRIGO COMIENZA HOY</span>
             </div>
 

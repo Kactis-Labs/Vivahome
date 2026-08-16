@@ -20,8 +20,8 @@ export const ServicesSection: React.FC = () => {
           className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
         >
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-medium uppercase tracking-wider mb-4 border border-amber-200">
-              <Compass className="w-3.5 h-3.5 text-[#E5A020]" />
+            <div className="inline-flex items-center gap-2 text-amber-600 text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
+              <Compass className="w-4 h-4 text-[#E5A020]" />
               <span>SOLUCIONES</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-slate-900">

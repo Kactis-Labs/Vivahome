@@ -17,8 +17,8 @@ export const AgentsSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-10 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-white border border-slate-200 text-slate-800 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-3 sm:mb-4 shadow-sm">
-            <UserCheck className="w-3.5 h-3.5 text-[#E5A020]" />
+          <div className="inline-flex items-center gap-2 text-amber-600 text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
+            <UserCheck className="w-4 h-4 text-[#E5A020]" />
             <span>NUESTRO EQUIPO</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-slate-900 mb-2 sm:mb-4">

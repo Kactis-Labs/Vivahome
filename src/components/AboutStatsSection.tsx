@@ -16,8 +16,8 @@ export const AboutStatsSection: React.FC = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-4xl mb-12 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-4 sm:mb-6">
-            <Award className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 text-amber-600 text-xs font-bold uppercase tracking-wider mb-3 sm:mb-4">
+            <Award className="w-4 h-4" />
             <span>SOBRE GOLDEN INMOBILIARIA</span>
           </div>
           

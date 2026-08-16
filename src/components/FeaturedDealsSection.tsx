@@ -18,7 +18,7 @@ export const FeaturedDealsSection: React.FC = () => {
           className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-4 sm:gap-6"
         >
           <div>
-            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-3 sm:mb-4">
+            <div className="inline-flex items-center gap-2 text-amber-600 text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
               <span>PREVENTA EXCLUSIVA</span>
             </div>
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-zinc-900 leading-tight">
