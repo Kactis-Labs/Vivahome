@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, type Variants } from 'framer-motion';
-import { ArrowUpRight, MessageCircle, Waves, ShieldCheck } from 'lucide-react';
-import { Logo } from './Logo';
+import { 
+  ArrowUpRight, 
+  MessageCircle, 
+  FileText, 
+  ClipboardCheck, 
+  Ruler, 
+  MapPin 
+} from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const fullText = "Vive a un paso de la playa";
@@ -50,24 +56,24 @@ export const HeroSection: React.FC = () => {
         <img 
           src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop" 
           alt="Terrenos de Campo y Playa en Puerto Malabrigo - Plus Inmobiliaria" 
-          className="w-full h-full object-cover object-center scale-105 filter brightness-[0.4] contrast-[1.08]"
+          className="w-full h-full object-cover object-center scale-105 filter brightness-[0.38] contrast-[1.08]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#162842] via-[#162842]/55 to-black/70" />
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-2 sm:mt-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
           
           {/* Left Column: Text & CTAs */}
           <motion.div 
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="lg:col-span-7"
+            className="lg:col-span-6"
           >
             {/* Main Title con Typewriter */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white tracking-[-0.03em] leading-[1.12] mb-4 sm:mb-6 min-h-[2.2em]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-[-0.03em] leading-[1.12] mb-4 sm:mb-6 min-h-[2.2em]">
               <span>{displayedText}</span>
               <span 
                 className={`inline-block w-[3px] sm:w-[4px] h-7 sm:h-11 lg:h-14 bg-[#F5921E] ml-1.5 align-middle transition-opacity duration-300 ${
@@ -111,53 +117,68 @@ export const HeroSection: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Column: Modern Glassmorphic Brand Emblem (Solo Desktop) */}
+          {/* Right Column: Open Fluid Typography & Value Props (Sin marcos ni tarjetas) */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.9, x: 20 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="hidden lg:flex lg:col-span-5 justify-center relative"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            className="hidden lg:flex lg:col-span-6 flex-col justify-center items-start pl-6 xl:pl-10 space-y-6"
           >
-            {/* Ambient Glow behind card */}
-            <div className="absolute -inset-4 bg-gradient-to-tr from-[#F5921E]/25 via-[#233D5B]/30 to-transparent rounded-full blur-3xl -z-10 pointer-events-none" />
-
-            {/* Glassmorphic Brand Showcase Card */}
-            <div className="w-full max-w-md bg-white/[0.08] backdrop-blur-xl border border-white/15 hover:border-[#F5921E]/40 rounded-3xl p-8 sm:p-10 shadow-2xl shadow-black/40 transition-all duration-500 flex flex-col items-center text-center">
-              
-              {/* Top Vector Logo */}
-              <div className="py-4 px-6 rounded-2xl bg-white/[0.05] border border-white/10 w-full flex items-center justify-center mb-6 shadow-inner">
-                <Logo variant="light" size="lg" className="scale-110" />
-              </div>
-
-              {/* Tagline & Badges */}
-              <div className="w-full space-y-4">
-                <div className="flex items-center justify-center gap-2 text-xs font-bold text-[#F5921E] uppercase tracking-wider">
-                  <Waves className="w-4 h-4" />
-                  <span>Puerto Malabrigo • Chicama</span>
-                </div>
-
-                <p className="text-xs text-slate-300 font-normal leading-relaxed">
-                  Líderes en proyectos de campo y playa con Club House, piscina y crédito directo hasta 48 meses.
-                </p>
-
-                {/* 2 Quick Highlights */}
-                <div className="grid grid-cols-2 gap-3 pt-4 border-t border-white/10 text-left">
-                  <div className="p-3 rounded-xl bg-white/[0.04] border border-white/10">
-                    <div className="text-lg font-extrabold text-[#F5921E]">S/ 799</div>
-                    <div className="text-[10px] text-slate-300">Cuotas desde</div>
-                  </div>
-                  <div className="p-3 rounded-xl bg-white/[0.04] border border-white/10 flex items-center gap-2">
-                    <ShieldCheck className="w-5 h-5 text-[#F5921E] shrink-0" />
-                    <div>
-                      <div className="text-xs font-bold text-white">100% Legal</div>
-                      <div className="text-[10px] text-slate-300">En Sunarp</div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
+            {/* Impact Headline */}
+            <div className="space-y-1">
+              <h2 className="text-3xl xl:text-5xl font-black text-white leading-[1.12] tracking-tight drop-shadow-md">
+                ¡Invertir seguro <br />
+                es invertir <span className="text-[#38BDF8] drop-shadow-[0_2px_12px_rgba(56,189,248,0.4)]">en PLUS!</span>
+              </h2>
             </div>
+
+            {/* 3 Key Benefits Inline (Sin marcos ni cajas) */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-2 text-white">
+              <div className="flex items-center gap-2.5">
+                <FileText className="w-6 h-6 text-[#38BDF8] stroke-[2.2] shrink-0 drop-shadow" />
+                <span className="text-xs xl:text-sm font-semibold tracking-wide leading-tight">
+                  Inscritos <br /> en SUNARP
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2.5">
+                <ClipboardCheck className="w-6 h-6 text-[#38BDF8] stroke-[2.2] shrink-0 drop-shadow" />
+                <span className="text-xs xl:text-sm font-semibold tracking-wide leading-tight">
+                  Título de <br /> propiedad
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2.5">
+                <Ruler className="w-6 h-6 text-[#38BDF8] stroke-[2.2] shrink-0 drop-shadow" />
+                <span className="text-xs xl:text-sm font-semibold tracking-wide leading-tight">
+                  Lotes desde <br /> 100 m²
+                </span>
+              </div>
+            </div>
+
+            {/* Vibrant Separation Pill (Inspirado en la pieza publicitaria) */}
+            <div className="pt-3">
+              <a 
+                href="https://wa.me/51987654321?text=Hola,%20deseo%20separar%20mi%20lote%20con%20S/%20100%20en%20Plus%20Inmobiliaria"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3.5 bg-gradient-to-r from-[#E11D48] via-[#E11D48] to-[#BE123C] hover:from-[#BE123C] hover:to-[#9F1239] text-white px-7 py-3.5 rounded-full shadow-2xl shadow-rose-600/40 hover:scale-105 transition-all duration-300 group cursor-pointer"
+              >
+                <span className="text-sm xl:text-base font-medium italic">
+                  separa tu lote con
+                </span>
+                <span className="text-2xl xl:text-3xl font-black tracking-tight leading-none">
+                  <span className="text-base xl:text-lg font-bold align-top mr-0.5">S/</span>100
+                </span>
+              </a>
+            </div>
+
+            {/* Location Line */}
+            <div className="flex items-center gap-2 text-slate-200 text-sm font-medium pt-1">
+              <MapPin className="w-4 h-4 text-[#F5921E] shrink-0" />
+              <span>en Puerto Malabrigo • Chicama</span>
+            </div>
+
           </motion.div>
 
         </div>
