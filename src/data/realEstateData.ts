@@ -126,7 +126,7 @@ export const featuredProperties: Property[] = [
     beds: 0,
     baths: 0,
     sqft: 160,
-    image: "/project-nueva-asia.png",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
     badge: "100% Independizado",
     description: "¡Vive a un paso de la playa! Exclusivo condominio residencial en Puerto Malabrigo con Club House, canchas de frontón y tenis, piscina panorámica, parques temáticos y crédito directo.",
     features: [
@@ -138,7 +138,7 @@ export const featuredProperties: Property[] = [
       "Alumbrado público y redes de agua"
     ],
     gallery: [
-      "/project-nueva-asia.png",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop"
     ],
@@ -171,7 +171,7 @@ export const featuredProperties: Property[] = [
     ],
     gallery: [
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
-      "/project-nueva-asia.png"
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop"
     ],
     assignedAgent: {
       name: "Lucía Mendoza",
@@ -251,7 +251,7 @@ export const services: Service[] = [
     title: "Venta de Terrenos de Campo y Playa",
     tag: "Proyectos Exclusivos",
     description: "Desarrollo y comercialización de lotes con Club House, áreas recreativas y acceso a las mejores playas del norte.",
-    image: "/project-nueva-asia.png",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
     intro: "En Plus Inmobiliaria diseñamos condominios que combinan la tranquilidad de la playa y el campo con servicios de primer nivel.",
     mainGoal: "Facilitar el acceso a terrenos propios con alta plusvalía y proyectos residenciales planificados.",
     process: [
@@ -351,7 +351,7 @@ export const blogPosts: BlogPost[] = [
     date: "14 Ago 2026",
     readTime: "4 min de lectura",
     summary: "Descubre el auge de la costa norte, el turismo internacional y el crecimiento del valor por m² en terrenos de playa.",
-    image: "/project-nueva-asia.png",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop",
     author: "Plus Inmobiliaria",
     content: [
       "Puerto Malabrigo se ha consolidado como uno de los destinos costeros más codiciados del Perú. Conocido mundialmente por poseer la ola izquierda más larga del planeta, atrae no solo a turistas y deportistas, sino a familias e inversionistas que buscan calidad de vida frente al mar.",

@@ -164,7 +164,7 @@ export const AboutPage: React.FC = () => {
             >
               <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-200">
                 <img 
-                  src="/project-nueva-asia.png" 
+                  src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" 
                   alt="Residencial Nueva Asia - Plus Inmobiliaria" 
                   className="w-full h-[260px] sm:h-[360px] object-cover"
                 />

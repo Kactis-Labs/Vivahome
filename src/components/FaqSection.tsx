@@ -40,7 +40,7 @@ export const FaqSection: React.FC = () => {
             {/* Visual Card */}
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-white/10 hidden sm:block">
               <img 
-                src="/project-nueva-asia.png" 
+                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" 
                 alt="Condominio Nueva Asia - Plus Inmobiliaria" 
                 className="w-full h-[220px] sm:h-[260px] object-cover"
               />

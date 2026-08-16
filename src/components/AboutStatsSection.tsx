@@ -49,7 +49,7 @@ export const AboutStatsSection: React.FC = () => {
           >
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl group">
               <img 
-                src="/project-nueva-asia.png" 
+                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" 
                 alt="Proyecto Residencial Nueva Asia en Puerto Malabrigo - Plus Inmobiliaria" 
                 className="w-full h-[260px] sm:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
