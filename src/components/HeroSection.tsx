@@ -63,52 +63,79 @@ export const HeroSection: React.FC = () => {
         animate="visible"
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-4 sm:mt-8"
       >
-        <div className="max-w-3xl">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          {/* Handwritten-Style Kicker */}
+          {/* Left Column: Headlines & Callouts */}
+          <div className="lg:col-span-8 max-w-3xl">
+            
+            {/* Handwritten-Style Kicker */}
+            <motion.div 
+              variants={itemVariants}
+              className="mb-2 sm:mb-3"
+            >
+              <span className="text-xl sm:text-2xl lg:text-3xl font-serif italic font-normal text-amber-400 tracking-wide drop-shadow-md">
+                El único proyecto con
+              </span>
+            </motion.div>
+
+            {/* Main Title con Efecto de Escritura (Typewriter) */}
+            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white tracking-[-0.03em] leading-[1.12] mb-4 sm:mb-6 min-h-[2.3em] drop-shadow-lg font-sans">
+              <span>{displayedText}</span>
+              <span 
+                className={`inline-block w-[3px] sm:w-[4px] h-7 sm:h-12 lg:h-16 bg-amber-400 ml-1.5 align-middle transition-opacity duration-300 ${
+                  isTypingComplete ? 'opacity-0' : 'opacity-100 animate-pulse'
+                }`} 
+              />
+            </h1>
+
+            {/* Subtitle & Highlights */}
+            <motion.p 
+              variants={itemVariants}
+              className="text-sm sm:text-base lg:text-lg text-zinc-100 font-light leading-relaxed mb-6 sm:mb-8 max-w-2xl drop-shadow"
+            >
+              Tu casa de campo/playa en <strong className="font-semibold text-white">Villa Club Malabrigo</strong>. Lotes amplios de <strong className="font-semibold text-amber-300">252m², 300m² y 500m²</strong> a precios de preventa y financiamiento directo <strong className="font-semibold text-amber-300">SIN INTERESES</strong>.
+            </motion.p>
+
+            {/* Feature Badges Grid */}
+            <motion.div 
+              variants={itemVariants}
+              className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4 sm:mb-6"
+            >
+              {/* Plano Americano Gratis */}
+              <div className="flex items-center gap-2 bg-[#1D4263]/85 backdrop-blur-md px-3.5 py-2 rounded-xl text-white text-xs sm:text-sm font-medium shadow-lg border border-white/10">
+                <Ruler className="w-4 h-4 text-amber-400 shrink-0" />
+                <span>📐 <strong>Plano Americano</strong> Gratis</span>
+              </div>
+
+              {/* Avance de Obras Semanal */}
+              <div className="flex items-center gap-2 bg-[#1D4263]/85 backdrop-blur-md px-3.5 py-2 rounded-xl text-white text-xs sm:text-sm font-medium shadow-lg border border-white/10">
+                <HardHat className="w-4 h-4 text-amber-400 shrink-0" />
+                <span>Avance de Obras <strong>Semanalmente</strong></span>
+              </div>
+            </motion.div>
+
+          </div>
+
+          {/* Right Column: Floating Villa Club Logo */}
           <motion.div 
             variants={itemVariants}
-            className="mb-2 sm:mb-3"
+            className="lg:col-span-4 flex justify-start lg:justify-end"
           >
-            <span className="text-xl sm:text-2xl lg:text-3xl font-serif italic font-normal text-amber-400 tracking-wide drop-shadow-md">
-              El único proyecto con
-            </span>
-          </motion.div>
-
-          {/* Main Title con Efecto de Escritura (Typewriter) */}
-          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white tracking-[-0.03em] leading-[1.12] mb-4 sm:mb-6 min-h-[2.3em] drop-shadow-lg font-sans">
-            <span>{displayedText}</span>
-            <span 
-              className={`inline-block w-[3px] sm:w-[4px] h-7 sm:h-12 lg:h-16 bg-amber-400 ml-1.5 align-middle transition-opacity duration-300 ${
-                isTypingComplete ? 'opacity-0' : 'opacity-100 animate-pulse'
-              }`} 
-            />
-          </h1>
-
-          {/* Subtitle & Highlights */}
-          <motion.p 
-            variants={itemVariants}
-            className="text-sm sm:text-base lg:text-lg text-zinc-100 font-light leading-relaxed mb-6 sm:mb-8 max-w-2xl drop-shadow"
-          >
-            Tu casa de campo/playa en <strong className="font-semibold text-white">Villa Club Malabrigo</strong>. Lotes amplios de <strong className="font-semibold text-amber-300">252m², 300m² y 500m²</strong> a precios de preventa y financiamiento directo <strong className="font-semibold text-amber-300">SIN INTERESES</strong>.
-          </motion.p>
-
-          {/* Feature Badges Grid (Recreating Banner Callouts) */}
-          <motion.div 
-            variants={itemVariants}
-            className="flex flex-wrap items-center gap-3 sm:gap-4 mb-6 sm:mb-8"
-          >
-            {/* Plano Americano Gratis */}
-            <div className="flex items-center gap-2 bg-[#1D4263]/85 backdrop-blur-md px-3.5 py-2 rounded-xl text-white text-xs sm:text-sm font-medium shadow-lg">
-              <Ruler className="w-4 h-4 text-amber-400 shrink-0" />
-              <span>📐 <strong>Plano Americano</strong> Gratis</span>
-            </div>
-
-            {/* Avance de Obras Semanal */}
-            <div className="flex items-center gap-2 bg-[#1D4263]/85 backdrop-blur-md px-3.5 py-2 rounded-xl text-white text-xs sm:text-sm font-medium shadow-lg">
-              <HardHat className="w-4 h-4 text-amber-400 shrink-0" />
-              <span>Avance de Obras <strong>Semanalmente</strong></span>
-            </div>
+            <motion.div 
+              animate={{ y: [-6, 6, -6] }}
+              transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
+              className="bg-white/95 backdrop-blur-xl p-4 sm:p-6 rounded-3xl shadow-2xl border border-white/40 max-w-[280px] sm:max-w-[320px] flex flex-col items-center text-center group hover:bg-white transition-all"
+            >
+              <img 
+                src="/images/logo-villa-club.png" 
+                alt="Villa Club Malabrigo Logo" 
+                className="w-full h-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="mt-3 pt-3 border-t border-zinc-200/80 w-full flex items-center justify-between text-[11px] font-semibold text-zinc-700">
+                <span className="text-amber-600 uppercase tracking-wider font-bold">PROYECTO ESTRELLA</span>
+                <span>PUERTO MALABRIGO</span>
+              </div>
+            </motion.div>
           </motion.div>
 
         </div>
@@ -116,7 +143,7 @@ export const HeroSection: React.FC = () => {
         {/* Bottom Actions Bar */}
         <motion.div 
           variants={itemVariants}
-          className="mt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6 pt-2"
+          className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6 pt-2"
         >
           
           {/* Left Actions: Card Glassmorphic + WhatsApp */}
@@ -125,7 +152,7 @@ export const HeroSection: React.FC = () => {
             {/* Glassmorphic Property Preview Card */}
             <Link 
               to="/propiedades/lote-villa-club-252"
-              className="bg-white/95 backdrop-blur-xl rounded-2xl p-2.5 sm:p-3 flex items-center gap-3 shadow-2xl hover:bg-white transition-all group max-w-full text-zinc-900"
+              className="bg-white/95 backdrop-blur-xl rounded-2xl p-2.5 sm:p-3 flex items-center gap-3 shadow-2xl hover:bg-white transition-all group max-w-full text-zinc-900 border border-white/20"
             >
               <img 
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=400&auto=format&fit=crop" 
