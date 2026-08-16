@@ -130,425 +130,361 @@ export interface BlogPost {
 
 export const featuredProperties: Property[] = [
   {
-    id: "prop-1",
-    title: "Residencia Greenfield & Penthouse",
-    category: "Penthouse de Lujo",
-    price: "$850,000",
-    pricePen: "S/ 3,185,000",
-    location: "Av. El Golf, San Isidro • Lima",
-    beds: 4,
-    baths: 4,
-    sqft: 340,
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1400&auto=format&fit=crop",
-    badge: "OFERTA TOP",
-    description: "Extraordinario penthouse dúplex con vista directa y despejada a las canchas del Club El Golf de San Isidro. Diseñado con alturas libres de 3.10 metros, pisos de madera estructurada europea, cocina de autor con isla en cuarzo Calacatta y terraza panorámica con zona lounge y jacuzzi privado.",
-    propertyType: "Penthouse Dúplex de Lujo",
-    totalArea: "340 m²",
-    coveredArea: "295 m²",
-    parking: "3 Cocheras Paralelas Techadas + 1 Depósito",
-    deliveryStatus: "Entrega Inmediata (Estreno)",
-    maintenance: "S/ 920 / mes aprox.",
-    security: "Seguridad 24/7, cámaras CCTV y ascensor directo con código privado",
+    id: "lote-malabrigo-1",
+    title: "Lote Residencial Cerca a la Playa - Puerto Malabrigo",
+    category: "Lote de Playa",
+    price: "S/ 14,900",
+    pricePen: "$3,980 USD aprox.",
+    location: "Puerto Malabrigo, Ascope • La Libertad",
+    beds: 0,
+    baths: 0,
+    sqft: 120,
+    image: "/images/banner-eco-hogar.png",
+    badge: "PRECIO DE LANZAMIENTO",
+    description: "Cumple el sueño del terreno propio a pocos minutos de la mítica playa de Puerto Malabrigo (Chicama). Proyecto campestre y playero con pórtico de ingreso monumental, áreas verdes, vías afirmadas y proyección de servicios de agua y luz. Financiamiento directo al 100% sin evaluación bancaria.",
+    propertyType: "Lote Residencial de Playa & Campo",
+    totalArea: "120 m² (8m x 15m)",
+    coveredArea: "Listo para edificar",
+    parking: "Espacio para cochera privada en lote",
+    deliveryStatus: "Entrega Inmediata / En Habilitación",
+    maintenance: "S/ 35 / mes (Mantenimiento de áreas comunes)",
+    security: "Pórtico de acceso monumental y cerco perimétrico vivo",
     gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop"
-    ],
-    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
-    assignedAgent: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 987 654 321",
-      email: "marco.benavides@vivahome.pe"
-    },
-    nearbyPlaces: [
-      { name: "Lima Golf Club", category: "Deportes & Exclusividad", distance: "2 min a pie" },
-      { name: "Bosque El Olivar", category: "Parques & Naturaleza", distance: "4 min en auto" },
-      { name: "Zona Gastronómica Dasso", category: "Restaurantes & Cafés", distance: "5 min en auto" },
-      { name: "Real Plaza Salaverry", category: "Centros Comerciales", distance: "7 min en auto" }
-    ]
-  },
-  {
-    id: "prop-2",
-    title: "Casa de Campo Woodland & Piscina",
-    category: "Villa Moderna",
-    price: "$1,250,000",
-    pricePen: "S/ 4,680,000",
-    location: "Rinconada de la Molina, La Molina • Lima",
-    beds: 5,
-    baths: 5,
-    sqft: 480,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
-    badge: "EXCLUSIVO",
-    description: "Imponente residencia contemporánea en el corazón de Rinconada de la Molina con microclima soleado todo el año. Cuenta con amplios jardines paisajistas, piscina temperada sin fin, zona de parrilla techada estilo BBQ Lounge, cava de vinos climatizada y suite principal con doble walk-in closet.",
-    propertyType: "Casa / Residencia Unifamiliar",
-    totalArea: "750 m² de Terreno",
-    coveredArea: "480 m² Construidos",
-    parking: "4 Estacionamientos Techados",
-    deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 650 / mes (Junta de Propietarios)",
-    security: "Pórtico de Control de Acceso 24/7 y Patrullaje Privado",
-    gallery: [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop"
-    ],
-    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
-    assignedAgent: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 981 234 567",
-      email: "valeria.ugarte@vivahome.pe"
-    },
-    nearbyPlaces: [
-      { name: "Rinconada Country Club", category: "Club Social & Golf", distance: "3 min" },
-      { name: "Centro Comercial Molicentro", category: "Compras & Servicios", distance: "5 min" },
-      { name: "Colegio Newton & Roosevelt", category: "Colegios Internacionales", distance: "6 min" },
-      { name: "Wong Planicie", category: "Supermercados", distance: "4 min" }
-    ]
-  },
-  {
-    id: "prop-3",
-    title: "Departamento Oceanview & Malecón",
-    category: "Dpto. Frente al Mar",
-    price: "$980,000",
-    pricePen: "S/ 3,670,000",
-    location: "Malecón de la Reserva, Miraflores • Lima",
-    beds: 3,
-    baths: 3,
-    sqft: 280,
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop",
-    badge: "DESTACADO",
-    description: "Espectacular departamento flat con vista frontal en primera fila a la bahía de Miraflores. Amplia terraza con barandas de cristal templado, mamparas termoacústicas de piso a techo, acabados en mármol Botticino y acceso peatonal directo a los parques del malecón.",
-    propertyType: "Departamento Flat Frente al Mar",
-    totalArea: "280 m²",
-    coveredArea: "250 m²",
-    parking: "2 Cocheras Paralelas + 1 Depósito",
-    deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 880 / mes aprox.",
-    security: "Recepción de Lujo 24/7 y Sistema de Control Biométrico",
-    gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?q=80&w=1200&auto=format&fit=crop"
-    ],
-    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
-    assignedAgent: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 993 456 789",
-      email: "diego.reyna@vivahome.pe"
-    },
-    nearbyPlaces: [
-      { name: "Larcomar", category: "Shopping & Dining", distance: "4 min a pie" },
-      { name: "Parque del Amor", category: "Malecón & Parques", distance: "3 min a pie" },
-      { name: "Club Terrazas", category: "Deportes & Tenis", distance: "5 min a pie" },
-      { name: "JW Marriott Hotel", category: "Hoteles 5 Estrellas", distance: "4 min" }
-    ]
-  },
-  {
-    id: "prop-4",
-    title: "Casa de Playa Villa Mar",
-    category: "Casa de Playa",
-    price: "$690,000",
-    pricePen: "S/ 2,585,000",
-    location: "Playa Chocalla, Asia, Cañete • Lima",
-    beds: 5,
-    baths: 4,
-    sqft: 390,
-    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop",
-    badge: "NUEVO INGRESO",
-    description: "Moderna casa de playa en condominio privado con acceso directo a la arena y vista panorámica al océano pacífico. Diseñada en 3 niveles con piscina privada en el rooftop, área de fogatero, dormitorios con baño incorporado y cocina abierta integrada a la terraza.",
-    propertyType: "Casa de Playa en Condominio",
-    totalArea: "390 m²",
-    coveredArea: "310 m²",
-    parking: "3 Estacionamientos Privados",
-    deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 1,100 / mes (Incluye Club House y Sombrilla)",
-    security: "Vigilancia Permanente 24/7 y Garita de Control",
-    gallery: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 981 234 567",
-      email: "valeria.ugarte@vivahome.pe"
-    },
-    nearbyPlaces: [
-      { name: "Boulevard de Asia", category: "Centros Comerciales", distance: "8 min en auto" },
-      { name: "Club House Privado", category: "Canchas de Tenis & Piscina", distance: "1 min a pie" },
-      { name: "Helipuerto Asia", category: "Transporte Privado", distance: "10 min" },
-      { name: "Restaurantes de Playa", category: "Gastronomía Marina", distance: "5 min" }
-    ]
-  },
-  {
-    id: "prop-5",
-    title: "Residencia San Isidro El Olivar",
-    category: "Casa Arquitectónica",
-    price: "$1,650,000",
-    pricePen: "S/ 6,180,000",
-    location: "Bosque El Olivar, San Isidro • Lima",
-    beds: 5,
-    baths: 5,
-    sqft: 520,
-    image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1400&auto=format&fit=crop",
-    badge: "PREVENTA",
-    description: "Obra maestra arquitectónica frente a los árboles centenarios del Bosque El Olivar. Fachada en concreto aparente y listones de madera teca, patio interior zen con caída de agua, ascensor hidráulico para todas las plantas y sistema integral de domótica Lutron para iluminación y climatización.",
-    propertyType: "Residencia Arquitectónica de Autor",
-    totalArea: "620 m² de Terreno",
-    coveredArea: "520 m² Construidos",
-    parking: "4 Estacionamientos Paralelos",
-    deliveryStatus: "Preventa Exclusiva (Entrega Diciembre 2026)",
-    maintenance: "S/ 750 / mes aprox.",
-    security: "Circuito Cerrado de Seguridad y Blindaje Perimetral",
-    gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?q=80&w=1200&auto=format&fit=crop"
-    ],
-    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
-    assignedAgent: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
+      name: "Renzo Cabrera",
+      role: "Gerente de Proyectos & Asesor Senior",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
       phone: "+51 987 654 321",
-      email: "marco.benavides@vivahome.pe"
+      email: "ventas@ecohogarinmobiliaria.pe"
     },
     nearbyPlaces: [
-      { name: "Parque El Olivar", category: "Patrimonio Histórico & Áreas Verdes", distance: "0 min (Frente al inmueble)" },
-      { name: "Av. Conquistadores", category: "Boutiques & Diseño de Interiores", distance: "3 min a pie" },
-      { name: "Hotel Country Club", category: "Gastronomía & Salones", distance: "4 min en auto" },
-      { name: "Centro Financiero San Isidro", category: "Banca & Negocios", distance: "5 min en auto" }
+      { name: "Playa Puerto Malabrigo (Ola Izquierda Más Larga del Mundo)", category: "Surf & Playa", distance: "4 min en auto" },
+      { name: "Plaza de Armas de Malabrigo", category: "Centro Urbano", distance: "3 min" },
+      { name: "Carretera Panamericana Norte", category: "Conectividad", distance: "8 min" },
+      { name: "Ciudad de Trujillo", category: "Capital Regional", distance: "55 min" }
     ]
   },
   {
-    id: "prop-6",
-    title: "Casona Moderna Paul de Baudiez",
-    category: "Casona Dúplex",
-    price: "$780,000",
-    pricePen: "S/ 2,920,000",
-    location: "Malecón de Barranco, Barranco • Lima",
-    beds: 4,
-    baths: 3,
-    sqft: 310,
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop",
-    badge: "OPORTUNIDAD",
-    description: "Casona de diseño restaurada con espíritu bohemio y acabados contemporáneos en el acantilado de Barranco. Techos de 4 metros de altura con vigas vistas, cocina gourmet industrial, balcón corrido con vista lateral al mar y taller/estudio independiente para artistas o profesionales.",
-    propertyType: "Casona Restaurada / Dúplex",
-    totalArea: "310 m²",
-    coveredArea: "275 m²",
-    parking: "2 Cocheras Techadas",
+    id: "lote-campestre-2",
+    title: "Lote Campestre Los Álamos - Vista Panorámica al Valle",
+    category: "Lote Campestre",
+    price: "S/ 18,500",
+    pricePen: "$4,950 USD aprox.",
+    location: "Valle Chicama, Ascope • La Libertad",
+    beds: 0,
+    baths: 0,
+    sqft: 160,
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1400&auto=format&fit=crop",
+    badge: "FINANCIAMIENTO DIRECTO",
+    description: "Espacioso lote campestre ideal para construir tu casa de campo o huerto familiar. Rodeado de árboles y vegetación natural, con clima cálido y soleado todo el año. Cuenta con acceso vehicular, zonas de esparcimiento familiar y factibilidad de servicios.",
+    propertyType: "Lote Campestre / Casa de Campo",
+    totalArea: "160 m² (10m x 16m)",
+    coveredArea: "100% Aprovechable",
+    parking: "Cochera dentro del lote",
     deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 580 / mes",
-    security: "Monitoreo 24/7 y Alarma Centralizada",
+    maintenance: "S/ 30 / mes",
+    security: "Control de acceso con tranquera y vigilancia",
     gallery: [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 993 456 789",
-      email: "diego.reyna@vivahome.pe"
+      name: "Dayana Paredes",
+      role: "Asesora Especialista en Terrenos Campestres",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 981 234 567",
+      email: "dparedes@ecohogarinmobiliaria.pe"
     },
     nearbyPlaces: [
-      { name: "Puente de los Suspiros", category: "Cultura & Turismo", distance: "4 min a pie" },
-      { name: "Malecón Paul de Baudiez", category: "Caminatas & Mar", distance: "1 min a pie" },
-      { name: "Galería Dédalo", category: "Arte & Diseño", distance: "5 min a pie" },
-      { name: "Restaurante Central & Isolina", category: "Alta Gastronomía", distance: "6 min a pie" }
+      { name: "Río Chicama & Áreas Naturales", category: "Naturaleza", distance: "5 min a pie" },
+      { name: "Pueblo Tradicional de Paiján", category: "Servicios & Mercado", distance: "10 min" },
+      { name: "Complejo Arqueológico El Brujo", category: "Cultura & Turismo", distance: "15 min" },
+      { name: "Trujillo", category: "Ciudad", distance: "50 min" }
+    ]
+  },
+  {
+    id: "lote-esquina-3",
+    title: "Lote Premium de Esquina Frente a Parque Central",
+    category: "Lote de Playa & Campo",
+    price: "S/ 22,900",
+    pricePen: "$6,100 USD aprox.",
+    location: "EcoHogar Malabrigo Etapa 1 • La Libertad",
+    beds: 0,
+    baths: 0,
+    sqft: 180,
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop",
+    badge: "FRENTE A PARQUE",
+    description: "Ubicación inmejorable en esquina frente al parque central del condominio. Ideal para casa de retiro, casa de playa o proyecto comercial (bodega, café, hospedaje). Doble frente de calle con excelente iluminación y ventilación marina.",
+    propertyType: "Lote en Esquina / Multifamiliar",
+    totalArea: "180 m² (12m x 15m)",
+    coveredArea: "Listo para construir",
+    parking: "Doble acceso vehicular",
+    deliveryStatus: "Etapa 1 Habilitada",
+    maintenance: "S/ 40 / mes",
+    security: "Pórtico de ingreso y rondas de vigilancia",
+    gallery: [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop"
+    ],
+    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
+    assignedAgent: {
+      name: "Carlos Benites",
+      role: "Coordinador de Visitas & Ventas de Campo",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 993 456 789",
+      email: "cbenites@ecohogarinmobiliaria.pe"
+    },
+    nearbyPlaces: [
+      { name: "Parque Central & Juegos Infantiles", category: "Áreas Verdes", distance: "0 min (Frente)" },
+      { name: "Malecón Turístico de Malabrigo", category: "Paseo Marítimo", distance: "5 min" },
+      { name: "Restaurantes de Pescados & Mariscos", category: "Gastronomía", distance: "4 min" },
+      { name: "Huanchaco", category: "Balneario", distance: "45 min" }
+    ]
+  },
+  {
+    id: "lote-playa-4",
+    title: "Lote EcoHogar Malabrigo - Segunda Etapa con Financiamiento",
+    category: "Lote de Playa",
+    price: "S/ 15,900",
+    pricePen: "$4,240 USD aprox.",
+    location: "Puerto Malabrigo, Ascope • La Libertad",
+    beds: 0,
+    baths: 0,
+    sqft: 130,
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1400&auto=format&fit=crop",
+    badge: "CUOTAS DESDE S/ 350",
+    description: "Adquiere tu lote con inicial accesible y paga el saldo en cómodas cuotas mensuales fijas sin intereses bancarios. Disfruta de la brisa marina, atardeceres mágicos y la tranquilidad que solo el norte liberteño te puede ofrecer.",
+    propertyType: "Lote de Playa / Preventa",
+    totalArea: "130 m²",
+    coveredArea: "Listo para inicio de obra",
+    parking: "Cochera propia",
+    deliveryStatus: "En Preventa con Descuento",
+    maintenance: "S/ 35 / mes",
+    security: "Pórtico de seguridad permanente",
+    gallery: [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+    ],
+    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
+    assignedAgent: {
+      name: "Renzo Cabrera",
+      role: "Gerente de Proyectos & Asesor Senior",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 987 654 321",
+      email: "ventas@ecohogarinmobiliaria.pe"
+    },
+    nearbyPlaces: [
+      { name: "Muelle Artesanal de Malabrigo", category: "Turismo & Paseos", distance: "5 min" },
+      { name: "Zona Hotelera & Surf Camps", category: "Hospedajes", distance: "4 min" },
+      { name: "Grifo & Minimarket", category: "Servicios", distance: "2 min" },
+      { name: "Pacasmayo", category: "Ciudad & Puerto", distance: "35 min" }
+    ]
+  },
+  {
+    id: "lote-comercial-5",
+    title: "Lote Comercial sobre Avenida Principal de Ingreso",
+    category: "Lote Comercial",
+    price: "S/ 29,900",
+    pricePen: "$7,980 USD aprox.",
+    location: "Av. Principal EcoHogar, Malabrigo • La Libertad",
+    beds: 0,
+    baths: 0,
+    sqft: 200,
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
+    badge: "ALTO TRÁFICO",
+    description: "Excelente lote comercial sobre la vía principal del proyecto. Ideal para inversión en minimarket, restaurante campestre, ferretería, farmacia o departamentos de alquiler para veraneantes y surfistas que visitan Puerto Malabrigo.",
+    propertyType: "Lote Comercial / Mixto",
+    totalArea: "200 m² (10m x 20m)",
+    coveredArea: "100% Comercial",
+    parking: "Estacionamiento frontal para clientes",
+    deliveryStatus: "Entrega Inmediata",
+    maintenance: "S/ 45 / mes",
+    security: "Pórtico de control de ingreso principal",
+    gallery: [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+    ],
+    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
+    assignedAgent: {
+      name: "Dayana Paredes",
+      role: "Asesora Especialista en Terrenos Campestres",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 981 234 567",
+      email: "dparedes@ecohogarinmobiliaria.pe"
+    },
+    nearbyPlaces: [
+      { name: "Pórtico de Ingreso Principal", category: "Acceso", distance: "1 min a pie" },
+      { name: "Playa de Malabrigo", category: "Mar", distance: "4 min en auto" },
+      { name: "Panamericana Norte", category: "Vía Nacional", distance: "7 min" },
+      { name: "Ascope Centro", category: "Municipio", distance: "20 min" }
+    ]
+  },
+  {
+    id: "lote-familiar-6",
+    title: "Lote Campestre Familiar - Proyecto Valle Esmeralda",
+    category: "Lote Campestre",
+    price: "S/ 16,900",
+    pricePen: "$4,500 USD aprox.",
+    location: "Ascope • La Libertad",
+    beds: 0,
+    baths: 0,
+    sqft: 140,
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1400&auto=format&fit=crop",
+    badge: "OPORTUNIDAD FAMILIAR",
+    description: "Terreno plano y listo para construir tu casa de campo familiar en una zona de alta tranquilidad y sol todo el año. Cuenta con áreas comunes para niños, canchas deportivas y árboles frutales en el entorno.",
+    propertyType: "Lote Campestre Residencial",
+    totalArea: "140 m²",
+    coveredArea: "100% plano",
+    parking: "Cochera propia",
+    deliveryStatus: "Entrega Inmediata",
+    maintenance: "S/ 30 / mes",
+    security: "Cerco perimétrico y portón de seguridad",
+    gallery: [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+    ],
+    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
+    assignedAgent: {
+      name: "Carlos Benites",
+      role: "Coordinador de Visitas & Ventas de Campo",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 993 456 789",
+      email: "cbenites@ecohogarinmobiliaria.pe"
+    },
+    nearbyPlaces: [
+      { name: "Zona Deportiva & Parrillas", category: "Recreación", distance: "1 min a pie" },
+      { name: "Paiján", category: "Comercio", distance: "8 min" },
+      { name: "Playa Malabrigo", category: "Mar", distance: "10 min" },
+      { name: "Trujillo", category: "Capital", distance: "50 min" }
     ]
   }
 ];
 
 export const stats: Stat[] = [
   {
-    value: "10+",
-    label: "Años de Experiencia",
-    description: "Brindando asesoría inmobiliaria de alto nivel con total transparencia en el Perú"
+    value: "1,200+",
+    label: "Lotes Entregados",
+    description: "Familias e inversionistas que ya cumplieron el sueño de su terreno propio en La Libertad"
   },
   {
-    value: "9k+",
-    label: "Clientes Satisfechos",
-    description: "Familias e inversionistas que concretaron su propiedad ideal con nuestro respaldo"
+    value: "S/ 14,900",
+    label: "Precio al Contado Desde",
+    description: "Oportunidades únicas de inversión cerca al mar y campo con alta plusvalía proyectada"
   },
   {
-    value: "10k+",
-    label: "Propiedades Gestionadas",
-    description: "Portafolio exclusivo administrado bajo estándares de máxima seguridad jurídica"
+    value: "100%",
+    label: "Financiamiento Directo",
+    description: "Sin bancos, sin avales ni trámites engorrosos: adquiere tu lote solo con tu DNI"
   }
 ];
 
 export const services: Service[] = [
   {
-    id: "asesoria-compra",
-    title: "Asesoría en Compra de Inmuebles",
-    description: "Te guiamos en la búsqueda y adquisición de propiedades residenciales y comerciales en Lima y playas con total seguridad jurídica.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
-    tag: "COMPRA & ASESORÍA",
-    intro: "Comprar una propiedad es una de las decisiones financieras más trascendentales. En VivaHome brindamos un acompañamiento integral y personalizado desde la definición del perfil del inmueble ideal hasta la firma de la escritura pública en notaría.",
-    mainGoal: "Garantizar que tu inversión inmobiliaria sea 100% segura, rentable y adaptada a las necesidades de vida o patrimonio de tu familia, protegiéndote ante riesgos registrales o tributarios.",
+    id: "venta-lotes-playa-campo",
+    title: "Venta de Lotes de Playa y Campo con Financiamiento Directo",
+    description: "Terrenos independizados en Puerto Malabrigo y Ascope con precios accesibles al contado y cuotas mensuales fijas.",
+    image: "/images/banner-eco-hogar.png",
+    tag: "FINANCIAMIENTO DIRECTO",
+    intro: "En ECO HOGAR Inmobiliaria hacemos posible el sueño de tener un lote propio cerca al mar o en el campo. Diseñamos proyectos sostenibles con pórticos de ingreso, áreas verdes y planes de pago a la medida de tu bolsillo.",
+    mainGoal: "Facilitar el acceso a terrenos con alta revalorización para que cada familia peruana construya su patrimonio con tranquilidad y seguridad.",
     process: [
-      { step: "01", title: "Definición de Requerimientos", desc: "Analizamos tu presupuesto, zona de preferencia (San Isidro, Miraflores, La Molina, etc.) y necesidades de metraje." },
-      { step: "02", title: "Selección Curada de Opciones", desc: "Filtramos propiedades exclusivas dentro y fuera del mercado abierto con altos estándares arquitectónicos." },
-      { step: "03", title: "Visitas Privadas & Guiadas", desc: "Coordinamos recorridos presenciales con asesoría técnica en acabados, iluminación y potencial de revalorización." },
-      { step: "04", title: "Negociación Estratégica", desc: "Defendemos tus intereses económicos para lograr el mejor precio de compra y condiciones comerciales favorables." },
-      { step: "05", title: "Estudio de Títulos & Cierre Notarial", desc: "Revisión exhaustiva en Sunarp, elaboración de minuta, pago de Alcabala y firma de escritura pública." }
+      { step: "01", title: "Visita Guiada Gratuita", desc: "Te llevamos con movilidad ida y vuelta desde Trujillo o Ascope para que conozcas el proyecto y elijas tu lote ideal." },
+      { step: "02", title: "Elección de Ubicación", desc: "Selecciona tu lote residencial, frente a parque, en esquina o sobre avenida principal según tu presupuesto." },
+      { step: "03", title: "Firma de Contrato con DNI", desc: "Separación inmediata y suscripción de contrato de compraventa sin evaluación crediticia de bancos." },
+      { step: "04", title: "Plan de Cuotas Flexibles", desc: "Paga tu cuota inicial y financia el saldo en cuotas mensuales cómodas y transparentes." },
+      { step: "05", title: "Toma de Posesión y Construcción", desc: "Entrega del lote para que inicies la cerca, plantación de árboles o construcción de tu casa." }
     ],
     challenges: [
       {
-        challenge: "Cargas o gravámenes ocultos en la partida registral del vendedor.",
-        solution: "Nuestro equipo legal realiza un estudio de títulos exhaustivo en Sunarp de los últimos 10 años antes de firmar cualquier arras o contrato."
+        challenge: "Precios elevados e inaccesibles en los proyectos tradicionales de la costa peruana.",
+        solution: "Lotes con precios de lanzamiento desde S/ 14,900 al contado y facilidades de pago directo."
       },
       {
-        challenge: "Demoras y complicaciones en la calificación del crédito hipotecario bancario.",
-        solution: "Trabajamos con ejecutivos senior de BCP, BBVA, Interbank y Scotiabank para agilizar la aprobación y conseguir tasas preferenciales."
+        challenge: "Requisitos bancarios estrictos que excluyen a trabajadores independientes.",
+        solution: "Financiamiento directo con la inmobiliaria únicamente presentando tu DNI."
       }
     ]
   },
   {
-    id: "venta-comercializacion",
-    title: "Venta y Comercialización Exclusiva",
-    description: "Estrategias de marketing inmobiliario digital y red de compradores calificados para vender tu propiedad al mejor valor de mercado.",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop",
-    tag: "VENTA & MARKETING",
-    intro: "Maximizamos el valor de venta de tu inmueble aplicando técnicas avanzadas de Home Staging, producción audiovisual 4K y segmentación de clientes con alto poder adquisitivo.",
-    mainGoal: "Lograr el cierre de venta en el menor tiempo posible, al precio óptimo de mercado y con filtros rigurosos de solvencia para los potenciales compradores.",
-    process: [
-      { step: "01", title: "Inspección & Valorización Comercial", desc: "Determinamos el precio justo y competitivo mediante análisis comparativo de mercado (ACM)." },
-      { step: "02", title: "Producción Audiovisual de Alto Nivel", desc: "Fotografía arquitectónica profesional, video con dron y recorridos virtuales 3D." },
-      { step: "03", title: "Campaña Multicanal Segmentada", desc: "Difusión en portales premium, redes sociales y nuestra base privada de inversionistas calificados." },
-      { step: "04", title: "Calificación y Filtro de Clientes", desc: "Verificación de capacidad crediticia antes de programar visitas privadas." },
-      { step: "05", title: "Cierre & Liquidación Notarial", desc: "Gestión de contratos, pago de impuesto a la renta de 2da categoría y entrega de llaves." }
-    ],
-    challenges: [
-      {
-        challenge: "Propiedades estancadas en el mercado por sobreprecio o mala exposición fotográfica.",
-        solution: "Alineamos la tasación con datos reales de transacciones recientes y relanzamos la propiedad con producción fotográfica de calidad editorial."
-      },
-      {
-        challenge: "Pérdida de tiempo con compradores no calificados o sin aprobación bancaria.",
-        solution: "Exigimos carta de aprobación hipotecaria o constancia de fondos previa a la negociación formal."
-      }
-    ]
-  },
-  {
-    id: "tasacion-valorizacion",
-    title: "Tasación y Valorización Comercial",
-    description: "Informes periciales rigurosos y análisis comparativo de mercado para fijar precios precisos de compra, venta o hipoteca.",
+    id: "asesoria-legal-titulacion",
+    title: "Seguridad Jurídica & Asesoría en Titulación",
+    description: "Garantía de compra con documentación saneada, partidas registrales y acompañamiento notarial.",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop",
-    tag: "VALORIZACIÓN TÉCNICA",
-    intro: "Conocer el valor real de un inmueble es fundamental antes de cualquier transacción. Elaboramos tasaciones comerciales y reglamentarias elaboradas por peritos certificados.",
-    mainGoal: "Proporcionar certeza técnica y financiera sobre el valor comercial y de liquidación de residencias, departamentos y terrenos.",
+    tag: "SEGURIDAD JURÍDICA",
+    intro: "En ECO HOGAR Inmobiliaria la transparencia y la legalidad son innegociables. Cada proyecto cuenta con expediente técnico y documentación en regla para proteger la inversión de tu familia.",
+    mainGoal: "Brindar certeza jurídica absoluta para que tu compra sea segura, heredable y libre de problemas legales.",
     process: [
-      { step: "01", title: "Recopilación Documentaria", desc: "Revisión de planos, memoria descriptiva, PU/HR de la municipalidad y partida registral." },
-      { step: "02", title: "Inspección Física In Situ", desc: "Evaluación del estado de conservación, calidad de acabados, antigüedad e infraestructura." },
-      { step: "03", title: "Análisis de Entorno y Zonificación", desc: "Estudio de accesibilidad, servicios, parámetros urbanísticos y proyectos viales cercanos." },
-      { step: "04", title: "Muestreo Comparativo de Mercado", desc: "Cruce de datos con ofertas activas y cierres notariales en la misma manzana o sector." },
-      { step: "05", title: "Emisión del Informe Pericial", desc: "Entrega del informe completo foliado con metodología de tasación y rango de valor." }
+      { step: "01", title: "Revisión de Antecedentes Registrales", desc: "Verificación de la partida matriz en Sunarp y ausencia de gravámenes o litigios." },
+      { step: "02", title: "Habilitación y Planos Visados", desc: "Levantamiento topográfico y delimitación clara de linderos de cada manzana y lote." },
+      { step: "03", title: "Contrato Legal Notarial", desc: "Firma de contrato de compraventa con cláusulas claras de derechos y posesión." },
+      { step: "04", title: "Proceso de Independización", desc: "Acompañamiento en el trámite de independización de partidas individuales." }
     ],
     challenges: [
       {
-        challenge: "Divergencias entre el valor de tasación bancaria y el precio de venta pactado.",
-        solution: "Presentamos informes sustentados con metodologías homologadas por el Cuerpo Técnico de Tasaciones del Perú para evitar observaciones bancarias."
+        challenge: "Temor a estafas o terrenos sin respaldo legal en la zona norte.",
+        solution: "Mostramos toda la documentación legal, partida matriz y licencias antes de cualquier pago."
       },
       {
-        challenge: "Falta de claridad en áreas comunes o porcentajes de copropiedad.",
-        solution: "Desglosamos al milímetro el área ocupada, techada y libre con su respectiva alícuota en el reglamento interno."
+        challenge: "Dudas sobre los linderos exactos de la propiedad.",
+        solution: "Entrega física del lote con estacas georreferenciadas y coordenadas UTM."
       }
     ]
   },
   {
-    id: "consultoria-inversiones",
-    title: "Consultoría en Inversiones & Preventas",
-    description: "Identificación de oportunidades en preventa y departamentos de estreno con alto potencial de plusvalía y retorno de alquiler (ROI).",
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1000&auto=format&fit=crop",
-    tag: "INVERSIÓN PATRIMONIAL",
-    intro: "Asesoramos a fondos familiares e inversionistas particulares en la conformación de portafolios inmobiliarios resilientes y altamente rentables en Lima Top.",
-    mainGoal: "Maximizar el retorno sobre el capital invertido (Cap Rate y Plusvalía) mitigando los riesgos del ciclo inmobiliario y constructivo.",
+    id: "habilitacion-urbana-sostenible",
+    title: "Habilitación de Espacios Ecológicos & Áreas Verdes",
+    description: "Diseño de condominios amigables con el medio ambiente: pórticos de ingreso, parques, vías arborizadas y espacios de recreación.",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop",
+    tag: "VIDA NATURAL",
+    intro: "Creemos en un desarrollo inmobiliario en armonía con la naturaleza. Nuestros proyectos en Puerto Malabrigo y Ascope integran grandes parques y áreas recreativas para el disfrute de tu familia.",
+    mainGoal: "Ofrecer una experiencia de vida saludable, libre del ruido de la ciudad y en contacto directo con el campo y el mar.",
     process: [
-      { step: "01", title: "Diagnóstico de Perfil de Inversionista", desc: "Determinación de metas de rentabilidad por alquiler o ganancia de capital a mediano plazo." },
-      { step: "02", title: "Scouting de Proyectos en Preventa", desc: "Acceso a listas de precios 'Friends & Family' y fases iniciales de preventa de constructoras consolidadas." },
-      { step: "03", title: "Evaluación Financiera & Flujos de Caja", desc: "Modelado de rentabilidad por alquiler tradicional, temporal (Airbnb) y tasa interna de retorno (TIR)." },
-      { step: "04", title: "Estructuración Legal del Contrato", desc: "Revisión de cartas fianza, cronogramas de desembolso y penalidades por retraso de entrega." },
-      { step: "05", title: "Monitoreo y Estrategia de Salida", desc: "Acompañamiento hasta la entrega del departamento y posterior puesta en alquiler o reventa." }
+      { step: "01", title: "Diseño Urbanístico Armónico", desc: "Planificación de manzanas amplias con doble vía y retiros para jardines." },
+      { step: "02", title: "Construcción de Pórticos y Cercos", desc: "Pórticos monumentales de bienvenida y cercos vivos con vegetación autóctona." },
+      { step: "03", title: "Apertura y Afirmado de Calles", desc: "Vías vehiculares y peatonales compactadas para fácil acceso en todo tipo de vehículo." },
+      { step: "04", title: "Arborización y Parques Temáticos", desc: "Siembra de árboles, zonas de juegos para niños y espacios de descanso." }
     ],
     challenges: [
       {
-        challenge: "Incertidumbre sobre la solvencia y cumplimiento de plazos de la empresa constructora.",
-        solution: "Auditamos el historial de entregas de la desarrolladora y exigimos que el proyecto cuente con fideicomiso bancario de garantía."
-      },
-      {
-        challenge: "Riesgo de vacancia prolongada tras la entrega del inmueble.",
-        solution: "Seleccionamos únicamente tipologías y metrajes de alta demanda de alquiler corporativo en zonas consolidadas."
+        challenge: "Proyectos en zonas áridas sin vegetación ni áreas recreativas.",
+        solution: "Incorporamos paisajismo verde y programas de arborización permanente en cada etapa."
       }
     ]
   },
   {
-    id: "administracion-propiedades",
-    title: "Administración Integral de Propiedades",
-    description: "Cuidado patrimonial continuo, mantenimiento preventivo, gestión de pagos y supervisión de servicios para propietarios ausentes.",
-    image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1000&auto=format&fit=crop",
-    tag: "ADMINISTRACIÓN & CUIDADO",
-    intro: "Para propietarios que residen fuera de Lima o en el extranjero, nos encargamos del cuidado integral de sus inmuebles como si fueran propios.",
-    mainGoal: "Mantener el estado óptimo de conservación y valor de tus activos inmobiliarios sin que tengas que invertir tu tiempo en gestiones operativas.",
+    id: "asesoria-construccion-casas",
+    title: "Asesoría en Construcción de Casas de Campo & Playa",
+    description: "Orientación arquitectónica y constructiva para edificar tu casa de descanso con materiales ecológicos y modernos.",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
+    tag: "CONSTRUCCIÓN",
+    intro: "Te asesoramos en el diseño y distribución de tu casa de campo o playa para aprovechar al máximo el espacio, la iluminación natural y el clima privilegiado de La Libertad.",
+    mainGoal: "Ayudarte a materializar tu vivienda de descanso con presupuestos eficientes y diseños modernos y bioclimáticos.",
     process: [
-      { step: "01", title: "Inventario Detallado Inicial", desc: "Levantamiento fotográfico del estado de mobiliario, equipamiento, luminarias y servicios." },
-      { step: "02", title: "Mantenimiento Preventivo y Correctivo", desc: "Coordinación con técnicos certificados para gasfitería, electricidad, pintura y climatización." },
-      { step: "03", title: "Gestión de Servicios y Arbitrios", desc: "Pago puntual de mantenimiento del edificio, luz, agua, predial y arbitrios municipales." },
-      { step: "04", title: "Supervisión de Seguridad y Accesos", desc: "Control de llaves, visitas técnicas y activación de alarmas." },
-      { step: "05", title: "Reportes Periódicos de Estado", desc: "Envío mensual de estados de cuenta consolidados y fotografías de inspección." }
+      { step: "01", title: "Modelos Arquitectónicos Sugeridos", desc: "Presentación de planos modelo para casas de 1 y 2 pisos con terraza y zona BBQ." },
+      { step: "02", title: "Recomendación de Materiales", desc: "Uso de madera tratada, ladrillo, drywall y coberturas termoacústicas duraderas." },
+      { step: "03", title: "Soluciones de Energía y Agua", desc: "Instalación de tanques elevados, biodigestores y paneles solares ecológicos." }
     ],
     challenges: [
       {
-        challenge: "Deterioro de inmuebles desocupados por falta de ventilación y mantenimiento.",
-        solution: "Programamos visitas quincenales de inspección y limpieza profunda para conservar el inmueble en condiciones impecables."
-      },
-      {
-        challenge: "Complicaciones para pagar arbitrios e impuestos desde el exterior.",
-        solution: "Consolidamos todos los pagos municipales y tributarios en una cuenta única con rendición mensual detallada."
-      }
-    ]
-  },
-  {
-    id: "gestion-alquileres",
-    title: "Gestión y Garantía de Alquileres",
-    description: "Evaluación crediticia de inquilinos en centrales de riesgo (Infocorp/Equifax), contratos con cláusula de allanamiento futuro y cobro puntual.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop",
-    tag: "ALQUILERES SEGUROS",
-    intro: "Alquilar una propiedad de lujo requiere máxima cautela. Filtramos rigurosamente a cada postulante y redactamos contratos blindados bajo la legislación peruana vigente.",
-    mainGoal: "Asegurar un flujo mensual de ingresos sin retrasos y con total protección legal frente a contingencias de inquilinos morosos.",
-    process: [
-      { step: "01", title: "Evaluación en Centrales de Riesgo", desc: "Revisión exhaustiva en Infocorp, Sentinel, verificación laboral y antecedentes penales/judiciales." },
-      { step: "02", title: "Fijación de Renta y Condiciones", desc: "Establecimiento del canon de arrendamiento y depósito de garantía (2 meses de garantía + 1 de adelanto)." },
-      { step: "03", title: "Contrato con Cláusula de Allanamiento", desc: "Redacción de contrato notarial con cláusula de allanamiento a futuro (Ley 30201) y desalojo notarial (Ley 30933)." },
-      { step: "04", title: "Firma en Notaría y Entrega de Activo", desc: "Legalización de firmas, inventario de entrega firmado y entrega formal de llaves." },
-      { step: "05", title: "Gestión Mensual de Cobranza", desc: "Recaudación del alquiler, pago del impuesto de 1ra categoría a Sunat y atención de incidencias del inquilino." }
-    ],
-    challenges: [
-      {
-        challenge: "Inquilinos morosos que se rehúsan a desalojar el inmueble.",
-        solution: "Incorporamos siempre la cláusula de allanamiento futuro y desalojo exprés con legalización notarial obligatoria."
-      },
-      {
-        challenge: "Daños en los acabados y pisos tras el vencimiento del contrato.",
-        solution: "Exigimos inventario fotográfico notariado y retenemos el depósito de garantía hasta la liquidación de refacciones."
+        challenge: "Desconocimiento de proveedores y constructores de confianza en la zona.",
+        solution: "Red de constructores y proveedores aliados con tarifas preferenciales para nuestros propietarios."
       }
     ]
   }
@@ -556,140 +492,108 @@ export const services: Service[] = [
 
 export const agents: Agent[] = [
   {
-    id: "agent-1",
-    name: "Marco Benavides",
-    role: "Director Comercial & Bróker Principal",
+    id: "renzo-cabrera",
+    name: "Renzo Cabrera",
+    role: "Gerente de Proyectos & Asesor Senior",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
     phone: "+51 987 654 321",
-    email: "marco.benavides@vivahome.pe",
-    bio: "Marco Benavides es el Director Comercial y Bróker Principal de VivaHome, liderando las operaciones de inmuebles de lujo e inversión institucional en Lima y balnearios del sur. Con más de 12 años en el sector inmobiliario de alta gama, su gestión se fundamenta en la integridad, el rigor analítico y la construcción de relaciones comerciales de largo plazo.",
-    experience: "A lo largo de su carrera, Marco ha asesorado con éxito a fondos de inversión, familias y empresarios en la adquisición y estructuración de proyectos residenciales en San Isidro, Miraflores y Asia. Su profundo conocimiento del mercado peruano garantiza transacciones seguras y altamente rentables.",
+    email: "ventas@ecohogarinmobiliaria.pe",
+    bio: "Renzo Cabrera lidera el desarrollo y comercialización de proyectos campestres y de playa en ECO HOGAR Inmobiliaria. Con más de 10 años impulsando la democratización del acceso a terrenos en el norte del país, ha guiado a más de 800 familias hacia su lote propio.",
+    experience: "Especialista en proyectos de habilitación campestre y de playa en La Libertad con facilidades de pago directo.",
     skills: [
       {
-        title: "Liderazgo Estratégico",
-        description: "Coordina equipos de alto rendimiento fomentando transparencia, servicio al cliente y excelencia técnica en cada cierre."
+        title: "Asesoría en Financiamiento Directo",
+        description: "Planes de pago personalizados adaptados a las posibilidades de cada familia."
       },
       {
-        title: "Conocimiento del Mercado",
-        description: "Análisis continuo de oferta, demanda y plusvalía por m² en Lima Top para anticipar tendencias de revalorización."
+        title: "Desarrollo de Proyectos Sostenibles",
+        description: "Diseño y ejecución de condominios campestres con amplias áreas verdes."
       },
       {
-        title: "Negociación de Alto Nivel",
-        description: "Especialista en alinear intereses entre compradores y vendedores para alcanzar acuerdos comerciales sólidos y mutuamente beneficiosos."
-      },
-      {
-        title: "Planificación Financiera",
-        description: "Diseño de modelos de retorno de capital, estructuración crediticia con banca local y análisis de rentabilidad patrimonial."
+        title: "Atención y Guiado de Clientes",
+        description: "Organización de tours y visitas guiadas a los terrenos de Puerto Malabrigo."
       }
     ],
     career: [
       {
-        period: "2016 — 2018",
-        description: "Inició en consultoría inmobiliaria residencial en Lima, especializándose en venta de departamentos de estreno y captación de clientes de banca privada."
+        period: "2015 — 2018",
+        description: "Coordinador de ventas inmobiliarias en Trujillo y costa norte."
       },
       {
-        period: "2019 — 2021",
-        description: "Consolidó alianzas estratégicas con las principales notarías y desarrolladoras en San Isidro y Miraflores, liderando equipos comerciales."
+        period: "2019 — 2022",
+        description: "Líder de proyectos de lotización campestre en el Valle Chicama."
       },
       {
-        period: "2022 — 2024",
-        description: "Dirigió transacciones multimillonarias en preventas exclusivas y casas de playa en Asia, consolidando carteras de inversión patrimonial."
-      },
-      {
-        period: "2025 — Presente",
-        description: "Lidera la expansión de VivaHome en el mercado peruano, impulsando la digitalización de procesos y estándares de servicio VIP."
+        period: "2023 — Presente",
+        description: "Gerente de Proyectos en ECO HOGAR Inmobiliaria liderando Puerto Malabrigo y Ascope."
       }
     ]
   },
   {
-    id: "agent-2",
-    name: "Valeria Ugarte",
-    role: "Asesora Senior de Inmuebles de Lujo",
+    id: "dayana-paredes",
+    name: "Dayana Paredes",
+    role: "Asesora Especialista en Terrenos Campestres",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
     phone: "+51 981 234 567",
-    email: "valeria.ugarte@vivahome.pe",
-    bio: "Valeria Ugarte es Asesora Senior en VivaHome, especializada en residencias de diseño, penthouses y arquitectura contemporánea en Lima Top. Combina su formación en arquitectura y bienes raíces para brindar una visión estética y técnica inigualable.",
-    experience: "Más de 9 años guiando a compradores exigentes y embajadas en la elección de inmuebles con los más altos estándares de privacidad, seguridad y confort.",
+    email: "dparedes@ecohogarinmobiliaria.pe",
+    bio: "Dayana Paredes es asesora inmobiliaria senior en ECO HOGAR. Apasionada por ayudar a las familias a encontrar su refugio en la naturaleza, brinda un trato cercano, claro y transparente en cada visita.",
+    experience: "Ha asesorado con éxito la colocación de más de 400 lotes residenciales y comerciales en Ascope y Malabrigo.",
     skills: [
       {
-        title: "Curaduría Arquitectónica",
-        description: "Evaluación detallada de distribución espacial, iluminación natural y calidad de acabados nobles."
+        title: "Orientación Personalizada",
+        description: "Selección del lote que mejor se adapta a tus planes de vivienda o inversión."
       },
       {
-        title: "Atención Diplomática y VIP",
-        description: "Gestión confidencial de operaciones para directivos, diplomáticos y clientes de alto patrimonio."
+        title: "Trámites y Contratos",
+        description: "Gestión ágil y transparente de contratos de compraventa y cronogramas de pago."
       },
       {
-        title: "Home Staging & Presentación",
-        description: "Estrategias de puesta en escena para maximizar el atractivo visual y el valor percibido del inmueble."
-      },
-      {
-        title: "Saneamiento Registral",
-        description: "Revisión meticulosa de títulos de propiedad, independizaciones y licencias municipales."
+        title: "Asesoría Postventa",
+        description: "Acompañamiento continuo a los propietarios en la toma de posesión y cercado."
       }
     ],
     career: [
       {
-        period: "2017 — 2019",
-        description: "Consultora de diseño y ventas para desarrollos boutique en Barranco y Miraflores."
+        period: "2018 — 2021",
+        description: "Asesora comercial en proyectos residenciales en La Libertad."
       },
       {
-        period: "2020 — 2022",
-        description: "Especialista en inmuebles residenciales de lujo en San Isidro Golf y La Molina."
-      },
-      {
-        period: "2023 — 2024",
-        description: "Asesora premiada por mayor volumen de cierres en penthouses frente al mar en Lima."
-      },
-      {
-        period: "2025 — Presente",
-        description: "Asesora Senior en VivaHome, gestionando el portafolio más exclusivo de residencias privadas."
+        period: "2022 — Presente",
+        description: "Asesora senior en ECO HOGAR Inmobiliaria para proyectos de playa y campo."
       }
     ]
   },
   {
-    id: "agent-3",
-    name: "Diego Reyna",
-    role: "Especialista en Proyectos e Inversión",
+    id: "carlos-benites",
+    name: "Carlos Benites",
+    role: "Coordinador de Visitas & Ventas de Campo",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
     phone: "+51 993 456 789",
-    email: "diego.reyna@vivahome.pe",
-    bio: "Diego Reyna es especialista en estructuración de inversiones inmobiliarias, preventas y análisis financiero de rentabilidad en VivaHome. Su enfoque cuantitativo permite a los inversionistas maximizar el retorno de su capital con total control de riesgos.",
-    experience: "Ha asesorado en la colocación de más de 100 unidades en preventa y en la estructuración de portafolios para renta tradicional y temporal.",
+    email: "cbenites@ecohogarinmobiliaria.pe",
+    bio: "Carlos Benites coordina las visitas de campo semanales desde Trujillo y Ascope hacia Puerto Malabrigo. Con amplio conocimiento del terreno y la geografía local, se asegura de que cada visitante viva una experiencia inolvidable.",
+    experience: "Más de 5 años coordinando logística de visitas y entrega física de lotes a propietarios felices.",
     skills: [
       {
-        title: "Modelado Financiero (ROI & TIR)",
-        description: "Análisis de flujos de caja proyectados, tasas de capitalización (Cap Rate) y rentabilidad neta."
+        title: "Guiado y Logística de Tours",
+        description: "Traslado seguro y cómodo de familias desde Trujillo y puntos de encuentro."
       },
       {
-        title: "Negociación en Preventa",
-        description: "Acceso a precios preferenciales en fases iniciales de proyectos con constructoras líderes."
+        title: "Verificación de Linderos en Campo",
+        description: "Ubicación precisa de manzanas y lotes con planos técnicos y estacas."
       },
       {
-        title: "Auditoría de Desarrolladoras",
-        description: "Verificación de cartas fianza, fideicomisos y solvencia de constructoras aliadas."
-      },
-      {
-        title: "Estrategias de Salida",
-        description: "Planificación de reventa en punto óptimo del ciclo constructivo para maximizar la plusvalía."
+        title: "Atención en Módulos de Venta",
+        description: "Recepción y asesoría en el módulo de ventas de Puerto Malabrigo."
       }
     ],
     career: [
       {
-        period: "2018 — 2020",
-        description: "Analista financiero en fondos de inversión inmobiliaria residencial en Lima."
+        period: "2019 — 2022",
+        description: "Supervisor de campo en proyectos de habilitación urbana."
       },
       {
-        period: "2021 — 2023",
-        description: "Especialista en comercialización de proyectos multifamiliares en Surco y Jesús María."
-      },
-      {
-        period: "2024",
-        description: "Líder de estructuración de compras en preventa para inversionistas institucionales."
-      },
-      {
-        period: "2025 — Presente",
-        description: "Especialista Senior de Inversiones en VivaHome, coordinando alianzas con constructoras."
+        period: "2023 — Presente",
+        description: "Coordinador de Visitas en ECO HOGAR Inmobiliaria."
       }
     ]
   }
@@ -698,211 +602,211 @@ export const agents: Agent[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "test-1",
-    name: "Carlos E. Mendoza",
-    role: "Empresario - San Isidro",
+    name: "Familia Morales Saldaña",
+    role: "Propietarios en Puerto Malabrigo",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Conseguir nuestro penthouse en Av. El Golf fue un proceso impecable. El equipo de VivaHome nos brindó asesoría VIP de principio a fin."
+    comment: "Compramos nuestro lote al contado por S/ 14,900 en Puerto Malabrigo. El proceso fue súper rápido, nos mostraron los papeles en regla y ya estamos planeando construir nuestra casa de playa."
   },
   {
     id: "test-2",
-    name: "Elena Rostova",
-    role: "Arquitecta de Interiores - Miraflores",
+    name: "Sra. Gladys Alayo",
+    role: "Emprendedora - Trujillo",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Como arquitecta, valoro mucho los acabados y la distribución. Encontraron exactamente el dpto frente al malecón que estaba buscando."
+    comment: "El financiamiento directo me permitió adquirir dos lotes juntos para mi familia pagando cuotas muy cómodas. La movilidad para conocer el terreno fue gratis y la atención de 10."
   },
   {
     id: "test-3",
-    name: "Juan Pablo Alarcón",
-    role: "Inversionista Inmobiliario - Surco",
+    name: "Ing. Marco Aurelio Ruiz",
+    role: "Inversionista en Terrenos",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "La rapidez en el estudio de títulos en Sunarp y la negociación directa con los propietarios hicieron que mi inversión en preventa sea sumamente rentable."
+    comment: "Puerto Malabrigo tiene un potencial turístico enorme por el surf. Adquirir lotes a este precio es una oportunidad de plusvalía insuperable en el norte."
   },
   {
     id: "test-4",
-    name: "Sofía & David Larrea",
-    role: "Compradores de Casa de Playa - Asia",
+    name: "Víctor & Paola Chávez",
+    role: "Compradores en Ascope",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Compramos nuestra casa de verano en Chocalla con total tranquilidad. Su equipo legal gestionó todo el proceso notarial sin inconvenientes."
+    comment: "Siempre soñamos con tener un pedazo de tierra en el campo para que nuestros hijos crezcan libres y con aire puro. ECO HOGAR lo hizo realidad."
   },
   {
     id: "test-5",
-    name: "Miguel Ángel Barreto",
-    role: "Gerente de Fondo Patrimonial",
+    name: "Prof. Segundo Vásquez",
+    role: "Docente - Paiján",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "VivaHome combina elegancia en la presentación con un rigor financiero excepcional. Son la mejor agencia inmobiliaria boutique en el Perú."
+    comment: "Excelente inmobiliaria, muy seria y cumplida con los plazos de habilitación del pórtico y las calles. Totalmente recomendados."
   },
   {
     id: "test-6",
-    name: "Amanda K. Wong",
-    role: "Directora Creativa - Barranco",
+    name: "Karina Zavaleta",
+    role: "Compradora en Etapa 2",
     avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Desde el recorrido virtual en 3D hasta la firma de la escritura pública en notaría, cada detalle fue llevado con profesionalismo."
+    comment: "Separé mi lote solo con S/ 500 y comencé a pagar mis cuotas mensuales sin problemas. Ya tengo la posesión de mi terreno frente al parque."
   }
 ];
 
 export const faqs: FAQItem[] = [
   {
     id: "faq-1",
-    question: "¿Cómo agendar una visita privada a un inmueble en Lima o provincias?",
-    answer: "Puedes agendar una visita presencial o tour virtual privado haciendo clic en 'Agendar Llamada', escribiéndonos directamente por WhatsApp o completando el formulario de contacto en la propiedad seleccionada."
+    question: "¿Dónde están ubicados los proyectos de ECO HOGAR Inmobiliaria?",
+    answer: "Nuestros proyectos principales se encuentran en Puerto Malabrigo (famoso por sus playas y la ola izquierda perfecta) y en el fértil Valle Chicama, provincia de Ascope, departamento de La Libertad, a solo 50 minutos de Trujillo."
   },
   {
     id: "faq-2",
-    question: "¿Qué asesoría legal e hipotecaria brindan para la compraventa?",
-    answer: "Ofrecemos asesoría legal integral que incluye el estudio de títulos en Sunarp, verificación de cargas/gravámenes, minuta de compraventa, coordinación notarial y trámite de crédito hipotecario con BCP, BBVA, Interbank o Scotiabank."
+    question: "¿Cuáles son los precios y facilidades de pago?",
+    answer: "Contamos con precios de lanzamiento al contado desde S/ 14,900. Además, ofrecemos financiamiento directo con cuotas mensuales accesibles desde S/ 350, sin bancos ni intereses usureros, solo presentando tu DNI."
   },
   {
     id: "faq-3",
-    question: "¿Manejan proyectos inmobiliarios en preventa y departamentos de estreno?",
-    answer: "Sí, contamos con alianzas exclusivas con las mejores desarrolladoras inmobiliarias para ofrecer departamentos de estreno y casas en preventa con precios preferenciales antes de su lanzamiento oficial."
+    question: "¿Cómo puedo visitar los terrenos y conocer el proyecto?",
+    answer: "Organizamos visitas guiadas gratuitas todos los sábados y domingos con movilidad de ida y vuelta incluida desde Trujillo y puntos estratégicos de Ascope. Solo debes registrarte vía WhatsApp."
   },
   {
     id: "faq-4",
-    question: "¿Cuáles son los impuestos y gastos notariales que corresponden al comprador?",
-    answer: "El comprador asume el impuesto de Alcabala (3% sobre el valor que excede las 10 UIT, salvo en primera venta de constructora) más los gastos notariales y de inscripción registral en Sunarp, los cuales desglosamos con total claridad previa a la oferta."
+    question: "¿Qué servicios y obras incluye el proyecto?",
+    answer: "Nuestros proyectos se entregan con pórtico de ingreso monumental, cerco perimétrico, calles y avenidas afirmadas, parques temáticos con juegos, áreas verdes arborizadas y factibilidad de servicios de luz y agua."
   }
 ];
 
 export const blogPosts: BlogPost[] = [
   {
     id: "blog-1",
-    title: "Consejos Clave para Encontrar el Hogar Ideal para tu Familia en Lima",
-    category: "CONSEJOS & GUÍAS",
-    date: "13 DE ABRIL, 2026",
-    readingTime: "6 Minutos",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-    summary: "Guía paso a paso para definir prioridades, evaluar plusvalía por m², asegurar solvencia crediticia y seleccionar la mejor zona residencial en Lima.",
+    title: "Por Qué Invertir en un Lote en Puerto Malabrigo es la Mejor Decisión Hoy",
+    category: "INVERSIÓN & PLUSVALÍA",
+    date: "10 DE JULIO, 2026",
+    readingTime: "5 Minutos",
+    image: "/images/banner-eco-hogar.png",
+    summary: "Descubre el crecimiento turístico y la revalorización de terrenos en Puerto Malabrigo (Chicama), uno de los destinos playeros con mayor proyección en el norte peruano.",
     author: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
+      name: "Renzo Cabrera",
+      role: "Gerente de Proyectos",
       avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop",
-      quote: "Asesorando a familias e inversionistas a tomar decisiones patrimoniales seguras y con alta plusvalía en el Perú."
+      quote: "Comprar tierra en el momento adecuado es la forma más segura de multiplicar tu patrimonio familiar."
     },
-    middleImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
+    middleImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Define tus Prioridades Familiares",
+      title: "El Atractivo Turístico y Deportivo de Puerto Malabrigo",
       paragraphs: [
-        "Antes de comenzar la búsqueda de un inmueble, es esencial alinear las necesidades presentes y futuras de tu familia. Factores como el número de habitaciones, la cercanía a colegios de prestigio, áreas recreativas y el tiempo diario de traslado son determinantes para garantizar calidad de vida a largo plazo.",
-        "En distritos consolidados de Lima como San Isidro, Miraflores o Surco, la distribución interna y la eficiencia del metraje resultan clave para equilibrar espacios sociales con la privacidad de cada miembro del hogar."
+        "Puerto Malabrigo (o Puerto Chicama) es reconocido mundialmente por albergar la ola izquierda más larga del mundo, atrayendo a miles de surfistas, turistas nacionales y extranjeros durante todo el año.",
+        "Este flujo constante de visitantes genera una creciente demanda de hospedajes, casas de playa y servicios comerciales, impulsando la plusvalía de los terrenos cercanos a la costa."
       ]
     },
     section2: {
-      title: "Establece un Presupuesto Realista y Calificación Bancaria",
+      title: "Precios Accesibles con Alto Potencial de Ganancia",
       paragraphs: [
-        "Determinar con exactitud tu capacidad de inversión evita desgastes y agiliza las negociaciones. Además del precio de lista del inmueble, considera costos anexos como el impuesto de Alcabala, gastos notariales, derechos de inscripción en Sunarp y cuotas iniciales del crédito hipotecario.",
-        "Contar con una carta de precalificación emitida por entidades como BCP, BBVA o Interbank te otorga una posición de ventaja competitiva para negociar mejores condiciones de compra."
+        "Mientras que en Lima o balnearios saturados el metro cuadrado supera los $500 dólares, en Puerto Malabrigo hoy puedes adquirir un lote de 120 m² desde S/ 14,900 al contado con ECO HOGAR Inmobiliaria.",
+        "Esto permite que familias jóvenes e inversionistas entren al mercado inmobiliario con un ticket bajo y capturen toda la valorización de las futuras etapas de habilitación urbana."
       ]
     },
     section3: {
-      title: "Investiga el Entorno y Seguridad de la Zona",
+      title: "Beneficios de Vivir Cerca al Mar y la Naturaleza",
       paragraphs: [
-        "La ubicación define más del 60% del valor futuro de tu propiedad. Evalúa el alumbrado público, cámaras de vigilancia comunales, acceso a ciclovías y la proximidad a centros de salud y parques ecológicos.",
-        "Un vecindario con baja densidad y zonificación residencial estrictamente regulada asegura que tu tranquilidad no se vea comprometida por futuras construcciones de alto impacto."
+        "Vivir o tener una casa de descanso cerca al mar mejora la calidad de vida, reduce el estrés y brinda un ambiente sano y seguro para el crecimiento de los niños, lejos de la contaminación y el caos urbano."
       ]
     },
     section4: {
-      title: "Evalúa el Retorno y la Plusvalía a Largo Plazo",
-      intro: "Elegir una residencia implica una inversión patrimonial que debe revalorizarse con el paso de los años. Ten en cuenta estas consideraciones clave:",
+      title: "Ventajas de Invertir con ECO HOGAR",
+      intro: "Por qué elegir nuestros proyectos en La Libertad:",
       items: [
-        "Opta por inmuebles en sectores con proyectos de mejora urbana e infraestructura vial consolidada.",
-        "Prioriza edificios con certificaciones sostenibles (Edge o LEED) para reducir costos de mantenimiento.",
-        "Verifica que el reglamento interno permita flexibilidad ante eventuales adaptaciones familiares.",
-        "Consulta el histórico de transacciones notariales en la misma manzana para verificar el precio por m².",
-        "Apóyate en asesores inmobiliarios colegiados para blindar la operación con total seguridad jurídica."
+        "Precios accesibles al contado desde S/ 14,900.",
+        "Financiamiento directo con tu DNI sin historial crediticio.",
+        "Pórtico de ingreso, áreas verdes y calles amplias.",
+        "Visitas guiadas gratuitas con movilidad todos los fines de semana.",
+        "Seguridad jurídica y entrega transparente de cada lote."
       ]
     }
   },
   {
     id: "blog-2",
-    title: "Innovaciones Arquitectónicas que Valorizan Tu Propiedad en Lima",
-    category: "DISEÑO & ARQUITECTURA",
-    date: "08 DE FEBRERO, 2026",
-    readingTime: "5 Minutos",
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
-    summary: "Cómo los acabados en piedra natural, cristales herméticos termoacústicos y terrazas panorámicas elevan el precio de reventa.",
+    title: "Guía Paso a Paso para Comprar tu Lote Campestre con Financiamiento Directo",
+    category: "CONSEJOS INMOBILIARIOS",
+    date: "25 DE JUNIO, 2026",
+    readingTime: "4 Minutos",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop",
+    summary: "Todo lo que necesitas saber para financiar tu terreno sin bancos, con cuotas fijas y total tranquilidad para tu economía familiar.",
     author: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
+      name: "Dayana Paredes",
+      role: "Asesora Senior",
       avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
-      quote: "El diseño funcional y los materiales nobles son el verdadero pilar de la revalorización inmobiliaria."
+      quote: "Tu sueño del lote propio no tiene por qué esperar a una aprobación bancaria."
     },
-    middleImage: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1000&auto=format&fit=crop",
+    middleImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Integración de Luz Natural y Ventilación Cruzada",
+      title: "¿Qué es el Financiamiento Directo?",
       paragraphs: [
-        "El diseño bioclimático se ha convertido en una de las mayores exigencias para compradores de alta gama en Lima. La correcta orientación de mamparas y techos de doble altura maximiza el confort térmico."
+        "El financiamiento directo es un crédito otorgado directamente por la inmobiliaria propietaria del proyecto, sin intermediación de entidades bancarias. Esto elimina trámites engorrosos, cartas de sustento de ingresos y cobro de intereses abusivos."
       ]
     },
     section2: {
-      title: "Materiales Nobles de Bajo Mantenimiento",
+      title: "Requisitos Mínimos",
       paragraphs: [
-        "El uso de cuarzo en encimeras de cocina, porcelanatos de gran formato y maderas tratadas previene el desgaste prematuro y garantiza una presentación impecable al momento de cotizar en el mercado."
+        "En ECO HOGAR Inmobiliaria creemos en la confianza. Para acceder al crédito solo necesitas tu DNI vigente, el pago de tu cuota inicial y elegir el plazo de cuotas que mejor se acomode a tu presupuesto mensual."
       ]
     },
     section3: {
-      title: "Espacios Híbridos para Home Office y Bienestar",
+      title: "Garantía y Entrega del Inmueble",
       paragraphs: [
-        "Las áreas polivalentes diseñadas para teletrabajo y zonas de relajación privada incrementan significativamente el atractivo comercial frente a familias profesionales contemporáneas."
+        "Desde la firma del contrato y el pago inicial, tienes la posesión de tu lote para comenzar a cercarlo, sembrar áreas verdes o planificar la construcción de tu casa de campo."
       ]
     },
     section4: {
-      title: "Factores Clave de Plusvalía Arquitectónica",
-      intro: "Aspectos indispensables en la arquitectura residencial moderna:",
+      title: "Pasos Simples para Comprar",
+      intro: "El proceso es muy sencillo:",
       items: [
-        "Balcones corridos con barandas de cristal templado.",
-        "Aislamiento termoacústico con ventanas de doble vidriado hermético.",
-        "Sistemas domóticos de control de iluminación y seguridad.",
-        "Luminarias LED empotradas de bajo consumo energético."
+        "1. Agenda tu visita guiada gratuita en nuestro bus de traslados.",
+        "2. Recorre el proyecto y elige la manzana y número de lote.",
+        "3. Separa tu terreno con un monto mínimo.",
+        "4. Firma tu contrato de compraventa.",
+        "5. Paga tus cuotas mensuales y disfruta de tu propiedad."
       ]
     }
   },
   {
     id: "blog-3",
-    title: "Guía Clave para Invertir en Proyectos Inmobiliarios en Preventa en Perú",
-    category: "GUÍA DE INVERSIÓN",
-    date: "28 DE ENERO, 2026",
-    readingTime: "7 Minutos",
-    image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
-    summary: "Consejos clave para asegurar precios de entrada de preventa, verificar el respaldo financiero del proyecto y maximizar la rentabilidad de alquiler.",
+    title: "Ideas y Consejos para Diseñar una Casa de Campo Económica y Sustentable",
+    category: "CONSTRUCCIÓN & ECOLOGÍA",
+    date: "15 DE MAYO, 2026",
+    readingTime: "5 Minutos",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+    summary: "Aprende cómo construir una vivienda de campo moderna, bioclimática y de bajo costo aprovechando los materiales de la zona y la energía solar.",
     author: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
+      name: "Carlos Benites",
+      role: "Coordinador de Campo",
       avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop",
-      quote: "Comprar en preventa con el socio desarrollador adecuado es la vía más sólida para generar plusvalía."
+      quote: "Una casa ecológica es más fresca, económica y hermosa para convivir con la naturaleza."
     },
-    middleImage: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1000&auto=format&fit=crop",
+    middleImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Beneficios de Entrada en Fases Iniciales",
+      title: "Orientación y Ventilación Cruzada",
       paragraphs: [
-        "Adquirir en preventa (en planos o inicio de excavación) permite acceder a descuentos de entre el 10% y el 18% respecto al valor final de entrega del departamento."
+        "En la costa norte de La Libertad el sol brilla la mayor parte del año. Diseñar ventanas amplias orientadas hacia los vientos dominantes permite mantener la casa fresca sin necesidad de aire acondicionado."
       ]
     },
     section2: {
-      title: "Auditoría de la Desarrolladora y Fideicomiso Bancario",
+      title: "Materiales Sostenibles y Accesibles",
       paragraphs: [
-        "Verifica que el proyecto cuente con el respaldo de un banco de primera línea y que los fondos de los compradores se depositen en una cuenta fiduciaria blindada."
+        "Combinar estructuras de concreto y ladrillo con techos altos de madera y terrazas exteriores con sombra de caña guayaquil o bambú crea una estética campestre muy acogedora a una fracción del costo tradicional."
       ]
     },
     section3: {
-      title: "Tipologías con Mayor Demanda de Alquiler",
+      title: "Aprovechamiento de la Energía Solar",
       paragraphs: [
-        "Los departamentos de 1 y 2 dormitorios con cochera en zonas estratégicas de San Isidro y Miraflores presentan la menor tasa de vacancia y el mayor retorno anual por renta (Cap Rate)."
+        "Instalar paneles solares y termas solares es una solución sumamente económica y autosustentable en Puerto Malabrigo y Ascope, garantizando energía limpia y agua caliente todo el año."
       ]
     },
     section4: {
-      title: "Estrategia para Inversionistas Patrimoniales",
-      intro: "Pasos recomendados para blindar tu compra en planos:",
+      title: "Espacios Clave en tu Casa de Campo",
+      intro: "Espacios que no pueden faltar:",
       items: [
-        "Solicita la copia literal de la matriz del terreno en Sunarp.",
-        "Revisa el cronograma de desembolsos vinculado al avance de obra.",
-        "Asegúrate de que el contrato contemple penalidades por retraso.",
-        "Planifica con anticipación la estrategia de amueblado y puesta en alquiler."
+        "Terraza exterior techada con zona de parrilla (BBQ) y horno a leña.",
+        "Jardín frontal con árboles frutales y plantas nativas.",
+        "Piscina o zona de juego para niños.",
+        "Espacio para huerto orgánico casero."
       ]
     }
   }

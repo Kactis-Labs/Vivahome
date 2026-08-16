@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { stats } from '../data/realEstateData';
-import { ArrowUpRight, ShieldCheck, Award } from 'lucide-react';
+import { ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const AboutStatsSection: React.FC = () => {
   return (
-    <section id="about" className="py-16 sm:py-24 bg-[#F8FAFC] text-[#0F172A] overflow-hidden">
+    <section className="py-20 sm:py-28 bg-white text-zinc-900 overflow-hidden border-t border-zinc-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Editorial Heading Section */}
+        {/* Main Brand Statement */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,83 +17,78 @@ export const AboutStatsSection: React.FC = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-4xl mb-12 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-4 sm:mb-6">
-            <Award className="w-3.5 h-3.5" />
-            <span>SOBRE NOSOTROS</span>
-          </div>
+          <span className="text-xs font-semibold text-emerald-700 uppercase tracking-wider block mb-2 sm:mb-3">
+            SOBRE ECO HOGAR INMOBILIARIA
+          </span>
           
-          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-normal text-slate-900 leading-[1.18] tracking-[-0.035em]">
-            Ayudamos a las familias e inversionistas a encontrar la propiedad ideal con asesoría transparente, confianza y respaldo integral en cada paso.
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-normal text-zinc-900 leading-[1.18] tracking-[-0.035em]">
+            Cumple el sueño del lote propio cerca al mar o campo y disfruta de la tranquilidad de la naturaleza en La Libertad.
           </h2>
-
-          <div className="mt-6 sm:mt-8 flex items-center gap-4">
-            <a 
-              href="/nosotros"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs sm:text-sm px-5 sm:px-7 py-2.5 sm:py-3 rounded-full transition-all shadow-md hover:shadow-emerald-900/20"
-            >
-              <span>Conoce Más Sobre Nosotros</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </a>
-          </div>
         </motion.div>
 
-        {/* Dual Composition Layout: Image Left + Stats Right */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center pt-6 sm:pt-8 border-t border-slate-200">
+        {/* Narrative & Stats Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
-          {/* Left Column: Team / Advisory Photo */}
+          {/* Left Column: Narrative Copy */}
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            className="lg:col-span-7 relative"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="lg:col-span-5 space-y-6"
           >
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl group">
-              <img 
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop" 
-                alt="Equipo de Asesoría Inmobiliaria VivaHome Perú" 
-                className="w-full h-[240px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
-              
-              {/* Floating Badge on Image */}
-              <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-md border border-white/50 flex items-center justify-between shadow-lg">
-                <div className="flex items-center gap-2.5 sm:gap-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold shrink-0">
-                    <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5" />
-                  </div>
-                  <div className="overflow-hidden">
-                    <h4 className="text-xs sm:text-sm font-medium text-slate-900 truncate">Agencia Inmobiliaria Registrada</h4>
-                    <p className="text-[10px] sm:text-xs font-light text-slate-600 truncate">Respaldo legal integral en Sunarp</p>
-                  </div>
-                </div>
+            <p className="text-sm sm:text-base font-light text-zinc-600 leading-relaxed">
+              En <strong className="font-semibold text-zinc-900">ECO HOGAR Inmobiliaria</strong> desarrollamos proyectos de lotes campestres y de playa en Puerto Malabrigo y Ascope. Creemos que toda familia merece tener un terreno seguro para construir su futuro con facilidades de pago directo y total respaldo legal.
+            </p>
+
+            <div className="pt-2 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                <ShieldCheck className="w-5 h-5" />
               </div>
+              <p className="text-xs sm:text-sm font-medium text-zinc-800">
+                Lotes independizados con pórtico de ingreso, áreas verdes y tours gratuitos todos los fines de semana.
+              </p>
+            </div>
+
+            <div className="pt-4">
+              <Link 
+                to="/nosotros"
+                className="inline-flex items-center gap-2 bg-[#0A2540] hover:bg-zinc-800 text-white text-xs sm:text-sm font-medium px-6 py-3 rounded-full transition-all shadow-md group"
+              >
+                <span>Conoce Nuestra Misión</span>
+                <ArrowUpRight className="w-4 h-4 text-emerald-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>
             </div>
           </motion.div>
 
-          {/* Right Column: Stacked Impact Statistics */}
-          <div className="lg:col-span-5 space-y-4 sm:space-y-6 pl-0 lg:pl-6">
+          {/* Right Column: 3 Key Metrics Cards */}
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6"
+          >
             {stats.map((stat, idx) => (
-              <motion.div 
+              <div 
                 key={idx}
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="p-4 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-[#F8FAFC] border border-zinc-200 rounded-3xl p-6 sm:p-7 flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-3xl sm:text-5xl font-medium text-slate-900 tracking-tight mb-1 sm:mb-2">
-                  {stat.value}
+                <div>
+                  <div className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0A2540] mb-2 font-mono">
+                    {stat.value}
+                  </div>
+                  <h3 className="text-xs sm:text-sm font-medium text-zinc-900 mb-2 uppercase tracking-wide">
+                    {stat.label}
+                  </h3>
                 </div>
-                <h3 className="text-sm sm:text-base font-medium text-slate-900 mb-0.5 sm:mb-1">
-                  {stat.label}
-                </h3>
-                <p className="text-xs sm:text-sm font-light text-slate-500 leading-relaxed">
+
+                <p className="text-xs font-light text-zinc-500 leading-relaxed border-t border-zinc-200 pt-3">
                   {stat.description}
                 </p>
-              </motion.div>
+              </div>
             ))}
-          </div>
+          </motion.div>
 
         </div>
 
