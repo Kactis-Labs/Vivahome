@@ -44,7 +44,7 @@ export const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[100dvh] min-h-screen flex items-center justify-center pt-20 sm:pt-24 pb-12 sm:pb-16 overflow-hidden bg-white">
+    <section className="relative min-h-[100dvh] min-h-screen flex items-center justify-center pt-28 sm:pt-32 pb-12 sm:pb-16 overflow-hidden bg-white">
       {/* Background Image: Casa Estilo Americano con Piscina */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -52,8 +52,8 @@ export const HeroSection: React.FC = () => {
           alt="Villa Club Malabrigo - Casa de Campo Estilo Americano con Piscina" 
           className="w-full h-full object-cover object-center"
         />
-        {/* Gradiente blanco suave y equilibrado (sin saturar la imagen) */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/35 to-transparent" />
+        {/* Gradiente blanco suave y equilibrado */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
       </div>
 
@@ -62,9 +62,9 @@ export const HeroSection: React.FC = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-4 sm:mt-6"
+        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-2 sm:mt-4"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           {/* Left Column: Headlines & Description */}
           <div className="lg:col-span-7 max-w-2xl">
@@ -126,22 +126,22 @@ export const HeroSection: React.FC = () => {
 
           </div>
 
-          {/* Right Column: Logo del proyecto más grande y con texto inferior */}
+          {/* Right Column: Logo del proyecto más arriba, más grande y con texto bold notorio */}
           <motion.div 
             variants={itemVariants}
-            className="lg:col-span-5 flex flex-col items-center justify-center lg:items-end"
+            className="lg:col-span-5 flex flex-col items-center justify-center lg:items-end -mt-4 sm:-mt-8 lg:-mt-12"
           >
             <motion.div 
-              animate={{ y: [-7, 7, -7] }}
+              animate={{ y: [-8, 8, -8] }}
               transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
               className="flex flex-col items-center select-none"
             >
               <img 
                 src="/images/logo-villa-club.png" 
                 alt="Villa Club Malabrigo" 
-                className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[440px] object-contain drop-shadow-2xl pointer-events-none"
+                className="w-full max-w-[340px] sm:max-w-[420px] lg:max-w-[460px] object-contain drop-shadow-2xl pointer-events-none"
               />
-              <span className="text-[11px] sm:text-xs font-extrabold tracking-[0.24em] text-[#1D4263] uppercase block mt-2.5 text-center drop-shadow-sm font-mono">
+              <span className="text-xs sm:text-sm lg:text-[15px] font-black tracking-[0.24em] text-[#1D4263] uppercase block mt-3 text-center drop-shadow font-sans">
                 PROYECTO ESTRELLA - PUERTO MALABRIGO
               </span>
             </motion.div>
