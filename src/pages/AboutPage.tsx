@@ -53,7 +53,7 @@ export const AboutPage: React.FC = () => {
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/banner-eco-hogar.png" 
+            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop" 
             alt="ECO HOGAR Inmobiliaria - Nuestra Historia" 
             className="w-full h-full object-cover object-center filter brightness-[0.4] contrast-[1.1]"
           />

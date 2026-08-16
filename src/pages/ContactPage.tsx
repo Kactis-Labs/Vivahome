@@ -41,7 +41,7 @@ export const ContactPage: React.FC = () => {
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/banner-eco-hogar.png" 
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop" 
             alt="Contáctanos en ECO HOGAR Inmobiliaria" 
             className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
           />

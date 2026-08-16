@@ -45,14 +45,14 @@ export const HeroSection: React.FC = () => {
 
   return (
     <section className="relative min-h-[100dvh] min-h-screen flex items-center justify-center pt-24 sm:pt-28 pb-12 sm:pb-16 overflow-hidden bg-[#0D2218]">
-      {/* Background Image with Organic Forest / Nature Overlay */}
+      {/* Background Image: Paisaje Natural de Campo & Costa */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/banner-eco-hogar.png" 
-          alt="Tu Lote Cerca a la Playa en Puerto Malabrigo - ECO HOGAR Inmobiliaria" 
-          className="w-full h-full object-cover object-center scale-105 filter brightness-[0.5] contrast-[1.05]"
+          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop" 
+          alt="Lotes de Campo y Playa en La Libertad - ECO HOGAR Inmobiliaria" 
+          className="w-full h-full object-cover object-center filter brightness-[0.45] contrast-[1.05]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0D2218] via-[#0D2218]/40 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0D2218] via-[#0D2218]/45 to-black/60" />
       </div>
 
       {/* Content Container with Framer Motion */}
@@ -89,7 +89,7 @@ export const HeroSection: React.FC = () => {
           className="mt-4 sm:mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6 pt-2 sm:pt-4"
         >
           
-          {/* Left Actions: Card sin marcos pesados + WhatsApp */}
+          {/* Left Actions: Card Glassmorphic sin marco + WhatsApp */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             
             {/* Borderless Glassmorphic Property Preview Card */}
@@ -98,7 +98,7 @@ export const HeroSection: React.FC = () => {
               className="bg-black/40 backdrop-blur-xl rounded-2xl p-2 sm:p-2.5 flex items-center gap-2.5 sm:gap-3 shadow-2xl hover:bg-black/60 transition-all group max-w-full"
             >
               <img 
-                src="/images/banner-eco-hogar.png" 
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=400&auto=format&fit=crop" 
                 alt="Puerto Malabrigo Lotes" 
                 className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl object-cover shrink-0"
               />
