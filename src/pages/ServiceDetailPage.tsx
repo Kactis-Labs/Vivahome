@@ -10,9 +10,7 @@ import {
   Home, 
   Key, 
   TrendingUp, 
-  Building, 
-  ShieldCheck, 
-  Users 
+  Building
 } from 'lucide-react';
 
 export const ServiceDetailPage: React.FC = () => {
@@ -27,17 +25,15 @@ export const ServiceDetailPage: React.FC = () => {
     .slice(0, 3);
 
   const whatsappMessage = encodeURIComponent(
-    `Hola, me gustaría solicitar información y asesoría sobre el servicio "${service.title}" de VivaHome.`
+    `Hola, me gustaría solicitar información y asesoría sobre el servicio "${service.title}" de KC Inmobiliaria.`
   );
 
   const getServiceIcon = (serviceId: string) => {
     switch (serviceId) {
-      case 'asesoria-compra': return <Home className="w-5 h-5" />;
-      case 'venta-comercializacion': return <Key className="w-5 h-5" />;
-      case 'tasacion-valorizacion': return <TrendingUp className="w-5 h-5" />;
-      case 'consultoria-inversiones': return <Building className="w-5 h-5" />;
-      case 'administracion-propiedades': return <ShieldCheck className="w-5 h-5" />;
-      case 'gestion-alquileres': return <Users className="w-5 h-5" />;
+      case 'venta-departamentos-estreno': return <Home className="w-5 h-5" />;
+      case 'asesoria-compra-reventa': return <Key className="w-5 h-5" />;
+      case 'tasacion-departamentos': return <TrendingUp className="w-5 h-5" />;
+      case 'creditos-hipotecarios': return <Building className="w-5 h-5" />;
       default: return <Home className="w-5 h-5" />;
     }
   };
@@ -47,13 +43,13 @@ export const ServiceDetailPage: React.FC = () => {
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-500 selection:text-white"
+      className="min-h-screen bg-white text-zinc-900 font-sans selection:bg-black selection:text-white"
     >
       {/* Navbar */}
       <Navbar />
 
-      {/* 1. HERO BANNER DINÁMICO WITH STAGGERED ENTRANCE */}
-      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0B1E17]">
+      {/* 1. HERO BANNER DINÁMICO */}
+      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0A0A0A]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -61,7 +57,7 @@ export const ServiceDetailPage: React.FC = () => {
             alt={service.title} 
             className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-black/75" />
         </div>
 
         {/* Hero Content */}
@@ -75,29 +71,29 @@ export const ServiceDetailPage: React.FC = () => {
             {service.title}
           </motion.h1>
 
-          {/* Breadcrumbs beneath title */}
+          {/* Breadcrumbs */}
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="flex items-center justify-center gap-2 text-xs font-light text-slate-300"
+            className="flex items-center justify-center gap-2 text-xs font-light text-zinc-300"
           >
             <Link to="/" className="hover:text-white transition-colors">Inicio</Link>
             <span>/</span>
             <Link to="/servicios" className="hover:text-white transition-colors">Servicios</Link>
             <span>/</span>
-            <span className="text-emerald-400 font-medium">Detalle del Servicio</span>
+            <span className="text-white font-medium">Detalle del Servicio</span>
           </motion.div>
         </div>
       </section>
 
-      {/* 2. CONTENIDO EDITORIAL A 2 COLUMNAS (Layout exacto según captura) */}
+      {/* 2. CONTENIDO EDITORIAL A 2 COLUMNAS */}
       <main className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             
-            {/* COLUMNA IZQUIERDA (Imagen + Botón "Solicitar este Servicio") */}
+            {/* COLUMNA IZQUIERDA */}
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -105,7 +101,7 @@ export const ServiceDetailPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-5 space-y-4"
             >
-              <div className="rounded-2xl overflow-hidden shadow-sm bg-slate-100">
+              <div className="rounded-2xl overflow-hidden shadow-sm bg-zinc-100">
                 <img 
                   src={service.image} 
                   alt={service.title} 
@@ -113,21 +109,21 @@ export const ServiceDetailPage: React.FC = () => {
                 />
               </div>
 
-              {/* Botón Verde Píldora "Solicitar este Servicio ↗" */}
+              {/* Botón Solicitar este Servicio */}
               <motion.a 
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 href={`https://wa.me/51987654321?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white text-xs sm:text-sm font-medium px-6 py-2.5 rounded-full transition-all shadow-sm"
+                className="inline-flex items-center gap-2 bg-black hover:bg-zinc-800 text-white text-xs sm:text-sm font-medium px-6 py-2.5 rounded-full transition-all shadow-sm"
               >
                 <span>Solicitar este Servicio</span>
                 <ArrowUpRight className="w-4 h-4" />
               </motion.a>
             </motion.div>
 
-            {/* COLUMNA DERECHA (Flujo Editorial Limpio con Scroll Reveal) */}
+            {/* COLUMNA DERECHA */}
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -138,36 +134,36 @@ export const ServiceDetailPage: React.FC = () => {
               
               {/* 1. Intro Service */}
               <div>
-                <h3 className="text-xl font-medium tracking-tight text-slate-900 mb-3">
-                  Intro Service
+                <h3 className="text-xl font-medium tracking-tight text-zinc-900 mb-3">
+                  Introducción del Servicio
                 </h3>
-                <p className="text-sm font-light text-slate-600 leading-relaxed">
+                <p className="text-sm font-light text-zinc-600 leading-relaxed">
                   {service.intro || service.description}
                 </p>
               </div>
 
               {/* 2. Our Main Goal */}
               <div>
-                <h3 className="text-xl font-medium tracking-tight text-slate-900 mb-3">
-                  Nuestro Objetivo Principal (Our Main Goal)
+                <h3 className="text-xl font-medium tracking-tight text-zinc-900 mb-3">
+                  Nuestro Objetivo Principal
                 </h3>
-                <p className="text-sm font-light text-slate-600 leading-relaxed">
-                  {service.mainGoal || "Proporcionar certeza, transparencia y asesoría personalizada de alto nivel, guiando a cada cliente hacia el éxito inmobiliario con total confianza."}
+                <p className="text-sm font-light text-zinc-600 leading-relaxed">
+                  {service.mainGoal || "Proporcionar certeza, transparencia y asesoría personalizada de alto nivel, guiando a cada cliente hacia la compra exitosa de su departamento."}
                 </p>
               </div>
 
-              {/* 3. Our Simple Process (Numbered list) */}
+              {/* 3. Our Simple Process */}
               {service.process && service.process.length > 0 && (
                 <div>
-                  <h3 className="text-xl font-medium tracking-tight text-slate-900 mb-3">
-                    Nuestro Proceso Simple (Our Simple Process)
+                  <h3 className="text-xl font-medium tracking-tight text-zinc-900 mb-3">
+                    Nuestro Proceso de Trabajo
                   </h3>
-                  <ol className="space-y-2 text-sm font-light text-slate-600 leading-relaxed list-none">
+                  <ol className="space-y-2 text-sm font-light text-zinc-600 leading-relaxed list-none">
                     {service.process.map((item, idx) => (
                       <li key={idx} className="flex items-baseline gap-2">
-                        <span className="font-normal text-slate-900">{idx + 1}.</span>
+                        <span className="font-normal text-zinc-900">{idx + 1}.</span>
                         <span>
-                          <strong className="font-medium text-slate-800">{item.title}:</strong> {item.desc}
+                          <strong className="font-medium text-zinc-800">{item.title}:</strong> {item.desc}
                         </span>
                       </li>
                     ))}
@@ -175,24 +171,24 @@ export const ServiceDetailPage: React.FC = () => {
                 </div>
               )}
 
-              {/* 4. What Was Challenge */}
+              {/* 4. Challenges */}
               <div>
-                <h3 className="text-xl font-medium tracking-tight text-slate-900 mb-3">
-                  Desafíos Habituales (What Was Challenge)
+                <h3 className="text-xl font-medium tracking-tight text-zinc-900 mb-3">
+                  Desafíos Habituales
                 </h3>
-                <p className="text-sm font-light text-slate-600 leading-relaxed">
+                <p className="text-sm font-light text-zinc-600 leading-relaxed">
                   {service.challenges && service.challenges[0]?.challenge
                     ? service.challenges[0].challenge
-                    : "Guiar a los clientes a través de un mercado inmobiliario dinámico con inventario limitado, variaciones de precios y rigurosos requerimientos legales en Sunarp."}
+                    : "Guiar a los compradores a través de un mercado inmobiliario con variaciones de precios y rigurosos requerimientos legales en Sunarp."}
                 </p>
               </div>
 
               {/* 5. Key Solutions */}
               <div>
-                <h3 className="text-xl font-medium tracking-tight text-slate-900 mb-3">
-                  Soluciones Clave (Key Solutions)
+                <h3 className="text-xl font-medium tracking-tight text-zinc-900 mb-3">
+                  Nuestras Soluciones Clave
                 </h3>
-                <p className="text-sm font-light text-slate-600 leading-relaxed">
+                <p className="text-sm font-light text-zinc-600 leading-relaxed">
                   {service.challenges && service.challenges[0]?.solution
                     ? service.challenges[0].solution
                     : "Implementamos estrategias proactivas, estudios de títulos notariales exhaustivos y asesoría personalizada para asegurar transacciones fluidas y 100% seguras."}
@@ -204,29 +200,29 @@ export const ServiceDetailPage: React.FC = () => {
           </div>
 
           {/* 3. SECCIÓN INFERIOR: OTROS SERVICIOS */}
-          <div className="mt-20 sm:mt-28 pt-12 sm:pt-16 border-t border-slate-200">
+          <div className="mt-20 sm:mt-28 pt-12 sm:pt-16 border-t border-zinc-200">
             
             {/* Header inferior */}
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12 gap-4">
               <div>
-                <span className="text-xs font-medium text-emerald-600 uppercase tracking-wider block mb-1">
+                <span className="text-xs font-semibold text-zinc-600 uppercase tracking-wider block mb-1">
                   NUESTROS SERVICIOS
                 </span>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-slate-900">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-black">
                   Soluciones Inmobiliarias Integrales
                 </h2>
               </div>
 
               <Link 
                 to="/servicios"
-                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all shadow-sm self-start sm:self-auto"
+                className="inline-flex items-center gap-2 bg-black hover:bg-zinc-800 text-white font-medium text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all shadow-sm self-start sm:self-auto"
               >
                 <span>Ver Todos los Servicios</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
             </div>
 
-            {/* Grid 3 tarjetas */}
+            {/* Grid tarjetas */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {otherServices.map((otherServ, idx) => (
                 <motion.div 
@@ -239,15 +235,15 @@ export const ServiceDetailPage: React.FC = () => {
                   className="group flex flex-col justify-between"
                 >
                   {/* Imagen con icono flotante */}
-                  <Link to={`/servicios/${otherServ.id}`} className="block relative aspect-[16/11] rounded-2xl overflow-hidden shadow-sm bg-slate-100">
+                  <Link to={`/servicios/${otherServ.id}`} className="block relative aspect-[16/11] rounded-2xl overflow-hidden shadow-sm bg-zinc-100">
                     <img 
                       src={otherServ.image} 
                       alt={otherServ.title} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                     />
                     
-                    {/* Floating Green Badge */}
-                    <div className="absolute bottom-3 right-3 w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shadow-lg group-hover:bg-emerald-600 transition-colors">
+                    {/* Floating Badge */}
+                    <div className="absolute bottom-3 right-3 w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center shadow-lg group-hover:bg-zinc-800 transition-colors">
                       {getServiceIcon(otherServ.id)}
                     </div>
                   </Link>
@@ -255,11 +251,11 @@ export const ServiceDetailPage: React.FC = () => {
                   {/* Texto inferior */}
                   <div className="pt-4">
                     <Link to={`/servicios/${otherServ.id}`}>
-                      <h3 className="text-lg font-medium text-slate-900 group-hover:text-emerald-700 transition-colors mb-1.5 leading-snug">
+                      <h3 className="text-lg font-medium text-zinc-900 group-hover:text-black transition-colors mb-1.5 leading-snug">
                         {otherServ.title}
                       </h3>
                     </Link>
-                    <p className="text-xs sm:text-sm font-light text-slate-500 leading-relaxed">
+                    <p className="text-xs sm:text-sm font-light text-zinc-600 leading-relaxed">
                       {otherServ.description}
                     </p>
                   </div>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Building2, 
   PhoneCall, 
   Menu, 
   X, 
   ChevronDown 
 } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -73,20 +73,15 @@ export const Navbar: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-[#0B1E17]/95 backdrop-blur-md py-3.5 border-b border-emerald-900/30 shadow-xl' 
-        : 'bg-gradient-to-b from-[#0B1E17]/90 via-[#0B1E17]/50 to-transparent py-5'
+        ? 'bg-[#0A0A0A]/95 backdrop-blur-md py-3 border-b border-white/10 shadow-2xl' 
+        : 'bg-gradient-to-b from-[#0A0A0A]/90 via-[#0A0A0A]/50 to-transparent py-4 sm:py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo VivaHome */}
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white shadow-lg shadow-emerald-900/30 group-hover:scale-105 transition-transform">
-              <Building2 className="w-5 h-5 stroke-[2.5]" />
-            </div>
-            <span className="text-2xl font-medium tracking-tight text-white">
-              Viva<span className="text-emerald-400 font-semibold">Home</span>
-            </span>
+          {/* Logo KC Inmobiliaria */}
+          <Link to="/" className="flex items-center group py-1" aria-label="KC Inmobiliaria Home">
+            <Logo variant="light" size="md" />
           </Link>
 
           {/* Navigation Links - Desktop */}
@@ -102,12 +97,12 @@ export const Navbar: React.FC = () => {
               <button 
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 className={`flex items-center gap-1.5 text-sm font-medium transition-colors cursor-pointer ${
-                  dropdownOpen ? 'text-emerald-400' : 'text-slate-300 hover:text-white'
+                  dropdownOpen ? 'text-white font-semibold' : 'text-zinc-300 hover:text-white'
                 }`}
                 aria-expanded={dropdownOpen}
               >
                 <span>Páginas</span>
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180 text-emerald-400' : ''}`} />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? 'rotate-180 text-white' : ''}`} />
               </button>
 
               {dropdownOpen && (
@@ -116,7 +111,7 @@ export const Navbar: React.FC = () => {
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="bg-[#0F241D] border border-emerald-900/40 rounded-2xl shadow-2xl p-6 transition-all duration-200">
+                  <div className="bg-[#141414] border border-white/15 rounded-2xl shadow-2xl p-6 transition-all duration-200">
                     <div className="grid grid-cols-2 gap-x-8 gap-y-4">
                       {/* Columna 1 */}
                       <div className="space-y-3.5">
@@ -125,7 +120,7 @@ export const Navbar: React.FC = () => {
                             key={idx}
                             to={item.href}
                             onClick={() => setDropdownOpen(false)}
-                            className="block text-sm font-medium text-slate-100 hover:text-emerald-400 transition-colors leading-tight"
+                            className="block text-sm font-medium text-zinc-300 hover:text-white transition-colors leading-tight"
                           >
                             {item.title}
                           </Link>
@@ -142,7 +137,7 @@ export const Navbar: React.FC = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                               onClick={() => setDropdownOpen(false)}
-                              className="block text-sm font-medium text-slate-100 hover:text-emerald-400 transition-colors leading-tight"
+                              className="block text-sm font-medium text-zinc-300 hover:text-white transition-colors leading-tight"
                             >
                               {item.title}
                             </a>
@@ -151,7 +146,7 @@ export const Navbar: React.FC = () => {
                               key={idx}
                               to={item.href}
                               onClick={() => setDropdownOpen(false)}
-                              className="block text-sm font-medium text-slate-100 hover:text-emerald-400 transition-colors leading-tight"
+                              className="block text-sm font-medium text-zinc-300 hover:text-white transition-colors leading-tight"
                             >
                               {item.title}
                             </Link>
@@ -165,15 +160,15 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Direct Links */}
-            <Link to="/nosotros" className="text-sm font-normal text-slate-300 hover:text-white transition-colors">
+            <Link to="/nosotros" className="text-sm font-normal text-zinc-300 hover:text-white transition-colors">
               Nosotros
             </Link>
-            <Link to="/servicios" className="text-sm font-normal text-slate-300 hover:text-white transition-colors">
+            <Link to="/servicios" className="text-sm font-normal text-zinc-300 hover:text-white transition-colors">
               Servicios
             </Link>
             <Link 
               to="/contacto"
-              className="text-sm font-normal text-slate-300 hover:text-white transition-colors"
+              className="text-sm font-normal text-zinc-300 hover:text-white transition-colors"
             >
               Contacto
             </Link>
@@ -182,10 +177,10 @@ export const Navbar: React.FC = () => {
           {/* Right Action CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="https://wa.me/51987654321?text=Hola,%20quisiera%20agendar%20una%20visita%20a%20las%20propiedades%20de%20VivaHome" 
+              href="https://wa.me/51987654321?text=Hola,%20quisiera%20agendar%20una%20visita%20para%20los%20departamentos%20de%20KC%20Inmobiliaria" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-emerald-900/30 hover:scale-105"
+              className="inline-flex items-center gap-2 bg-white hover:bg-zinc-200 text-black font-semibold text-sm px-6 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-white/10 hover:scale-105"
             >
               <PhoneCall className="w-4 h-4" />
               <span>Agendar Visita</span>
@@ -196,7 +191,7 @@ export const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-slate-300 hover:text-white p-2 rounded-lg cursor-pointer"
+              className="text-zinc-300 hover:text-white p-2 rounded-lg cursor-pointer"
               aria-label="Menú de Navegación"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -207,7 +202,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0B1E17] border-b border-emerald-900/30 px-4 pt-3 pb-6 space-y-4">
+        <div className="md:hidden bg-[#0A0A0A] border-b border-white/10 px-4 pt-3 pb-6 space-y-4">
           <div className="grid grid-cols-2 gap-3 pt-2">
             {[...pageLinksCol1, ...pageLinksCol2].map((item, idx) => (
               item.isExternal ? (
@@ -217,7 +212,7 @@ export const Navbar: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-sm font-medium text-slate-200 hover:text-emerald-400 py-1.5"
+                  className="text-sm font-medium text-zinc-200 hover:text-white py-1.5"
                 >
                   {item.title}
                 </a>
@@ -226,7 +221,7 @@ export const Navbar: React.FC = () => {
                   key={idx}
                   to={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-sm font-medium text-slate-200 hover:text-emerald-400 py-1.5"
+                  className="text-sm font-medium text-zinc-200 hover:text-white py-1.5"
                 >
                   {item.title}
                 </Link>
@@ -234,12 +229,12 @@ export const Navbar: React.FC = () => {
             ))}
           </div>
 
-          <div className="pt-3 border-t border-emerald-900/30">
+          <div className="pt-3 border-t border-white/10">
             <a 
-              href="https://wa.me/51987654321?text=Hola,%20quisiera%20agendar%20una%20visita%20a%20las%20propiedades%20de%20VivaHome" 
+              href="https://wa.me/51987654321?text=Hola,%20quisiera%20agendar%20una%20visita%20para%20los%20departamentos%20de%20KC%20Inmobiliaria" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-6 py-3 rounded-full shadow-md"
+              className="inline-flex items-center justify-center gap-2 w-full bg-white hover:bg-zinc-200 text-black font-semibold text-sm px-6 py-3 rounded-full shadow-md"
             >
               <PhoneCall className="w-4 h-4" />
               <span>Agendar Visita</span>

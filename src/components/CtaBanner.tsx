@@ -13,39 +13,39 @@ export const CtaBanner: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7 }}
-          className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-[#0B1E17] min-h-[340px] sm:min-h-[460px] flex items-center justify-center text-center p-6 sm:p-16"
+          className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-[#0A0A0A] min-h-[340px] sm:min-h-[460px] flex items-center justify-center text-center p-6 sm:p-16"
         >
-          {/* Background Image with Dark Emerald Contrast Overlay */}
+          {/* Background Image with Dark Contrast Overlay */}
           <div className="absolute inset-0 z-0">
             <img 
               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" 
-              alt="Mansión de Arquitectura Contemporánea - VivaHome" 
+              alt="Edificio Residencial Moderno - KC Inmobiliaria" 
               className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.1]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-black/75" />
           </div>
 
           {/* Banner Content */}
           <div className="relative z-10 max-w-3xl mx-auto text-white">
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1 rounded-full bg-emerald-900/50 border border-emerald-500/30 text-emerald-400 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-4 sm:mb-6">
-              <span>TU PRÓXIMA INVERSIÓN COMIENZA HOY</span>
+            <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1 rounded-full bg-white/10 border border-white/20 text-zinc-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-4 sm:mb-6">
+              <span>TU PRÓXIMO DEPARTAMENTO COMIENZA AQUÍ</span>
             </div>
 
             <h2 className="text-2xl sm:text-4xl lg:text-6xl font-medium tracking-tight text-white leading-[1.14] mb-4 sm:mb-6">
-              Explora Inmuebles Exclusivos e Invierte con Total Seguridad
+              Encuentra el Departamento Ideal con Asesoría Especializada
             </h2>
 
-            <p className="text-slate-300 text-xs sm:text-base lg:text-lg font-light leading-relaxed mb-6 sm:mb-10 max-w-xl mx-auto">
-              En VivaHome te acompañamos en todo el proceso de adquisición, desde la selección del inmueble y estudio de títulos hasta la firma notarial.
+            <p className="text-zinc-300 text-xs sm:text-base lg:text-lg font-light leading-relaxed mb-6 sm:mb-10 max-w-xl mx-auto">
+              En KC Inmobiliaria te acompañamos en cada etapa: desde la selección de la tipología ideal y el estudio de títulos hasta la entrega formal de llaves.
             </p>
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
               <a 
-                href="https://wa.me/51987654321?text=Hola,%20deseo%20asesoria%20para%20comprar%20o%20invertir%20en%20un%20inmueble%20con%20VivaHome"
+                href="https://wa.me/51987654321?text=Hola,%20deseo%20asesoria%20para%20comprar%20un%20departamento%20con%20KC%20Inmobiliaria"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all shadow-lg hover:shadow-emerald-900/30 hover:scale-105 flex items-center gap-2"
+                className="bg-white hover:bg-zinc-200 text-black font-semibold text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all shadow-lg hover:shadow-white/20 hover:scale-105 flex items-center gap-2"
               >
                 <MessageCircle className="w-4 h-4 fill-current stroke-none" />
                 <span>Hablar por WhatsApp</span>
@@ -55,7 +55,7 @@ export const CtaBanner: React.FC = () => {
                 href="/#deals"
                 className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 font-medium text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all flex items-center gap-2"
               >
-                <span>Ver Portafolio</span>
+                <span>Ver Departamentos</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>

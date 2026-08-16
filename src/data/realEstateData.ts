@@ -131,24 +131,24 @@ export interface BlogPost {
 export const featuredProperties: Property[] = [
   {
     id: "prop-1",
-    title: "Residencia Greenfield & Penthouse",
-    category: "Penthouse de Lujo",
-    price: "$850,000",
-    pricePen: "S/ 3,185,000",
-    location: "Av. El Golf, San Isidro • Lima",
+    title: "Penthouse Dúplex con Terraza Panorámica & Vista al Golf",
+    category: "Penthouse Dúplex",
+    price: "$680,000",
+    pricePen: "S/ 2,550,000",
+    location: "Av. Aurelio Miró Quesada, San Isidro • Lima",
     beds: 4,
     baths: 4,
-    sqft: 340,
+    sqft: 310,
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1400&auto=format&fit=crop",
-    badge: "OFERTA TOP",
-    description: "Extraordinario penthouse dúplex con vista directa y despejada a las canchas del Club El Golf de San Isidro. Diseñado con alturas libres de 3.10 metros, pisos de madera estructurada europea, cocina de autor con isla en cuarzo Calacatta y terraza panorámica con zona lounge y jacuzzi privado.",
+    badge: "ESTRENO EXCLUSIVO",
+    description: "Imponente penthouse dúplex de estreno con ascensor directo a ambos niveles y vista despejada al Club El Golf. Cuenta con techos altos de 2.95 m, pisos en madera estructurada europea, cocina de autor con isla central de cuarzo y una amplia terraza social con zona de parrilla y piscina privada.",
     propertyType: "Penthouse Dúplex de Lujo",
-    totalArea: "340 m²",
-    coveredArea: "295 m²",
+    totalArea: "310 m²",
+    coveredArea: "265 m²",
     parking: "3 Cocheras Paralelas Techadas + 1 Depósito",
     deliveryStatus: "Entrega Inmediata (Estreno)",
-    maintenance: "S/ 920 / mes aprox.",
-    security: "Seguridad 24/7, cámaras CCTV y ascensor directo con código privado",
+    maintenance: "S/ 850 / mes aprox.",
+    security: "Seguridad y recepción 24/7, cámaras CCTV y control biométrico",
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
@@ -157,39 +157,80 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
+      name: "Christian Kruger",
+      role: "Director Comercial & Especialista en Departamentos",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
       phone: "+51 987 654 321",
-      email: "marco.benavides@vivahome.pe"
+      email: "ventas@kcinmobiliaria.pe"
     },
     nearbyPlaces: [
-      { name: "Lima Golf Club", category: "Deportes & Exclusividad", distance: "2 min a pie" },
+      { name: "Lima Golf Club", category: "Deportes & Exclusividad", distance: "1 min a pie" },
       { name: "Bosque El Olivar", category: "Parques & Naturaleza", distance: "4 min en auto" },
       { name: "Zona Gastronómica Dasso", category: "Restaurantes & Cafés", distance: "5 min en auto" },
-      { name: "Real Plaza Salaverry", category: "Centros Comerciales", distance: "7 min en auto" }
+      { name: "Real Plaza Salaverry", category: "Centros Comerciales", distance: "6 min en auto" }
     ]
   },
   {
     id: "prop-2",
-    title: "Casa de Campo Woodland & Piscina",
-    category: "Villa Moderna",
-    price: "$1,250,000",
-    pricePen: "S/ 4,680,000",
-    location: "Rinconada de la Molina, La Molina • Lima",
-    beds: 5,
-    baths: 5,
-    sqft: 480,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
-    badge: "EXCLUSIVO",
-    description: "Imponente residencia contemporánea en el corazón de Rinconada de la Molina con microclima soleado todo el año. Cuenta con amplios jardines paisajistas, piscina temperada sin fin, zona de parrilla techada estilo BBQ Lounge, cava de vinos climatizada y suite principal con doble walk-in closet.",
-    propertyType: "Casa / Residencia Unifamiliar",
-    totalArea: "750 m² de Terreno",
-    coveredArea: "480 m² Construidos",
-    parking: "4 Estacionamientos Techados",
+    title: "Departamento Flat con Vista Frontal al Mar & Malecón",
+    category: "Departamento Flat",
+    price: "$520,000",
+    pricePen: "S/ 1,950,000",
+    location: "Malecón de la Marina, Miraflores • Lima",
+    beds: 3,
+    baths: 3,
+    sqft: 220,
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop",
+    badge: "VISTA AL MAR",
+    description: "Extraordinario departamento flat frente al océano pacífico con mamparas termoacústicas de piso a techo y terraza envolvente. Acabados premium, mármol en baños, cocina abierta equipada con electrodomésticos empotrados y dormitorio principal con walk-in closet y tina hidromasaje.",
+    propertyType: "Departamento Flat Frente al Mar",
+    totalArea: "220 m²",
+    coveredArea: "198 m²",
+    parking: "2 Cocheras Paralelas Techadas + 1 Depósito",
     deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 650 / mes (Junta de Propietarios)",
-    security: "Pórtico de Control de Acceso 24/7 y Patrullaje Privado",
+    maintenance: "S/ 720 / mes aprox.",
+    security: "Recepción de lujo 24/7 y control de accesos automatizado",
+    gallery: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?q=80&w=1200&auto=format&fit=crop"
+    ],
+    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
+    assignedAgent: {
+      name: "Karina Cisneros",
+      role: "Asesora Senior de Departamentos Residenciales",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 981 234 567",
+      email: "kcisneros@kcinmobiliaria.pe"
+    },
+    nearbyPlaces: [
+      { name: "Parque del Faro & Malecón", category: "Parques & Caminatas", distance: "1 min a pie" },
+      { name: "Larcomar", category: "Centro Comercial & Cine", distance: "5 min en auto" },
+      { name: "Club Terrazas", category: "Club Social & Tenis", distance: "4 min en auto" },
+      { name: "Av. Pardo & Restaurantes", category: "Gastronomía", distance: "3 min en auto" }
+    ]
+  },
+  {
+    id: "prop-3",
+    title: "Moderno Dúplex con Jardín Privado & Family Room",
+    category: "Departamento Dúplex",
+    price: "$445,000",
+    pricePen: "S/ 1,670,000",
+    location: "Chacarilla del Estanque, Santiago de Surco • Lima",
+    beds: 3,
+    baths: 3,
+    sqft: 245,
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
+    badge: "CON JARDÍN",
+    description: "Elegante departamento dúplex en primer piso elevado con jardín privado de 45 m² y terraza techada para reuniones. Diseño contemporáneo en calle cerrada y tranquila, sala comedor de gran amplitud, family room en segundo nivel y acabados de primera en cuarzo y porcelanatos importados.",
+    propertyType: "Departamento Dúplex con Jardín",
+    totalArea: "245 m²",
+    coveredArea: "200 m²",
+    parking: "2 Cocheras Lineales Techadas",
+    deliveryStatus: "Entrega Inmediata",
+    maintenance: "S/ 580 / mes aprox.",
+    security: "Garita de control de accesos 24 horas y cámaras perimétricas",
     gallery: [
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
@@ -198,80 +239,39 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 981 234 567",
-      email: "valeria.ugarte@vivahome.pe"
-    },
-    nearbyPlaces: [
-      { name: "Rinconada Country Club", category: "Club Social & Golf", distance: "3 min" },
-      { name: "Centro Comercial Molicentro", category: "Compras & Servicios", distance: "5 min" },
-      { name: "Colegio Newton & Roosevelt", category: "Colegios Internacionales", distance: "6 min" },
-      { name: "Wong Planicie", category: "Supermercados", distance: "4 min" }
-    ]
-  },
-  {
-    id: "prop-3",
-    title: "Departamento Oceanview & Malecón",
-    category: "Dpto. Frente al Mar",
-    price: "$980,000",
-    pricePen: "S/ 3,670,000",
-    location: "Malecón de la Reserva, Miraflores • Lima",
-    beds: 3,
-    baths: 3,
-    sqft: 280,
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop",
-    badge: "DESTACADO",
-    description: "Espectacular departamento flat con vista frontal en primera fila a la bahía de Miraflores. Amplia terraza con barandas de cristal templado, mamparas termoacústicas de piso a techo, acabados en mármol Botticino y acceso peatonal directo a los parques del malecón.",
-    propertyType: "Departamento Flat Frente al Mar",
-    totalArea: "280 m²",
-    coveredArea: "250 m²",
-    parking: "2 Cocheras Paralelas + 1 Depósito",
-    deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 880 / mes aprox.",
-    security: "Recepción de Lujo 24/7 y Sistema de Control Biométrico",
-    gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?q=80&w=1200&auto=format&fit=crop"
-    ],
-    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
-    assignedAgent: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
+      name: "Diego Cárdenas",
+      role: "Especialista en Departamentos & Inversión",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
       phone: "+51 993 456 789",
-      email: "diego.reyna@vivahome.pe"
+      email: "dcardenas@kcinmobiliaria.pe"
     },
     nearbyPlaces: [
-      { name: "Larcomar", category: "Shopping & Dining", distance: "4 min a pie" },
-      { name: "Parque del Amor", category: "Malecón & Parques", distance: "3 min a pie" },
-      { name: "Club Terrazas", category: "Deportes & Tenis", distance: "5 min a pie" },
-      { name: "JW Marriott Hotel", category: "Hoteles 5 Estrellas", distance: "4 min" }
+      { name: "Centro Comercial Chacarilla", category: "Boutiques & Cafés", distance: "3 min a pie" },
+      { name: "Colegio Santa María Marianistas", category: "Colegios", distance: "4 min en auto" },
+      { name: "Parque Bella Luz", category: "Áreas Verdes", distance: "2 min a pie" },
+      { name: "Supermercado Wong Chacarilla", category: "Compras", distance: "3 min en auto" }
     ]
   },
   {
     id: "prop-4",
-    title: "Casa de Playa Villa Mar",
-    category: "Casa de Playa",
-    price: "$690,000",
-    pricePen: "S/ 2,585,000",
-    location: "Playa Chocalla, Asia, Cañete • Lima",
-    beds: 5,
-    baths: 4,
-    sqft: 390,
+    title: "Departamento de Estreno con Balcón & Vista a Parque",
+    category: "Departamento Flat",
+    price: "$340,000",
+    pricePen: "S/ 1,275,000",
+    location: "Calle Las Moreras, San Borja • Lima",
+    beds: 3,
+    baths: 2,
+    sqft: 155,
     image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop",
-    badge: "NUEVO INGRESO",
-    description: "Moderna casa de playa en condominio privado con acceso directo a la arena y vista panorámica al océano pacífico. Diseñada en 3 niveles con piscina privada en el rooftop, área de fogatero, dormitorios con baño incorporado y cocina abierta integrada a la terraza.",
-    propertyType: "Casa de Playa en Condominio",
-    totalArea: "390 m²",
-    coveredArea: "310 m²",
-    parking: "3 Estacionamientos Privados",
-    deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 1,100 / mes (Incluye Club House y Sombrilla)",
-    security: "Vigilancia Permanente 24/7 y Garita de Control",
+    badge: "FRENTE A PARQUE",
+    description: "Departamento flat nuevo de estreno en edificio exclusivo de solo 8 familias frente a parque residencial. Distribución eficiente, balcón terraza hacia áreas verdes, cocina cerrada con tableros de granito, área de lavandería completa y cuarto y baño de servicio.",
+    propertyType: "Departamento Flat de Estreno",
+    totalArea: "155 m²",
+    coveredArea: "155 m²",
+    parking: "2 Cocheras Paralelas",
+    deliveryStatus: "Estreno (No Paga Alcabala)",
+    maintenance: "S/ 480 / mes aprox.",
+    security: "Conserjería 24/7 y ascensor directo Schindler",
     gallery: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1200&auto=format&fit=crop",
@@ -280,39 +280,39 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
+      name: "Karina Cisneros",
+      role: "Asesora Senior de Departamentos Residenciales",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
       phone: "+51 981 234 567",
-      email: "valeria.ugarte@vivahome.pe"
+      email: "kcisneros@kcinmobiliaria.pe"
     },
     nearbyPlaces: [
-      { name: "Boulevard de Asia", category: "Centros Comerciales", distance: "8 min en auto" },
-      { name: "Club House Privado", category: "Canchas de Tenis & Piscina", distance: "1 min a pie" },
-      { name: "Helipuerto Asia", category: "Transporte Privado", distance: "10 min" },
-      { name: "Restaurantes de Playa", category: "Gastronomía Marina", distance: "5 min" }
+      { name: "Parque de la Felicidad & Pentagonito", category: "Deportes al Aire Libre", distance: "3 min a pie" },
+      { name: "Real Plaza Primavera", category: "Centros Comerciales", distance: "5 min en auto" },
+      { name: "Clínica Delgado & San Borja", category: "Salud", distance: "6 min en auto" },
+      { name: "Av. San Borja Sur", category: "Conectividad", distance: "2 min en auto" }
     ]
   },
   {
     id: "prop-5",
-    title: "Residencia San Isidro El Olivar",
-    category: "Casa Arquitectónica",
-    price: "$1,650,000",
-    pricePen: "S/ 6,180,000",
-    location: "Bosque El Olivar, San Isidro • Lima",
-    beds: 5,
+    title: "Penthouse de Autor con Rooftop & Piscina Climatizada",
+    category: "Penthouse Triplex",
+    price: "$890,000",
+    pricePen: "S/ 3,340,000",
+    location: "Av. Pardo y Aliaga, San Isidro • Lima",
+    beds: 4,
     baths: 5,
-    sqft: 520,
+    sqft: 380,
     image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1400&auto=format&fit=crop",
-    badge: "PREVENTA",
-    description: "Obra maestra arquitectónica frente a los árboles centenarios del Bosque El Olivar. Fachada en concreto aparente y listones de madera teca, patio interior zen con caída de agua, ascensor hidráulico para todas las plantas y sistema integral de domótica Lutron para iluminación y climatización.",
-    propertyType: "Residencia Arquitectónica de Autor",
-    totalArea: "620 m² de Terreno",
-    coveredArea: "520 m² Construidos",
-    parking: "4 Estacionamientos Paralelos",
+    badge: "PREVENTA TOP",
+    description: "Obra de arte inmobiliaria en la zona más codiciada de San Isidro. Triplex de autor con rooftop privado, piscina sinfín con vista panorámica a la ciudad, sistema integral de domótica Lutron para climatización y sonido, y acabados en mármol Calacatta y roble importado.",
+    propertyType: "Penthouse Triplex de Autor",
+    totalArea: "380 m²",
+    coveredArea: "310 m²",
+    parking: "4 Estacionamientos Paralelos + Depósito Doble",
     deliveryStatus: "Preventa Exclusiva (Entrega Diciembre 2026)",
-    maintenance: "S/ 750 / mes aprox.",
-    security: "Circuito Cerrado de Seguridad y Blindaje Perimetral",
+    maintenance: "S/ 1,100 / mes aprox.",
+    security: "Circuito cerrado CCTV, portería blindada y ascensor privado",
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
@@ -321,39 +321,39 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
+      name: "Christian Kruger",
+      role: "Director Comercial & Especialista en Departamentos",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
       phone: "+51 987 654 321",
-      email: "marco.benavides@vivahome.pe"
+      email: "ventas@kcinmobiliaria.pe"
     },
     nearbyPlaces: [
-      { name: "Parque El Olivar", category: "Patrimonio Histórico & Áreas Verdes", distance: "0 min (Frente al inmueble)" },
-      { name: "Av. Conquistadores", category: "Boutiques & Diseño de Interiores", distance: "3 min a pie" },
-      { name: "Hotel Country Club", category: "Gastronomía & Salones", distance: "4 min en auto" },
-      { name: "Centro Financiero San Isidro", category: "Banca & Negocios", distance: "5 min en auto" }
+      { name: "Av. Conquistadores", category: "Boutiques & Diseño", distance: "2 min a pie" },
+      { name: "Parque El Olivar", category: "Patrimonio & Naturaleza", distance: "3 min a pie" },
+      { name: "Hotel Country Club", category: "Hotelería & Salones", distance: "4 min en auto" },
+      { name: "Centro Financiero Real", category: "Negocios & Banca", distance: "5 min en auto" }
     ]
   },
   {
     id: "prop-6",
-    title: "Casona Moderna Paul de Baudiez",
-    category: "Casona Dúplex",
-    price: "$780,000",
-    pricePen: "S/ 2,920,000",
-    location: "Malecón de Barranco, Barranco • Lima",
-    beds: 4,
-    baths: 3,
-    sqft: 310,
+    title: "Departamento Boutique de Estreno en Acantilado de Barranco",
+    category: "Departamento Flat",
+    price: "$295,000",
+    pricePen: "S/ 1,105,000",
+    location: "Av. Pedro de Osma, Barranco • Lima",
+    beds: 2,
+    baths: 2,
+    sqft: 110,
     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop",
-    badge: "OPORTUNIDAD",
-    description: "Casona de diseño restaurada con espíritu bohemio y acabados contemporáneos en el acantilado de Barranco. Techos de 4 metros de altura con vigas vistas, cocina gourmet industrial, balcón corrido con vista lateral al mar y taller/estudio independiente para artistas o profesionales.",
-    propertyType: "Casona Restaurada / Dúplex",
-    totalArea: "310 m²",
-    coveredArea: "275 m²",
-    parking: "2 Cocheras Techadas",
+    badge: "ALTO RENDIMIENTO",
+    description: "Departamento boutique de concepto contemporáneo con diseño de autor en el corazón cultural de Barranco. Techos de 2.80 m, cocina integrada con barra de granito, balcón con vista urbana y excelente perfil para inversión o renta temporal de alta rentabilidad.",
+    propertyType: "Departamento Flat Boutique",
+    totalArea: "110 m²",
+    coveredArea: "110 m²",
+    parking: "1 Cochera Techada + Depósito",
     deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 580 / mes",
-    security: "Monitoreo 24/7 y Alarma Centralizada",
+    maintenance: "S/ 420 / mes",
+    security: "Lobby con vigilancia 24/7 y control de accesos digital",
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
@@ -362,193 +362,141 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
+      name: "Diego Cárdenas",
+      role: "Especialista en Departamentos & Inversión",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
       phone: "+51 993 456 789",
-      email: "diego.reyna@vivahome.pe"
+      email: "dcardenas@kcinmobiliaria.pe"
     },
     nearbyPlaces: [
       { name: "Puente de los Suspiros", category: "Cultura & Turismo", distance: "4 min a pie" },
-      { name: "Malecón Paul de Baudiez", category: "Caminatas & Mar", distance: "1 min a pie" },
-      { name: "Galería Dédalo", category: "Arte & Diseño", distance: "5 min a pie" },
-      { name: "Restaurante Central & Isolina", category: "Alta Gastronomía", distance: "6 min a pie" }
+      { name: "Malecón Paul de Baudiez", category: "Caminatas & Mar", distance: "2 min a pie" },
+      { name: "Galería Dédalo & MAC", category: "Arte Contemporáneo", distance: "3 min a pie" },
+      { name: "Restaurantes de Autor", category: "Gastronomía", distance: "3 min a pie" }
     ]
   }
 ];
 
 export const stats: Stat[] = [
   {
-    value: "10+",
-    label: "Años de Experiencia",
-    description: "Brindando asesoría inmobiliaria de alto nivel con total transparencia en el Perú"
+    value: "12+",
+    label: "Años de Trayectoria",
+    description: "Especialistas líderes en comercialización y venta de departamentos en zonas residenciales exclusivas"
   },
   {
-    value: "9k+",
-    label: "Clientes Satisfechos",
-    description: "Familias e inversionistas que concretaron su propiedad ideal con nuestro respaldo"
+    value: "450+",
+    label: "Departamentos Vendidos",
+    description: "Familias e inversionistas que encontraron su departamento ideal con total seguridad jurídica"
   },
   {
-    value: "10k+",
-    label: "Propiedades Gestionadas",
-    description: "Portafolio exclusivo administrado bajo estándares de máxima seguridad jurídica"
+    value: "99%",
+    label: "Satisfacción Comprobada",
+    description: "Acompañamiento transparente desde la primera visita hasta la entrega de llaves y escrituración"
   }
 ];
 
 export const services: Service[] = [
   {
-    id: "asesoria-compra",
-    title: "Asesoría en Compra de Inmuebles",
-    description: "Te guiamos en la búsqueda y adquisición de propiedades residenciales y comerciales en Lima y playas con total seguridad jurídica.",
+    id: "venta-departamentos-estreno",
+    title: "Venta de Departamentos de Estreno & Preventa",
+    description: "Portafolio curado de proyectos residenciales de estreno y preventa con precios de lanzamiento y cero impuesto de Alcabala.",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
-    tag: "COMPRA & ASESORÍA",
-    intro: "Comprar una propiedad es una de las decisiones financieras más trascendentales. En VivaHome brindamos un acompañamiento integral y personalizado desde la definición del perfil del inmueble ideal hasta la firma de la escritura pública en notaría.",
-    mainGoal: "Garantizar que tu inversión inmobiliaria sea 100% segura, rentable y adaptada a las necesidades de vida o patrimonio de tu familia, protegiéndote ante riesgos registrales o tributarios.",
+    tag: "DEPARTAMENTOS DE ESTRENO",
+    intro: "Comprar un departamento de estreno o en preventa requiere respaldo y visión técnica. En KC Inmobiliaria seleccionamos exclusivamente proyectos con constructoras sólidas, fideicomisos bancarios de garantía y distribuciones arquitectónicas de vanguardia.",
+    mainGoal: "Garantizar que tu compra de departamento sea una inversión patrimonial segura, con acabados de primera calidad y alta plusvalía garantizada.",
     process: [
-      { step: "01", title: "Definición de Requerimientos", desc: "Analizamos tu presupuesto, zona de preferencia (San Isidro, Miraflores, La Molina, etc.) y necesidades de metraje." },
-      { step: "02", title: "Selección Curada de Opciones", desc: "Filtramos propiedades exclusivas dentro y fuera del mercado abierto con altos estándares arquitectónicos." },
-      { step: "03", title: "Visitas Privadas & Guiadas", desc: "Coordinamos recorridos presenciales con asesoría técnica en acabados, iluminación y potencial de revalorización." },
-      { step: "04", title: "Negociación Estratégica", desc: "Defendemos tus intereses económicos para lograr el mejor precio de compra y condiciones comerciales favorables." },
-      { step: "05", title: "Estudio de Títulos & Cierre Notarial", desc: "Revisión exhaustiva en Sunarp, elaboración de minuta, pago de Alcabala y firma de escritura pública." }
+      { step: "01", title: "Definición de Requerimientos", desc: "Analizamos tu perfil, zona deseada (San Isidro, Miraflores, Surco, San Borja), tipología (Flat, Dúplex, Penthouse) y presupuesto." },
+      { step: "02", title: "Selección Curada de Proyectos", desc: "Te presentamos departamentos seleccionados por metraje, orientación de luz, calidad constructiva y áreas sociales." },
+      { step: "03", title: "Visitas Técnicas & Sala de Ventas", desc: "Recorridos guiados al departamento piloto, revisión minuciosa de planos y memoria descriptiva de acabados." },
+      { step: "04", title: "Estructuración de Pago & Separación", desc: "Negociación del plan de pagos con la constructora y asesoría para aplicar a tasas preferenciales con el banco promotor." },
+      { step: "05", title: "Minuta, Entrega de Llaves & Postventa", desc: "Revisión legal de la minuta de compraventa, acta de entrega de departamento y seguimiento de garantías postventa." }
     ],
     challenges: [
       {
-        challenge: "Cargas o gravámenes ocultos en la partida registral del vendedor.",
-        solution: "Nuestro equipo legal realiza un estudio de títulos exhaustivo en Sunarp de los últimos 10 años antes de firmar cualquier arras o contrato."
+        challenge: "Incertidumbre respecto a fechas de entrega y solvencia de la constructora.",
+        solution: "Filtramos únicamente proyectos respaldados por bancos de primera línea con cartas fianza y cuentas fiduciarias."
       },
       {
-        challenge: "Demoras y complicaciones en la calificación del crédito hipotecario bancario.",
-        solution: "Trabajamos con ejecutivos senior de BCP, BBVA, Interbank y Scotiabank para agilizar la aprobación y conseguir tasas preferenciales."
+        challenge: "Dudas sobre la distribución real de espacios al comprar en planos.",
+        solution: "Brindamos análisis arquitectónico de planos, renders a escala y visitas a proyectos previos del desarrollador."
       }
     ]
   },
   {
-    id: "venta-comercializacion",
-    title: "Venta y Comercialización Exclusiva",
-    description: "Estrategias de marketing inmobiliario digital y red de compradores calificados para vender tu propiedad al mejor valor de mercado.",
+    id: "asesoria-compra-reventa",
+    title: "Compra y Venta de Departamentos Exclusivos",
+    description: "Comercialización profesional de departamentos de segundo uso en zonas consolidadas con estudio de títulos en Sunarp.",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop",
-    tag: "VENTA & MARKETING",
-    intro: "Maximizamos el valor de venta de tu inmueble aplicando técnicas avanzadas de Home Staging, producción audiovisual 4K y segmentación de clientes con alto poder adquisitivo.",
-    mainGoal: "Lograr el cierre de venta en el menor tiempo posible, al precio óptimo de mercado y con filtros rigurosos de solvencia para los potenciales compradores.",
+    tag: "VENTA RESIDENCIAL",
+    intro: "Si buscas vender o adquirir un departamento de segundo uso, nuestro equipo garantiza una operación ágil, segura y al valor justo del mercado.",
+    mainGoal: "Cerrar transacciones transparentes con estudio de títulos registrales al 100% y compradores bancariamente calificados.",
     process: [
-      { step: "01", title: "Inspección & Valorización Comercial", desc: "Determinamos el precio justo y competitivo mediante análisis comparativo de mercado (ACM)." },
-      { step: "02", title: "Producción Audiovisual de Alto Nivel", desc: "Fotografía arquitectónica profesional, video con dron y recorridos virtuales 3D." },
-      { step: "03", title: "Campaña Multicanal Segmentada", desc: "Difusión en portales premium, redes sociales y nuestra base privada de inversionistas calificados." },
-      { step: "04", title: "Calificación y Filtro de Clientes", desc: "Verificación de capacidad crediticia antes de programar visitas privadas." },
-      { step: "05", title: "Cierre & Liquidación Notarial", desc: "Gestión de contratos, pago de impuesto a la renta de 2da categoría y entrega de llaves." }
+      { step: "01", title: "Evaluación & Estudio de Mercado", desc: "Tasación comercial y comparativa de departamentos similares vendidos recientemente en la zona." },
+      { step: "02", title: "Preparación & Fotografía Profesional", desc: "Producción fotográfica de alta resolución, video y asesoría de presentación para resaltar cada ambiente." },
+      { step: "03", title: "Difusión en Canales Premium", desc: "Publicación estratégica en plataformas especializadas y promoción directa en nuestra red de compradores activos." },
+      { step: "04", title: "Filtro de Compradores & Visitas", desc: "Verificación de capacidad económica antes de coordinar visitas privadas con cita previa." },
+      { step: "05", title: "Cierre Notarial & Firma de Escritura", desc: "Redacción de minuta, verificación de pago de tributos (Alcabala/Predial/Arbitrios) y firma notarial." }
     ],
     challenges: [
       {
-        challenge: "Propiedades estancadas en el mercado por sobreprecio o mala exposición fotográfica.",
-        solution: "Alineamos la tasación con datos reales de transacciones recientes y relanzamos la propiedad con producción fotográfica de calidad editorial."
+        challenge: "Departamentos que tardan meses en venderse por precio desfasado.",
+        solution: "Fijamos precios estratégicos basados en métricas reales de cierre y demanda activa en el sector."
       },
       {
-        challenge: "Pérdida de tiempo con compradores no calificados o sin aprobación bancaria.",
-        solution: "Exigimos carta de aprobación hipotecaria o constancia de fondos previa a la negociación formal."
+        challenge: "Trabas registrales por herencias, hipotecas pendientes o independizaciones incompletas.",
+        solution: "Nuestro equipo legal sanea la documentación antes de lanzar la propiedad al mercado."
       }
     ]
   },
   {
-    id: "tasacion-valorizacion",
-    title: "Tasación y Valorización Comercial",
-    description: "Informes periciales rigurosos y análisis comparativo de mercado para fijar precios precisos de compra, venta o hipoteca.",
+    id: "tasacion-departamentos",
+    title: "Tasación y Valorización de Departamentos",
+    description: "Informes periciales técnicos para determinar el valor comercial real por m² de tu departamento.",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop",
     tag: "VALORIZACIÓN TÉCNICA",
-    intro: "Conocer el valor real de un inmueble es fundamental antes de cualquier transacción. Elaboramos tasaciones comerciales y reglamentarias elaboradas por peritos certificados.",
-    mainGoal: "Proporcionar certeza técnica y financiera sobre el valor comercial y de liquidación de residencias, departamentos y terrenos.",
+    intro: "Conocer el valor real de un departamento es indispensable para fijar un precio competitivo de venta, solicitar financiamiento o partición patrimonial.",
+    mainGoal: "Entregar un informe técnico detallado que refleje el valor comercial, estado de conservación y potencial de revalorización.",
     process: [
-      { step: "01", title: "Recopilación Documentaria", desc: "Revisión de planos, memoria descriptiva, PU/HR de la municipalidad y partida registral." },
-      { step: "02", title: "Inspección Física In Situ", desc: "Evaluación del estado de conservación, calidad de acabados, antigüedad e infraestructura." },
-      { step: "03", title: "Análisis de Entorno y Zonificación", desc: "Estudio de accesibilidad, servicios, parámetros urbanísticos y proyectos viales cercanos." },
-      { step: "04", title: "Muestreo Comparativo de Mercado", desc: "Cruce de datos con ofertas activas y cierres notariales en la misma manzana o sector." },
-      { step: "05", title: "Emisión del Informe Pericial", desc: "Entrega del informe completo foliado con metodología de tasación y rango de valor." }
+      { step: "01", title: "Revisión Documentaria", desc: "Análisis de partida registral (Copia Literal), PU/HR municipal y planos del departamento." },
+      { step: "02", title: "Inspección Física In Situ", desc: "Verificación de acabados, estado de instalaciones eléctricas, sanitarias y áreas comunes del edificio." },
+      { step: "03", title: "Análisis de Edificio y Entorno", desc: "Evaluación de antigüedad, mantenimiento, ascensores, áreas sociales y cercanía a vías principales." },
+      { step: "04", title: "Estudio Comparativo por m²", desc: "Cruce de datos con ofertas y ventas registradas en la misma cuadra o sector urbano." },
+      { step: "05", title: "Emisión de Informe Pericial", desc: "Entrega del informe con rango de valor comercial recomendado para una venta efectiva." }
     ],
     challenges: [
       {
-        challenge: "Divergencias entre el valor de tasación bancaria y el precio de venta pactado.",
-        solution: "Presentamos informes sustentados con metodologías homologadas por el Cuerpo Técnico de Tasaciones del Perú para evitar observaciones bancarias."
+        challenge: "Sobreestimar o subvaluar el precio por m² de áreas ocupadas vs techadas.",
+        solution: "Aplicamos coeficientes técnicos estandarizados para terrazas, balcones y alícuotas de cocheras y depósitos."
       },
       {
-        challenge: "Falta de claridad en áreas comunes o porcentajes de copropiedad.",
-        solution: "Desglosamos al milímetro el área ocupada, techada y libre con su respectiva alícuota en el reglamento interno."
+        challenge: "Tasaciones bancarias bajas que truncan el crédito del comprador.",
+        solution: "Nuestros informes homologados sustentan el valor real ante los peritos de las principales entidades bancarias."
       }
     ]
   },
   {
-    id: "consultoria-inversiones",
-    title: "Consultoría en Inversiones & Preventas",
-    description: "Identificación de oportunidades en preventa y departamentos de estreno con alto potencial de plusvalía y retorno de alquiler (ROI).",
+    id: "creditos-hipotecarios",
+    title: "Asesoría en Créditos Hipotecarios & Finanzas",
+    description: "Gestión directa con los principales bancos del país para obtener la mejor tasa de interés y cuota inicial para tu departamento.",
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1000&auto=format&fit=crop",
-    tag: "INVERSIÓN PATRIMONIAL",
-    intro: "Asesoramos a fondos familiares e inversionistas particulares en la conformación de portafolios inmobiliarios resilientes y altamente rentables en Lima Top.",
-    mainGoal: "Maximizar el retorno sobre el capital invertido (Cap Rate y Plusvalía) mitigando los riesgos del ciclo inmobiliario y constructivo.",
+    tag: "FINANCIAMIENTO INMOBILIARIO",
+    intro: "Facilitamos la aprobación de tu crédito hipotecario conectándote con ejecutivos senior de BCP, BBVA, Interbank y Scotiabank.",
+    mainGoal: "Asegurar la mejor estructura financiera, tasa preferencial y agilidad en el desembolso para la compra de tu departamento.",
     process: [
-      { step: "01", title: "Diagnóstico de Perfil de Inversionista", desc: "Determinación de metas de rentabilidad por alquiler o ganancia de capital a mediano plazo." },
-      { step: "02", title: "Scouting de Proyectos en Preventa", desc: "Acceso a listas de precios 'Friends & Family' y fases iniciales de preventa de constructoras consolidadas." },
-      { step: "03", title: "Evaluación Financiera & Flujos de Caja", desc: "Modelado de rentabilidad por alquiler tradicional, temporal (Airbnb) y tasa interna de retorno (TIR)." },
-      { step: "04", title: "Estructuración Legal del Contrato", desc: "Revisión de cartas fianza, cronogramas de desembolso y penalidades por retraso de entrega." },
-      { step: "05", title: "Monitoreo y Estrategia de Salida", desc: "Acompañamiento hasta la entrega del departamento y posterior puesta en alquiler o reventa." }
+      { step: "01", title: "Evaluación del Perfil Financiero", desc: "Cálculo de capacidad de endeudamiento, cuota mensual máxima e historial crediticio." },
+      { step: "02", title: "Presentación Multibanco", desc: "Ingreso simultáneo del expediente en las mejores entidades para comparar ofertas y condiciones." },
+      { step: "03", title: "Carta de Aprobación & Elección", desc: "Selección de la entidad con menor TEA, costo financiero total y mejores beneficios de amortización." },
+      { step: "04", title: "Tasación Bancaria & Estudio Legal", desc: "Coordinación con el banco para la tasación del departamento y revisión del expediente legal." },
+      { step: "05", title: "Firma de Escritura & Desembolso", desc: "Acompañamiento en notaría para la firma del contrato de crédito hipotecario y compraventa." }
     ],
     challenges: [
       {
-        challenge: "Incertidumbre sobre la solvencia y cumplimiento de plazos de la empresa constructora.",
-        solution: "Auditamos el historial de entregas de la desarrolladora y exigimos que el proyecto cuente con fideicomiso bancario de garantía."
+        challenge: "Demoras bancarias que ponen en riesgo el plazo de arras o separación.",
+        solution: "Monitoreo diario del expediente con ejecutivos de banca exclusiva para acelerar aprobaciones en menos de 72 horas."
       },
       {
-        challenge: "Riesgo de vacancia prolongada tras la entrega del inmueble.",
-        solution: "Seleccionamos únicamente tipologías y metrajes de alta demanda de alquiler corporativo en zonas consolidadas."
-      }
-    ]
-  },
-  {
-    id: "administracion-propiedades",
-    title: "Administración Integral de Propiedades",
-    description: "Cuidado patrimonial continuo, mantenimiento preventivo, gestión de pagos y supervisión de servicios para propietarios ausentes.",
-    image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1000&auto=format&fit=crop",
-    tag: "ADMINISTRACIÓN & CUIDADO",
-    intro: "Para propietarios que residen fuera de Lima o en el extranjero, nos encargamos del cuidado integral de sus inmuebles como si fueran propios.",
-    mainGoal: "Mantener el estado óptimo de conservación y valor de tus activos inmobiliarios sin que tengas que invertir tu tiempo en gestiones operativas.",
-    process: [
-      { step: "01", title: "Inventario Detallado Inicial", desc: "Levantamiento fotográfico del estado de mobiliario, equipamiento, luminarias y servicios." },
-      { step: "02", title: "Mantenimiento Preventivo y Correctivo", desc: "Coordinación con técnicos certificados para gasfitería, electricidad, pintura y climatización." },
-      { step: "03", title: "Gestión de Servicios y Arbitrios", desc: "Pago puntual de mantenimiento del edificio, luz, agua, predial y arbitrios municipales." },
-      { step: "04", title: "Supervisión de Seguridad y Accesos", desc: "Control de llaves, visitas técnicas y activación de alarmas." },
-      { step: "05", title: "Reportes Periódicos de Estado", desc: "Envío mensual de estados de cuenta consolidados y fotografías de inspección." }
-    ],
-    challenges: [
-      {
-        challenge: "Deterioro de inmuebles desocupados por falta de ventilación y mantenimiento.",
-        solution: "Programamos visitas quincenales de inspección y limpieza profunda para conservar el inmueble en condiciones impecables."
-      },
-      {
-        challenge: "Complicaciones para pagar arbitrios e impuestos desde el exterior.",
-        solution: "Consolidamos todos los pagos municipales y tributarios en una cuenta única con rendición mensual detallada."
-      }
-    ]
-  },
-  {
-    id: "gestion-alquileres",
-    title: "Gestión y Garantía de Alquileres",
-    description: "Evaluación crediticia de inquilinos en centrales de riesgo (Infocorp/Equifax), contratos con cláusula de allanamiento futuro y cobro puntual.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop",
-    tag: "ALQUILERES SEGUROS",
-    intro: "Alquilar una propiedad de lujo requiere máxima cautela. Filtramos rigurosamente a cada postulante y redactamos contratos blindados bajo la legislación peruana vigente.",
-    mainGoal: "Asegurar un flujo mensual de ingresos sin retrasos y con total protección legal frente a contingencias de inquilinos morosos.",
-    process: [
-      { step: "01", title: "Evaluación en Centrales de Riesgo", desc: "Revisión exhaustiva en Infocorp, Sentinel, verificación laboral y antecedentes penales/judiciales." },
-      { step: "02", title: "Fijación de Renta y Condiciones", desc: "Establecimiento del canon de arrendamiento y depósito de garantía (2 meses de garantía + 1 de adelanto)." },
-      { step: "03", title: "Contrato con Cláusula de Allanamiento", desc: "Redacción de contrato notarial con cláusula de allanamiento a futuro (Ley 30201) y desalojo notarial (Ley 30933)." },
-      { step: "04", title: "Firma en Notaría y Entrega de Activo", desc: "Legalización de firmas, inventario de entrega firmado y entrega formal de llaves." },
-      { step: "05", title: "Gestión Mensual de Cobranza", desc: "Recaudación del alquiler, pago del impuesto de 1ra categoría a Sunat y atención de incidencias del inquilino." }
-    ],
-    challenges: [
-      {
-        challenge: "Inquilinos morosos que se rehúsan a desalojar el inmueble.",
-        solution: "Incorporamos siempre la cláusula de allanamiento futuro y desalojo exprés con legalización notarial obligatoria."
-      },
-      {
-        challenge: "Daños en los acabados y pisos tras el vencimiento del contrato.",
-        solution: "Exigimos inventario fotográfico notariado y retenemos el depósito de garantía hasta la liquidación de refacciones."
+        challenge: "Dificultad para sustentar ingresos de independientes o empresarios.",
+        solution: "Armado especializado de carpetas financieras con estados de cuenta, balances y sustentos tributarios sólidos."
       }
     ]
   }
@@ -557,139 +505,139 @@ export const services: Service[] = [
 export const agents: Agent[] = [
   {
     id: "agent-1",
-    name: "Marco Benavides",
-    role: "Director Comercial & Bróker Principal",
+    name: "Christian Kruger",
+    role: "Director Comercial & Especialista en Departamentos",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
     phone: "+51 987 654 321",
-    email: "marco.benavides@vivahome.pe",
-    bio: "Marco Benavides es el Director Comercial y Bróker Principal de VivaHome, liderando las operaciones de inmuebles de lujo e inversión institucional en Lima y balnearios del sur. Con más de 12 años en el sector inmobiliario de alta gama, su gestión se fundamenta en la integridad, el rigor analítico y la construcción de relaciones comerciales de largo plazo.",
-    experience: "A lo largo de su carrera, Marco ha asesorado con éxito a fondos de inversión, familias y empresarios en la adquisición y estructuración de proyectos residenciales en San Isidro, Miraflores y Asia. Su profundo conocimiento del mercado peruano garantiza transacciones seguras y altamente rentables.",
+    email: "ventas@kcinmobiliaria.pe",
+    bio: "Christian Kruger es Director Comercial en KC Inmobiliaria, con más de 12 años liderando la comercialización de departamentos de lujo, preventas y proyectos residenciales en los distritos más cotizados de Lima. Su metodología se basa en la honestidad, el análisis exhaustivo de mercado y la satisfacción total de cada comprador.",
+    experience: "Ha gestionado con éxito la venta de más de 300 unidades residenciales entre flats, dúplex y penthouses en San Isidro, Miraflores, Surco y San Borja.",
     skills: [
       {
-        title: "Liderazgo Estratégico",
-        description: "Coordina equipos de alto rendimiento fomentando transparencia, servicio al cliente y excelencia técnica en cada cierre."
+        title: "Especialización en Departamentos",
+        description: "Profundo dominio de tipologías, acabados constructivos y normativas de copropiedad en edificios residenciales."
       },
       {
-        title: "Conocimiento del Mercado",
-        description: "Análisis continuo de oferta, demanda y plusvalía por m² en Lima Top para anticipar tendencias de revalorización."
+        title: "Negociación Estratégica",
+        description: "Enfoque ganar-ganar para asegurar las mejores condiciones comerciales de compraventa."
       },
       {
-        title: "Negociación de Alto Nivel",
-        description: "Especialista en alinear intereses entre compradores y vendedores para alcanzar acuerdos comerciales sólidos y mutuamente beneficiosos."
+        title: "Seguridad Legal y Notarial",
+        description: "Acompañamiento integral en revisión de partidas en Sunarp, minutas y trámites notariales."
       },
       {
-        title: "Planificación Financiera",
-        description: "Diseño de modelos de retorno de capital, estructuración crediticia con banca local y análisis de rentabilidad patrimonial."
+        title: "Asesoría Financiera Hipotecaria",
+        description: "Conexión directa con la banca privada para financiamientos ágiles y competitivos."
       }
     ],
     career: [
       {
-        period: "2016 — 2018",
-        description: "Inició en consultoría inmobiliaria residencial en Lima, especializándose en venta de departamentos de estreno y captación de clientes de banca privada."
+        period: "2014 — 2017",
+        description: "Inició como asesor inmobiliario especializado en venta de departamentos de estreno en Lima moderna."
       },
       {
-        period: "2019 — 2021",
-        description: "Consolidó alianzas estratégicas con las principales notarías y desarrolladoras en San Isidro y Miraflores, liderando equipos comerciales."
+        period: "2018 — 2021",
+        description: "Lideró equipos comerciales para proyectos inmobiliarios boutique en Miraflores y San Isidro."
       },
       {
         period: "2022 — 2024",
-        description: "Dirigió transacciones multimillonarias en preventas exclusivas y casas de playa en Asia, consolidando carteras de inversión patrimonial."
+        description: "Consolidó alianzas estratégicas con las principales constructoras y notarías de Lima."
       },
       {
         period: "2025 — Presente",
-        description: "Lidera la expansión de VivaHome en el mercado peruano, impulsando la digitalización de procesos y estándares de servicio VIP."
+        description: "Director Comercial en KC Inmobiliaria, posicionando la marca como referente en venta de departamentos."
       }
     ]
   },
   {
     id: "agent-2",
-    name: "Valeria Ugarte",
-    role: "Asesora Senior de Inmuebles de Lujo",
+    name: "Karina Cisneros",
+    role: "Asesora Senior de Departamentos Residenciales",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
     phone: "+51 981 234 567",
-    email: "valeria.ugarte@vivahome.pe",
-    bio: "Valeria Ugarte es Asesora Senior en VivaHome, especializada en residencias de diseño, penthouses y arquitectura contemporánea en Lima Top. Combina su formación en arquitectura y bienes raíces para brindar una visión estética y técnica inigualable.",
-    experience: "Más de 9 años guiando a compradores exigentes y embajadas en la elección de inmuebles con los más altos estándares de privacidad, seguridad y confort.",
+    email: "kcisneros@kcinmobiliaria.pe",
+    bio: "Karina Cisneros es Asesora Senior en KC Inmobiliaria, especializada en departamentos familiares, flats frente a parque y unidades de estreno en Lima Top. Con un enfoque altamente empático y detallista, orienta a cada cliente para encontrar la propiedad que mejor se adapte a su estilo de vida.",
+    experience: "Más de 9 años asesorando a familias y profesionales en la selección de su primer o nuevo departamento con los mejores estándares de habitabilidad.",
     skills: [
       {
-        title: "Curaduría Arquitectónica",
-        description: "Evaluación detallada de distribución espacial, iluminación natural y calidad de acabados nobles."
+        title: "Asesoría Familiar Personalizada",
+        description: "Identificación precisa de necesidades de espacio, iluminación y servicios cercanos para cada familia."
       },
       {
-        title: "Atención Diplomática y VIP",
-        description: "Gestión confidencial de operaciones para directivos, diplomáticos y clientes de alto patrimonio."
+        title: "Evaluación de Acabados & Calidad",
+        description: "Revisión técnica de griferías, porcelanatos, tableros y sistemas termoacústicos."
       },
       {
-        title: "Home Staging & Presentación",
-        description: "Estrategias de puesta en escena para maximizar el atractivo visual y el valor percibido del inmueble."
+        title: "Gestión Notarial y Registral",
+        description: "Seguimiento riguroso de cada etapa del proceso de escrituración e inscripción en Sunarp."
       },
       {
-        title: "Saneamiento Registral",
-        description: "Revisión meticulosa de títulos de propiedad, independizaciones y licencias municipales."
+        title: "Atención Postventa",
+        description: "Soporte integral durante la recepción del departamento y coordinación de garantías con la constructora."
       }
     ],
     career: [
       {
-        period: "2017 — 2019",
-        description: "Consultora de diseño y ventas para desarrollos boutique en Barranco y Miraflores."
+        period: "2016 — 2019",
+        description: "Asesora comercial en proyectos residenciales en Surco y San Borja."
       },
       {
         period: "2020 — 2022",
-        description: "Especialista en inmuebles residenciales de lujo en San Isidro Golf y La Molina."
+        description: "Especialista en comercialización de departamentos frente a parque y de estreno."
       },
       {
         period: "2023 — 2024",
-        description: "Asesora premiada por mayor volumen de cierres en penthouses frente al mar en Lima."
+        description: "Reconocida por récord de ventas y satisfacción al cliente en Lima Top."
       },
       {
         period: "2025 — Presente",
-        description: "Asesora Senior en VivaHome, gestionando el portafolio más exclusivo de residencias privadas."
+        description: "Asesora Senior en KC Inmobiliaria, liderando la atención a compradores de departamentos residenciales."
       }
     ]
   },
   {
     id: "agent-3",
-    name: "Diego Reyna",
-    role: "Especialista en Proyectos e Inversión",
+    name: "Diego Cárdenas",
+    role: "Especialista en Departamentos & Inversión",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
     phone: "+51 993 456 789",
-    email: "diego.reyna@vivahome.pe",
-    bio: "Diego Reyna es especialista en estructuración de inversiones inmobiliarias, preventas y análisis financiero de rentabilidad en VivaHome. Su enfoque cuantitativo permite a los inversionistas maximizar el retorno de su capital con total control de riesgos.",
-    experience: "Ha asesorado en la colocación de más de 100 unidades en preventa y en la estructuración de portafolios para renta tradicional y temporal.",
+    email: "dcardenas@kcinmobiliaria.pe",
+    bio: "Diego Cárdenas es especialista en departamentos para inversión, preventas y análisis financiero de plusvalía en KC Inmobiliaria. Asesora a inversionistas en la selección de unidades de alta rentabilidad por alquiler tradicional y temporal en distritos estratégicos.",
+    experience: "Ha asesorado en la colocación de más de 120 departamentos para renta e inversión con excelentes tasas de retorno anual.",
     skills: [
       {
-        title: "Modelado Financiero (ROI & TIR)",
-        description: "Análisis de flujos de caja proyectados, tasas de capitalización (Cap Rate) y rentabilidad neta."
+        title: "Cálculo de Rentabilidad (Cap Rate)",
+        description: "Modelado financiero de ingresos por alquiler, gastos de mantenimiento e impuestos."
       },
       {
-        title: "Negociación en Preventa",
-        description: "Acceso a precios preferenciales en fases iniciales de proyectos con constructoras líderes."
+        title: "Oportunidades en Preventa",
+        description: "Acceso temprano a precios preferenciales en etapas de planos y excavación."
       },
       {
-        title: "Auditoría de Desarrolladoras",
-        description: "Verificación de cartas fianza, fideicomisos y solvencia de constructoras aliadas."
+        title: "Análisis de Demanda de Alquiler",
+        description: "Selección de tipologías y ubicaciones con menor tasa de desocupación en el mercado limeño."
       },
       {
-        title: "Estrategias de Salida",
-        description: "Planificación de reventa en punto óptimo del ciclo constructivo para maximizar la plusvalía."
+        title: "Estructuración de Salida",
+        description: "Estrategias de reventa en punto óptimo de plusvalía antes o durante la entrega del proyecto."
       }
     ],
     career: [
       {
-        period: "2018 — 2020",
-        description: "Analista financiero en fondos de inversión inmobiliaria residencial en Lima."
+        period: "2017 — 2020",
+        description: "Analista de mercado inmobiliario residencial enfocado en proyectos multifamiliares."
       },
       {
         period: "2021 — 2023",
-        description: "Especialista en comercialización de proyectos multifamiliares en Surco y Jesús María."
+        description: "Especialista en comercialización de departamentos tipo estudio y 1-2 dormitorios en Barranco y Miraflores."
       },
       {
         period: "2024",
-        description: "Líder de estructuración de compras en preventa para inversionistas institucionales."
+        description: "Asesor de fondos patrimoniales en compra por volumen de departamentos en preventa."
       },
       {
         period: "2025 — Presente",
-        description: "Especialista Senior de Inversiones en VivaHome, coordinando alianzas con constructoras."
+        description: "Especialista de Inversiones en KC Inmobiliaria, asesorando compras estratégicas de departamentos."
       }
     ]
   }
@@ -698,211 +646,211 @@ export const agents: Agent[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "test-1",
-    name: "Carlos E. Mendoza",
-    role: "Empresario - San Isidro",
+    name: "Gonzalo & Mariana Villalobos",
+    role: "Compradores en San Isidro",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Conseguir nuestro penthouse en Av. El Golf fue un proceso impecable. El equipo de VivaHome nos brindó asesoría VIP de principio a fin."
+    comment: "Comprar nuestro penthouse con KC Inmobiliaria fue una experiencia impecable. Nos guiaron en cada paso, desde la visita hasta la firma en notaría con total transparencia."
   },
   {
     id: "test-2",
-    name: "Elena Rostova",
-    role: "Arquitecta de Interiores - Miraflores",
+    name: "Patricia De La Borda",
+    role: "Propietaria en Miraflores",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Como arquitecta, valoro mucho los acabados y la distribución. Encontraron exactamente el dpto frente al malecón que estaba buscando."
+    comment: "Buscaba un departamento con vista al mar y acabados de primera. El equipo de KC Inmobiliaria entendió exactamente lo que necesitaba y negoció el mejor precio."
   },
   {
     id: "test-3",
-    name: "Juan Pablo Alarcón",
+    name: "Renzo Valdivia",
     role: "Inversionista Inmobiliario - Surco",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "La rapidez en el estudio de títulos en Sunarp y la negociación directa con los propietarios hicieron que mi inversión en preventa sea sumamente rentable."
+    comment: "He comprado 2 departamentos en preventa con la asesoría de Diego Cárdenas. La rentabilidad y la plusvalía han superado mis expectativas. 100% recomendados."
   },
   {
     id: "test-4",
-    name: "Sofía & David Larrea",
-    role: "Compradores de Casa de Playa - Asia",
+    name: "Carla Montesinos",
+    role: "Compradora en San Borja",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Compramos nuestra casa de verano en Chocalla con total tranquilidad. Su equipo legal gestionó todo el proceso notarial sin inconvenientes."
+    comment: "Encontramos el departamento frente a parque perfecto para nuestros hijos. Nos ayudaron a gestionar el crédito hipotecario con una tasa preferencial muy rápido."
   },
   {
     id: "test-5",
-    name: "Miguel Ángel Barreto",
-    role: "Gerente de Fondo Patrimonial",
+    name: "Mauricio Benza",
+    role: "Empresario - Lima",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "VivaHome combina elegancia en la presentación con un rigor financiero excepcional. Son la mejor agencia inmobiliaria boutique en el Perú."
+    comment: "KC Inmobiliaria destaca por su seriedad, conocimiento del mercado de departamentos y trato cordial. Da gusto trabajar con profesionales de este nivel."
   },
   {
     id: "test-6",
-    name: "Amanda K. Wong",
-    role: "Directora Creativa - Barranco",
+    name: "Lucía Arámbulo",
+    role: "Diseñadora de Interiores - Barranco",
     avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Desde el recorrido virtual en 3D hasta la firma de la escritura pública en notaría, cada detalle fue llevado con profesionalismo."
+    comment: "El departamento boutique que adquirí en Barranco tiene una arquitectura fantástica. El proceso de entrega fue puntual y con todos los detalles acordados."
   }
 ];
 
 export const faqs: FAQItem[] = [
   {
     id: "faq-1",
-    question: "¿Cómo agendar una visita privada a un inmueble en Lima o provincias?",
-    answer: "Puedes agendar una visita presencial o tour virtual privado haciendo clic en 'Agendar Llamada', escribiéndonos directamente por WhatsApp o completando el formulario de contacto en la propiedad seleccionada."
+    question: "¿Cómo programar una visita a un departamento de su portafolio?",
+    answer: "Puedes agendar una visita guiada escribiéndonos directamente a nuestro WhatsApp oficial (+51 987 654 321) o completando el formulario de contacto de la propiedad. Coordinamos visitas privadas los 7 días de la semana."
   },
   {
     id: "faq-2",
-    question: "¿Qué asesoría legal e hipotecaria brindan para la compraventa?",
-    answer: "Ofrecemos asesoría legal integral que incluye el estudio de títulos en Sunarp, verificación de cargas/gravámenes, minuta de compraventa, coordinación notarial y trámite de crédito hipotecario con BCP, BBVA, Interbank o Scotiabank."
+    question: "¿Qué beneficios tiene comprar un departamento de estreno versus uno de segundo uso?",
+    answer: "Los departamentos de estreno no pagan el impuesto de Alcabala (ahorro directo del 3% sobre el valor del inmueble), cuentan con acabados nuevos bajo garantía de la constructora y tienen mayor vida útil con menores costos de mantenimiento inicial."
   },
   {
     id: "faq-3",
-    question: "¿Manejan proyectos inmobiliarios en preventa y departamentos de estreno?",
-    answer: "Sí, contamos con alianzas exclusivas con las mejores desarrolladoras inmobiliarias para ofrecer departamentos de estreno y casas en preventa con precios preferenciales antes de su lanzamiento oficial."
+    question: "¿Brindan asesoría para calificar y tramitar mi crédito hipotecario?",
+    answer: "Sí, trabajamos directamente con ejecutivos hipotecarios de BCP, BBVA, Interbank y Scotiabank para ayudarte a conseguir la aprobación de tu crédito con tasas competitivas y la estructura de pago que más te convenga."
   },
   {
     id: "faq-4",
-    question: "¿Cuáles son los impuestos y gastos notariales que corresponden al comprador?",
-    answer: "El comprador asume el impuesto de Alcabala (3% sobre el valor que excede las 10 UIT, salvo en primera venta de constructora) más los gastos notariales y de inscripción registral en Sunarp, los cuales desglosamos con total claridad previa a la oferta."
+    question: "¿Qué documentos revisan para garantizar la seguridad legal del departamento?",
+    answer: "Efectuamos un estudio de títulos completo en Sunarp (Copia Literal, CRI - Certificado Registral Inmobiliario), verificamos que no existan gravámenes, embargos o hipotecas pendientes, y revisamos que los pagos de impuesto predial y arbitrios estén al día en el municipio correspondiente."
   }
 ];
 
 export const blogPosts: BlogPost[] = [
   {
     id: "blog-1",
-    title: "Consejos Clave para Encontrar el Hogar Ideal para tu Familia en Lima",
-    category: "CONSEJOS & GUÍAS",
-    date: "13 DE ABRIL, 2026",
-    readingTime: "6 Minutos",
+    title: "Guía Completa para Comprar tu Primer Departamento en Lima",
+    category: "GUÍA DE COMPRA",
+    date: "12 DE MAYO, 2026",
+    readingTime: "5 Minutos",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-    summary: "Guía paso a paso para definir prioridades, evaluar plusvalía por m², asegurar solvencia crediticia y seleccionar la mejor zona residencial en Lima.",
+    summary: "Aprende los factores fundamentales para elegir tu departamento: ubicación, orientación solar, presupuesto real, evaluación del edificio y seguridad jurídica.",
     author: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
+      name: "Christian Kruger",
+      role: "Director Comercial & Especialista en Departamentos",
       avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop",
-      quote: "Asesorando a familias e inversionistas a tomar decisiones patrimoniales seguras y con alta plusvalía en el Perú."
+      quote: "Comprar un departamento es una decisión trascendental. La clave está en asesorarse con información clara y transparente."
     },
     middleImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Define tus Prioridades Familiares",
+      title: "Define tus Necesidades de Espacio y Ubicación",
       paragraphs: [
-        "Antes de comenzar la búsqueda de un inmueble, es esencial alinear las necesidades presentes y futuras de tu familia. Factores como el número de habitaciones, la cercanía a colegios de prestigio, áreas recreativas y el tiempo diario de traslado son determinantes para garantizar calidad de vida a largo plazo.",
-        "En distritos consolidados de Lima como San Isidro, Miraflores o Surco, la distribución interna y la eficiencia del metraje resultan clave para equilibrar espacios sociales con la privacidad de cada miembro del hogar."
+        "Antes de comenzar las visitas, establece con claridad tus prioridades: número de dormitorios, necesidad de cochera, cercanía a tu centro de trabajo y acceso a parques o áreas comerciales.",
+        "En distritos como San Isidro, Miraflores, Surco o San Borja, la cercanía a vías principales y la tranquilidad de calles secundarias ofrecen un equilibrio ideal de plusvalía y confort de vida."
       ]
     },
     section2: {
-      title: "Establece un Presupuesto Realista y Calificación Bancaria",
+      title: "Calcula el Presupuesto Total y Costos de Cierre",
       paragraphs: [
-        "Determinar con exactitud tu capacidad de inversión evita desgastes y agiliza las negociaciones. Además del precio de lista del inmueble, considera costos anexos como el impuesto de Alcabala, gastos notariales, derechos de inscripción en Sunarp y cuotas iniciales del crédito hipotecario.",
-        "Contar con una carta de precalificación emitida por entidades como BCP, BBVA o Interbank te otorga una posición de ventaja competitiva para negociar mejores condiciones de compra."
+        "Además del precio del departamento, debes considerar la cuota inicial (usualmente entre 10% y 20%), los gastos notariales, los derechos de inscripción en Sunarp y, si es reventa, el impuesto de Alcabala (los departamentos de estreno están inafectos).",
+        "Tener una carta de aprobación o precalificación bancaria te dará poder de negociación frente al vendedor o constructora."
       ]
     },
     section3: {
-      title: "Investiga el Entorno y Seguridad de la Zona",
+      title: "Evalúa las Áreas Comunes y el Mantenimiento del Edificio",
       paragraphs: [
-        "La ubicación define más del 60% del valor futuro de tu propiedad. Evalúa el alumbrado público, cámaras de vigilancia comunales, acceso a ciclovías y la proximidad a centros de salud y parques ecológicos.",
-        "Un vecindario con baja densidad y zonificación residencial estrictamente regulada asegura que tu tranquilidad no se vea comprometida por futuras construcciones de alto impacto."
+        "Revisa los servicios que ofrece el edificio: ascensor, recepción 24/7, sistema de cámaras, áreas comunes como terraza o coworking, y consulta el costo estimado del mantenimiento mensual.",
+        "Un edificio bien administrado con junta de propietarios organizada protege y eleva el valor de tu departamento a lo largo del tiempo."
       ]
     },
     section4: {
-      title: "Evalúa el Retorno y la Plusvalía a Largo Plazo",
-      intro: "Elegir una residencia implica una inversión patrimonial que debe revalorizarse con el paso de los años. Ten en cuenta estas consideraciones clave:",
+      title: "Checklist Indispensable antes de Firmar",
+      intro: "Aspectos clave que en KC Inmobiliaria verificamos antes de cualquier compra:",
       items: [
-        "Opta por inmuebles en sectores con proyectos de mejora urbana e infraestructura vial consolidada.",
-        "Prioriza edificios con certificaciones sostenibles (Edge o LEED) para reducir costos de mantenimiento.",
-        "Verifica que el reglamento interno permita flexibilidad ante eventuales adaptaciones familiares.",
-        "Consulta el histórico de transacciones notariales en la misma manzana para verificar el precio por m².",
-        "Apóyate en asesores inmobiliarios colegiados para blindar la operación con total seguridad jurídica."
+        "Estudio de títulos en Sunarp (verificación de cargas y gravámenes).",
+        "Constancia de no adeudo de arbitrios y predial en la municipalidad.",
+        "Revisión minuciosa de la memoria descriptiva de acabados.",
+        "Comprobación de cocheras y depósitos independizados en partida registral.",
+        "Acompañamiento legal en la redacción y firma de la minuta en notaría."
       ]
     }
   },
   {
     id: "blog-2",
-    title: "Innovaciones Arquitectónicas que Valorizan Tu Propiedad en Lima",
-    category: "DISEÑO & ARQUITECTURA",
-    date: "08 DE FEBRERO, 2026",
-    readingTime: "5 Minutos",
+    title: "Flat vs Dúplex vs Penthouse: ¿Cuál es el Departamento Ideal para Ti?",
+    category: "CONSEJOS RESIDENCIALES",
+    date: "24 DE ABRIL, 2026",
+    readingTime: "4 Minutos",
     image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
-    summary: "Cómo los acabados en piedra natural, cristales herméticos termoacústicos y terrazas panorámicas elevan el precio de reventa.",
+    summary: "Conoce las ventajas de cada tipología de departamento y descubre cuál se adapta mejor a la dinámica de tu familia o a tu plan de inversión.",
     author: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
+      name: "Karina Cisneros",
+      role: "Asesora Senior de Departamentos Residenciales",
       avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
-      quote: "El diseño funcional y los materiales nobles son el verdadero pilar de la revalorización inmobiliaria."
+      quote: "Cada tipología responde a un estilo de vida diferente; elegir la correcta asegura confort y bienestar diario."
     },
     middleImage: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Integración de Luz Natural y Ventilación Cruzada",
+      title: "Departamento Flat: Comodidad y Accesibilidad en un Solo Nivel",
       paragraphs: [
-        "El diseño bioclimático se ha convertido en una de las mayores exigencias para compradores de alta gama en Lima. La correcta orientación de mamparas y techos de doble altura maximiza el confort térmico."
+        "Los flats son la opción más versátil y demandada del mercado. Al tener todos los ambientes en una sola planta, facilitan la convivencia diaria, la limpieza y son ideales para familias con niños pequeños o adultos mayores."
       ]
     },
     section2: {
-      title: "Materiales Nobles de Bajo Mantenimiento",
+      title: "Departamento Dúplex: Privacidad y Separación de Ambientes",
       paragraphs: [
-        "El uso de cuarzo en encimeras de cocina, porcelanatos de gran formato y maderas tratadas previene el desgaste prematuro y garantiza una presentación impecable al momento de cotizar en el mercado."
+        "El dúplex permite independizar claramente el área social (sala, comedor, cocina, terraza) en un piso del área privada de descanso (dormitorios, family room) en otro nivel, brindando sensación de casa independiente."
       ]
     },
     section3: {
-      title: "Espacios Híbridos para Home Office y Bienestar",
+      title: "Penthouse: Exclusividad, Terrazas y Vistas Panorámicas",
       paragraphs: [
-        "Las áreas polivalentes diseñadas para teletrabajo y zonas de relajación privada incrementan significativamente el atractivo comercial frente a familias profesionales contemporáneas."
+        "Ubicados en los pisos más altos del edificio, los penthouses ofrecen amplitud excepcional, terrazas privadas con zona BBQ o jacuzzi y las mejores vistas panorámicas de la ciudad."
       ]
     },
     section4: {
-      title: "Factores Clave de Plusvalía Arquitectónica",
-      intro: "Aspectos indispensables en la arquitectura residencial moderna:",
+      title: "Comparativa Rápida para tu Elección",
+      intro: "Claves para decidir la mejor opción:",
       items: [
-        "Balcones corridos con barandas de cristal templado.",
-        "Aislamiento termoacústico con ventanas de doble vidriado hermético.",
-        "Sistemas domóticos de control de iluminación y seguridad.",
-        "Luminarias LED empotradas de bajo consumo energético."
+        "Flat: Máxima practicidad, menor costo de mantenimiento, alta demanda de alquiler.",
+        "Dúplex: Mayor sensación de amplitud y privacidad entre ambientes.",
+        "Penthouse: Exclusividad, terrazas al aire libre y máxima revalorización.",
+        "En KC Inmobiliaria contamos con opciones de las tres tipologías en las mejores zonas."
       ]
     }
   },
   {
     id: "blog-3",
-    title: "Guía Clave para Invertir en Proyectos Inmobiliarios en Preventa en Perú",
-    category: "GUÍA DE INVERSIÓN",
-    date: "28 DE ENERO, 2026",
-    readingTime: "7 Minutos",
+    title: "Por Qué Invertir en Departamentos en Preventa es una Gran Estrategia",
+    category: "INVERSIÓN PATRIMONIAL",
+    date: "10 DE MARZO, 2026",
+    readingTime: "6 Minutos",
     image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
-    summary: "Consejos clave para asegurar precios de entrada de preventa, verificar el respaldo financiero del proyecto y maximizar la rentabilidad de alquiler.",
+    summary: "Descubre cómo generar una plusvalía de entre 12% y 20% comprando departamentos en planos o en fases tempranas de construcción.",
     author: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
+      name: "Diego Cárdenas",
+      role: "Especialista en Departamentos & Inversión",
       avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop",
-      quote: "Comprar en preventa con el socio desarrollador adecuado es la vía más sólida para generar plusvalía."
+      quote: "La preventa inmobiliaria permite capturar la plusvalía constructiva con esquemas de pago flexibles y seguros."
     },
     middleImage: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Beneficios de Entrada en Fases Iniciales",
+      title: "Ganancia de Capital por Plusvalía de Obra",
       paragraphs: [
-        "Adquirir en preventa (en planos o inicio de excavación) permite acceder a descuentos de entre el 10% y el 18% respecto al valor final de entrega del departamento."
+        "El precio del metro cuadrado en preventa es significativamente menor al precio de entrega final. A medida que avanza la construcción, el valor del inmueble se incrementa automáticamente generando una ganancia de capital sólida."
       ]
     },
     section2: {
-      title: "Auditoría de la Desarrolladora y Fideicomiso Bancario",
+      title: "Flexibilidad en el Pago de la Cuota Inicial",
       paragraphs: [
-        "Verifica que el proyecto cuente con el respaldo de un banco de primera línea y que los fondos de los compradores se depositen en una cuenta fiduciaria blindada."
+        "Comprar en preventa te permite fraccionar el pago de la cuota inicial en cuotas mensuales durante los 12 a 24 meses que dura la obra, sin necesidad de desembolsar todo el capital de inmediato."
       ]
     },
     section3: {
-      title: "Tipologías con Mayor Demanda de Alquiler",
+      title: "Personalización y Elección de los Mejores Departamentos",
       paragraphs: [
-        "Los departamentos de 1 y 2 dormitorios con cochera en zonas estratégicas de San Isidro y Miraflores presentan la menor tasa de vacancia y el mayor retorno anual por renta (Cap Rate)."
+        "Al entrar en fases iniciales, puedes elegir el piso de tu preferencia, la orientación hacia parque o calle, la cochera mejor ubicada e incluso solicitar pequeñas personalizaciones en los acabados."
       ]
     },
     section4: {
-      title: "Estrategia para Inversionistas Patrimoniales",
-      intro: "Pasos recomendados para blindar tu compra en planos:",
+      title: "Recomendaciones de Seguridad para Comprar en Preventa",
+      intro: "Garantías que siempre verificamos en KC Inmobiliaria:",
       items: [
-        "Solicita la copia literal de la matriz del terreno en Sunarp.",
-        "Revisa el cronograma de desembolsos vinculado al avance de obra.",
-        "Asegúrate de que el contrato contemple penalidades por retraso.",
-        "Planifica con anticipación la estrategia de amueblado y puesta en alquiler."
+        "Proyecto respaldado por banco con cuenta fiduciaria.",
+        "Licencia de edificación municipal aprobada.",
+        "Contrato con cronograma de obra y cláusula de penalidades por demora.",
+        "Asesoría técnica para seleccionar las tipologías con mayor demanda de alquiler posterior."
       ]
     }
   }
