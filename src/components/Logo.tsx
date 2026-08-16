@@ -19,12 +19,12 @@ export const Logo: React.FC<LogoProps> = ({
 
   const isLight = variant === 'light';
   const mainTextColor = isLight ? '#FFFFFF' : '#0E4F7E';
-  const subTextColor = isLight ? '#93C5FD' : '#0E4F7E';
+  const subTextColor = isLight ? '#A7F3D0' : '#1E8E5A';
 
   return (
-    <div className={`flex items-center gap-2 select-none ${className}`}>
+    <div className={`flex items-center select-none ${className}`}>
       <svg 
-        viewBox="0 0 280 90" 
+        viewBox="0 0 340 90" 
         className={`${sizeClasses[size]} w-auto transition-transform duration-300 group-hover:scale-105`}
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
@@ -83,8 +83,8 @@ export const Logo: React.FC<LogoProps> = ({
           y="72" 
           fill={subTextColor} 
           fontSize="19" 
-          fontWeight="400" 
-          letterSpacing="4.5"
+          fontWeight="500" 
+          letterSpacing="4"
           fontFamily="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
         >
           inmobiliaria
