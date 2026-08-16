@@ -44,7 +44,7 @@ export const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[100dvh] min-h-screen flex items-center justify-center pt-24 sm:pt-28 pb-12 sm:pb-16 overflow-hidden bg-white">
+    <section className="relative min-h-[100dvh] min-h-screen flex items-center justify-center pt-20 sm:pt-24 pb-12 sm:pb-16 overflow-hidden bg-white">
       {/* Background Image: Casa Estilo Americano con Piscina */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -52,9 +52,9 @@ export const HeroSection: React.FC = () => {
           alt="Villa Club Malabrigo - Casa de Campo Estilo Americano con Piscina" 
           className="w-full h-full object-cover object-center"
         />
-        {/* White Luminous Gradient Overlay (como solicitó el usuario) */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/40 sm:to-white/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/30" />
+        {/* Gradiente blanco suave y equilibrado (sin saturar la imagen) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/35 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
       </div>
 
       {/* Content Container */}
@@ -74,13 +74,13 @@ export const HeroSection: React.FC = () => {
               variants={itemVariants}
               className="mb-1 sm:mb-2"
             >
-              <span className="text-xl sm:text-2xl lg:text-3xl font-serif italic font-normal text-[#E5A020] tracking-wide">
+              <span className="text-xl sm:text-2xl lg:text-3xl font-serif italic font-normal text-[#E5A020] tracking-wide drop-shadow-sm">
                 El único proyecto con
               </span>
             </motion.div>
 
             {/* Main Title con Efecto de Escritura (Typewriter) */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#1D4263] tracking-[-0.035em] leading-[1.12] mb-4 sm:mb-6 min-h-[2.3em] font-sans">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#1D4263] tracking-[-0.035em] leading-[1.12] mb-4 sm:mb-6 min-h-[2.3em] font-sans drop-shadow-sm">
               <span>{displayedText}</span>
               <span 
                 className={`inline-block w-[3px] sm:w-[4px] h-7 sm:h-11 lg:h-14 bg-[#E5A020] ml-1.5 align-middle transition-opacity duration-300 ${
@@ -92,7 +92,7 @@ export const HeroSection: React.FC = () => {
             {/* Subtitle & Clear Highlights - Solo texto sin recuadros ni viñetas */}
             <motion.p 
               variants={itemVariants}
-              className="text-sm sm:text-base lg:text-lg text-zinc-700 font-light leading-relaxed mb-6 sm:mb-8"
+              className="text-sm sm:text-base lg:text-lg text-zinc-800 font-light leading-relaxed mb-6 sm:mb-8 drop-shadow-sm"
             >
               Tu casa de campo y playa en <strong className="font-semibold text-[#1D4263]">Villa Club Malabrigo</strong>. Lotes de <strong className="font-semibold text-[#1D4263]">252m², 300m² y 500m²</strong> a precios de preventa con <strong className="font-semibold text-[#E5A020]">Plano Americano Gratis</strong>, avance de obras semanal y financiamiento directo <strong className="font-semibold text-[#1D4263]">100% SIN INTERESES</strong>.
             </motion.p>
@@ -116,7 +116,7 @@ export const HeroSection: React.FC = () => {
               {/* Lote Preview Link */}
               <Link 
                 to="/propiedades/lote-villa-club-252"
-                className="bg-zinc-100 hover:bg-zinc-200 text-zinc-800 rounded-full px-6 py-3.5 text-xs sm:text-sm font-medium transition-colors flex items-center gap-2"
+                className="bg-white/80 hover:bg-white text-zinc-800 rounded-full px-6 py-3.5 text-xs sm:text-sm font-medium transition-colors flex items-center gap-2 shadow-sm border border-zinc-200/60 backdrop-blur-sm"
               >
                 <MapPin className="w-3.5 h-3.5 text-[#E5A020]" />
                 <span>Ver Lotes desde 252 m²</span>
@@ -126,18 +126,25 @@ export const HeroSection: React.FC = () => {
 
           </div>
 
-          {/* Right Column: Logo del proyecto flotando libremente SIN FONDO NI RECUADRO */}
+          {/* Right Column: Logo del proyecto más grande y con texto inferior */}
           <motion.div 
             variants={itemVariants}
-            className="lg:col-span-5 flex justify-center lg:justify-end"
+            className="lg:col-span-5 flex flex-col items-center justify-center lg:items-end"
           >
-            <motion.img 
-              src="/images/logo-villa-club.png" 
-              alt="Villa Club Malabrigo" 
-              animate={{ y: [-8, 8, -8] }}
+            <motion.div 
+              animate={{ y: [-7, 7, -7] }}
               transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
-              className="w-full max-w-[280px] sm:max-w-[360px] object-contain drop-shadow-xl select-none pointer-events-none"
-            />
+              className="flex flex-col items-center select-none"
+            >
+              <img 
+                src="/images/logo-villa-club.png" 
+                alt="Villa Club Malabrigo" 
+                className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[440px] object-contain drop-shadow-2xl pointer-events-none"
+              />
+              <span className="text-[11px] sm:text-xs font-extrabold tracking-[0.24em] text-[#1D4263] uppercase block mt-2.5 text-center drop-shadow-sm font-mono">
+                PROYECTO ESTRELLA - PUERTO MALABRIGO
+              </span>
+            </motion.div>
           </motion.div>
 
         </div>

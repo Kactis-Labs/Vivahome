@@ -71,15 +71,15 @@ export const Navbar: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-white/95 backdrop-blur-md py-3.5 shadow-md border-b border-zinc-100' 
-        : 'bg-white/70 backdrop-blur-md py-4 sm:py-5 border-b border-zinc-100/50'
+        ? 'bg-white/95 backdrop-blur-md py-2 shadow-sm border-b border-zinc-100' 
+        : 'bg-white/75 backdrop-blur-md py-2 sm:py-2.5 border-b border-zinc-100/40'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
           {/* Logo Golden Inmobiliaria */}
-          <Link to="/" className="flex items-center group py-1">
-            <Logo variant="dark" size="md" />
+          <Link to="/" className="flex items-center group">
+            <Logo variant="dark" size="sm" />
           </Link>
 
           {/* Navigation Links - Desktop */}
