@@ -1,63 +1,61 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, MessageCircle } from 'lucide-react';
 
 export const CtaBanner: React.FC = () => {
   return (
-    <section className="py-12 sm:py-20 bg-white overflow-hidden">
+    <section className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Architectural Panoramic Banner */}
+        {/* Banner Container: Navy with Gold Accents */}
         <motion.div 
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.7 }}
-          className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-[#0B1E17] min-h-[340px] sm:min-h-[460px] flex items-center justify-center text-center p-6 sm:p-16"
+          transition={{ duration: 0.6 }}
+          className="relative rounded-3xl overflow-hidden bg-[#1D4263] p-8 sm:p-14 lg:p-18 text-white shadow-2xl"
         >
-          {/* Background Image with Dark Emerald Contrast Overlay */}
-          <div className="absolute inset-0 z-0">
+          {/* Subtle background image */}
+          <div className="absolute inset-0 opacity-20 pointer-events-none">
             <img 
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" 
-              alt="Mansión de Arquitectura Contemporánea - VivaHome" 
-              className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.1]"
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" 
+              alt="Villa Club Malabrigo" 
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
           </div>
 
-          {/* Banner Content */}
-          <div className="relative z-10 max-w-3xl mx-auto text-white">
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1 rounded-full bg-emerald-900/50 border border-emerald-500/30 text-emerald-400 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-4 sm:mb-6">
-              <span>TU PRÓXIMA INVERSIÓN COMIENZA HOY</span>
-            </div>
+          <div className="relative z-10 max-w-3xl space-y-6">
+            <span className="text-xs font-bold text-amber-400 uppercase tracking-widest block">
+              PREVENTA DISPONIBLE • 0% INTERESES
+            </span>
 
-            <h2 className="text-2xl sm:text-4xl lg:text-6xl font-medium tracking-tight text-white leading-[1.14] mb-4 sm:mb-6">
-              Explora Inmuebles Exclusivos e Invierte con Total Seguridad
+            <h2 className="text-3xl sm:text-5xl font-medium tracking-tight text-white leading-[1.12]">
+              Tu Casa de Campo y Playa en Puerto Malabrigo te Espera
             </h2>
 
-            <p className="text-slate-300 text-xs sm:text-base lg:text-lg font-light leading-relaxed mb-6 sm:mb-10 max-w-xl mx-auto">
-              En VivaHome te acompañamos en todo el proceso de adquisición, desde la selección del inmueble y estudio de títulos hasta la firma notarial.
+            <p className="text-sm sm:text-base font-light text-zinc-200 leading-relaxed max-w-2xl">
+              Asegura hoy tu lote de <strong>252m², 300m² o 500m²</strong> en Villa Club Malabrigo con plano de arquitectura estilo americano gratis y financiamiento directo sin intereses.
             </p>
 
-            {/* Action Buttons */}
-            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            <div className="pt-4 flex flex-wrap items-center gap-4">
               <a 
-                href="https://wa.me/51987654321?text=Hola,%20deseo%20asesoria%20para%20comprar%20o%20invertir%20en%20un%20inmueble%20con%20VivaHome"
+                href="https://wa.me/51987654321?text=Hola%20Golden%20Inmobiliaria,%20quiero%20separar%20mi%20lote%20en%20preventa%20en%20Villa%20Club%20Malabrigo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all shadow-lg hover:shadow-emerald-900/30 hover:scale-105 flex items-center gap-2"
+                className="bg-[#E5A020] hover:bg-[#D97706] text-white font-semibold text-xs sm:text-sm px-8 py-3.5 rounded-full transition-all shadow-lg flex items-center gap-2 hover:scale-105"
               >
                 <MessageCircle className="w-4 h-4 fill-current stroke-none" />
-                <span>Hablar por WhatsApp</span>
+                <span>Separar Lote en Preventa por WhatsApp</span>
               </a>
 
-              <a 
-                href="/#deals"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 font-medium text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-3.5 rounded-full transition-all flex items-center gap-2"
+              <Link 
+                to="/contacto"
+                className="bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm px-6 py-3.5 rounded-full transition-colors flex items-center gap-2 border border-white/15"
               >
-                <span>Ver Portafolio</span>
-                <ArrowUpRight className="w-4 h-4" />
-              </a>
+                <span>Agendar Visita Guiada</span>
+                <ArrowUpRight className="w-4 h-4 text-amber-400" />
+              </Link>
             </div>
           </div>
 

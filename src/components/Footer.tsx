@@ -1,147 +1,151 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building2, Mail, Phone, MapPin, Send } from 'lucide-react';
+import { 
+  MapPin, 
+  Phone, 
+  Mail, 
+  MessageCircle,
+  Clock
+} from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setSubscribed(true);
-      setEmail('');
-    }
-  };
-
   return (
-    <footer className="bg-[#0B1E17] text-slate-400 border-t border-emerald-950/60 pt-16 sm:pt-20 pb-12">
+    <footer className="bg-[#1D4263] text-white pt-16 sm:pt-20 pb-12 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 sm:gap-12 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 sm:gap-12 pb-12 sm:pb-16 border-b border-white/10">
           
-          {/* Brand Col */}
-          <div className="lg:col-span-2 space-y-6">
-            <Link to="/" className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white shadow-lg shadow-emerald-900/30">
-                <Building2 className="w-5 h-5 stroke-[2.5]" />
-              </div>
-              <span className="text-2xl font-medium tracking-tight text-white">
-                Viva<span className="text-emerald-400 font-semibold">Home</span>
-              </span>
+          {/* Col 1: Brand & Bio (4 cols) */}
+          <div className="lg:col-span-4 space-y-5">
+            <Link to="/" className="inline-block py-1">
+              <Logo variant="light" size="md" />
             </Link>
 
-            <p className="text-sm font-light text-slate-400 leading-relaxed max-w-sm">
-              Guiamos a familias e inversionistas exigentes en la adquisición de residencias exclusivas y proyectos de alta plusvalía en el Perú con seguridad jurídica y atención personal.
+            <p className="text-xs sm:text-sm font-light text-zinc-300 leading-relaxed">
+              <strong>Golden Inmobiliaria</strong> desarrolla <strong>Villa Club Malabrigo</strong>, el primer y único proyecto con diseño urbanístico de Estilo Americano en Puerto Malabrigo. Terrenos de 252m², 300m² y 500m² con planos gratis y financiamiento sin intereses.
             </p>
 
-            <div className="flex items-center space-x-3 text-white">
-              <a href="#" className="w-9 h-9 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-colors" aria-label="Instagram">
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-colors" aria-label="LinkedIn">
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-colors" aria-label="Twitter">
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+            {/* Direct WhatsApp CTA */}
+            <div className="pt-2">
+              <a
+                href="https://wa.me/51987654321?text=Hola%20Golden%20Inmobiliaria,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Villa%20Club%20Malabrigo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#E5A020] hover:bg-[#D97706] text-white text-xs font-semibold transition-all shadow-md"
+              >
+                <MessageCircle className="w-4 h-4 fill-current stroke-none" />
+                <span>Atención Rápida por WhatsApp</span>
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-xs font-medium text-white uppercase tracking-wider mb-5">
-              Explora
+          {/* Col 2: Navigation Links (2 cols) */}
+          <div className="lg:col-span-2 space-y-4">
+            <h4 className="text-xs font-bold text-amber-400 uppercase tracking-widest">
+              Navegación
             </h4>
-            <ul className="space-y-3 text-sm font-light">
-              <li><Link to="/#deals" className="hover:text-emerald-400 transition-colors">Oportunidades</Link></li>
-              <li><Link to="/nosotros" className="hover:text-emerald-400 transition-colors">Sobre Nosotros</Link></li>
-              <li><Link to="/servicios" className="hover:text-emerald-400 transition-colors">Servicios Integrales</Link></li>
-              <li><Link to="/#agents" className="hover:text-emerald-400 transition-colors">Equipo de Asesores</Link></li>
-              <li><Link to="/contacto" className="hover:text-emerald-400 transition-colors">Contacto</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact Details */}
-          <div>
-            <h4 className="text-xs font-medium text-white uppercase tracking-wider mb-5">
-              Contacto Directo
-            </h4>
-            <ul className="space-y-3.5 text-sm font-light">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>Av. Víctor Andrés Belaúnde 147, Real 5, San Isidro, Lima - Perú</span>
+            <ul className="space-y-2.5 text-xs font-light text-zinc-300">
+              <li>
+                <Link to="/" className="hover:text-amber-400 transition-colors">Inicio</Link>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>+51 (01) 456-7890 / +51 987 654 321</span>
+              <li>
+                <Link to="/nosotros" className="hover:text-amber-400 transition-colors">Nosotros</Link>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>contacto@vivahome.pe</span>
+              <li>
+                <Link to="/servicios" className="hover:text-amber-400 transition-colors">Servicios</Link>
+              </li>
+              <li>
+                <Link to="/equipo" className="hover:text-amber-400 transition-colors">Equipo Comercial</Link>
+              </li>
+              <li>
+                <a href="#deals" className="hover:text-amber-400 transition-colors">Lotes Villa Club</a>
+              </li>
+              <li>
+                <a href="#blog" className="hover:text-amber-400 transition-colors">Blog & Noticias</a>
+              </li>
+              <li>
+                <Link to="/contacto" className="hover:text-amber-400 transition-colors">Contacto & Preventa</Link>
               </li>
             </ul>
           </div>
 
-          {/* Newsletter Box */}
-          <div>
-            <h4 className="text-xs font-medium text-white uppercase tracking-wider mb-5">
-              Boletín Exclusivo
+          {/* Col 3: Metrajes & Proyecto (3 cols) */}
+          <div className="lg:col-span-3 space-y-4">
+            <h4 className="text-xs font-bold text-amber-400 uppercase tracking-widest">
+              Villa Club Malabrigo
             </h4>
-            <p className="text-xs font-light text-slate-400 mb-4">
-              Recibe oportunidades fuera de mercado en Lima y playas directamente en tu correo.
-            </p>
-            {subscribed ? (
-              <div className="p-3 bg-emerald-950/80 border border-emerald-500/40 rounded-2xl text-emerald-400 text-xs font-medium text-center">
-                ✓ ¡Gracias por suscribirte a VivaHome!
-              </div>
-            ) : (
-              <form onSubmit={handleSubscribe} className="space-y-3">
-                <div className="relative">
-                  <input 
-                    type="email" 
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Ingresa tu correo electrónico"
-                    required
-                    className="w-full bg-white/5 border border-white/10 rounded-full py-2.5 pl-4 pr-10 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500"
-                  />
-                  <button 
-                    type="submit"
-                    className="absolute right-1.5 top-1.5 w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-700 transition-colors"
-                    aria-label="Suscribirse"
-                  >
-                    <Send className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-              </form>
-            )}
+            <ul className="space-y-2.5 text-xs font-light text-zinc-300">
+              <li>
+                <Link to="/propiedades/lote-villa-club-252" className="hover:text-amber-400 transition-colors">
+                  • Lotes de 252 m² en Preventa
+                </Link>
+              </li>
+              <li>
+                <Link to="/propiedades/lote-villa-club-300" className="hover:text-amber-400 transition-colors">
+                  • Lotes de 300 m² frente a Club House
+                </Link>
+              </li>
+              <li>
+                <Link to="/propiedades/lote-villa-club-500" className="hover:text-amber-400 transition-colors">
+                  • Macrolotes Quinta de 500 m²
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicios/diseno-planos-arquitectonicos" className="hover:text-amber-400 transition-colors">
+                  • Plano Americano Gratis
+                </Link>
+              </li>
+              <li>
+                <Link to="/contacto" className="hover:text-amber-400 transition-colors">
+                  • Financiamiento 100% Sin Intereses
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 4: Contact Info (3 cols) */}
+          <div className="lg:col-span-3 space-y-4">
+            <h4 className="text-xs font-bold text-amber-400 uppercase tracking-widest">
+              Atención & Ventas
+            </h4>
+            
+            <div className="space-y-3 text-xs font-light text-zinc-300">
+              <p className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <span>Villa Club Malabrigo, Puerto Malabrigo • La Libertad, Perú</span>
+              </p>
+
+              <p className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-amber-400 shrink-0" />
+                <a href="tel:+51987654321" className="hover:text-amber-400 transition-colors">
+                  +51 987 654 321 / +51 981 234 567
+                </a>
+              </p>
+
+              <p className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-amber-400 shrink-0" />
+                <a href="mailto:ventas@goldeninmobiliaria.pe" className="hover:text-amber-400 transition-colors">
+                  ventas@goldeninmobiliaria.pe
+                </a>
+              </p>
+
+              <p className="flex items-center gap-2 pt-1 text-[11px] text-zinc-400">
+                <Clock className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                <span>Lunes a Domingo: 8:00 am - 7:00 pm</span>
+              </p>
+            </div>
           </div>
 
         </div>
 
-        {/* Bottom Copyright Bar with Kacti Labs Attribution */}
-        <div className="pt-8 border-t border-emerald-950/60 flex flex-col sm:flex-row items-center justify-between text-xs font-light text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} VivaHome Inmobiliaria S.A.C. Todos los derechos reservados.</p>
-          
-          {/* Desarrollado por Kacti Labs */}
-          <div className="text-xs text-slate-400">
-            Desarrollado por{' '}
-            <a 
-              href="https://kactilabs.vercel.app/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-emerald-400 font-medium hover:underline transition-colors"
-            >
-              Kacti Labs
-            </a>
-          </div>
-
-          <div className="flex items-center space-x-6">
-            <a href="#" className="hover:text-slate-300 transition-colors">Privacidad</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">Términos</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">Aviso Legal</a>
+        {/* Bottom Copyright & Disclaimer */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-light text-zinc-400 gap-4">
+          <p>© {new Date().getFullYear()} Golden Inmobiliaria. Todos los derechos reservados.</p>
+          <div className="flex items-center gap-6">
+            <span>Puerto Malabrigo • La Libertad</span>
+            <span>RUC: 20608945123</span>
           </div>
         </div>
 
