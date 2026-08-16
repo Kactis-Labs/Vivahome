@@ -42,7 +42,7 @@ export const PropertyDetailPage: React.FC = () => {
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hola ${property.assignedAgent.name}, estoy interesado(a) en la propiedad "${property.title}" (${property.price} / ${property.location}) a través de VivaHome. Deseo agendar una visita o recibir el brochure.`
+    `Hola ${property.assignedAgent.name}, estoy interesado(a) en la propiedad "${property.title}" (${property.price} / ${property.location}) a través de Megapolys Inmobiliaria. Deseo agendar una visita o recibir el brochure.`
   );
 
   return (
@@ -323,8 +323,8 @@ export const PropertyDetailPage: React.FC = () => {
                   <h3 className="text-lg sm:text-xl font-medium tracking-tight text-slate-900">
                     Agendar Visita / Recibir Brochure
                   </h3>
-                  <p className="text-xs font-light text-slate-500 mt-1">
-                    Completa el formulario o contacta directamente con el asesor asignado a esta propiedad en VivaHome.
+                  <p className="text-xs font-normal text-slate-500 mt-1">
+                    Completa el formulario o contacta directamente con el asesor asignado a esta propiedad en Megapolys Inmobiliaria.
                   </p>
                 </div>
 
@@ -333,18 +333,18 @@ export const PropertyDetailPage: React.FC = () => {
                   <img 
                     src={property.assignedAgent.image} 
                     alt={property.assignedAgent.name} 
-                    className="w-11 h-11 sm:w-13 sm:h-13 rounded-full object-cover ring-2 ring-emerald-500 shrink-0"
+                    className="w-11 h-11 sm:w-13 sm:h-13 rounded-full object-cover ring-2 ring-[#00873D] shrink-0"
                   />
                   <div className="overflow-hidden">
-                    <h4 className="text-xs sm:text-sm font-medium text-slate-900 truncate">
+                    <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate">
                       {property.assignedAgent.name}
                     </h4>
-                    <p className="text-[11px] sm:text-xs font-light text-slate-500 truncate">
+                    <p className="text-[11px] sm:text-xs font-normal text-slate-500 truncate">
                       {property.assignedAgent.role}
                     </p>
                     <a 
                       href={`tel:${property.assignedAgent.phone.replace(/\s+/g, '')}`}
-                      className="text-[11px] sm:text-xs font-medium text-emerald-700 flex items-center gap-1 mt-0.5 hover:underline"
+                      className="text-[11px] sm:text-xs font-semibold text-[#00873D] flex items-center gap-1 mt-0.5 hover:underline"
                     >
                       <Phone className="w-3 h-3" />
                       <span>{property.assignedAgent.phone}</span>
@@ -355,11 +355,11 @@ export const PropertyDetailPage: React.FC = () => {
                 {/* Formulario */}
                 {formSubmitted ? (
                   <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-2xl text-center space-y-2">
-                    <CheckCircle2 className="w-8 h-8 text-emerald-600 mx-auto" />
-                    <h4 className="text-sm sm:text-base font-medium text-emerald-900">
+                    <CheckCircle2 className="w-8 h-8 text-[#00873D] mx-auto" />
+                    <h4 className="text-sm sm:text-base font-bold text-emerald-900">
                       ¡Solicitud Recibida!
                     </h4>
-                    <p className="text-xs font-light text-emerald-800 leading-relaxed">
+                    <p className="text-xs font-normal text-emerald-800 leading-relaxed">
                       Gracias {name || 'estimado cliente'}. Nuestro asesor te contactará por WhatsApp a la brevedad.
                     </p>
                   </div>
@@ -373,7 +373,7 @@ export const PropertyDetailPage: React.FC = () => {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Ej. Carlos Mendoza"
-                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500 focus:bg-white"
+                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#00873D] focus:bg-white"
                       />
                     </div>
 
@@ -385,7 +385,7 @@ export const PropertyDetailPage: React.FC = () => {
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         placeholder="+51 987 654 321"
-                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500 focus:bg-white"
+                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#00873D] focus:bg-white"
                       />
                     </div>
 
@@ -397,7 +397,7 @@ export const PropertyDetailPage: React.FC = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="carlos.mendoza@email.com"
-                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500 focus:bg-white"
+                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#00873D] focus:bg-white"
                       />
                     </div>
 
@@ -407,13 +407,13 @@ export const PropertyDetailPage: React.FC = () => {
                         type="date" 
                         value={visitDate}
                         onChange={(e) => setVisitDate(e.target.value)}
-                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-emerald-500 focus:bg-white"
+                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 focus:outline-none focus:border-[#00873D] focus:bg-white"
                       />
                     </div>
 
                     <button 
                       type="submit"
-                      className="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium py-2.5 sm:py-3 rounded-full flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer"
+                      className="w-full bg-[#00873D] hover:bg-[#007333] text-white text-xs font-semibold py-2.5 sm:py-3 rounded-full flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer"
                     >
                       <Send className="w-3.5 h-3.5" />
                       <span>Enviar Solicitud de Visita</span>
@@ -427,7 +427,7 @@ export const PropertyDetailPage: React.FC = () => {
                     href={`https://wa.me/${property.assignedAgent.phone.replace(/\D/g, '')}?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs sm:text-sm py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-102"
+                    className="w-full bg-[#00873D] hover:bg-[#007333] text-white font-semibold text-xs sm:text-sm py-3 px-4 rounded-full flex items-center justify-center gap-2 transition-all shadow-md hover:scale-102"
                   >
                     <MessageCircle className="w-4 h-4 fill-current stroke-none" />
                     <span>Solicitar Asesoría por WhatsApp</span>
@@ -436,7 +436,7 @@ export const PropertyDetailPage: React.FC = () => {
 
                 {/* Security note */}
                 <p className="text-[10px] sm:text-[11px] font-light text-slate-400 text-center leading-relaxed">
-                  🔒 Tus datos están protegidos bajo estricta confidencialidad por VivaHome.
+                  🔒 Tus datos están protegidos bajo estricta confidencialidad por Megapolys Inmobiliaria.
                 </p>
 
               </div>

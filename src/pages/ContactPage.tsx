@@ -39,15 +39,15 @@ export const ContactPage: React.FC = () => {
       <Navbar />
 
       {/* 1. HERO BANNER WITH STAGGERED ENTRANCE */}
-      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#0B1E17]">
+      <section className="relative min-h-[48vh] sm:min-h-[52vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#062316]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" 
-            alt="Contáctanos en VivaHome Perú" 
-            className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.05]"
+            alt="Contáctanos en Megapolys Inmobiliaria" 
+            className="w-full h-full object-cover object-center filter brightness-[0.35] contrast-[1.08]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#062316] via-[#062316]/60 to-black/70" />
         </div>
 
         {/* Hero Content */}
@@ -56,9 +56,9 @@ export const ContactPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-3xl sm:text-5xl lg:text-6xl font-normal text-white tracking-[-0.035em] leading-[1.12] mb-4"
+            className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-[-0.035em] leading-[1.12] mb-4"
           >
-            Contáctanos en VivaHome
+            Contáctanos en Megapolys
           </motion.h1>
 
           {/* Breadcrumbs */}
@@ -66,11 +66,11 @@ export const ContactPage: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="flex items-center justify-center gap-2 text-xs font-light text-slate-300"
+            className="flex items-center justify-center gap-2 text-xs font-normal text-slate-300"
           >
             <Link to="/" className="hover:text-white transition-colors">Inicio</Link>
             <span>/</span>
-            <span className="text-emerald-400 font-medium">Contacto</span>
+            <span className="text-[#A3D224] font-semibold">Contacto</span>
           </motion.div>
         </div>
       </section>
@@ -88,16 +88,16 @@ export const ContactPage: React.FC = () => {
             className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6"
           >
             <div>
-              <span className="text-xs font-medium text-emerald-700 uppercase tracking-wider block mb-2">
-                // CONTACTO
+              <span className="text-xs font-bold text-[#00873D] uppercase tracking-wider block mb-2">
+                // CONTACTO DIRECTO
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-slate-900 leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
                 Encontremos Tu Próximo Inmueble
               </h2>
             </div>
 
-            <p className="text-xs sm:text-sm font-light text-slate-600 max-w-md leading-relaxed">
-              Comunícate con nuestro equipo especializado hoy y déjanos ayudarte a alcanzar tus objetivos inmobiliarios con total confianza y claridad jurídica.
+            <p className="text-xs sm:text-sm font-normal text-slate-600 max-w-md leading-relaxed">
+              Comunícate con nuestro equipo especializado de <strong className="text-slate-900 font-semibold">Megapolys Inmobiliaria</strong> hoy y déjanos ayudarte a comprar, vender o alquilar con total confianza y claridad jurídica.
             </p>
           </motion.div>
 
@@ -114,23 +114,23 @@ export const ContactPage: React.FC = () => {
             >
               <div className="bg-[#F8FAFC] border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
                 <div>
-                  <span className="text-[11px] font-semibold text-emerald-700 uppercase tracking-wider block mb-1">
+                  <span className="text-[11px] font-bold text-[#00873D] uppercase tracking-wider block mb-1">
                     SEDE CENTRAL
                   </span>
-                  <h3 className="text-xl font-medium tracking-tight text-slate-900">
-                    Oficina Principal VivaHome
+                  <h3 className="text-xl font-bold tracking-tight text-slate-900">
+                    Oficina Principal Megapolys
                   </h3>
                 </div>
 
                 <div className="space-y-4 pt-2">
                   {/* Dirección */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0B1E17] text-emerald-400 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#062316] text-[#A3D224] flex items-center justify-center shrink-0">
                       <MapPin className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-medium text-slate-900">Dirección</h4>
-                      <p className="text-xs font-light text-slate-600 leading-relaxed mt-0.5">
+                      <h4 className="text-xs font-bold text-slate-900">Dirección</h4>
+                      <p className="text-xs font-normal text-slate-600 leading-relaxed mt-0.5">
                         Av. Víctor Andrés Belaúnde 147, Real 5, San Isidro, Lima - Perú
                       </p>
                     </div>
@@ -138,12 +138,12 @@ export const ContactPage: React.FC = () => {
 
                   {/* Teléfono */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0B1E17] text-emerald-400 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#062316] text-[#A3D224] flex items-center justify-center shrink-0">
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-medium text-slate-900">Central Telefónica</h4>
-                      <p className="text-xs font-light text-slate-600 mt-0.5">
+                      <h4 className="text-xs font-bold text-slate-900">Central Telefónica</h4>
+                      <p className="text-xs font-normal text-slate-600 mt-0.5">
                         +51 (01) 456-7890 / +51 987 654 321
                       </p>
                     </div>
@@ -151,21 +151,21 @@ export const ContactPage: React.FC = () => {
 
                   {/* Correo */}
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#0B1E17] text-emerald-400 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#062316] text-[#A3D224] flex items-center justify-center shrink-0">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-medium text-slate-900">Correo Electrónico</h4>
-                      <p className="text-xs font-light text-slate-600 mt-0.5">
-                        contacto@vivahome.pe
+                      <h4 className="text-xs font-bold text-slate-900">Correo Electrónico</h4>
+                      <p className="text-xs font-normal text-slate-600 mt-0.5">
+                        contacto@megapolys.pe
                       </p>
                     </div>
                   </div>
                 </div>
 
                 {/* Horario de atención */}
-                <div className="p-4 rounded-2xl bg-white border border-slate-200 text-xs font-light text-slate-600 leading-relaxed">
-                  <strong className="font-medium text-slate-900 block mb-1">Horario de Atención:</strong>
+                <div className="p-4 rounded-2xl bg-white border border-slate-200 text-xs font-normal text-slate-600 leading-relaxed">
+                  <strong className="font-bold text-slate-900 block mb-1">Horario de Atención:</strong>
                   Lunes a Viernes: 8:30 AM – 7:00 PM <br />
                   Sábados: 9:00 AM – 2:00 PM
                 </div>
@@ -183,12 +183,12 @@ export const ContactPage: React.FC = () => {
               <div className="bg-[#F8FAFC] border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm">
                 {formSubmitted ? (
                   <div className="p-10 bg-emerald-50 border border-emerald-200 rounded-2xl text-center space-y-4">
-                    <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
-                    <h3 className="text-2xl font-medium text-emerald-900">
+                    <CheckCircle2 className="w-12 h-12 text-[#00873D] mx-auto" />
+                    <h3 className="text-2xl font-bold text-emerald-900">
                       ¡Consulta Enviada con Éxito!
                     </h3>
-                    <p className="text-sm font-light text-emerald-800 leading-relaxed max-w-md mx-auto">
-                      Gracias {name || 'estimado cliente'}. Un asesor senior de VivaHome revisará tu requerimiento y se comunicará contigo vía WhatsApp o correo electrónico a la brevedad.
+                    <p className="text-sm font-normal text-emerald-800 leading-relaxed max-w-md mx-auto">
+                      Gracias {name || 'estimado cliente'}. Un asesor senior de Megapolys Inmobiliaria revisará tu requerimiento y se comunicará contigo vía WhatsApp o correo electrónico a la brevedad.
                     </p>
                   </div>
                 ) : (

@@ -20,18 +20,18 @@ export const ServicesSection: React.FC = () => {
           className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"
         >
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-medium uppercase tracking-wider mb-4 border border-emerald-200">
-              <Compass className="w-3.5 h-3.5 text-emerald-600" />
-              <span>SOLUCIONES</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#00873D]/10 text-[#00873D] text-xs font-bold uppercase tracking-wider mb-4 border border-[#00873D]/20">
+              <Compass className="w-3.5 h-3.5 text-[#00873D]" />
+              <span>SERVICIOS & PROYECTOS</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-slate-900">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
               Soluciones Inmobiliarias Integrales
             </h2>
           </div>
 
           <Link 
             to="/servicios"
-            className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md"
+            className="inline-flex items-center gap-2 bg-[#00873D] hover:bg-[#007333] text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md"
           >
             <span>Ver Todos los Servicios</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -48,7 +48,7 @@ export const ServicesSection: React.FC = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               whileHover={{ y: -6 }}
-              className="group bg-[#F8FAFC] rounded-3xl overflow-hidden border border-slate-200 hover:border-slate-300 transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-xl"
+              className="group bg-[#F8FAFC] rounded-3xl overflow-hidden border border-slate-200 hover:border-[#00873D]/40 transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-xl"
             >
               {/* Image Container with Floating Emerald Arrow Badge */}
               <Link to={`/servicios/${service.id}`} className="block relative aspect-[16/10] overflow-hidden">
@@ -60,7 +60,7 @@ export const ServicesSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
                 
                 {/* Floating Emerald Icon Badge */}
-                <div className="absolute bottom-4 right-4 w-11 h-11 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-45 transition-transform">
+                <div className="absolute bottom-4 right-4 w-11 h-11 rounded-full bg-[#00873D] text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-45 transition-transform">
                   <ArrowUpRight className="w-6 h-6 stroke-[2.5]" />
                 </div>
 
@@ -73,11 +73,11 @@ export const ServicesSection: React.FC = () => {
               <div className="p-8 flex-1 flex flex-col justify-between">
                 <div>
                   <Link to={`/servicios/${service.id}`}>
-                    <h3 className="text-xl font-medium text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors leading-snug">
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#00873D] transition-colors leading-snug">
                       {service.title}
                     </h3>
                   </Link>
-                  <p className="text-sm font-light text-slate-600 leading-relaxed">
+                  <p className="text-sm font-normal text-slate-600 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -85,7 +85,7 @@ export const ServicesSection: React.FC = () => {
                 <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
                   <Link 
                     to={`/servicios/${service.id}`}
-                    className="text-xs font-semibold text-emerald-700 hover:text-emerald-800 flex items-center gap-1.5 transition-colors"
+                    className="text-xs font-bold text-[#00873D] hover:text-[#007333] flex items-center gap-1.5 transition-colors"
                   >
                     <span>Conocer más</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />

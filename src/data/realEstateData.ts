@@ -161,7 +161,7 @@ export const featuredProperties: Property[] = [
       role: "Director Comercial & Bróker Principal",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
       phone: "+51 987 654 321",
-      email: "marco.benavides@vivahome.pe"
+      email: "marco.benavides@megapolys.pe"
     },
     nearbyPlaces: [
       { name: "Lima Golf Club", category: "Deportes & Exclusividad", distance: "2 min a pie" },
@@ -202,7 +202,7 @@ export const featuredProperties: Property[] = [
       role: "Asesora Senior de Inmuebles de Lujo",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
       phone: "+51 981 234 567",
-      email: "valeria.ugarte@vivahome.pe"
+      email: "valeria.ugarte@megapolys.pe"
     },
     nearbyPlaces: [
       { name: "Rinconada Country Club", category: "Club Social & Golf", distance: "3 min" },
@@ -243,7 +243,7 @@ export const featuredProperties: Property[] = [
       role: "Especialista en Proyectos e Inversión",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
       phone: "+51 993 456 789",
-      email: "diego.reyna@vivahome.pe"
+      email: "diego.reyna@megapolys.pe"
     },
     nearbyPlaces: [
       { name: "Larcomar", category: "Shopping & Dining", distance: "4 min a pie" },
@@ -284,7 +284,7 @@ export const featuredProperties: Property[] = [
       role: "Asesora Senior de Inmuebles de Lujo",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
       phone: "+51 981 234 567",
-      email: "valeria.ugarte@vivahome.pe"
+      email: "valeria.ugarte@megapolys.pe"
     },
     nearbyPlaces: [
       { name: "Boulevard de Asia", category: "Centros Comerciales", distance: "8 min en auto" },
@@ -325,7 +325,7 @@ export const featuredProperties: Property[] = [
       role: "Director Comercial & Bróker Principal",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
       phone: "+51 987 654 321",
-      email: "marco.benavides@vivahome.pe"
+      email: "marco.benavides@megapolys.pe"
     },
     nearbyPlaces: [
       { name: "Parque El Olivar", category: "Patrimonio Histórico & Áreas Verdes", distance: "0 min (Frente al inmueble)" },
@@ -366,7 +366,7 @@ export const featuredProperties: Property[] = [
       role: "Especialista en Proyectos e Inversión",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
       phone: "+51 993 456 789",
-      email: "diego.reyna@vivahome.pe"
+      email: "diego.reyna@megapolys.pe"
     },
     nearbyPlaces: [
       { name: "Puente de los Suspiros", category: "Cultura & Turismo", distance: "4 min a pie" },
@@ -402,7 +402,7 @@ export const services: Service[] = [
     description: "Te guiamos en la búsqueda y adquisición de propiedades residenciales y comerciales en Lima y playas con total seguridad jurídica.",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
     tag: "COMPRA & ASESORÍA",
-    intro: "Comprar una propiedad es una de las decisiones financieras más trascendentales. En VivaHome brindamos un acompañamiento integral y personalizado desde la definición del perfil del inmueble ideal hasta la firma de la escritura pública en notaría.",
+    intro: "Comprar una propiedad es una de las decisiones financieras más trascendentales. En Megapolys Inmobiliaria brindamos un acompañamiento integral y personalizado desde la definición del perfil del inmueble ideal hasta la firma de la escritura pública en notaría.",
     mainGoal: "Garantizar que tu inversión inmobiliaria sea 100% segura, rentable y adaptada a las necesidades de vida o patrimonio de tu familia, protegiéndote ante riesgos registrales o tributarios.",
     process: [
       { step: "01", title: "Definición de Requerimientos", desc: "Analizamos tu presupuesto, zona de preferencia (San Isidro, Miraflores, La Molina, etc.) y necesidades de metraje." },
@@ -561,8 +561,8 @@ export const agents: Agent[] = [
     role: "Director Comercial & Bróker Principal",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
     phone: "+51 987 654 321",
-    email: "marco.benavides@vivahome.pe",
-    bio: "Marco Benavides es el Director Comercial y Bróker Principal de VivaHome, liderando las operaciones de inmuebles de lujo e inversión institucional en Lima y balnearios del sur. Con más de 12 años en el sector inmobiliario de alta gama, su gestión se fundamenta en la integridad, el rigor analítico y la construcción de relaciones comerciales de largo plazo.",
+    email: "marco.benavides@megapolys.pe",
+    bio: "Marco Benavides es el Director Comercial y Bróker Principal de Megapolys Inmobiliaria, liderando las operaciones de inmuebles de lujo e inversión institucional en Lima y balnearios del sur. Con más de 12 años en el sector inmobiliario de alta gama, su gestión se fundamenta en la integridad, el rigor analítico y la construcción de relaciones comerciales de largo plazo.",
     experience: "A lo largo de su carrera, Marco ha asesorado con éxito a fondos de inversión, familias y empresarios en la adquisición y estructuración de proyectos residenciales en San Isidro, Miraflores y Asia. Su profundo conocimiento del mercado peruano garantiza transacciones seguras y altamente rentables.",
     skills: [
       {
@@ -597,7 +597,7 @@ export const agents: Agent[] = [
       },
       {
         period: "2025 — Presente",
-        description: "Lidera la expansión de VivaHome en el mercado peruano, impulsando la digitalización de procesos y estándares de servicio VIP."
+        description: "Lidera la expansión de Megapolys Inmobiliaria en el mercado peruano, impulsando la digitalización de procesos y estándares de servicio VIP."
       }
     ]
   },
@@ -607,8 +607,8 @@ export const agents: Agent[] = [
     role: "Asesora Senior de Inmuebles de Lujo",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
     phone: "+51 981 234 567",
-    email: "valeria.ugarte@vivahome.pe",
-    bio: "Valeria Ugarte es Asesora Senior en VivaHome, especializada en residencias de diseño, penthouses y arquitectura contemporánea en Lima Top. Combina su formación en arquitectura y bienes raíces para brindar una visión estética y técnica inigualable.",
+    email: "valeria.ugarte@megapolys.pe",
+    bio: "Valeria Ugarte es Asesora Senior en Megapolys Inmobiliaria, especializada en residencias de diseño, penthouses y arquitectura contemporánea en Lima Top. Combina su formación en arquitectura y bienes raíces para brindar una visión estética y técnica inigualable.",
     experience: "Más de 9 años guiando a compradores exigentes y embajadas en la elección de inmuebles con los más altos estándares de privacidad, seguridad y confort.",
     skills: [
       {
@@ -643,7 +643,7 @@ export const agents: Agent[] = [
       },
       {
         period: "2025 — Presente",
-        description: "Asesora Senior en VivaHome, gestionando el portafolio más exclusivo de residencias privadas."
+        description: "Asesora Senior en Megapolys Inmobiliaria, gestionando el portafolio más exclusivo de residencias privadas."
       }
     ]
   },
@@ -653,8 +653,8 @@ export const agents: Agent[] = [
     role: "Especialista en Proyectos e Inversión",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
     phone: "+51 993 456 789",
-    email: "diego.reyna@vivahome.pe",
-    bio: "Diego Reyna es especialista en estructuración de inversiones inmobiliarias, preventas y análisis financiero de rentabilidad en VivaHome. Su enfoque cuantitativo permite a los inversionistas maximizar el retorno de su capital con total control de riesgos.",
+    email: "diego.reyna@megapolys.pe",
+    bio: "Diego Reyna es especialista en estructuración de inversiones inmobiliarias, preventas y análisis financiero de rentabilidad en Megapolys Inmobiliaria. Su enfoque cuantitativo permite a los inversionistas maximizar el retorno de su capital con total control de riesgos.",
     experience: "Ha asesorado en la colocación de más de 100 unidades en preventa y en la estructuración de portafolios para renta tradicional y temporal.",
     skills: [
       {
@@ -689,7 +689,7 @@ export const agents: Agent[] = [
       },
       {
         period: "2025 — Presente",
-        description: "Especialista Senior de Inversiones en VivaHome, coordinando alianzas con constructoras."
+        description: "Especialista Senior de Inversiones en Megapolys Inmobiliaria, coordinando alianzas con constructoras."
       }
     ]
   }
@@ -702,7 +702,7 @@ export const testimonials: Testimonial[] = [
     role: "Empresario - San Isidro",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Conseguir nuestro penthouse en Av. El Golf fue un proceso impecable. El equipo de VivaHome nos brindó asesoría VIP de principio a fin."
+    comment: "Conseguir nuestro penthouse en Av. El Golf fue un proceso impecable. El equipo de Megapolys Inmobiliaria nos brindó asesoría VIP de principio a fin."
   },
   {
     id: "test-2",
@@ -734,7 +734,7 @@ export const testimonials: Testimonial[] = [
     role: "Gerente de Fondo Patrimonial",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "VivaHome combina elegancia en la presentación con un rigor financiero excepcional. Son la mejor agencia inmobiliaria boutique en el Perú."
+    comment: "Megapolys Inmobiliaria combina elegancia en la presentación con un rigor financiero excepcional. Son la mejor agencia inmobiliaria boutique en el Perú."
   },
   {
     id: "test-6",

@@ -18,15 +18,15 @@ export const TestimonialsSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-8 sm:mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-3 sm:mb-4">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-[#00873D]/10 text-[#00873D] text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-3 sm:mb-4 border border-[#00873D]/20">
             <MessageSquare className="w-3.5 h-3.5" />
-            <span>HISTORIAS DE ÉXITO</span>
+            <span>HISTORIAS DE ÉXITO & CONFIANZA</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-slate-900 mb-2 sm:mb-4">
-            Lo que Dicen Nuestros Clientes
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mb-2 sm:mb-4">
+            Lo que Dicen Quienes Ya Encontraron su Hogar
           </h2>
-          <p className="text-slate-600 text-xs sm:text-base font-light">
-            Experiencias reales de compradores, familias e inversionistas que confiaron su patrimonio en VivaHome.
+          <p className="text-slate-600 text-xs sm:text-base font-normal">
+            Experiencias reales de compradores, familias e inversionistas que confiaron su patrimonio en <strong className="text-slate-900 font-medium">Megapolys Inmobiliaria</strong>.
           </p>
         </motion.div>
 
@@ -44,20 +44,20 @@ export const TestimonialsSection: React.FC = () => {
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.4, delay: idx * 0.05 }}
                 whileHover={{ y: -4 }}
-                className={`bg-[#F8FAFC] rounded-2xl sm:rounded-3xl p-4 sm:p-7 border border-slate-200 hover:border-slate-300 transition-all flex flex-col justify-between shadow-sm ${
+                className={`bg-[#F8FAFC] rounded-2xl sm:rounded-3xl p-4 sm:p-7 border border-slate-200 hover:border-[#00873D]/40 transition-all flex flex-col justify-between shadow-sm ${
                   isHiddenMobile ? 'hidden sm:flex' : 'flex'
                 }`}
               >
                 <div>
                   {/* 5-Star Rating */}
-                  <div className="flex items-center gap-1 mb-2.5 sm:mb-4 text-emerald-600">
+                  <div className="flex items-center gap-1 mb-2.5 sm:mb-4 text-[#A3D224]">
                     {[...Array(test.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" />
+                      <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#A3D224] text-[#8CB81E]" />
                     ))}
                   </div>
 
                   {/* Comment */}
-                  <p className="text-xs sm:text-sm font-light text-slate-700 leading-relaxed mb-4 sm:mb-6 italic">
+                  <p className="text-xs sm:text-sm font-normal text-slate-700 leading-relaxed mb-4 sm:mb-6 italic">
                     "{test.comment}"
                   </p>
                 </div>
@@ -67,11 +67,11 @@ export const TestimonialsSection: React.FC = () => {
                   <img 
                     src={test.avatar} 
                     alt={test.name} 
-                    className="w-9 h-9 sm:w-11 sm:h-11 rounded-full object-cover ring-2 ring-emerald-500/30 shrink-0"
+                    className="w-9 h-9 sm:w-11 sm:h-11 rounded-full object-cover ring-2 ring-[#00873D]/30 shrink-0"
                   />
                   <div className="overflow-hidden">
-                    <h4 className="text-xs sm:text-sm font-medium text-slate-900 truncate">{test.name}</h4>
-                    <p className="text-[10px] sm:text-xs font-light text-slate-500 truncate">{test.role}</p>
+                    <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate">{test.name}</h4>
+                    <p className="text-[10px] sm:text-xs font-normal text-slate-500 truncate">{test.role}</p>
                   </div>
                 </div>
 

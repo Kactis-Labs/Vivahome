@@ -25,39 +25,39 @@ export const FaqSection: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="lg:col-span-5"
           >
-            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-emerald-900/40 border border-emerald-500/30 text-emerald-400 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-3 sm:mb-6">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-[#00873D]/30 border border-[#A3D224]/30 text-[#A3D224] text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-3 sm:mb-6">
               <HelpCircle className="w-3.5 h-3.5" />
               <span>PREGUNTAS FRECUENTES</span>
             </div>
 
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-white mb-2 sm:mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-2 sm:mb-6 leading-tight">
               Todo lo que Necesitas Saber Antes de Invertir
             </h2>
 
-            <p className="text-slate-300 text-xs sm:text-sm font-light leading-relaxed mb-4 sm:mb-8">
-              Resolvemos tus dudas sobre requisitos notariales, verificación en Sunarp, financiamiento hipotecario y visitas guiadas a propiedades con VivaHome.
+            <p className="text-slate-300 text-xs sm:text-sm font-normal leading-relaxed mb-4 sm:mb-8">
+              Resolvemos tus dudas sobre compras, ventas, alquileres, estudio de títulos en Sunarp, financiamiento hipotecario y visitas guiadas con <strong className="text-white font-semibold">Megapolys Inmobiliaria</strong>.
             </p>
 
             {/* Visual Card Under Description (Solo en tablets y desktop para ahorrar espacio en móvil) */}
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-emerald-900/40 hidden sm:block">
               <img 
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" 
-                alt="Propiedad de Lujo en San Isidro - VivaHome" 
+                alt="Propiedad de Lujo - Megapolys Inmobiliaria" 
                 className="w-full h-[220px] sm:h-[260px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#062316] via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex items-center justify-between text-white">
                 <div>
-                  <h4 className="text-xs sm:text-sm font-medium">¿Tienes una consulta específica?</h4>
-                  <p className="text-[11px] sm:text-xs font-light text-slate-300">Habla directamente con un asesor por WhatsApp</p>
+                  <h4 className="text-xs sm:text-sm font-semibold">¿Tienes una consulta específica?</h4>
+                  <p className="text-[11px] sm:text-xs font-light text-slate-300">Confía en los que saben 💚 — Chatea por WhatsApp</p>
                 </div>
                 <motion.a 
                   whileHover={{ scale: 1.08 }}
                   whileTap={{ scale: 0.95 }}
-                  href="https://wa.me/51987654321?text=Hola,%20tengo%20una%20consulta%20inmobiliaria%20para%20VivaHome"
+                  href="https://wa.me/51987654321?text=Hola,%20tengo%20una%20consulta%20inmobiliaria%20para%20Megapolys%20Inmobiliaria"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 hover:bg-emerald-700 transition-colors"
+                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#00873D] text-white flex items-center justify-center shrink-0 hover:bg-[#007333] transition-colors"
                 >
                   <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </motion.a>

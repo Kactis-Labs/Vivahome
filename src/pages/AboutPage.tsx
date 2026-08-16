@@ -48,15 +48,15 @@ export const AboutPage: React.FC = () => {
       <Navbar />
 
       {/* 1. ABOUT HERO BANNER WITH STAGGERED ENTRANCE */}
-      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#0B1E17]">
+      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#062316]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" 
-            alt="Arquitectura Moderna y Residencia de Lujo - VivaHome" 
-            className="w-full h-full object-cover object-center filter brightness-[0.45] contrast-[1.05]"
+            alt="Arquitectura Moderna y Proyectos - Megapolys Inmobiliaria" 
+            className="w-full h-full object-cover object-center filter brightness-[0.42] contrast-[1.08]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#062316] via-[#062316]/60 to-black/70" />
         </div>
 
         {/* Hero Content */}
@@ -65,10 +65,10 @@ export const AboutPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-3xl sm:text-5xl lg:text-6xl font-normal text-white tracking-[-0.035em] leading-[1.12]"
+            className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-[-0.035em] leading-[1.12]"
           >
             Nuestra Trayectoria en Casos <br className="hidden sm:block" />
-            <span className="font-medium text-white">de Éxito Inmobiliario</span>
+            <span className="font-semibold text-white">de Éxito Inmobiliario</span>
           </motion.h1>
         </div>
       </section>
@@ -86,7 +86,7 @@ export const AboutPage: React.FC = () => {
             className="max-w-4xl mb-12 sm:mb-16"
           >
             <p className="text-2xl sm:text-3xl lg:text-4xl font-normal text-slate-900 leading-[1.25] tracking-[-0.03em]">
-              VivaHome nació con la visión de transformar la experiencia inmobiliaria a través de la confianza, transparencia e innovación. Asesoramos a nuestros clientes en la compra, venta e inversión de propiedades con seguridad jurídica y visión a largo plazo.
+              <strong className="font-bold text-[#00873D]">Megapolys Inmobiliaria</strong> nació con la visión de transformar la experiencia inmobiliaria a través de la confianza, transparencia e innovación. Especialistas en <strong className="font-semibold text-slate-900">ventas, alquileres y proyectos</strong> con seguridad jurídica y visión a largo plazo.
             </p>
           </motion.div>
 
@@ -102,25 +102,25 @@ export const AboutPage: React.FC = () => {
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
                 className={`rounded-2xl sm:rounded-3xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between ${
                   stat.isHighlighted
-                    ? 'bg-emerald-600 text-white shadow-xl shadow-emerald-900/20'
+                    ? 'bg-[#00873D] text-white shadow-xl shadow-[#00873D]/20'
                     : 'bg-white text-slate-900 border border-slate-200 shadow-sm'
                 }`}
               >
                 <div>
-                  <div className={`text-4xl sm:text-5xl font-medium tracking-tight mb-3 ${
+                  <div className={`text-4xl sm:text-5xl font-bold tracking-tight mb-3 ${
                     stat.isHighlighted ? 'text-white' : 'text-slate-900'
                   }`}>
                     {stat.value}
                   </div>
-                  <h3 className={`text-base font-semibold mb-2 ${
+                  <h3 className={`text-base font-bold mb-2 ${
                     stat.isHighlighted ? 'text-white' : 'text-slate-900'
                   }`}>
                     {stat.label}
                   </h3>
                 </div>
 
-                <p className={`text-xs font-light leading-relaxed pt-4 border-t ${
-                  stat.isHighlighted ? 'text-white/80 border-white/20' : 'text-slate-500 border-slate-100'
+                <p className={`text-xs font-normal leading-relaxed pt-4 border-t ${
+                  stat.isHighlighted ? 'text-white/90 border-white/20' : 'text-slate-500 border-slate-100'
                 }`}>
                   {stat.desc}
                 </p>
@@ -144,17 +144,17 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 space-y-4"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-medium uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#00873D]/10 text-[#00873D] text-xs font-bold uppercase tracking-wider border border-[#00873D]/20">
                 <ShieldCheck className="w-3.5 h-3.5" />
-                <span>EXCELENCIA</span>
+                <span>EXCELENCIA & SEGURIDAD</span>
               </div>
               
-              <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-slate-900 leading-tight">
+              <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
                 Comprometidos con la Seguridad de tu Patrimonio
               </h2>
               
-              <p className="text-sm sm:text-base font-light text-slate-600 leading-relaxed">
-                Cada inmueble en nuestro portafolio pasa por un riguroso estudio de títulos, verificación de gravámenes en Sunarp y saneamiento legal completo. Garantizamos que tu adquisición con VivaHome se realice con absoluta transparencia y respaldo notarial.
+              <p className="text-sm sm:text-base font-normal text-slate-600 leading-relaxed">
+                Cada inmueble en nuestro portafolio pasa por un riguroso estudio de títulos, verificación de gravámenes en Sunarp y saneamiento legal completo. Garantizamos que tu adquisición con <strong className="text-slate-900 font-semibold">Megapolys Inmobiliaria</strong> se realice con absoluta transparencia y respaldo notarial.
               </p>
             </motion.div>
 
@@ -168,7 +168,7 @@ export const AboutPage: React.FC = () => {
               <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100">
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Asesoría Inmobiliaria Profesional VivaHome" 
+                  alt="Asesoría Inmobiliaria Profesional Megapolys Inmobiliaria" 
                   className="w-full h-[260px] sm:h-[360px] object-cover"
                 />
               </div>
@@ -187,7 +187,7 @@ export const AboutPage: React.FC = () => {
               <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100">
                 <img 
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Construyendo el Futuro Inmobiliario con VivaHome" 
+                  alt="Construyendo el Futuro Inmobiliario con Megapolys Inmobiliaria" 
                   className="w-full h-[260px] sm:h-[360px] object-cover"
                 />
               </div>

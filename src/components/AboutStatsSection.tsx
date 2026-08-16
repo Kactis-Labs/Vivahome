@@ -16,19 +16,19 @@ export const AboutStatsSection: React.FC = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-4xl mb-12 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-4 sm:mb-6">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-[#00873D]/10 text-[#00873D] text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-4 sm:mb-6 border border-[#00873D]/20">
             <Award className="w-3.5 h-3.5" />
-            <span>SOBRE NOSOTROS</span>
+            <span>SOBRE MEGAPOLYS INMOBILIARIA</span>
           </div>
           
           <h2 className="text-2xl sm:text-4xl lg:text-6xl font-normal text-slate-900 leading-[1.18] tracking-[-0.035em]">
-            Ayudamos a las familias e inversionistas a encontrar la propiedad ideal con asesoría transparente, confianza y respaldo integral en cada paso.
+            Confía en los que saben 💚. Ayudamos a familias e inversionistas a encontrar la propiedad ideal con asesoría transparente, seguridad jurídica y respaldo integral.
           </h2>
 
           <div className="mt-6 sm:mt-8 flex items-center gap-4">
             <a 
               href="/nosotros"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs sm:text-sm px-5 sm:px-7 py-2.5 sm:py-3 rounded-full transition-all shadow-md hover:shadow-emerald-900/20"
+              className="inline-flex items-center gap-2 bg-[#00873D] hover:bg-[#007333] text-white font-medium text-xs sm:text-sm px-5 sm:px-7 py-2.5 sm:py-3 rounded-full transition-all shadow-md hover:shadow-[#00873D]/30"
             >
               <span>Conoce Más Sobre Nosotros</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -50,7 +50,7 @@ export const AboutStatsSection: React.FC = () => {
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl group">
               <img 
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop" 
-                alt="Equipo de Asesoría Inmobiliaria VivaHome Perú" 
+                alt="Equipo de Asesoría Megapolys Inmobiliaria" 
                 className="w-full h-[240px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
@@ -58,7 +58,7 @@ export const AboutStatsSection: React.FC = () => {
               {/* Floating Badge on Image */}
               <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-md border border-white/50 flex items-center justify-between shadow-lg">
                 <div className="flex items-center gap-2.5 sm:gap-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold shrink-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#00873D] text-white flex items-center justify-center font-bold shrink-0">
                     <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div className="overflow-hidden">
