@@ -54,7 +54,7 @@ export const FeaturedDealsSection: React.FC = () => {
                 
                 {/* Badge Overlay */}
                 {prop.badge && (
-                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-black/80 text-white border border-white/20 text-[10px] sm:text-[11px] font-medium px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full uppercase tracking-wider backdrop-blur-md">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-black/80 text-white border border-white/20 text-[10px] sm:text-[11px] font-medium px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-md uppercase tracking-wider backdrop-blur-md">
                     {prop.badge}
                   </div>
                 )}

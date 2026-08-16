@@ -54,7 +54,7 @@ export const BlogSection: React.FC = () => {
                   alt={post.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-black/80 backdrop-blur-md text-white text-[9px] sm:text-[10px] font-medium px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase tracking-wider">
+                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-black/80 backdrop-blur-md text-white text-[9px] sm:text-[10px] font-medium px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-md uppercase tracking-wider">
                   {post.category}
                 </div>
               </Link>

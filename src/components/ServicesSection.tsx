@@ -63,7 +63,7 @@ export const ServicesSection: React.FC = () => {
                   <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
                 </div>
 
-                <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md text-white text-[10px] font-medium px-3 py-1 rounded-full uppercase tracking-wider">
+                <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md text-white text-[10px] font-medium px-3 py-1 rounded-md uppercase tracking-wider">
                   {service.tag}
                 </div>
               </Link>

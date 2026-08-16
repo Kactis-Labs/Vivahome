@@ -84,15 +84,15 @@ export const PropertyDetailPage: React.FC = () => {
           {/* 1. ENCABEZADO DE PROPIEDAD */}
           <div className="mb-6 sm:mb-8">
             <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4">
-              <span className="px-3 py-0.5 sm:px-3.5 sm:py-1 rounded-full bg-zinc-200 text-zinc-800 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider">
+              <span className="px-2.5 py-0.5 rounded-md bg-zinc-100 border border-zinc-200 text-zinc-800 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider">
                 VENTA EXCLUSIVA
               </span>
               {property.badge && (
-                <span className="px-3 py-0.5 sm:px-3.5 sm:py-1 rounded-full bg-black text-white text-[10px] sm:text-[11px] font-medium uppercase tracking-wider">
+                <span className="px-2.5 py-0.5 rounded-md bg-black text-white text-[10px] sm:text-[11px] font-medium uppercase tracking-wider">
                   {property.badge}
                 </span>
               )}
-              <span className="px-3 py-0.5 sm:px-3.5 sm:py-1 rounded-full bg-white border border-zinc-200 text-zinc-700 text-[10px] sm:text-[11px] font-medium uppercase tracking-wider">
+              <span className="px-2.5 py-0.5 rounded-md bg-white border border-zinc-200 text-zinc-600 text-[10px] sm:text-[11px] font-medium uppercase tracking-wider">
                 {property.deliveryStatus}
               </span>
             </div>
