@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Building2, Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -15,7 +16,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#0B1E17] text-slate-400 border-t border-emerald-950/60 pt-16 sm:pt-20 pb-12">
+    <footer className="bg-[#111827] text-slate-300 border-t border-white/10 pt-16 sm:pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Grid */}
@@ -23,78 +24,74 @@ export const Footer: React.FC = () => {
           
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-6">
-            <Link to="/" className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white shadow-lg shadow-emerald-900/30">
-                <Building2 className="w-5 h-5 stroke-[2.5]" />
-              </div>
-              <span className="text-2xl font-medium tracking-tight text-white">
-                Viva<span className="text-emerald-400 font-semibold">Home</span>
-              </span>
+            <Link to="/" className="inline-block group">
+              <Logo variant="light" size="md" />
             </Link>
 
-            <p className="text-sm font-light text-slate-400 leading-relaxed max-w-sm">
-              Guiamos a familias e inversionistas exigentes en la adquisición de residencias exclusivas y proyectos de alta plusvalía en el Perú con seguridad jurídica y atención personal.
+            <p className="text-sm font-normal text-slate-300 leading-relaxed max-w-sm">
+              <strong className="text-white">Gestión y asesoría profesional en Trujillo.</strong><br />
+              <span className="text-[#EF4444] font-semibold">+10 años de experiencia</span> en la compra y venta de inmuebles residenciales y comerciales en El Golf, California, San Andrés y Huanchaco.
             </p>
 
             <div className="flex items-center space-x-3 text-white">
-              <a href="#" className="w-9 h-9 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-colors" aria-label="Instagram">
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#DC2626] hover:text-white flex items-center justify-center transition-colors" aria-label="Facebook">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-colors" aria-label="LinkedIn">
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#DC2626] hover:text-white flex items-center justify-center transition-colors" aria-label="YouTube">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-white/5 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-colors" aria-label="Twitter">
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#DC2626] hover:text-white flex items-center justify-center transition-colors" aria-label="Pinterest">
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.07-.98-.13-2.48.03-3.55.14-.98.93-3.97.93-3.97s-.24-.48-.24-1.18c0-1.11.64-1.94 1.44-1.94.68 0 1.01.51 1.01 1.12 0 .68-.44 1.71-.66 2.66-.19.79.4 1.44 1.18 1.44 1.41 0 2.5-1.49 2.5-3.64 0-1.9-1.37-3.23-3.32-3.23-2.26 0-3.59 1.7-3.59 3.45 0 .68.26 1.42.59 1.81.06.08.07.15.05.23-.06.26-.2.82-.23.94-.04.16-.13.2-.3.12-1.11-.52-1.81-2.14-1.81-3.45 0-2.8 2.04-5.38 5.88-5.38 3.09 0 5.49 2.2 5.49 5.14 0 3.07-1.93 5.53-4.62 5.53-.9 0-1.75-.47-2.04-1.02l-.56 2.12c-.2.78-.75 1.75-1.12 2.35A12 12 0 1 0 12 0z"/></svg>
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xs font-medium text-white uppercase tracking-wider mb-5">
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-5">
               Explora
             </h4>
-            <ul className="space-y-3 text-sm font-light">
-              <li><Link to="/#deals" className="hover:text-emerald-400 transition-colors">Oportunidades</Link></li>
-              <li><Link to="/nosotros" className="hover:text-emerald-400 transition-colors">Sobre Nosotros</Link></li>
-              <li><Link to="/servicios" className="hover:text-emerald-400 transition-colors">Servicios Integrales</Link></li>
-              <li><Link to="/#agents" className="hover:text-emerald-400 transition-colors">Equipo de Asesores</Link></li>
-              <li><Link to="/contacto" className="hover:text-emerald-400 transition-colors">Contacto</Link></li>
+            <ul className="space-y-3 text-sm font-normal">
+              <li><a href="/#deals" className="hover:text-[#EF4444] transition-colors">Inmuebles en Trujillo</a></li>
+              <li><Link to="/nosotros" className="hover:text-[#EF4444] transition-colors">Sobre Inmobiliaria JML</Link></li>
+              <li><Link to="/servicios" className="hover:text-[#EF4444] transition-colors">Compra y Venta</Link></li>
+              <li><Link to="/#agents" className="hover:text-[#EF4444] transition-colors">Nuestros Asesores</Link></li>
+              <li><Link to="/contacto" className="hover:text-[#EF4444] transition-colors">Contacto Directo</Link></li>
             </ul>
           </div>
 
           {/* Contact Details */}
           <div>
-            <h4 className="text-xs font-medium text-white uppercase tracking-wider mb-5">
-              Contacto Directo
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-5">
+              Contacto & Oficina
             </h4>
-            <ul className="space-y-3.5 text-sm font-light">
+            <ul className="space-y-3.5 text-sm font-normal">
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>Av. Víctor Andrés Belaúnde 147, Real 5, San Isidro, Lima - Perú</span>
+                <MapPin className="w-4 h-4 text-[#EF4444] shrink-0 mt-0.5" />
+                <span>Urb. El Golf / California, Trujillo, La Libertad - Perú</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>+51 (01) 456-7890 / +51 987 654 321</span>
+                <Phone className="w-4 h-4 text-[#EF4444] shrink-0" />
+                <span>+51 (044) 234-567 / +51 987 654 321</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>contacto@vivahome.pe</span>
+                <Mail className="w-4 h-4 text-[#EF4444] shrink-0" />
+                <span>contacto@inmobiliariajml.com</span>
               </li>
             </ul>
           </div>
 
           {/* Newsletter Box */}
           <div>
-            <h4 className="text-xs font-medium text-white uppercase tracking-wider mb-5">
-              Boletín Exclusivo
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-5">
+              Boletín Inmobiliario
             </h4>
-            <p className="text-xs font-light text-slate-400 mb-4">
-              Recibe oportunidades fuera de mercado en Lima y playas directamente en tu correo.
+            <p className="text-xs font-normal text-slate-300 mb-4">
+              Recibe oportunidades exclusivas y nuevas propiedades en Trujillo directamente en tu correo.
             </p>
             {subscribed ? (
-              <div className="p-3 bg-emerald-950/80 border border-emerald-500/40 rounded-2xl text-emerald-400 text-xs font-medium text-center">
-                ✓ ¡Gracias por suscribirte a VivaHome!
+              <div className="p-3 bg-[#1F2937] border border-[#DC2626]/50 rounded-2xl text-[#EF4444] text-xs font-semibold text-center">
+                ✓ ¡Gracias por suscribirte a Inmobiliaria JML!
               </div>
             ) : (
               <form onSubmit={handleSubscribe} className="space-y-3">
@@ -103,13 +100,13 @@ export const Footer: React.FC = () => {
                     type="email" 
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Ingresa tu correo electrónico"
+                    placeholder="Ingresa tu correo"
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-full py-2.5 pl-4 pr-10 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500"
+                    className="w-full bg-white/10 border border-white/15 rounded-full py-2.5 pl-4 pr-10 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#DC2626]"
                   />
                   <button 
                     type="submit"
-                    className="absolute right-1.5 top-1.5 w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-700 transition-colors"
+                    className="absolute right-1.5 top-1.5 w-7 h-7 rounded-full bg-[#DC2626] text-white flex items-center justify-center hover:bg-[#B91C1C] transition-colors"
                     aria-label="Suscribirse"
                   >
                     <Send className="w-3.5 h-3.5" />
@@ -121,27 +118,26 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        {/* Bottom Copyright Bar with Kacti Labs Attribution */}
-        <div className="pt-8 border-t border-emerald-950/60 flex flex-col sm:flex-row items-center justify-between text-xs font-light text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} VivaHome Inmobiliaria S.A.C. Todos los derechos reservados.</p>
+        {/* Bottom Copyright Bar with web link */}
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs font-normal text-slate-400 gap-4">
+          <p>© {new Date().getFullYear()} Inmobiliaria JML S.A.C. Todos los derechos reservados. • <span className="text-slate-300">www.inmobiliariajml.com</span></p>
           
-          {/* Desarrollado por Kacti Labs */}
-          <div className="text-xs text-slate-400">
+          <div className="text-xs text-slate-300">
             Desarrollado por{' '}
             <a 
               href="https://kactilabs.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-emerald-400 font-medium hover:underline transition-colors"
+              className="text-[#EF4444] font-semibold hover:underline transition-colors"
             >
               Kacti Labs
             </a>
           </div>
 
           <div className="flex items-center space-x-6">
-            <a href="#" className="hover:text-slate-300 transition-colors">Privacidad</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">Términos</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">Aviso Legal</a>
+            <a href="#" className="hover:text-white transition-colors">Privacidad</a>
+            <a href="#" className="hover:text-white transition-colors">Términos</a>
+            <a href="#" className="hover:text-white transition-colors">Aviso Legal</a>
           </div>
         </div>
 
