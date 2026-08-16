@@ -131,24 +131,24 @@ export interface BlogPost {
 export const featuredProperties: Property[] = [
   {
     id: "prop-1",
-    title: "Residencia Greenfield & Penthouse",
-    category: "Penthouse de Lujo",
-    price: "$850,000",
-    pricePen: "S/ 3,185,000",
-    location: "Av. El Golf, San Isidro • Lima",
+    title: "Penthouse Dúplex de Alta Plusvalía en San Isidro Golf",
+    category: "Inversión Residencial",
+    price: "$790,000",
+    pricePen: "S/ 2,960,000",
+    location: "Av. Aurelio Miró Quesada, San Isidro • Lima",
     beds: 4,
     baths: 4,
     sqft: 340,
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1400&auto=format&fit=crop",
-    badge: "OFERTA TOP",
-    description: "Extraordinario penthouse dúplex con vista directa y despejada a las canchas del Club El Golf de San Isidro. Diseñado con alturas libres de 3.10 metros, pisos de madera estructurada europea, cocina de autor con isla en cuarzo Calacatta y terraza panorámica con zona lounge y jacuzzi privado.",
-    propertyType: "Penthouse Dúplex de Lujo",
+    badge: "ALTO RETORNO",
+    description: "Inmueble residencial de autor con vista panorámica al Lima Golf Club. Diseñado para inversionistas exigentes que buscan plusvalía sostenida y rentabilidad por alquiler corporativo. Cuenta con ascensor directo, acabados europeos en cuarzo y madera estructurada, y terraza social privada con zona lounge.",
+    propertyType: "Penthouse Dúplex Patrimonial",
     totalArea: "340 m²",
     coveredArea: "295 m²",
-    parking: "3 Cocheras Paralelas Techadas + 1 Depósito",
+    parking: "3 Cocheras Paralelas + 1 Depósito Amplio",
     deliveryStatus: "Entrega Inmediata (Estreno)",
-    maintenance: "S/ 920 / mes aprox.",
-    security: "Seguridad 24/7, cámaras CCTV y ascensor directo con código privado",
+    maintenance: "S/ 890 / mes aprox.",
+    security: "Seguridad privada 24/7, cámaras CCTV y control de acceso biométrico",
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
@@ -157,39 +157,80 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
+      name: "Gonzalo Silva",
+      role: "Director de Inversiones & Estrategia Patrimonial",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
       phone: "+51 987 654 321",
-      email: "marco.benavides@vivahome.pe"
+      email: "gsilva@gysinmobiliarios.pe"
     },
     nearbyPlaces: [
       { name: "Lima Golf Club", category: "Deportes & Exclusividad", distance: "2 min a pie" },
-      { name: "Bosque El Olivar", category: "Parques & Naturaleza", distance: "4 min en auto" },
+      { name: "Centro Financiero San Isidro", category: "Negocios & Banca", distance: "4 min en auto" },
       { name: "Zona Gastronómica Dasso", category: "Restaurantes & Cafés", distance: "5 min en auto" },
-      { name: "Real Plaza Salaverry", category: "Centros Comerciales", distance: "7 min en auto" }
+      { name: "Real Plaza Salaverry", category: "Comercio & Retail", distance: "6 min en auto" }
     ]
   },
   {
     id: "prop-2",
-    title: "Casa de Campo Woodland & Piscina",
-    category: "Villa Moderna",
-    price: "$1,250,000",
-    pricePen: "S/ 4,680,000",
-    location: "Rinconada de la Molina, La Molina • Lima",
+    title: "Edificio Corporativo Boutique con Renta Garantizada",
+    category: "Inversión Comercial",
+    price: "$1,850,000",
+    pricePen: "S/ 6,930,000",
+    location: "Av. Canaval y Moreyra, San Isidro • Lima",
+    beds: 0,
+    baths: 8,
+    sqft: 820,
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop",
+    badge: "OPORTUNIDAD COMERCIAL",
+    description: "Activo inmobiliario comercial de primer nivel en pleno polo corporativo de San Isidro. Estructurado con contratos de arrendamiento vigentes con empresas triple A, asegurando un flujo de caja mensual con Cap Rate superior al 8.5% anual en dólares.",
+    propertyType: "Edificio Corporativo / Oficinas Prime",
+    totalArea: "820 m² Construidos",
+    coveredArea: "760 m² Útiles",
+    parking: "12 Estacionamientos Subterráneos",
+    deliveryStatus: "Operativo con Inquilino Corporativo",
+    maintenance: "Autogestionado",
+    security: "Control de accesos con molinetes ópticos y vigilancia integral 24/7",
+    gallery: [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop"
+    ],
+    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
+    assignedAgent: {
+      name: "Rodrigo Salazar",
+      role: "Consultor Senior de Finanzas & Bienes Raíces",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 993 456 789",
+      email: "rsalazar@gysinmobiliarios.pe"
+    },
+    nearbyPlaces: [
+      { name: "Estación Canaval y Moreyra", category: "Transporte Rápido", distance: "2 min a pie" },
+      { name: "Torres Financieras BCP / BBVA", category: "Banca Matriz", distance: "3 min a pie" },
+      { name: "Hotel Westin Lima", category: "Hotelería 5 Estrellas", distance: "4 min a pie" },
+      { name: "Vía Expresa Paseo de la República", category: "Conectividad Vial", distance: "1 min" }
+    ]
+  },
+  {
+    id: "prop-3",
+    title: "Residencia Contemporánea & Arquitectura de Autor",
+    category: "Residencial Premium",
+    price: "$1,150,000",
+    pricePen: "S/ 4,310,000",
+    location: "Rinconada Baja, La Molina • Lima",
     beds: 5,
-    baths: 5,
-    sqft: 480,
+    baths: 6,
+    sqft: 520,
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
-    badge: "EXCLUSIVO",
-    description: "Imponente residencia contemporánea en el corazón de Rinconada de la Molina con microclima soleado todo el año. Cuenta con amplios jardines paisajistas, piscina temperada sin fin, zona de parrilla techada estilo BBQ Lounge, cava de vinos climatizada y suite principal con doble walk-in closet.",
-    propertyType: "Casa / Residencia Unifamiliar",
-    totalArea: "750 m² de Terreno",
-    coveredArea: "480 m² Construidos",
+    badge: "EXCLUSIVIDAD",
+    description: "Imponente residencia en exclusivo condominio cerrado con microclima privilegiado. Extensos jardines con paisajismo, piscina temperada, zona de parrilla techada estilo BBQ Lounge, cava climatizada y suite principal con doble walk-in closet y acabados en mármol Travertino.",
+    propertyType: "Residencia Unifamiliar de Lujo",
+    totalArea: "780 m² de Terreno",
+    coveredArea: "520 m² Construidos",
     parking: "4 Estacionamientos Techados",
-    deliveryStatus: "Entrega Inmediata",
+    deliveryStatus: "Entrega Inmediata (Saneada)",
     maintenance: "S/ 650 / mes (Junta de Propietarios)",
-    security: "Pórtico de Control de Acceso 24/7 y Patrullaje Privado",
+    security: "Pórtico de control de acceso 24/7 y patrullaje motorizado permanente",
     gallery: [
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
@@ -198,39 +239,39 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
+      name: "Gisela Salinas",
+      role: "Directora de Asesoría Legal & Saneamiento",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
       phone: "+51 981 234 567",
-      email: "valeria.ugarte@vivahome.pe"
+      email: "gsalinas@gysinmobiliarios.pe"
     },
     nearbyPlaces: [
       { name: "Rinconada Country Club", category: "Club Social & Golf", distance: "3 min" },
-      { name: "Centro Comercial Molicentro", category: "Compras & Servicios", distance: "5 min" },
+      { name: "Centro Comercial Molicentro", category: "Servicios & Compras", distance: "4 min" },
       { name: "Colegio Newton & Roosevelt", category: "Colegios Internacionales", distance: "6 min" },
-      { name: "Wong Planicie", category: "Supermercados", distance: "4 min" }
+      { name: "Wong Planicie", category: "Supermercados", distance: "5 min" }
     ]
   },
   {
-    id: "prop-3",
-    title: "Departamento Oceanview & Malecón",
-    category: "Dpto. Frente al Mar",
-    price: "$980,000",
-    pricePen: "S/ 3,670,000",
-    location: "Malecón de la Reserva, Miraflores • Lima",
+    id: "prop-4",
+    title: "Departamento Flat Oceanview Frente al Mar",
+    category: "Inversión Residencial",
+    price: "$560,000",
+    pricePen: "S/ 2,100,000",
+    location: "Malecón de la Marina, Miraflores • Lima",
     beds: 3,
     baths: 3,
-    sqft: 280,
+    sqft: 215,
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop",
-    badge: "DESTACADO",
-    description: "Espectacular departamento flat con vista frontal en primera fila a la bahía de Miraflores. Amplia terraza con barandas de cristal templado, mamparas termoacústicas de piso a techo, acabados en mármol Botticino y acceso peatonal directo a los parques del malecón.",
+    badge: "VISTA AL MAR",
+    description: "Departamento flat frente al océano pacífico con mamparas termoacústicas de piso a techo y terraza envolvente. Excelente perfil patrimonial tanto para vivienda familiar como para alquiler temporal VIP con alta tasa de ocupación anual.",
     propertyType: "Departamento Flat Frente al Mar",
-    totalArea: "280 m²",
-    coveredArea: "250 m²",
-    parking: "2 Cocheras Paralelas + 1 Depósito",
+    totalArea: "215 m²",
+    coveredArea: "190 m²",
+    parking: "2 Cocheras Paralelas Techadas + 1 Depósito",
     deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 880 / mes aprox.",
-    security: "Recepción de Lujo 24/7 y Sistema de Control Biométrico",
+    maintenance: "S/ 750 / mes aprox.",
+    security: "Recepción de lujo 24/7 y control biométrico",
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
@@ -239,80 +280,39 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 993 456 789",
-      email: "diego.reyna@vivahome.pe"
+      name: "Gonzalo Silva",
+      role: "Director de Inversiones & Estrategia Patrimonial",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 987 654 321",
+      email: "gsilva@gysinmobiliarios.pe"
     },
     nearbyPlaces: [
-      { name: "Larcomar", category: "Shopping & Dining", distance: "4 min a pie" },
-      { name: "Parque del Amor", category: "Malecón & Parques", distance: "3 min a pie" },
-      { name: "Club Terrazas", category: "Deportes & Tenis", distance: "5 min a pie" },
-      { name: "JW Marriott Hotel", category: "Hoteles 5 Estrellas", distance: "4 min" }
-    ]
-  },
-  {
-    id: "prop-4",
-    title: "Casa de Playa Villa Mar",
-    category: "Casa de Playa",
-    price: "$690,000",
-    pricePen: "S/ 2,585,000",
-    location: "Playa Chocalla, Asia, Cañete • Lima",
-    beds: 5,
-    baths: 4,
-    sqft: 390,
-    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop",
-    badge: "NUEVO INGRESO",
-    description: "Moderna casa de playa en condominio privado con acceso directo a la arena y vista panorámica al océano pacífico. Diseñada en 3 niveles con piscina privada en el rooftop, área de fogatero, dormitorios con baño incorporado y cocina abierta integrada a la terraza.",
-    propertyType: "Casa de Playa en Condominio",
-    totalArea: "390 m²",
-    coveredArea: "310 m²",
-    parking: "3 Estacionamientos Privados",
-    deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 1,100 / mes (Incluye Club House y Sombrilla)",
-    security: "Vigilancia Permanente 24/7 y Garita de Control",
-    gallery: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
-    ],
-    floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
-    assignedAgent: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 981 234 567",
-      email: "valeria.ugarte@vivahome.pe"
-    },
-    nearbyPlaces: [
-      { name: "Boulevard de Asia", category: "Centros Comerciales", distance: "8 min en auto" },
-      { name: "Club House Privado", category: "Canchas de Tenis & Piscina", distance: "1 min a pie" },
-      { name: "Helipuerto Asia", category: "Transporte Privado", distance: "10 min" },
-      { name: "Restaurantes de Playa", category: "Gastronomía Marina", distance: "5 min" }
+      { name: "Parque del Faro & Malecón", category: "Paseos & Deporte", distance: "1 min a pie" },
+      { name: "Larcomar", category: "Gastronomía & Shopping", distance: "4 min en auto" },
+      { name: "Club Terrazas", category: "Tenis & Club Social", distance: "3 min en auto" },
+      { name: "Av. Pardo", category: "Conectividad Comercial", distance: "2 min en auto" }
     ]
   },
   {
     id: "prop-5",
-    title: "Residencia San Isidro El Olivar",
-    category: "Casa Arquitectónica",
-    price: "$1,650,000",
-    pricePen: "S/ 6,180,000",
-    location: "Bosque El Olivar, San Isidro • Lima",
-    beds: 5,
-    baths: 5,
-    sqft: 520,
-    image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1400&auto=format&fit=crop",
-    badge: "PREVENTA",
-    description: "Obra maestra arquitectónica frente a los árboles centenarios del Bosque El Olivar. Fachada en concreto aparente y listones de madera teca, patio interior zen con caída de agua, ascensor hidráulico para todas las plantas y sistema integral de domótica Lutron para iluminación y climatización.",
-    propertyType: "Residencia Arquitectónica de Autor",
-    totalArea: "620 m² de Terreno",
-    coveredArea: "520 m² Construidos",
-    parking: "4 Estacionamientos Paralelos",
-    deliveryStatus: "Preventa Exclusiva (Entrega Diciembre 2026)",
-    maintenance: "S/ 750 / mes aprox.",
-    security: "Circuito Cerrado de Seguridad y Blindaje Perimetral",
+    title: "Terreno Estratégico para Desarrollo Multifamiliar",
+    category: "Desarrollo Inmobiliario",
+    price: "$1,420,000",
+    pricePen: "S/ 5,325,000",
+    location: "Av. Primavera, Chacarilla, Surco • Lima",
+    beds: 0,
+    baths: 0,
+    sqft: 650,
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1400&auto=format&fit=crop",
+    badge: "DESARROLLO",
+    description: "Excelente terreno con parámetros urbanísticos de alta densidad (RDA) para edificación de proyecto multifamiliar de departamentos de estreno. Frente de 18 metros lineales sobre avenida principal con zonificación consolidada y saneamiento registral listo para estructuración de fideicomiso.",
+    propertyType: "Terreno Residencial / Multifamiliar",
+    totalArea: "650 m² de Terreno",
+    coveredArea: "0 m²",
+    parking: "N/A",
+    deliveryStatus: "Listo para Construcción / Parámetros Aprobados",
+    maintenance: "N/A",
+    security: "Perímetro cerrado con cerco de seguridad",
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
@@ -321,39 +321,39 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
-      phone: "+51 987 654 321",
-      email: "marco.benavides@vivahome.pe"
+      name: "Gisela Salinas",
+      role: "Directora de Asesoría Legal & Saneamiento",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+      phone: "+51 981 234 567",
+      email: "gsalinas@gysinmobiliarios.pe"
     },
     nearbyPlaces: [
-      { name: "Parque El Olivar", category: "Patrimonio Histórico & Áreas Verdes", distance: "0 min (Frente al inmueble)" },
-      { name: "Av. Conquistadores", category: "Boutiques & Diseño de Interiores", distance: "3 min a pie" },
-      { name: "Hotel Country Club", category: "Gastronomía & Salones", distance: "4 min en auto" },
-      { name: "Centro Financiero San Isidro", category: "Banca & Negocios", distance: "5 min en auto" }
+      { name: "C.C. Chacarilla", category: "Comercio & Restaurantes", distance: "3 min" },
+      { name: "Colegio Santa María Marianistas", category: "Colegios", distance: "4 min" },
+      { name: "Av. Velasco Astete", category: "Conectividad", distance: "2 min" },
+      { name: "Parque Bella Luz", category: "Áreas Verdes", distance: "2 min a pie" }
     ]
   },
   {
     id: "prop-6",
-    title: "Casona Moderna Paul de Baudiez",
-    category: "Casona Dúplex",
-    price: "$780,000",
-    pricePen: "S/ 2,920,000",
-    location: "Malecón de Barranco, Barranco • Lima",
-    beds: 4,
+    title: "Dúplex de Estreno con Terraza & Vista a Parque",
+    category: "Inversión Residencial",
+    price: "$385,000",
+    pricePen: "S/ 1,440,000",
+    location: "Calle Las Moreras, San Borja • Lima",
+    beds: 3,
     baths: 3,
-    sqft: 310,
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop",
-    badge: "OPORTUNIDAD",
-    description: "Casona de diseño restaurada con espíritu bohemio y acabados contemporáneos en el acantilado de Barranco. Techos de 4 metros de altura con vigas vistas, cocina gourmet industrial, balcón corrido con vista lateral al mar y taller/estudio independiente para artistas o profesionales.",
-    propertyType: "Casona Restaurada / Dúplex",
-    totalArea: "310 m²",
-    coveredArea: "275 m²",
-    parking: "2 Cocheras Techadas",
-    deliveryStatus: "Entrega Inmediata",
-    maintenance: "S/ 580 / mes",
-    security: "Monitoreo 24/7 y Alarma Centralizada",
+    sqft: 185,
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop",
+    badge: "PREVENTA",
+    description: "Departamento dúplex nuevo en edificio exclusivo de baja densidad frente a parque. Distribución optimizada para familias modernas, finos acabados en cuarzo y porcelanatos importados, terraza privada y alta liquidez en el mercado secundario.",
+    propertyType: "Departamento Dúplex de Estreno",
+    totalArea: "185 m²",
+    coveredArea: "150 m²",
+    parking: "2 Cocheras Paralelas Techadas",
+    deliveryStatus: "Estreno (Inafecto a Alcabala)",
+    maintenance: "S/ 490 / mes aprox.",
+    security: "Conserjería 24/7 y ascensor directo Schindler",
     gallery: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
@@ -362,193 +362,141 @@ export const featuredProperties: Property[] = [
     ],
     floorPlan: "https://images.unsplash.com/photo-1574958269340-fa927304f208?q=80&w=1200&auto=format&fit=crop",
     assignedAgent: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
+      name: "Rodrigo Salazar",
+      role: "Consultor Senior de Finanzas & Bienes Raíces",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
       phone: "+51 993 456 789",
-      email: "diego.reyna@vivahome.pe"
+      email: "rsalazar@gysinmobiliarios.pe"
     },
     nearbyPlaces: [
-      { name: "Puente de los Suspiros", category: "Cultura & Turismo", distance: "4 min a pie" },
-      { name: "Malecón Paul de Baudiez", category: "Caminatas & Mar", distance: "1 min a pie" },
-      { name: "Galería Dédalo", category: "Arte & Diseño", distance: "5 min a pie" },
-      { name: "Restaurante Central & Isolina", category: "Alta Gastronomía", distance: "6 min a pie" }
+      { name: "Pentagonito & Parque de la Felicidad", category: "Deportes al Aire Libre", distance: "3 min a pie" },
+      { name: "Real Plaza Primavera", category: "Centros Comerciales", distance: "5 min" },
+      { name: "Clínica San Borja", category: "Salud", distance: "6 min" },
+      { name: "Av. San Borja Sur", category: "Vías Rápidas", distance: "2 min" }
     ]
   }
 ];
 
 export const stats: Stat[] = [
   {
-    value: "10+",
-    label: "Años de Experiencia",
-    description: "Brindando asesoría inmobiliaria de alto nivel con total transparencia en el Perú"
+    value: "14+",
+    label: "Años de Trayectoria",
+    description: "Especialistas en construir valor y maximizar rentabilidad en cada decisión inmobiliaria"
   },
   {
-    value: "9k+",
-    label: "Clientes Satisfechos",
-    description: "Familias e inversionistas que concretaron su propiedad ideal con nuestro respaldo"
+    value: "S/ 250M+",
+    label: "Patrimonio Gestionado",
+    description: "Transformamos experiencia, estrategia y conocimiento del mercado en resultados sólidos"
   },
   {
-    value: "10k+",
-    label: "Propiedades Gestionadas",
-    description: "Portafolio exclusivo administrado bajo estándares de máxima seguridad jurídica"
+    value: "100%",
+    label: "Seguridad Legal & Financiera",
+    description: "Asesoría integral en estructuración, saneamiento registral y financiamiento estratégico"
   }
 ];
 
 export const services: Service[] = [
   {
-    id: "asesoria-compra",
-    title: "Asesoría en Compra de Inmuebles",
-    description: "Te guiamos en la búsqueda y adquisición de propiedades residenciales y comerciales en Lima y playas con total seguridad jurídica.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
-    tag: "COMPRA & ASESORÍA",
-    intro: "Comprar una propiedad es una de las decisiones financieras más trascendentales. En VivaHome brindamos un acompañamiento integral y personalizado desde la definición del perfil del inmueble ideal hasta la firma de la escritura pública en notaría.",
-    mainGoal: "Garantizar que tu inversión inmobiliaria sea 100% segura, rentable y adaptada a las necesidades de vida o patrimonio de tu familia, protegiéndote ante riesgos registrales o tributarios.",
-    process: [
-      { step: "01", title: "Definición de Requerimientos", desc: "Analizamos tu presupuesto, zona de preferencia (San Isidro, Miraflores, La Molina, etc.) y necesidades de metraje." },
-      { step: "02", title: "Selección Curada de Opciones", desc: "Filtramos propiedades exclusivas dentro y fuera del mercado abierto con altos estándares arquitectónicos." },
-      { step: "03", title: "Visitas Privadas & Guiadas", desc: "Coordinamos recorridos presenciales con asesoría técnica en acabados, iluminación y potencial de revalorización." },
-      { step: "04", title: "Negociación Estratégica", desc: "Defendemos tus intereses económicos para lograr el mejor precio de compra y condiciones comerciales favorables." },
-      { step: "05", title: "Estudio de Títulos & Cierre Notarial", desc: "Revisión exhaustiva en Sunarp, elaboración de minuta, pago de Alcabala y firma de escritura pública." }
-    ],
-    challenges: [
-      {
-        challenge: "Cargas o gravámenes ocultos en la partida registral del vendedor.",
-        solution: "Nuestro equipo legal realiza un estudio de títulos exhaustivo en Sunarp de los últimos 10 años antes de firmar cualquier arras o contrato."
-      },
-      {
-        challenge: "Demoras y complicaciones en la calificación del crédito hipotecario bancario.",
-        solution: "Trabajamos con ejecutivos senior de BCP, BBVA, Interbank y Scotiabank para agilizar la aprobación y conseguir tasas preferenciales."
-      }
-    ]
-  },
-  {
-    id: "venta-comercializacion",
-    title: "Venta y Comercialización Exclusiva",
-    description: "Estrategias de marketing inmobiliario digital y red de compradores calificados para vender tu propiedad al mejor valor de mercado.",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop",
-    tag: "VENTA & MARKETING",
-    intro: "Maximizamos el valor de venta de tu inmueble aplicando técnicas avanzadas de Home Staging, producción audiovisual 4K y segmentación de clientes con alto poder adquisitivo.",
-    mainGoal: "Lograr el cierre de venta en el menor tiempo posible, al precio óptimo de mercado y con filtros rigurosos de solvencia para los potenciales compradores.",
-    process: [
-      { step: "01", title: "Inspección & Valorización Comercial", desc: "Determinamos el precio justo y competitivo mediante análisis comparativo de mercado (ACM)." },
-      { step: "02", title: "Producción Audiovisual de Alto Nivel", desc: "Fotografía arquitectónica profesional, video con dron y recorridos virtuales 3D." },
-      { step: "03", title: "Campaña Multicanal Segmentada", desc: "Difusión en portales premium, redes sociales y nuestra base privada de inversionistas calificados." },
-      { step: "04", title: "Calificación y Filtro de Clientes", desc: "Verificación de capacidad crediticia antes de programar visitas privadas." },
-      { step: "05", title: "Cierre & Liquidación Notarial", desc: "Gestión de contratos, pago de impuesto a la renta de 2da categoría y entrega de llaves." }
-    ],
-    challenges: [
-      {
-        challenge: "Propiedades estancadas en el mercado por sobreprecio o mala exposición fotográfica.",
-        solution: "Alineamos la tasación con datos reales de transacciones recientes y relanzamos la propiedad con producción fotográfica de calidad editorial."
-      },
-      {
-        challenge: "Pérdida de tiempo con compradores no calificados o sin aprobación bancaria.",
-        solution: "Exigimos carta de aprobación hipotecaria o constancia de fondos previa a la negociación formal."
-      }
-    ]
-  },
-  {
-    id: "tasacion-valorizacion",
-    title: "Tasación y Valorización Comercial",
-    description: "Informes periciales rigurosos y análisis comparativo de mercado para fijar precios precisos de compra, venta o hipoteca.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop",
-    tag: "VALORIZACIÓN TÉCNICA",
-    intro: "Conocer el valor real de un inmueble es fundamental antes de cualquier transacción. Elaboramos tasaciones comerciales y reglamentarias elaboradas por peritos certificados.",
-    mainGoal: "Proporcionar certeza técnica y financiera sobre el valor comercial y de liquidación de residencias, departamentos y terrenos.",
-    process: [
-      { step: "01", title: "Recopilación Documentaria", desc: "Revisión de planos, memoria descriptiva, PU/HR de la municipalidad y partida registral." },
-      { step: "02", title: "Inspección Física In Situ", desc: "Evaluación del estado de conservación, calidad de acabados, antigüedad e infraestructura." },
-      { step: "03", title: "Análisis de Entorno y Zonificación", desc: "Estudio de accesibilidad, servicios, parámetros urbanísticos y proyectos viales cercanos." },
-      { step: "04", title: "Muestreo Comparativo de Mercado", desc: "Cruce de datos con ofertas activas y cierres notariales en la misma manzana o sector." },
-      { step: "05", title: "Emisión del Informe Pericial", desc: "Entrega del informe completo foliado con metodología de tasación y rango de valor." }
-    ],
-    challenges: [
-      {
-        challenge: "Divergencias entre el valor de tasación bancaria y el precio de venta pactado.",
-        solution: "Presentamos informes sustentados con metodologías homologadas por el Cuerpo Técnico de Tasaciones del Perú para evitar observaciones bancarias."
-      },
-      {
-        challenge: "Falta de claridad en áreas comunes o porcentajes de copropiedad.",
-        solution: "Desglosamos al milímetro el área ocupada, techada y libre con su respectiva alícuota en el reglamento interno."
-      }
-    ]
-  },
-  {
-    id: "consultoria-inversiones",
-    title: "Consultoría en Inversiones & Preventas",
-    description: "Identificación de oportunidades en preventa y departamentos de estreno con alto potencial de plusvalía y retorno de alquiler (ROI).",
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1000&auto=format&fit=crop",
+    id: "manejo-inversiones-inmobiliarias",
+    title: "Manejo y Estructuración de Inversiones en Bienes Raíces",
+    description: "Estrategias de inversión patrimonial, selección de activos de alto rendimiento y análisis financiero de Cap Rate y ROI.",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop",
     tag: "INVERSIÓN PATRIMONIAL",
-    intro: "Asesoramos a fondos familiares e inversionistas particulares en la conformación de portafolios inmobiliarios resilientes y altamente rentables en Lima Top.",
-    mainGoal: "Maximizar el retorno sobre el capital invertido (Cap Rate y Plusvalía) mitigando los riesgos del ciclo inmobiliario y constructivo.",
+    intro: "Manejamos carteras de inversión en bienes raíces para familias, fondos privados y empresas. Transformamos conocimiento del mercado en decisiones altamente rentables y blindadas frente a fluctuaciones económicas.",
+    mainGoal: "Maximizar el retorno de inversión y la plusvalía del capital, garantizando activos generadores de flujo de caja continuo y seguridad a largo plazo.",
     process: [
-      { step: "01", title: "Diagnóstico de Perfil de Inversionista", desc: "Determinación de metas de rentabilidad por alquiler o ganancia de capital a mediano plazo." },
-      { step: "02", title: "Scouting de Proyectos en Preventa", desc: "Acceso a listas de precios 'Friends & Family' y fases iniciales de preventa de constructoras consolidadas." },
-      { step: "03", title: "Evaluación Financiera & Flujos de Caja", desc: "Modelado de rentabilidad por alquiler tradicional, temporal (Airbnb) y tasa interna de retorno (TIR)." },
-      { step: "04", title: "Estructuración Legal del Contrato", desc: "Revisión de cartas fianza, cronogramas de desembolso y penalidades por retraso de entrega." },
-      { step: "05", title: "Monitoreo y Estrategia de Salida", desc: "Acompañamiento hasta la entrega del departamento y posterior puesta en alquiler o reventa." }
+      { step: "01", title: "Diagnóstico de Perfil y Metas", desc: "Evaluamos objetivos de rentabilidad, horizonte temporal y tolerancia al riesgo del inversionista." },
+      { step: "02", title: "Scouting y Análisis Comparativo", desc: "Identificamos activos residenciales, comerciales o terrenos con alto potencial de revalorización." },
+      { step: "03", title: "Modelado Financiero (TIR / Cap Rate)", desc: "Proyección rigurosa de flujos de caja, costos operativos, impuestos y rentabilidad neta anual." },
+      { step: "04", title: "Estructuración y Cierre Seguro", desc: "Negociación de precios de entrada preferenciales y redacción de contratos blindados." },
+      { step: "05", title: "Monitoreo y Estrategia de Salida", desc: "Seguimiento de valorización y asesoría en el momento óptimo para desinversión o reventa." }
     ],
     challenges: [
       {
-        challenge: "Incertidumbre sobre la solvencia y cumplimiento de plazos de la empresa constructora.",
-        solution: "Auditamos el historial de entregas de la desarrolladora y exigimos que el proyecto cuente con fideicomiso bancario de garantía."
+        challenge: "Inversiones con rentabilidades proyectadas irreales o costos ocultos de mantenimiento.",
+        solution: "Auditamos exhaustivamente el historial operativo y modelamos escenarios conservadores con métricas reales de mercado."
       },
       {
-        challenge: "Riesgo de vacancia prolongada tras la entrega del inmueble.",
-        solution: "Seleccionamos únicamente tipologías y metrajes de alta demanda de alquiler corporativo en zonas consolidadas."
+        challenge: "Riesgos de vacancia prolongada en activos comerciales o residenciales.",
+        solution: "Seleccionamos únicamente ubicaciones estratégicas con demanda corporativa consolidada."
       }
     ]
   },
   {
-    id: "administracion-propiedades",
-    title: "Administración Integral de Propiedades",
-    description: "Cuidado patrimonial continuo, mantenimiento preventivo, gestión de pagos y supervisión de servicios para propietarios ausentes.",
-    image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1000&auto=format&fit=crop",
-    tag: "ADMINISTRACIÓN & CUIDADO",
-    intro: "Para propietarios que residen fuera de Lima o en el extranjero, nos encargamos del cuidado integral de sus inmuebles como si fueran propios.",
-    mainGoal: "Mantener el estado óptimo de conservación y valor de tus activos inmobiliarios sin que tengas que invertir tu tiempo en gestiones operativas.",
+    id: "asesoria-legal-saneamiento",
+    title: "Asesoría Legal Inmobiliaria & Saneamiento Registral",
+    description: "Estudio minucioso de títulos en Sunarp, elaboración de minutas, saneamiento físico-legal y cierre notarial 100% seguro.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop",
+    tag: "SEGURIDAD JURÍDICA",
+    intro: "La seguridad jurídica es el pilar de toda inversión inmobiliaria exitosa. En GyS Servicios Inmobiliarios nuestro equipo legal especializado protege tu patrimonio en cada etapa contractual.",
+    mainGoal: "Garantizar transacciones limpias, libres de contingencias registrales, gravámenes ocultos o disputas hereditarias.",
     process: [
-      { step: "01", title: "Inventario Detallado Inicial", desc: "Levantamiento fotográfico del estado de mobiliario, equipamiento, luminarias y servicios." },
-      { step: "02", title: "Mantenimiento Preventivo y Correctivo", desc: "Coordinación con técnicos certificados para gasfitería, electricidad, pintura y climatización." },
-      { step: "03", title: "Gestión de Servicios y Arbitrios", desc: "Pago puntual de mantenimiento del edificio, luz, agua, predial y arbitrios municipales." },
-      { step: "04", title: "Supervisión de Seguridad y Accesos", desc: "Control de llaves, visitas técnicas y activación de alarmas." },
-      { step: "05", title: "Reportes Periódicos de Estado", desc: "Envío mensual de estados de cuenta consolidados y fotografías de inspección." }
+      { step: "01", title: "Auditoría Registral Exhaustiva", desc: "Estudio de títulos de los últimos 10 años en Sunarp (Copia Literal, CRI y títulos archivados)." },
+      { step: "02", title: "Verificación Municipal y Tributaria", desc: "Revisión de constancias de no adeudo de impuesto predial, arbitrios y licencias municipales." },
+      { step: "03", title: "Saneamiento y Regularización", desc: "Trámite de independizaciones, rectificación de áreas, declaratorias de fábrica y levantamiento de hipotecas." },
+      { step: "04", title: "Redacción de Minutas y Contratos", desc: "Elaboración de contratos a medida con cláusulas de protección patrimonial y penalidades de cumplimiento." },
+      { step: "05", title: "Firma Notarial e Inscripción", desc: "Acompañamiento en notaría hasta la inscripción registral definitiva a nombre del nuevo propietario." }
     ],
     challenges: [
       {
-        challenge: "Deterioro de inmuebles desocupados por falta de ventilación y mantenimiento.",
-        solution: "Programamos visitas quincenales de inspección y limpieza profunda para conservar el inmueble en condiciones impecables."
+        challenge: "Cargas, embargos o procesos judiciales no advertidos en la partida registral.",
+        solution: "Revisión integral de antecedentes judiciales y títulos archivados antes de autorizar cualquier pago de arras."
       },
       {
-        challenge: "Complicaciones para pagar arbitrios e impuestos desde el exterior.",
-        solution: "Consolidamos todos los pagos municipales y tributarios en una cuenta única con rendición mensual detallada."
+        challenge: "Discrepancias entre el área física del terreno y el metraje inscrito en Sunarp.",
+        solution: "Levantamiento topográfico pericial y trámite de rectificación de linderos según normativa vigente."
       }
     ]
   },
   {
-    id: "gestion-alquileres",
-    title: "Gestión y Garantía de Alquileres",
-    description: "Evaluación crediticia de inquilinos en centrales de riesgo (Infocorp/Equifax), contratos con cláusula de allanamiento futuro y cobro puntual.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop",
-    tag: "ALQUILERES SEGUROS",
-    intro: "Alquilar una propiedad de lujo requiere máxima cautela. Filtramos rigurosamente a cada postulante y redactamos contratos blindados bajo la legislación peruana vigente.",
-    mainGoal: "Asegurar un flujo mensual de ingresos sin retrasos y con total protección legal frente a contingencias de inquilinos morosos.",
+    id: "asesoria-financiera-hipotecaria",
+    title: "Asesoría y Planificación Financiera Hipotecaria",
+    description: "Gestión estratégica con la banca privada para optimizar estructuras de financiamiento, tasas de interés preferenciales y apalancamiento.",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1000&auto=format&fit=crop",
+    tag: "FINANZAS ESTRATÉGICAS",
+    intro: "Optimizamos tu capacidad financiera para adquirir activos inmobiliarios con el menor costo de capital posible a través de alianzas con los principales bancos del país.",
+    mainGoal: "Diseñar esquemas de financiamiento eficientes que maximicen el rendimiento del capital propio y aceleren el crecimiento patrimonial.",
     process: [
-      { step: "01", title: "Evaluación en Centrales de Riesgo", desc: "Revisión exhaustiva en Infocorp, Sentinel, verificación laboral y antecedentes penales/judiciales." },
-      { step: "02", title: "Fijación de Renta y Condiciones", desc: "Establecimiento del canon de arrendamiento y depósito de garantía (2 meses de garantía + 1 de adelanto)." },
-      { step: "03", title: "Contrato con Cláusula de Allanamiento", desc: "Redacción de contrato notarial con cláusula de allanamiento a futuro (Ley 30201) y desalojo notarial (Ley 30933)." },
-      { step: "04", title: "Firma en Notaría y Entrega de Activo", desc: "Legalización de firmas, inventario de entrega firmado y entrega formal de llaves." },
-      { step: "05", title: "Gestión Mensual de Cobranza", desc: "Recaudación del alquiler, pago del impuesto de 1ra categoría a Sunat y atención de incidencias del inquilino." }
+      { step: "01", title: "Análisis de Capacidad Crediticia", desc: "Evaluación financiera de ingresos, endeudamiento y estructuración del perfil del solicitante." },
+      { step: "02", title: "Negociación Multibanco", desc: "Presentación simultánea del expediente en las mejores entidades financieras para competir por la menor TEA." },
+      { step: "03", title: "Estructuración de Cuotas y Plazos", desc: "Elección del plan óptimo de amortización, cuotas dobles y condiciones de prepago sin penalidad." },
+      { step: "04", title: "Coordinación de Tasación Bancaria", desc: "Sustento técnico del valor comercial del inmueble ante los peritos de la entidad bancaria." },
+      { step: "05", title: "Desembolso y Firma Notarial", desc: "Acompañamiento en el cierre financiero y liquidación formal de fondos." }
     ],
     challenges: [
       {
-        challenge: "Inquilinos morosos que se rehúsan a desalojar el inmueble.",
-        solution: "Incorporamos siempre la cláusula de allanamiento futuro y desalojo exprés con legalización notarial obligatoria."
+        challenge: "Dificultad de independientes o empresarios para sustentar ingresos ante la banca tradicional.",
+        solution: "Armado de carpetas financieras profesionales con sustento de flujos comerciales, balances y dividendos."
       },
       {
-        challenge: "Daños en los acabados y pisos tras el vencimiento del contrato.",
-        solution: "Exigimos inventario fotográfico notariado y retenemos el depósito de garantía hasta la liquidación de refacciones."
+        challenge: "Tasas de interés elevadas que reducen la rentabilidad del proyecto.",
+        solution: "Negociación directa con ejecutivos de banca privada para obtener tasas corporativas preferenciales."
+      }
+    ]
+  },
+  {
+    id: "comercializacion-venta-estrategica",
+    title: "Comercialización y Venta Estratégica de Propiedades",
+    description: "Planes de comercialización de alto impacto, valoración comercial pericial y red exclusiva de inversionistas calificados.",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
+    tag: "VENTA ESTRATÉGICA",
+    intro: "Construimos valor en cada propiedad. Implementamos estrategias de marketing de alta gama y filtramos a compradores calificados para lograr cierres ágiles y al valor óptimo de mercado.",
+    mainGoal: "Vender tu activo inmobiliario en el menor tiempo posible, al precio más competitivo y con total respaldo contractual.",
+    process: [
+      { step: "01", title: "Valorización Comercial Pericial", desc: "Determinación del precio estratégico mediante análisis comparativo de mercado y tasación técnica." },
+      { step: "02", title: "Producción Audiovisual de Alta Gama", desc: "Fotografía arquitectónica profesional, video con dron y recorridos virtuales 3D." },
+      { step: "03", title: "Campaña Multicanal Segmentada", desc: "Difusión en plataformas inmobiliarias premium y presentación directa a nuestra cartera de inversionistas." },
+      { step: "04", title: "Calificación y Filtro de Clientes", desc: "Verificación de respaldo económico y precalificación bancaria antes de programar visitas." },
+      { step: "05", title: "Cierre Notarial y Liquidación", desc: "Gestión de contratos, pago de tributos correspondientes y entrega de posesión del inmueble." }
+    ],
+    challenges: [
+      {
+        challenge: "Inmuebles con tiempos prolongados en el mercado por estrategias de difusión deficientes.",
+        solution: "Reposicionamiento del activo con producción visual editorial y campañas digitales altamente segmentadas."
+      },
+      {
+        challenge: "Negociaciones desgastantes con compradores no calificados.",
+        solution: "Filtro riguroso previo para negociar únicamente con compradores con fondos o aprobación bancaria firme."
       }
     ]
   }
@@ -557,139 +505,139 @@ export const services: Service[] = [
 export const agents: Agent[] = [
   {
     id: "agent-1",
-    name: "Marco Benavides",
-    role: "Director Comercial & Bróker Principal",
+    name: "Gonzalo Silva",
+    role: "Director de Inversiones & Estrategia Patrimonial",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
     phone: "+51 987 654 321",
-    email: "marco.benavides@vivahome.pe",
-    bio: "Marco Benavides es el Director Comercial y Bróker Principal de VivaHome, liderando las operaciones de inmuebles de lujo e inversión institucional en Lima y balnearios del sur. Con más de 12 años en el sector inmobiliario de alta gama, su gestión se fundamenta en la integridad, el rigor analítico y la construcción de relaciones comerciales de largo plazo.",
-    experience: "A lo largo de su carrera, Marco ha asesorado con éxito a fondos de inversión, familias y empresarios en la adquisición y estructuración de proyectos residenciales en San Isidro, Miraflores y Asia. Su profundo conocimiento del mercado peruano garantiza transacciones seguras y altamente rentables.",
+    email: "gsilva@gysinmobiliarios.pe",
+    bio: "Gonzalo Silva es socio fundador y Director de Inversiones en GyS Servicios Inmobiliarios. Con más de 14 años de experiencia en el mercado inmobiliario corporativo y residencial de alta gama, lidera la estructuración de portafolios patrimoniales y transacciones de alto valor en Lima y principales polos de desarrollo del Perú.",
+    experience: "Ha asesorado transacciones por más de S/ 150 millones en activos comerciales, terrenos y residencias prime, enfocándose en maximizar la rentabilidad y plusvalía de cada cliente.",
     skills: [
       {
-        title: "Liderazgo Estratégico",
-        description: "Coordina equipos de alto rendimiento fomentando transparencia, servicio al cliente y excelencia técnica en cada cierre."
+        title: "Estructuración de Inversiones",
+        description: "Modelado financiero de rentabilidad, tasas de capitalización y análisis de riesgo patrimonial."
       },
       {
-        title: "Conocimiento del Mercado",
-        description: "Análisis continuo de oferta, demanda y plusvalía por m² en Lima Top para anticipar tendencias de revalorización."
+        title: "Negociación Estratégica",
+        description: "Alineación de intereses comerciales para lograr acuerdos sólidos y de alto beneficio mutuo."
       },
       {
-        title: "Negociación de Alto Nivel",
-        description: "Especialista en alinear intereses entre compradores y vendedores para alcanzar acuerdos comerciales sólidos y mutuamente beneficiosos."
+        title: "Visión del Mercado Inmobiliario",
+        description: "Identificación de oportunidades fuera del mercado abierto y tendencias de crecimiento urbano."
       },
       {
-        title: "Planificación Financiera",
-        description: "Diseño de modelos de retorno de capital, estructuración crediticia con banca local y análisis de rentabilidad patrimonial."
+        title: "Gestión de Portafolios",
+        description: "Administración integral y revalorización continua de carteras de activos inmobiliarios."
       }
     ],
     career: [
       {
-        period: "2016 — 2018",
-        description: "Inició en consultoría inmobiliaria residencial en Lima, especializándose en venta de departamentos de estreno y captación de clientes de banca privada."
+        period: "2012 — 2015",
+        description: "Analista senior de inversiones inmobiliarias residenciales y comerciales en Lima."
       },
       {
-        period: "2019 — 2021",
-        description: "Consolidó alianzas estratégicas con las principales notarías y desarrolladoras en San Isidro y Miraflores, liderando equipos comerciales."
+        period: "2016 — 2019",
+        description: "Director comercial liderando la colocación de proyectos multifamiliares y oficinas prime."
       },
       {
-        period: "2022 — 2024",
-        description: "Dirigió transacciones multimillonarias en preventas exclusivas y casas de playa en Asia, consolidando carteras de inversión patrimonial."
+        period: "2020 — 2023",
+        description: "Estructuración de fondos inmobiliarios y compra de terrenos para desarrollo urbano."
       },
       {
-        period: "2025 — Presente",
-        description: "Lidera la expansión de VivaHome en el mercado peruano, impulsando la digitalización de procesos y estándares de servicio VIP."
+        period: "2024 — Presente",
+        description: "Director General de Inversiones en GyS Servicios Inmobiliarios, construyendo valor para clientes e inversionistas."
       }
     ]
   },
   {
     id: "agent-2",
-    name: "Valeria Ugarte",
-    role: "Asesora Senior de Inmuebles de Lujo",
+    name: "Gisela Salinas",
+    role: "Directora de Asesoría Legal & Saneamiento",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
     phone: "+51 981 234 567",
-    email: "valeria.ugarte@vivahome.pe",
-    bio: "Valeria Ugarte es Asesora Senior en VivaHome, especializada en residencias de diseño, penthouses y arquitectura contemporánea en Lima Top. Combina su formación en arquitectura y bienes raíces para brindar una visión estética y técnica inigualable.",
-    experience: "Más de 9 años guiando a compradores exigentes y embajadas en la elección de inmuebles con los más altos estándares de privacidad, seguridad y confort.",
+    email: "gsalinas@gysinmobiliarios.pe",
+    bio: "Gisela Salinas es socia fundadora y Directora del área Legal en GyS Servicios Inmobiliarios. Abogada especialista en derecho registral, notarial e inmobiliario con más de 12 años asesorando operaciones complejas, saneamiento de predios y blindaje contractual.",
+    experience: "Ha liderado el saneamiento físico-legal de más de 200 propiedades y coordinado cierres notariales seguros con las principales notarías de Lima.",
     skills: [
       {
-        title: "Curaduría Arquitectónica",
-        description: "Evaluación detallada de distribución espacial, iluminación natural y calidad de acabados nobles."
+        title: "Derecho Registral y Notarial",
+        description: "Dominio absoluto de la normativa de Sunarp, estudios de títulos y minutas de compraventa complejas."
       },
       {
-        title: "Atención Diplomática y VIP",
-        description: "Gestión confidencial de operaciones para directivos, diplomáticos y clientes de alto patrimonio."
+        title: "Saneamiento Físico-Legal",
+        description: "Independizaciones, acumulación de lotes, rectificación de áreas y declaratorias de fábrica."
       },
       {
-        title: "Home Staging & Presentación",
-        description: "Estrategias de puesta en escena para maximizar el atractivo visual y el valor percibido del inmueble."
+        title: "Estructuración Contractual",
+        description: "Redacción de contratos de arras, opciones de compra y fideicomisos inmobiliarios de garantía."
       },
       {
-        title: "Saneamiento Registral",
-        description: "Revisión meticulosa de títulos de propiedad, independizaciones y licencias municipales."
+        title: "Planificación Tributaria",
+        description: "Optimización legal del impuesto de Alcabala, Impuesto a la Renta de 2da categoría y arbitrios."
       }
     ],
     career: [
       {
-        period: "2017 — 2019",
-        description: "Consultora de diseño y ventas para desarrollos boutique en Barranco y Miraflores."
+        period: "2014 — 2017",
+        description: "Asesora legal en notarías líderes de Lima especializada en transferencias inmobiliarias."
       },
       {
-        period: "2020 — 2022",
-        description: "Especialista en inmuebles residenciales de lujo en San Isidro Golf y La Molina."
+        period: "2018 — 2021",
+        description: "Líder de saneamiento predial y regularización de inmuebles comerciales y residenciales."
       },
       {
-        period: "2023 — 2024",
-        description: "Asesora premiada por mayor volumen de cierres en penthouses frente al mar en Lima."
+        period: "2022 — 2023",
+        description: "Consultora legal para empresas constructoras y fondos de inversión privada."
       },
       {
-        period: "2025 — Presente",
-        description: "Asesora Senior en VivaHome, gestionando el portafolio más exclusivo de residencias privadas."
+        period: "2024 — Presente",
+        description: "Directora Legal en GyS Servicios Inmobiliarios, asegurando cero contingencias en cada operación."
       }
     ]
   },
   {
     id: "agent-3",
-    name: "Diego Reyna",
-    role: "Especialista en Proyectos e Inversión",
+    name: "Rodrigo Salazar",
+    role: "Consultor Senior de Finanzas & Bienes Raíces",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
     phone: "+51 993 456 789",
-    email: "diego.reyna@vivahome.pe",
-    bio: "Diego Reyna es especialista en estructuración de inversiones inmobiliarias, preventas y análisis financiero de rentabilidad en VivaHome. Su enfoque cuantitativo permite a los inversionistas maximizar el retorno de su capital con total control de riesgos.",
-    experience: "Ha asesorado en la colocación de más de 100 unidades en preventa y en la estructuración de portafolios para renta tradicional y temporal.",
+    email: "rsalazar@gysinmobiliarios.pe",
+    bio: "Rodrigo Salazar es especialista en finanzas inmobiliarias, evaluación crediticia y apalancamiento estratégico en GyS Servicios Inmobiliarios. Con sólida trayectoria en banca corporativa e hipotecaria, ayuda a los clientes a estructurar el mejor esquema financiero para cada adquisición.",
+    experience: "Ha gestionado con éxito más de S/ 80 millones en colocaciones hipotecarias y préstamos puente para proyectos inmobiliarios.",
     skills: [
       {
-        title: "Modelado Financiero (ROI & TIR)",
-        description: "Análisis de flujos de caja proyectados, tasas de capitalización (Cap Rate) y rentabilidad neta."
+        title: "Modelación Financiera y Créditos",
+        description: "Estructuración de financiamientos con BCP, BBVA, Interbank y Scotiabank con tasas preferenciales."
       },
       {
-        title: "Negociación en Preventa",
-        description: "Acceso a precios preferenciales en fases iniciales de proyectos con constructoras líderes."
+        title: "Análisis de Retorno de Inversión",
+        description: "Cálculo de TIR, VAN, Cap Rate y periodo de recuperación de capital invertido."
       },
       {
-        title: "Auditoría de Desarrolladoras",
-        description: "Verificación de cartas fianza, fideicomisos y solvencia de constructoras aliadas."
+        title: "Estrategias de Apalancamiento",
+        description: "Uso óptimo de deuda bancaria para potenciar la rentabilidad sobre el patrimonio (ROE)."
       },
       {
-        title: "Estrategias de Salida",
-        description: "Planificación de reventa en punto óptimo del ciclo constructivo para maximizar la plusvalía."
+        title: "Asesoría a Independientes",
+        description: "Formulación de expedientes financieros sólidos para independientes y personas jurídicas."
       }
     ],
     career: [
       {
-        period: "2018 — 2020",
-        description: "Analista financiero en fondos de inversión inmobiliaria residencial en Lima."
+        period: "2015 — 2018",
+        description: "Ejecutivo de banca hipotecaria y créditos empresariales en entidad líder local."
       },
       {
-        period: "2021 — 2023",
-        description: "Especialista en comercialización de proyectos multifamiliares en Surco y Jesús María."
+        period: "2019 — 2022",
+        description: "Consultor financiero independiente para inversionistas en bienes raíces."
       },
       {
-        period: "2024",
-        description: "Líder de estructuración de compras en preventa para inversionistas institucionales."
+        period: "2023 — 2024",
+        description: "Asesor senior en estructuración de créditos para preventas e inmuebles prime."
       },
       {
         period: "2025 — Presente",
-        description: "Especialista Senior de Inversiones en VivaHome, coordinando alianzas con constructoras."
+        description: "Consultor Financiero Senior en GyS Servicios Inmobiliarios."
       }
     ]
   }
@@ -698,211 +646,212 @@ export const agents: Agent[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "test-1",
-    name: "Carlos E. Mendoza",
-    role: "Empresario - San Isidro",
+    name: "Dr. Fernando Velásquez",
+    role: "Inversionista Privado - San Isidro",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Conseguir nuestro penthouse en Av. El Golf fue un proceso impecable. El equipo de VivaHome nos brindó asesoría VIP de principio a fin."
+    comment: "GyS Servicios Inmobiliarios transformó mi visión de inversión. Su asesoría legal y financiera me permitió adquirir activos con rentabilidad garantizada y total seguridad."
   },
   {
     id: "test-2",
-    name: "Elena Rostova",
-    role: "Arquitecta de Interiores - Miraflores",
+    name: "María Eugenia Barnechea",
+    role: "Empresaria - Miraflores",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Como arquitecta, valoro mucho los acabados y la distribución. Encontraron exactamente el dpto frente al malecón que estaba buscando."
+    comment: "El equipo legal liderado por Gisela Salinas resolvió una compleja independización en Sunarp que llevaba meses estancada. Profesionales de primer nivel."
   },
   {
     id: "test-3",
-    name: "Juan Pablo Alarcón",
-    role: "Inversionista Inmobiliario - Surco",
+    name: "Carlos Alberto Montoya",
+    role: "Director de Fondo Patrimonial",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "La rapidez en el estudio de títulos en Sunarp y la negociación directa con los propietarios hicieron que mi inversión en preventa sea sumamente rentable."
+    comment: "Gonzalo y Rodrigo tienen un dominio analítico excepcional del mercado. Cada propiedad recomendada ha superado las proyecciones de plusvalía y retorno."
   },
   {
     id: "test-4",
-    name: "Sofía & David Larrea",
-    role: "Compradores de Casa de Playa - Asia",
+    name: "Claudia & Renato Morales",
+    role: "Propietarios en La Molina",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Compramos nuestra casa de verano en Chocalla con total tranquilidad. Su equipo legal gestionó todo el proceso notarial sin inconvenientes."
+    comment: "Vendimos nuestra residencia al mejor valor de mercado en menos de 45 días. La estrategia comercial y el filtro de compradores fueron impecables."
   },
   {
     id: "test-5",
-    name: "Miguel Ángel Barreto",
-    role: "Gerente de Fondo Patrimonial",
+    name: "Ing. Jorge Luis Seminario",
+    role: "Desarrollador Inmobiliario - Surco",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "VivaHome combina elegancia en la presentación con un rigor financiero excepcional. Son la mejor agencia inmobiliaria boutique en el Perú."
+    comment: "GyS es nuestro socio estratégico indispensable para la adquisición y saneamiento de terrenos multifamiliares. Rigor técnico absoluto."
   },
   {
     id: "test-6",
-    name: "Amanda K. Wong",
-    role: "Directora Creativa - Barranco",
+    name: "Lucía De La Puente",
+    role: "Inversionista en Renta Residencial",
     avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop",
     rating: 5,
-    comment: "Desde el recorrido virtual en 3D hasta la firma de la escritura pública en notaría, cada detalle fue llevado con profesionalismo."
+    comment: "Su asesoría integral en crédito hipotecario me consiguió una tasa preferencial que mejoró significativamente el flujo neto de mi inversión."
   }
 ];
 
 export const faqs: FAQItem[] = [
   {
     id: "faq-1",
-    question: "¿Cómo agendar una visita privada a un inmueble en Lima o provincias?",
-    answer: "Puedes agendar una visita presencial o tour virtual privado haciendo clic en 'Agendar Llamada', escribiéndonos directamente por WhatsApp o completando el formulario de contacto en la propiedad seleccionada."
+    question: "¿Qué servicios integrales brinda GyS Servicios Inmobiliarios?",
+    answer: "Brindamos una asesoría 360° que abarca el manejo de inversiones en bienes raíces, asesoría legal especializada (estudio de títulos y saneamiento en Sunarp), consultoría financiera hipotecaria y comercialización estratégica de activos residenciales y comerciales."
   },
   {
     id: "faq-2",
-    question: "¿Qué asesoría legal e hipotecaria brindan para la compraventa?",
-    answer: "Ofrecemos asesoría legal integral que incluye el estudio de títulos en Sunarp, verificación de cargas/gravámenes, minuta de compraventa, coordinación notarial y trámite de crédito hipotecario con BCP, BBVA, Interbank o Scotiabank."
+    question: "¿Cómo garantizan la seguridad jurídica de cada transacción inmobiliaria?",
+    answer: "Nuestro equipo legal efectúa un estudio de títulos exhaustivo de los últimos 10 años en Sunarp, verifica cargas, gravámenes, embargos y antecedentes judiciales, y redacta contratos con cláusulas blindadas de protección patrimonial antes de autorizar cualquier desembolso."
   },
   {
     id: "faq-3",
-    question: "¿Manejan proyectos inmobiliarios en preventa y departamentos de estreno?",
-    answer: "Sí, contamos con alianzas exclusivas con las mejores desarrolladoras inmobiliarias para ofrecer departamentos de estreno y casas en preventa con precios preferenciales antes de su lanzamiento oficial."
+    question: "¿Cómo estructuran y calculan la rentabilidad de una inversión en bienes raíces?",
+    answer: "Elaboramos modelos financieros a medida calculando la Tasa Interna de Retorno (TIR), la Tasa de Capitalización (Cap Rate), el flujo de caja neto proyectado y la ganancia de capital estimada por plusvalía constructiva o revalorización de la zona."
   },
   {
     id: "faq-4",
-    question: "¿Cuáles son los impuestos y gastos notariales que corresponden al comprador?",
-    answer: "El comprador asume el impuesto de Alcabala (3% sobre el valor que excede las 10 UIT, salvo en primera venta de constructora) más los gastos notariales y de inscripción registral en Sunarp, los cuales desglosamos con total claridad previa a la oferta."
+    question: "¿Ayudan en la obtención de financiamiento y crédito hipotecario?",
+    answer: "Sí, trabajamos directamente con ejecutivos senior de las principales entidades financieras del Perú (BCP, BBVA, Interbank y Scotiabank) para obtener la tasa de interés más baja del mercado y condiciones de amortización flexibles."
   }
 ];
 
 export const blogPosts: BlogPost[] = [
   {
     id: "blog-1",
-    title: "Consejos Clave para Encontrar el Hogar Ideal para tu Familia en Lima",
-    category: "CONSEJOS & GUÍAS",
-    date: "13 DE ABRIL, 2026",
+    title: "Estrategias Clave para Construir Patrimonio a Través de Bienes Raíces",
+    category: "INVERSIÓN PATRIMONIAL",
+    date: "14 DE JUNIO, 2026",
     readingTime: "6 Minutos",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-    summary: "Guía paso a paso para definir prioridades, evaluar plusvalía por m², asegurar solvencia crediticia y seleccionar la mejor zona residencial en Lima.",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+    summary: "Aprende cómo transformar experiencia, estrategia y conocimiento del mercado en decisiones inmobiliarias que generan rentabilidad y plusvalía sostenible.",
     author: {
-      name: "Marco Benavides",
-      role: "Director Comercial & Bróker Principal",
+      name: "Gonzalo Silva",
+      role: "Director de Inversiones & Estrategia Patrimonial",
       avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop",
-      quote: "Asesorando a familias e inversionistas a tomar decisiones patrimoniales seguras y con alta plusvalía en el Perú."
+      quote: "Construir valor en bienes raíces exige visión cuantitativa, rigor legal y disciplina estratégica."
     },
-    middleImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
+    middleImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Define tus Prioridades Familiares",
+      title: "La Importancia del Rigor Financiero en Bienes Raíces",
       paragraphs: [
-        "Antes de comenzar la búsqueda de un inmueble, es esencial alinear las necesidades presentes y futuras de tu familia. Factores como el número de habitaciones, la cercanía a colegios de prestigio, áreas recreativas y el tiempo diario de traslado son determinantes para garantizar calidad de vida a largo plazo.",
-        "En distritos consolidados de Lima como San Isidro, Miraflores o Surco, la distribución interna y la eficiencia del metraje resultan clave para equilibrar espacios sociales con la privacidad de cada miembro del hogar."
+        "Invertir en bienes raíces no consiste simplemente en adquirir metros cuadrados, sino en estructurar activos generadores de flujo de efectivo y plusvalía continua. El análisis exhaustivo de la tasa de capitalización (Cap Rate) y la tasa interna de retorno (TIR) permite distinguir oportunidades sólidas de compras especulativas.",
+        "En GyS Servicios Inmobiliarios combinamos métricas de mercado con análisis macroeconómico local para seleccionar propiedades en ubicaciones con demanda corporativa y residencial de alta resiliencia."
       ]
     },
     section2: {
-      title: "Establece un Presupuesto Realista y Calificación Bancaria",
+      title: "Diversificación y Selección de Tipologías",
       paragraphs: [
-        "Determinar con exactitud tu capacidad de inversión evita desgastes y agiliza las negociaciones. Además del precio de lista del inmueble, considera costos anexos como el impuesto de Alcabala, gastos notariales, derechos de inscripción en Sunarp y cuotas iniciales del crédito hipotecario.",
-        "Contar con una carta de precalificación emitida por entidades como BCP, BBVA o Interbank te otorga una posición de ventaja competitiva para negociar mejores condiciones de compra."
+        "Un portafolio patrimonial equilibrado debe combinar inmuebles generadores de renta inmediata (departamentos premium o activos comerciales) con proyectos en preventa o terrenos estratégicos que capturen la plusvalía constructiva a mediano plazo.",
+        "La clave radica en alinear la liquidez de cada activo con el horizonte de inversión y los objetivos patrimoniales de cada familia o empresa."
       ]
     },
     section3: {
-      title: "Investiga el Entorno y Seguridad de la Zona",
+      title: "El Papel Fundamental de la Asesoría Legal",
       paragraphs: [
-        "La ubicación define más del 60% del valor futuro de tu propiedad. Evalúa el alumbrado público, cámaras de vigilancia comunales, acceso a ciclovías y la proximidad a centros de salud y parques ecológicos.",
-        "Un vecindario con baja densidad y zonificación residencial estrictamente regulada asegura que tu tranquilidad no se vea comprometida por futuras construcciones de alto impacto."
+        "Ninguna rentabilidad proyectada tiene valor si la propiedad no cuenta con un saneamiento registral impecable. Verificar la partida matriz, los títulos archivados en Sunarp y la ausencia de cargas es el primer paso obligatorio de toda inversión inteligente."
       ]
     },
     section4: {
-      title: "Evalúa el Retorno y la Plusvalía a Largo Plazo",
-      intro: "Elegir una residencia implica una inversión patrimonial que debe revalorizarse con el paso de los años. Ten en cuenta estas consideraciones clave:",
+      title: "Pilares para una Inversión Inmobiliaria Exitosa",
+      intro: "Factores esenciales que evaluamos en cada análisis:",
       items: [
-        "Opta por inmuebles en sectores con proyectos de mejora urbana e infraestructura vial consolidada.",
-        "Prioriza edificios con certificaciones sostenibles (Edge o LEED) para reducir costos de mantenimiento.",
-        "Verifica que el reglamento interno permita flexibilidad ante eventuales adaptaciones familiares.",
-        "Consulta el histórico de transacciones notariales en la misma manzana para verificar el precio por m².",
-        "Apóyate en asesores inmobiliarios colegiados para blindar la operación con total seguridad jurídica."
+        "Ubicación consolidada con acceso a servicios e infraestructura vial de primer orden.",
+        "Estudio de títulos registrales al 100% libre de gravámenes.",
+        "Modelado de flujos de caja conservadores con margen de seguridad ante vacancia.",
+        "Estructuración de créditos con apalancamiento a tasas preferenciales.",
+        "Acompañamiento profesional desde la búsqueda hasta la gestión del contrato de alquiler."
       ]
     }
   },
   {
     id: "blog-2",
-    title: "Innovaciones Arquitectónicas que Valorizan Tu Propiedad en Lima",
-    category: "DISEÑO & ARQUITECTURA",
-    date: "08 DE FEBRERO, 2026",
+    title: "Checklist Legal Indispensable Antes de Comprar un Inmueble en el Perú",
+    category: "SEGURIDAD JURÍDICA",
+    date: "28 DE MAYO, 2026",
     readingTime: "5 Minutos",
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
-    summary: "Cómo los acabados en piedra natural, cristales herméticos termoacústicos y terrazas panorámicas elevan el precio de reventa.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
+    summary: "Guía legal práctica elaborada por nuestros especialistas para evitar fraudes, verificar títulos en Sunarp y asegurar un cierre notarial blindado.",
     author: {
-      name: "Valeria Ugarte",
-      role: "Asesora Senior de Inmuebles de Lujo",
+      name: "Gisela Salinas",
+      role: "Directora de Asesoría Legal & Saneamiento",
       avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop",
-      quote: "El diseño funcional y los materiales nobles son el verdadero pilar de la revalorización inmobiliaria."
+      quote: "El saneamiento registral y el rigor notarial son la garantía definitiva de la tranquilidad de tu familia."
     },
-    middleImage: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1000&auto=format&fit=crop",
+    middleImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Integración de Luz Natural y Ventilación Cruzada",
+      title: "Estudio de Títulos de los Últimos 10 Años",
       paragraphs: [
-        "El diseño bioclimático se ha convertido en una de las mayores exigencias para compradores de alta gama en Lima. La correcta orientación de mamparas y techos de doble altura maximiza el confort térmico."
+        "Solicitar únicamente la copia literal no es suficiente. Es indispensable solicitar el Certificado Registral Inmobiliario (CRI) y revisar los títulos archivados en Sunarp para rastrear la cadena ininterrumpida de transferencias y confirmar la legitimidad de las firmas precedentes."
       ]
     },
     section2: {
-      title: "Materiales Nobles de Bajo Mantenimiento",
+      title: "Verificación de Facultades y Poderes",
       paragraphs: [
-        "El uso de cuarzo en encimeras de cocina, porcelanatos de gran formato y maderas tratadas previene el desgaste prematuro y garantiza una presentación impecable al momento de cotizar en el mercado."
+        "Si la venta es realizada mediante apoderado o persona jurídica, debe verificarse en el Registro de Personas Jurídicas y Mandatos que las facultades de disposición de bienes inmuebles se encuentren expresas, vigentes y no revocadas."
       ]
     },
     section3: {
-      title: "Espacios Híbridos para Home Office y Bienestar",
+      title: "Minuta Notarial con Cláusulas de Protección",
       paragraphs: [
-        "Las áreas polivalentes diseñadas para teletrabajo y zonas de relajación privada incrementan significativamente el atractivo comercial frente a familias profesionales contemporáneas."
+        "El contrato debe incluir cláusulas expresas de evicción y saneamiento, penalidades por mora en la entrega del inmueble y el establecimiento claro del medio de pago bancarizado obligatorio según la Ley de Bancarización."
       ]
     },
     section4: {
-      title: "Factores Clave de Plusvalía Arquitectónica",
-      intro: "Aspectos indispensables en la arquitectura residencial moderna:",
+      title: "Documentación que Debes Exigir",
+      intro: "Revisa siempre estos documentos antes de firmar las arras:",
       items: [
-        "Balcones corridos con barandas de cristal templado.",
-        "Aislamiento termoacústico con ventanas de doble vidriado hermético.",
-        "Sistemas domóticos de control de iluminación y seguridad.",
-        "Luminarias LED empotradas de bajo consumo energético."
+        "Certificado Registral Inmobiliario (CRI) emitido por Sunarp con antigüedad menor a 30 días.",
+        "Hoja Resumen (HR) y Predio Urbano (PU) municipal con pagos al día.",
+        "Constancia de no adeudo de arbitrios e impuesto predial del año en curso.",
+        "Comprobación de independización de cocheras y depósitos si es departamento.",
+        "Minuta redactada y visada por abogado colegiado especializado en derecho inmobiliario."
       ]
     }
   },
   {
     id: "blog-3",
-    title: "Guía Clave para Invertir en Proyectos Inmobiliarios en Preventa en Perú",
-    category: "GUÍA DE INVERSIÓN",
-    date: "28 DE ENERO, 2026",
-    readingTime: "7 Minutos",
-    image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
-    summary: "Consejos clave para asegurar precios de entrada de preventa, verificar el respaldo financiero del proyecto y maximizar la rentabilidad de alquiler.",
+    title: "Cómo Optimizar el Financiamiento Hipotecario y Maximizar tu ROE",
+    category: "FINANZAS ESTRATÉGICAS",
+    date: "12 DE ABRIL, 2026",
+    readingTime: "5 Minutos",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop",
+    summary: "Descubre cómo el apalancamiento bancario inteligente puede duplicar el retorno sobre tu capital propio al adquirir propiedades para inversión.",
     author: {
-      name: "Diego Reyna",
-      role: "Especialista en Proyectos e Inversión",
+      name: "Rodrigo Salazar",
+      role: "Consultor Senior de Finanzas & Bienes Raíces",
       avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop",
-      quote: "Comprar en preventa con el socio desarrollador adecuado es la vía más sólida para generar plusvalía."
+      quote: "Una estructura de deuda inteligente convierte una buena inversión en un negocio altamente rentable."
     },
-    middleImage: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1000&auto=format&fit=crop",
+    middleImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop",
     section1: {
-      title: "Beneficios de Entrada en Fases Iniciales",
+      title: "El Poder del Apalancamiento Financiero",
       paragraphs: [
-        "Adquirir en preventa (en planos o inicio de excavación) permite acceder a descuentos de entre el 10% y el 18% respecto al valor final de entrega del departamento."
+        "Utilizar capital bancario a una tasa de interés menor a la tasa de retorno total del inmueble (renta + plusvalía) permite amplificar el rendimiento de los fondos propios invertidos (Return on Equity - ROE)."
       ]
     },
     section2: {
-      title: "Auditoría de la Desarrolladora y Fideicomiso Bancario",
+      title: "Negociación de Tasas y Costo Financiero Total (TCEA)",
       paragraphs: [
-        "Verifica que el proyecto cuente con el respaldo de un banco de primera línea y que los fondos de los compradores se depositen en una cuenta fiduciaria blindada."
+        "Comparar ofertas entre diversas entidades bancarias y evaluar seguros asociados (desgravamen e inmueble) permite reducir el costo efectivo anual en más de 150 puntos básicos, lo que representa decenas de miles de dólares en ahorros a lo largo del crédito."
       ]
     },
     section3: {
-      title: "Tipologías con Mayor Demanda de Alquiler",
+      title: "Estrategias de Amortización Acelerada",
       paragraphs: [
-        "Los departamentos de 1 y 2 dormitorios con cochera en zonas estratégicas de San Isidro y Miraflores presentan la menor tasa de vacancia y el mayor retorno anual por renta (Cap Rate)."
+        "Diseñar cronogramas que permitan abonos directos al capital sin penalidades acelera la cancelación de la deuda y permite reinvertir el flujo liberado en nuevas oportunidades inmobiliarias."
       ]
     },
     section4: {
-      title: "Estrategia para Inversionistas Patrimoniales",
-      intro: "Pasos recomendados para blindar tu compra en planos:",
+      title: "Recomendaciones Financieras para Inversionistas",
+      intro: "Prácticas recomendadas para optimizar tus créditos:",
       items: [
-        "Solicita la copia literal de la matriz del terreno en Sunarp.",
-        "Revisa el cronograma de desembolsos vinculado al avance de obra.",
-        "Asegúrate de que el contrato contemple penalidades por retraso.",
-        "Planifica con anticipación la estrategia de amueblado y puesta en alquiler."
+        "Mantén un score crediticio intachable en Infocorp y centrales de riesgo.",
+        "Presenta expedientes con ingresos auditados y balances consolidados.",
+        "Opta por créditos en la misma moneda en la que recibirás los ingresos por alquiler.",
+        "Negocia exoneraciones de comisiones de evaluación y gastos de estructuración.",
+        "Cuenta con la asesoría de GyS Servicios Inmobiliarios para el cierre multibanco."
       ]
     }
   }

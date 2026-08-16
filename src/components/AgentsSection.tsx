@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { agents } from '../data/realEstateData';
-import { Phone, UserCheck, ArrowUpRight } from 'lucide-react';
+import { Phone, ArrowUpRight } from 'lucide-react';
 
 export const AgentsSection: React.FC = () => {
   return (
-    <section id="agents" className="py-16 sm:py-24 bg-[#F8FAFC] text-slate-900 overflow-hidden">
+    <section id="agents" className="py-20 sm:py-28 bg-white text-zinc-900 overflow-hidden border-t border-zinc-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
+        {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,75 +17,72 @@ export const AgentsSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-10 sm:mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full bg-white border border-slate-200 text-slate-800 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-3 sm:mb-4 shadow-sm">
-            <UserCheck className="w-3.5 h-3.5 text-emerald-600" />
-            <span>NUESTRO EQUIPO</span>
-          </div>
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-slate-900 mb-2 sm:mb-4">
-            Expertos Detrás de Tu Próximo Hogar
+          <span className="text-xs font-semibold text-lime-700 uppercase tracking-wider block mb-2 sm:mb-3">
+            EQUIPO ESPECIALISTA
+          </span>
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-black mb-2 sm:mb-4">
+            Directores & Asesores de GyS Servicios Inmobiliarios
           </h2>
-          <p className="text-slate-600 text-xs sm:text-base font-light">
-            Asesores inmobiliarios colegiados y especialistas financieros comprometidos con proteger tu inversión patrimonial en VivaHome.
+          <p className="text-xs sm:text-base font-light text-zinc-600 leading-relaxed">
+            Especialistas en inversiones, derecho registral y finanzas dedicados a construir valor para tu patrimonio.
           </p>
         </motion.div>
 
-        {/* 3 Agents Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-          {agents.map((agent, idx) => (
-            <motion.div 
+        {/* Agents Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+          {agents.map((agent, index) => (
+            <motion.div
               key={agent.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              whileHover={{ y: -6 }}
-              className="group bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200 hover:border-slate-300 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between"
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group bg-[#F8FAFC] border border-zinc-200 rounded-3xl p-6 flex flex-col justify-between hover:border-lime-500/40 hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5"
             >
-              {/* Agent Photo Link */}
-              <Link to={`/equipo/${agent.id}`} className="block relative aspect-[4/4] overflow-hidden bg-slate-100">
-                <img 
-                  src={agent.image} 
-                  alt={agent.name} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-50" />
-                
-                {/* Floating view profile icon */}
-                <div className="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-white/90 group-hover:bg-emerald-600 group-hover:text-white text-slate-800 flex items-center justify-center shadow-md transition-colors">
-                  <ArrowUpRight className="w-4 h-4" />
-                </div>
-              </Link>
+              <div>
+                {/* Agent Image */}
+                <Link to={`/equipo/${agent.id}`} className="block relative aspect-square rounded-2xl overflow-hidden mb-5 bg-zinc-100">
+                  <img 
+                    src={agent.image} 
+                    alt={agent.name} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity" />
+                  
+                  {/* Floating Action Button */}
+                  <div className="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-lime-500 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
+                  </div>
+                </Link>
 
-              {/* Agent Details */}
-              <div className="p-5 sm:p-6">
+                {/* Agent Info */}
                 <Link to={`/equipo/${agent.id}`}>
-                  <h3 className="text-base sm:text-lg font-medium text-slate-900 group-hover:text-emerald-700 transition-colors mb-1">
+                  <h3 className="text-lg sm:text-xl font-medium tracking-tight text-zinc-900 group-hover:text-lime-700 transition-colors">
                     {agent.name}
                   </h3>
                 </Link>
-                <p className="text-xs text-emerald-700 font-medium mb-4 sm:mb-6">
+                <p className="text-xs sm:text-sm font-light text-zinc-500 mb-4 mt-0.5">
                   {agent.role}
                 </p>
-
-                {/* Contact Links */}
-                <div className="pt-3 sm:pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                  <a 
-                    href={`tel:${agent.phone.replace(/\s+/g, '')}`}
-                    className="flex items-center gap-1.5 hover:text-emerald-700 transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>{agent.phone}</span>
-                  </a>
-                  <Link 
-                    to={`/equipo/${agent.id}`}
-                    className="flex items-center gap-1 text-emerald-700 font-medium hover:underline"
-                  >
-                    <span>Ver Perfil</span>
-                    <ArrowUpRight className="w-3 h-3" />
-                  </Link>
-                </div>
               </div>
 
+              {/* Contact Button */}
+              <div className="pt-4 border-t border-zinc-200 flex items-center justify-between">
+                <a 
+                  href={`tel:${agent.phone.replace(/\s+/g, '')}`}
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-lime-700 hover:text-lime-800 transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5" />
+                  <span>{agent.phone}</span>
+                </a>
+
+                <Link
+                  to={`/equipo/${agent.id}`}
+                  className="text-[11px] font-medium text-zinc-500 hover:text-zinc-900 transition-colors"
+                >
+                  Ver Perfil
+                </Link>
+              </div>
             </motion.div>
           ))}
         </div>

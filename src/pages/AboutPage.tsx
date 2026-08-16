@@ -7,32 +7,31 @@ import { FaqSection } from '../components/FaqSection';
 import { BlogSection } from '../components/BlogSection';
 import { CtaBanner } from '../components/CtaBanner';
 import { Footer } from '../components/Footer';
-import { ShieldCheck, Sparkles } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   const statsList = [
     {
-      value: "10+",
-      label: "Años de Experiencia",
-      desc: "Liderando operaciones en el sector inmobiliario residencial y corporativo",
+      value: "14+",
+      label: "Años de Trayectoria",
+      desc: "Liderando operaciones en el sector inmobiliario residencial, comercial y corporativo",
       isHighlighted: false
     },
     {
-      value: "9k+",
-      label: "Clientes Satisfechos",
-      desc: "Familias e inversionistas respaldados con asesoría personalizada",
+      value: "S/ 250M+",
+      label: "Patrimonio Gestionado",
+      desc: "Activos estructurados y asesorados con alta rentabilidad y plusvalía en el Perú",
       isHighlighted: true
     },
     {
-      value: "10k+",
-      label: "Propiedades Gestionadas",
-      desc: "Inmuebles entregados con absoluta seguridad registral en el Perú",
+      value: "500+",
+      label: "Inversionistas Asesorados",
+      desc: "Familias, fondos y empresas con inversiones blindadas y seguras",
       isHighlighted: false
     },
     {
-      value: "30+",
-      label: "Alianzas Estratégicas",
-      desc: "Convenios directos con las principales notarías y entidades bancarias",
+      value: "100%",
+      label: "Seguridad Legal",
+      desc: "Estudio de títulos minucioso y convenios directos con banca privada y notarías",
       isHighlighted: true
     }
   ];
@@ -42,21 +41,21 @@ export const AboutPage: React.FC = () => {
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="min-h-screen bg-[#F8FAFC] text-slate-900 font-sans selection:bg-emerald-500 selection:text-white"
+      className="min-h-screen bg-[#F8FAFC] text-zinc-900 font-sans selection:bg-lime-500 selection:text-black"
     >
       {/* Navbar */}
       <Navbar />
 
-      {/* 1. ABOUT HERO BANNER WITH STAGGERED ENTRANCE */}
-      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#0B1E17]">
+      {/* 1. ABOUT HERO BANNER */}
+      <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#0C130E]">
         {/* Background Image with Dark Architectural Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" 
-            alt="Arquitectura Moderna y Residencia de Lujo - VivaHome" 
+            alt="Arquitectura Moderna y Residencia de Lujo - GyS Servicios Inmobiliarios" 
             className="w-full h-full object-cover object-center filter brightness-[0.45] contrast-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E17] via-[#0B1E17]/60 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0C130E] via-[#0C130E]/60 to-black/75" />
         </div>
 
         {/* Hero Content */}
@@ -67,13 +66,13 @@ export const AboutPage: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl sm:text-5xl lg:text-6xl font-normal text-white tracking-[-0.035em] leading-[1.12]"
           >
-            Nuestra Trayectoria en Casos <br className="hidden sm:block" />
-            <span className="font-medium text-white">de Éxito Inmobiliario</span>
+            Especialistas en Construir Valor <br className="hidden sm:block" />
+            <span className="font-medium text-white">para tu Patrimonio Inmobiliario</span>
           </motion.h1>
         </div>
       </section>
 
-      {/* 2. MANIFIESTO & MÉTRICAS (About Manifesto & Stats Grid) */}
+      {/* 2. MANIFIESTO & MÉTRICAS */}
       <section className="py-16 sm:py-24 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -85,8 +84,8 @@ export const AboutPage: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12 sm:mb-16"
           >
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-normal text-slate-900 leading-[1.25] tracking-[-0.03em]">
-              VivaHome nació con la visión de transformar la experiencia inmobiliaria a través de la confianza, transparencia e innovación. Asesoramos a nuestros clientes en la compra, venta e inversión de propiedades con seguridad jurídica y visión a largo plazo.
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-normal text-zinc-900 leading-[1.25] tracking-[-0.03em]">
+              En GyS Servicios Inmobiliarios transformamos experiencia, estrategia y conocimiento del mercado en resultados que generan patrimonio. Asesoramos en cada decisión inmobiliaria, legal y financiera con transparencia y rigor técnico.
             </p>
           </motion.div>
 
@@ -102,25 +101,25 @@ export const AboutPage: React.FC = () => {
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
                 className={`rounded-2xl sm:rounded-3xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between ${
                   stat.isHighlighted
-                    ? 'bg-emerald-600 text-white shadow-xl shadow-emerald-900/20'
-                    : 'bg-white text-slate-900 border border-slate-200 shadow-sm'
+                    ? 'bg-[#0C130E] text-white border border-lime-500/30 shadow-xl'
+                    : 'bg-white text-zinc-900 border border-zinc-200 shadow-sm'
                 }`}
               >
                 <div>
-                  <div className={`text-4xl sm:text-5xl font-medium tracking-tight mb-3 ${
-                    stat.isHighlighted ? 'text-white' : 'text-slate-900'
+                  <div className={`text-4xl sm:text-5xl font-bold tracking-tight mb-3 font-mono ${
+                    stat.isHighlighted ? 'text-lime-400' : 'text-[#0C130E]'
                   }`}>
                     {stat.value}
                   </div>
                   <h3 className={`text-base font-semibold mb-2 ${
-                    stat.isHighlighted ? 'text-white' : 'text-slate-900'
+                    stat.isHighlighted ? 'text-white' : 'text-zinc-900'
                   }`}>
                     {stat.label}
                   </h3>
                 </div>
 
                 <p className={`text-xs font-light leading-relaxed pt-4 border-t ${
-                  stat.isHighlighted ? 'text-white/80 border-white/20' : 'text-slate-500 border-slate-100'
+                  stat.isHighlighted ? 'text-zinc-300 border-white/10' : 'text-zinc-500 border-zinc-100'
                 }`}>
                   {stat.desc}
                 </p>
@@ -131,11 +130,11 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. PILARES DE VALOR (Zig-Zag Story Blocks with Scroll Reveal) */}
-      <section className="py-16 sm:py-20 bg-white border-t border-slate-200">
+      {/* 3. PILARES DE VALOR */}
+      <section className="py-16 sm:py-20 bg-white border-t border-zinc-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-24">
           
-          {/* Bloque 1: Texto Izquierda + Imagen Derecha */}
+          {/* Bloque 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
@@ -144,17 +143,16 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 space-y-4"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-medium uppercase tracking-wider">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>EXCELENCIA</span>
-              </div>
+              <span className="text-xs font-semibold text-lime-700 uppercase tracking-wider block mb-1">
+                SEGURIDAD JURÍDICA
+              </span>
               
-              <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-slate-900 leading-tight">
-                Comprometidos con la Seguridad de tu Patrimonio
+              <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-black leading-tight">
+                Comprometidos con la Protección de tu Patrimonio
               </h2>
               
-              <p className="text-sm sm:text-base font-light text-slate-600 leading-relaxed">
-                Cada inmueble en nuestro portafolio pasa por un riguroso estudio de títulos, verificación de gravámenes en Sunarp y saneamiento legal completo. Garantizamos que tu adquisición con VivaHome se realice con absoluta transparencia y respaldo notarial.
+              <p className="text-sm sm:text-base font-light text-zinc-600 leading-relaxed">
+                Cada inmueble en nuestra cartera pasa por un riguroso estudio de títulos en Sunarp, verificación de gravámenes y saneamiento legal completo. Garantizamos que tu inversión con GyS Servicios Inmobiliarios se realice con absoluta transparencia y respaldo notarial.
               </p>
             </motion.div>
 
@@ -165,17 +163,17 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6"
             >
-              <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+              <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-zinc-200">
                 <img 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Asesoría Inmobiliaria Profesional VivaHome" 
+                  alt="Asesoría Legal Inmobiliaria Profesional GyS" 
                   className="w-full h-[260px] sm:h-[360px] object-cover"
                 />
               </div>
             </motion.div>
           </div>
 
-          {/* Bloque 2: Imagen Izquierda + Texto Derecha */}
+          {/* Bloque 2 */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
@@ -184,10 +182,10 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 order-2 lg:order-1"
             >
-              <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+              <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-zinc-200">
                 <img 
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Construyendo el Futuro Inmobiliario con VivaHome" 
+                  alt="Estrategia e Inversión Inmobiliaria con GyS" 
                   className="w-full h-[260px] sm:h-[360px] object-cover"
                 />
               </div>
@@ -200,17 +198,16 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-6 space-y-4 order-1 lg:order-2"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-medium uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>FUTURO</span>
-              </div>
+              <span className="text-xs font-semibold text-lime-700 uppercase tracking-wider block mb-1">
+                ESTRATEGIA PATRIMONIAL
+              </span>
 
-              <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-slate-900 leading-tight">
-                Construyendo un Mañana Mejor para tu Familia
+              <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-black leading-tight">
+                Modelado Financiero & Rentabilidad Continua
               </h2>
 
-              <p className="text-sm sm:text-base font-light text-slate-600 leading-relaxed">
-                Seleccionamos proyectos residenciales y departamentos de estreno en las zonas con mayor proyección y plusvalía de Lima Top y playas. Diseñamos experiencias habitacionales que priorizan la luz natural, la arquitectura sustentable y el confort familiar.
+              <p className="text-sm sm:text-base font-light text-zinc-600 leading-relaxed">
+                Seleccionamos propiedades en las zonas con mayor proyección y plusvalía de Lima Top y polos comerciales. Diseñamos esquemas de apalancamiento y rentas que optimizan el retorno de tu inversión a corto, mediano y largo plazo.
               </p>
             </motion.div>
           </div>
@@ -218,7 +215,7 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. SECCIONES REUTILIZADAS DE LA HOMEPAGE */}
+      {/* 4. SECCIONES REUTILIZADAS */}
       <AgentsSection />
       <TestimonialsSection />
       <FaqSection />
